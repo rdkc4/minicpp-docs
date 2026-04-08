@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: ExpressionIntermediateRepresentation Class Reference</title>
+<title>MINICPP: ExpressionIntermediateRepresentation Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -41,7 +41,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classExpressionIntermediateRepresentation-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ExpressionIntermediateRepresentation Class Reference</div></div>
 </div><!--header-->
@@ -54,59 +53,51 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a31afe9fe80c57b324c83c225270a9afe" id="r_a31afe9fe80c57b324c83c225270a9afe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a31afe9fe80c57b324c83c225270a9afe">ExpressionIntermediateRepresentation</a> ()</td></tr>
-<tr class="memdesc:a31afe9fe80c57b324c83c225270a9afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the expression intermediate representation.  <br /></td></tr>
-<tr class="separator:a31afe9fe80c57b324c83c225270a9afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76be9e79805360befcc6406e9485c4f3" id="r_a76be9e79805360befcc6406e9485c4f3"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRExpression.html">IRExpression</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a76be9e79805360befcc6406e9485c4f3">numericalExpression</a> (const <a class="el" href="classASTExpression.html">ASTExpression</a> *_numexp)</td></tr>
-<tr class="memdesc:a76be9e79805360befcc6406e9485c4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast numerical expression into irt numerical expression  <br /></td></tr>
-<tr class="separator:a76be9e79805360befcc6406e9485c4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace9538f5aa586911bfe8834415e4fe3d" id="r_ace9538f5aa586911bfe8834415e4fe3d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRBinaryExpression.html">IRBinaryExpression</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#ace9538f5aa586911bfe8834415e4fe3d">relationalExpression</a> (const <a class="el" href="classASTExpression.html">ASTExpression</a> *_relexp)</td></tr>
-<tr class="memdesc:ace9538f5aa586911bfe8834415e4fe3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast relational expression into irt relational expression  <br /></td></tr>
-<tr class="separator:ace9538f5aa586911bfe8834415e4fe3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab397f986b6553e309746201f697aac07" id="r_ab397f986b6553e309746201f697aac07"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRId.html">IRId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#ab397f986b6553e309746201f697aac07">id</a> (const <a class="el" href="classASTId.html">ASTId</a> *_id) const</td></tr>
-<tr class="memdesc:ab397f986b6553e309746201f697aac07"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast id into irt id  <br /></td></tr>
-<tr class="separator:ab397f986b6553e309746201f697aac07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a257a987114f7d15cbf849f14cc5f978c" id="r_a257a987114f7d15cbf849f14cc5f978c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRLiteral.html">IRLiteral</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a257a987114f7d15cbf849f14cc5f978c">literal</a> (const <a class="el" href="classASTLiteral.html">ASTLiteral</a> *_literal) const</td></tr>
-<tr class="memdesc:a257a987114f7d15cbf849f14cc5f978c"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast literal into irt literal  <br /></td></tr>
-<tr class="separator:a257a987114f7d15cbf849f14cc5f978c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8251c603f503d831262f042a226bd997" id="r_a8251c603f503d831262f042a226bd997"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRTemporary.html">IRTemporary</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a8251c603f503d831262f042a226bd997">initiateTemporaries</a> (const <a class="el" href="classASTExpression.html">ASTExpression</a> *_numexp)</td></tr>
-<tr class="memdesc:a8251c603f503d831262f042a226bd997"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates temporary variables for runction calls of the numerical expression  <br /></td></tr>
-<tr class="separator:a8251c603f503d831262f042a226bd997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a2575e978de23960e8efc94d2adee1b03" id="r_a2575e978de23960e8efc94d2adee1b03"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRFunctionCall.html">IRFunctionCall</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a2575e978de23960e8efc94d2adee1b03">functionCall</a> (const <a class="el" href="classASTFunctionCall.html">ASTFunctionCall</a> *_functionCall)</td></tr>
-<tr class="memdesc:a2575e978de23960e8efc94d2adee1b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast function call into irt function call  <br /></td></tr>
-<tr class="separator:a2575e978de23960e8efc94d2adee1b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba99d7aa0052ed77866b1663c5b0292" id="r_a8ba99d7aa0052ed77866b1663c5b0292"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a8ba99d7aa0052ed77866b1663c5b0292">argument</a> (<a class="el" href="classIRFunctionCall.html">IRFunctionCall</a> *_irFunctionCall, const <a class="el" href="classASTFunctionCall.html">ASTFunctionCall</a> *_functionCall)</td></tr>
-<tr class="memdesc:a8ba99d7aa0052ed77866b1663c5b0292"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns arguments of the ast function call into arguments of the irt function call  <br /></td></tr>
-<tr class="separator:a8ba99d7aa0052ed77866b1663c5b0292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37372de8299afb0bb153a25e55ff5146" id="r_a37372de8299afb0bb153a25e55ff5146"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a37372de8299afb0bb153a25e55ff5146">countTemporaries</a> (const <a class="el" href="classASTExpression.html">ASTExpression</a> *_numexp) const</td></tr>
-<tr class="memdesc:a37372de8299afb0bb153a25e55ff5146"><td class="mdescLeft">&#160;</td><td class="mdescRight">counting the number of required temporaries  <br /></td></tr>
-<tr class="separator:a37372de8299afb0bb153a25e55ff5146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0caaf2ac2adbbf1085b19e7d03daa80" id="r_ae0caaf2ac2adbbf1085b19e7d03daa80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#ae0caaf2ac2adbbf1085b19e7d03daa80">ExpressionIntermediateRepresentation</a> ()=default</td></tr>
+<tr class="memdesc:ae0caaf2ac2adbbf1085b19e7d03daa80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the expression intermediate representation.  <br /></td></tr>
+<tr class="separator:ae0caaf2ac2adbbf1085b19e7d03daa80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d346ddd69038d1af3ea09e111b3c21" id="r_a92d346ddd69038d1af3ea09e111b3c21"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRExpr.html">IRExpr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a92d346ddd69038d1af3ea09e111b3c21">transformNumericalExpr</a> (const <a class="el" href="classASTExpr.html">ASTExpr</a> *astNumericalExpr)</td></tr>
+<tr class="memdesc:a92d346ddd69038d1af3ea09e111b3c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast numerical expression into irt numerical expression  <br /></td></tr>
+<tr class="separator:a92d346ddd69038d1af3ea09e111b3c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c29eb8db48147929aa7dc000a515c05" id="r_a4c29eb8db48147929aa7dc000a515c05"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRExpr.html">IRExpr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a4c29eb8db48147929aa7dc000a515c05">transformBinaryExpr</a> (const <a class="el" href="classASTBinaryExpr.html">ASTBinaryExpr</a> *astBinaryExpr)</td></tr>
+<tr class="memdesc:a4c29eb8db48147929aa7dc000a515c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast binary expression into irt binary expression  <br /></td></tr>
+<tr class="separator:a4c29eb8db48147929aa7dc000a515c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e6e2f401ae5394451e99d83d73ff10" id="r_a89e6e2f401ae5394451e99d83d73ff10"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRBinaryExpr.html">IRBinaryExpr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a89e6e2f401ae5394451e99d83d73ff10">transformRelationalExpr</a> (const <a class="el" href="classASTExpr.html">ASTExpr</a> *astRelationalExpr)</td></tr>
+<tr class="memdesc:a89e6e2f401ae5394451e99d83d73ff10"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast relational expression into irt relational expression  <br /></td></tr>
+<tr class="separator:a89e6e2f401ae5394451e99d83d73ff10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1859886f5f31c038ffd98caea235351a" id="r_a1859886f5f31c038ffd98caea235351a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRIdExpr.html">IRIdExpr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a1859886f5f31c038ffd98caea235351a">transformIdExpr</a> (const <a class="el" href="classASTIdExpr.html">ASTIdExpr</a> *astIdExpr) const</td></tr>
+<tr class="memdesc:a1859886f5f31c038ffd98caea235351a"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast id into irt id  <br /></td></tr>
+<tr class="separator:a1859886f5f31c038ffd98caea235351a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28272c4b73eb858dfc4c5af364071c6" id="r_af28272c4b73eb858dfc4c5af364071c6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#af28272c4b73eb858dfc4c5af364071c6">transformLiteralExpr</a> (const <a class="el" href="classASTLiteralExpr.html">ASTLiteralExpr</a> *astLiteralExpr) const</td></tr>
+<tr class="memdesc:af28272c4b73eb858dfc4c5af364071c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast literal into irt literal  <br /></td></tr>
+<tr class="separator:af28272c4b73eb858dfc4c5af364071c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad667de9696cba5dcace3611e348dae00" id="r_ad667de9696cba5dcace3611e348dae00"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRTemporaryExpr.html">IRTemporaryExpr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#ad667de9696cba5dcace3611e348dae00">initiateTemporaries</a> (const <a class="el" href="classASTExpr.html">ASTExpr</a> *astExpr)</td></tr>
+<tr class="memdesc:ad667de9696cba5dcace3611e348dae00"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates temporary variables for runction calls of the numerical expression  <br /></td></tr>
+<tr class="separator:ad667de9696cba5dcace3611e348dae00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b0227523fad43d8418af3358aee17a" id="r_a81b0227523fad43d8418af3358aee17a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRFunctionCallExpr.html">IRFunctionCallExpr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a81b0227523fad43d8418af3358aee17a">transformFunctionCallExpr</a> (const <a class="el" href="classASTFunctionCallExpr.html">ASTFunctionCallExpr</a> *astCallExpr)</td></tr>
+<tr class="memdesc:a81b0227523fad43d8418af3358aee17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast function call into irt function call  <br /></td></tr>
+<tr class="separator:a81b0227523fad43d8418af3358aee17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc452a265b92a8230d7810c0bad67fe" id="r_abfc452a265b92a8230d7810c0bad67fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#abfc452a265b92a8230d7810c0bad67fe">transformArguments</a> (<a class="el" href="classIRFunctionCallExpr.html">IRFunctionCallExpr</a> *irCallExpr, const <a class="el" href="classASTFunctionCallExpr.html">ASTFunctionCallExpr</a> *astCallExpr)</td></tr>
+<tr class="memdesc:abfc452a265b92a8230d7810c0bad67fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns arguments of the ast function call into arguments of the irt function call  <br /></td></tr>
+<tr class="separator:abfc452a265b92a8230d7810c0bad67fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4b3bf1b33858dcdd10fd970b6f01a0" id="r_a3f4b3bf1b33858dcdd10fd970b6f01a0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a3f4b3bf1b33858dcdd10fd970b6f01a0">countTemporaries</a> (const <a class="el" href="classASTExpr.html">ASTExpr</a> *astExpr) const</td></tr>
+<tr class="memdesc:a3f4b3bf1b33858dcdd10fd970b6f01a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">counting the number of required temporaries  <br /></td></tr>
+<tr class="separator:a3f4b3bf1b33858dcdd10fd970b6f01a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae31a1c76450ee985ce900004343e1d88" id="r_ae31a1c76450ee985ce900004343e1d88"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#ae31a1c76450ee985ce900004343e1d88">generateTemporaries</a> ()</td></tr>
 <tr class="memdesc:ae31a1c76450ee985ce900004343e1d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the name for the temporary variable  <br /></td></tr>
 <tr class="separator:ae31a1c76450ee985ce900004343e1d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ca86e669dd5bc4a68ba8e2a61c2be5d" id="r_a1ca86e669dd5bc4a68ba8e2a61c2be5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a1ca86e669dd5bc4a68ba8e2a61c2be5d">assignFunctionCalls</a> (<a class="el" href="classIRTemporary.html">IRTemporary</a> *_temporaryRoot, const <a class="el" href="classASTExpression.html">ASTExpression</a> *_numexp, size_t &amp;idx)</td></tr>
-<tr class="memdesc:a1ca86e669dd5bc4a68ba8e2a61c2be5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">assigns function calls to the temporaries  <br /></td></tr>
-<tr class="separator:a1ca86e669dd5bc4a68ba8e2a61c2be5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf140c5b81bc63670892ba5497699421" id="r_abf140c5b81bc63670892ba5497699421"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRId.html">IRId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#abf140c5b81bc63670892ba5497699421">replaceFunctionCall</a> (const <a class="el" href="classASTFunctionCall.html">ASTFunctionCall</a> *_functionCall)</td></tr>
-<tr class="memdesc:abf140c5b81bc63670892ba5497699421"><td class="mdescLeft">&#160;</td><td class="mdescRight">replaces function calls with temporaries  <br /></td></tr>
-<tr class="separator:abf140c5b81bc63670892ba5497699421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b9941280482b1a41d1f86ca1967361f" id="r_a3b9941280482b1a41d1f86ca1967361f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3b9941280482b1a41d1f86ca1967361f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a3b9941280482b1a41d1f86ca1967361f">getOperandValue</a> (const <a class="el" href="classIRLiteral.html">IRLiteral</a> *operand) const</td></tr>
-<tr class="memdesc:a3b9941280482b1a41d1f86ca1967361f"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to get operand value  <br /></td></tr>
-<tr class="separator:a3b9941280482b1a41d1f86ca1967361f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29b04e86ef69e661d5afd72e750212c9" id="r_a29b04e86ef69e661d5afd72e750212c9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a29b04e86ef69e661d5afd72e750212c9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">Optimization::ConstantFolding::MergeResult</a>&lt; std::unique_ptr&lt; <a class="el" href="classIRExpression.html">IRExpression</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#a29b04e86ef69e661d5afd72e750212c9">mergeLiterals</a> (const <a class="el" href="classIRLiteral.html">IRLiteral</a> *leftOperand, const <a class="el" href="classIRLiteral.html">IRLiteral</a> *rightOperand, const <a class="el" href="classASTBinaryExpression.html">ASTBinaryExpression</a> *binExp) const</td></tr>
-<tr class="memdesc:a29b04e86ef69e661d5afd72e750212c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">merges literals of the expression  <br /></td></tr>
-<tr class="separator:a29b04e86ef69e661d5afd72e750212c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9be0785adc903f42ed0d2566d76bda" id="r_adb9be0785adc903f42ed0d2566d76bda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#adb9be0785adc903f42ed0d2566d76bda">assignTemporaries</a> (<a class="el" href="classIRTemporaryExpr.html">IRTemporaryExpr</a> *temporaryRoot, const <a class="el" href="classASTExpr.html">ASTExpr</a> *astExpr, size_t &amp;idx)</td></tr>
+<tr class="memdesc:adb9be0785adc903f42ed0d2566d76bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">assigns function calls to the temporaries  <br /></td></tr>
+<tr class="separator:adb9be0785adc903f42ed0d2566d76bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09a2df98b60e10266474e647cade7a8" id="r_ab09a2df98b60e10266474e647cade7a8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRIdExpr.html">IRIdExpr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExpressionIntermediateRepresentation.html#ab09a2df98b60e10266474e647cade7a8">replaceFunctionCallExpr</a> (const <a class="el" href="classASTFunctionCallExpr.html">ASTFunctionCallExpr</a> *astCallExpr)</td></tr>
+<tr class="memdesc:ab09a2df98b60e10266474e647cade7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">replaces function calls with temporaries  <br /></td></tr>
+<tr class="separator:ab09a2df98b60e10266474e647cade7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>turns ast expression into irt expression </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a31afe9fe80c57b324c83c225270a9afe" name="a31afe9fe80c57b324c83c225270a9afe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31afe9fe80c57b324c83c225270a9afe">&#9670;&#160;</a></span>ExpressionIntermediateRepresentation()</h2>
+<a id="ae0caaf2ac2adbbf1085b19e7d03daa80" name="ae0caaf2ac2adbbf1085b19e7d03daa80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0caaf2ac2adbbf1085b19e7d03daa80">&#9670;&#160;</a></span>ExpressionIntermediateRepresentation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,72 +124,23 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8ba99d7aa0052ed77866b1663c5b0292" name="a8ba99d7aa0052ed77866b1663c5b0292"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ba99d7aa0052ed77866b1663c5b0292">&#9670;&#160;</a></span>argument()</h2>
+<a id="adb9be0785adc903f42ed0d2566d76bda" name="adb9be0785adc903f42ed0d2566d76bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9be0785adc903f42ed0d2566d76bda">&#9670;&#160;</a></span>assignTemporaries()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ExpressionIntermediateRepresentation::argument </td>
+          <td class="memname">void ExpressionIntermediateRepresentation::assignTemporaries </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classIRFunctionCall.html">IRFunctionCall</a> *&#160;</td>
-          <td class="paramname"><em>_irFunctionCall</em>, </td>
+          <td class="paramtype"><a class="el" href="classIRTemporaryExpr.html">IRTemporaryExpr</a> *&#160;</td>
+          <td class="paramname"><em>temporaryRoot</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classASTFunctionCall.html">ASTFunctionCall</a> *&#160;</td>
-          <td class="paramname"><em>_functionCall</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>turns arguments of the ast function call into arguments of the irt function call </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_irFunctionCall</td><td>- pointer to the irt function call </td></tr>
-    <tr><td class="paramname">_functionCall</td><td>- const pointer to the ast function call </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="a1ca86e669dd5bc4a68ba8e2a61c2be5d" name="a1ca86e669dd5bc4a68ba8e2a61c2be5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ca86e669dd5bc4a68ba8e2a61c2be5d">&#9670;&#160;</a></span>assignFunctionCalls()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ExpressionIntermediateRepresentation::assignFunctionCalls </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classIRTemporary.html">IRTemporary</a> *&#160;</td>
-          <td class="paramname"><em>_temporaryRoot</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classASTExpression.html">ASTExpression</a> *&#160;</td>
-          <td class="paramname"><em>_numexp</em>, </td>
+          <td class="paramtype">const <a class="el" href="classASTExpr.html">ASTExpr</a> *&#160;</td>
+          <td class="paramname"><em>astExpr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -212,18 +154,13 @@ Private Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>assigns function calls to the temporaries </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_temporaryRoot</td><td>- pointer to the parent node of the temporaries </td></tr>
-    <tr><td class="paramname">_numexp</td><td>- const pointer to the ast numerical expression </td></tr>
+    <tr><td class="paramname">temporaryRoot</td><td>- pointer to the parent node of the temporaries </td></tr>
+    <tr><td class="paramname">astExpr</td><td>- const pointer to the ast expression </td></tr>
     <tr><td class="paramname">idx</td><td>- index of the temporary being assigned </td></tr>
   </table>
   </dd>
@@ -231,73 +168,30 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a37372de8299afb0bb153a25e55ff5146" name="a37372de8299afb0bb153a25e55ff5146"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37372de8299afb0bb153a25e55ff5146">&#9670;&#160;</a></span>countTemporaries()</h2>
+<a id="a3f4b3bf1b33858dcdd10fd970b6f01a0" name="a3f4b3bf1b33858dcdd10fd970b6f01a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f4b3bf1b33858dcdd10fd970b6f01a0">&#9670;&#160;</a></span>countTemporaries()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t ExpressionIntermediateRepresentation::countTemporaries </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTExpression.html">ASTExpression</a> *&#160;</td>
-          <td class="paramname"><em>_numexp</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTExpr.html">ASTExpr</a> *&#160;</td>
+          <td class="paramname"><em>astExpr</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>counting the number of required temporaries </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_numexp</td><td>- const pointer to the ast numerical expression </td></tr>
+    <tr><td class="paramname">astExpr</td><td>- const pointer to the ast expression </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of required temporaries </dd></dl>
-
-</div>
-</div>
-<a id="a2575e978de23960e8efc94d2adee1b03" name="a2575e978de23960e8efc94d2adee1b03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2575e978de23960e8efc94d2adee1b03">&#9670;&#160;</a></span>functionCall()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRFunctionCall.html">IRFunctionCall</a> &gt; ExpressionIntermediateRepresentation::functionCall </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTFunctionCall.html">ASTFunctionCall</a> *&#160;</td>
-          <td class="paramname"><em>_functionCall</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>turns ast function call into irt function call </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_functionCall</td><td>- const pointer to the ast function call </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the irt function call </dd></dl>
 
 </div>
 </div>
@@ -306,9 +200,6 @@ Private Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string ExpressionIntermediateRepresentation::generateTemporaries </td>
@@ -317,11 +208,6 @@ Private Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>generates the name for the temporary variable </p>
@@ -329,75 +215,17 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b9941280482b1a41d1f86ca1967361f" name="a3b9941280482b1a41d1f86ca1967361f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b9941280482b1a41d1f86ca1967361f">&#9670;&#160;</a></span>getOperandValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T ExpressionIntermediateRepresentation::getOperandValue </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRLiteral.html">IRLiteral</a> *&#160;</td>
-          <td class="paramname"><em>operand</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>helper function to get operand value </p>
-<dl class="section return"><dt>Returns</dt><dd>operand value as T </dd></dl>
-
-</div>
-</div>
-<a id="ab397f986b6553e309746201f697aac07" name="ab397f986b6553e309746201f697aac07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab397f986b6553e309746201f697aac07">&#9670;&#160;</a></span>id()</h2>
+<a id="ad667de9696cba5dcace3611e348dae00" name="ad667de9696cba5dcace3611e348dae00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad667de9696cba5dcace3611e348dae00">&#9670;&#160;</a></span>initiateTemporaries()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRId.html">IRId</a> &gt; ExpressionIntermediateRepresentation::id </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRTemporaryExpr.html">IRTemporaryExpr</a> &gt; ExpressionIntermediateRepresentation::initiateTemporaries </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTId.html">ASTId</a> *&#160;</td>
-          <td class="paramname"><em>_id</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>turns ast id into irt id </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_id</td><td>- const pointer to the ast id </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the irt id </dd></dl>
-
-</div>
-</div>
-<a id="a8251c603f503d831262f042a226bd997" name="a8251c603f503d831262f042a226bd997"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8251c603f503d831262f042a226bd997">&#9670;&#160;</a></span>initiateTemporaries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRTemporary.html">IRTemporary</a> &gt; ExpressionIntermediateRepresentation::initiateTemporaries </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTExpression.html">ASTExpression</a> *&#160;</td>
-          <td class="paramname"><em>_numexp</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTExpr.html">ASTExpr</a> *&#160;</td>
+          <td class="paramname"><em>astExpr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -406,7 +234,7 @@ template&lt;typename T &gt; </div>
 <p>generates temporary variables for runction calls of the numerical expression </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_numexp</td><td>- const pointer to the ast numerical expression </td></tr>
+    <tr><td class="paramname">astExpr</td><td>- const pointer to the ast numerical expression </td></tr>
   </table>
   </dd>
 </dl>
@@ -414,17 +242,162 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a257a987114f7d15cbf849f14cc5f978c" name="a257a987114f7d15cbf849f14cc5f978c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a257a987114f7d15cbf849f14cc5f978c">&#9670;&#160;</a></span>literal()</h2>
+<a id="ab09a2df98b60e10266474e647cade7a8" name="ab09a2df98b60e10266474e647cade7a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09a2df98b60e10266474e647cade7a8">&#9670;&#160;</a></span>replaceFunctionCallExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRLiteral.html">IRLiteral</a> &gt; ExpressionIntermediateRepresentation::literal </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRIdExpr.html">IRIdExpr</a> &gt; ExpressionIntermediateRepresentation::replaceFunctionCallExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTLiteral.html">ASTLiteral</a> *&#160;</td>
-          <td class="paramname"><em>_literal</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTFunctionCallExpr.html">ASTFunctionCallExpr</a> *&#160;</td>
+          <td class="paramname"><em>astCallExpr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>replaces function calls with temporaries </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">astCallExpr</td><td>- const pointer to the ast function call </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the irt id of the temporary variable </dd></dl>
+
+</div>
+</div>
+<a id="abfc452a265b92a8230d7810c0bad67fe" name="abfc452a265b92a8230d7810c0bad67fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfc452a265b92a8230d7810c0bad67fe">&#9670;&#160;</a></span>transformArguments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ExpressionIntermediateRepresentation::transformArguments </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIRFunctionCallExpr.html">IRFunctionCallExpr</a> *&#160;</td>
+          <td class="paramname"><em>irCallExpr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classASTFunctionCallExpr.html">ASTFunctionCallExpr</a> *&#160;</td>
+          <td class="paramname"><em>astCallExpr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>turns arguments of the ast function call into arguments of the irt function call </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">irCallExpr</td><td>- pointer to the irt function call </td></tr>
+    <tr><td class="paramname">astCallExpr</td><td>- const pointer to the ast function call </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c29eb8db48147929aa7dc000a515c05" name="a4c29eb8db48147929aa7dc000a515c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c29eb8db48147929aa7dc000a515c05">&#9670;&#160;</a></span>transformBinaryExpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRExpr.html">IRExpr</a> &gt; ExpressionIntermediateRepresentation::transformBinaryExpr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classASTBinaryExpr.html">ASTBinaryExpr</a> *&#160;</td>
+          <td class="paramname"><em>astBinaryExpr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>turns ast binary expression into irt binary expression </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">astBinaryExpr</td><td>- const pointer to the ast binary expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the irt expression </dd></dl>
+
+</div>
+</div>
+<a id="a81b0227523fad43d8418af3358aee17a" name="a81b0227523fad43d8418af3358aee17a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b0227523fad43d8418af3358aee17a">&#9670;&#160;</a></span>transformFunctionCallExpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRFunctionCallExpr.html">IRFunctionCallExpr</a> &gt; ExpressionIntermediateRepresentation::transformFunctionCallExpr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classASTFunctionCallExpr.html">ASTFunctionCallExpr</a> *&#160;</td>
+          <td class="paramname"><em>astCallExpr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>turns ast function call into irt function call </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">astCallExpr</td><td>- const pointer to the ast function call </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the irt function call </dd></dl>
+
+</div>
+</div>
+<a id="a1859886f5f31c038ffd98caea235351a" name="a1859886f5f31c038ffd98caea235351a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1859886f5f31c038ffd98caea235351a">&#9670;&#160;</a></span>transformIdExpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRIdExpr.html">IRIdExpr</a> &gt; ExpressionIntermediateRepresentation::transformIdExpr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classASTIdExpr.html">ASTIdExpr</a> *&#160;</td>
+          <td class="paramname"><em>astIdExpr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>turns ast id into irt id </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">astIdExpr</td><td>- const pointer to the ast id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the irt id </dd></dl>
+
+</div>
+</div>
+<a id="af28272c4b73eb858dfc4c5af364071c6" name="af28272c4b73eb858dfc4c5af364071c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28272c4b73eb858dfc4c5af364071c6">&#9670;&#160;</a></span>transformLiteralExpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> &gt; ExpressionIntermediateRepresentation::transformLiteralExpr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classASTLiteralExpr.html">ASTLiteralExpr</a> *&#160;</td>
+          <td class="paramname"><em>astLiteralExpr</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -433,7 +406,7 @@ template&lt;typename T &gt; </div>
 <p>turns ast literal into irt literal </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_literal</td><td>- const pointer to the ast literal </td></tr>
+    <tr><td class="paramname">astLiteralExpr</td><td>- const pointer to the ast literal </td></tr>
   </table>
   </dd>
 </dl>
@@ -441,72 +414,17 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a29b04e86ef69e661d5afd72e750212c9" name="a29b04e86ef69e661d5afd72e750212c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29b04e86ef69e661d5afd72e750212c9">&#9670;&#160;</a></span>mergeLiterals()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">Optimization::ConstantFolding::MergeResult</a>&lt; std::unique_ptr&lt; <a class="el" href="classIRExpression.html">IRExpression</a> &gt; &gt; ExpressionIntermediateRepresentation::mergeLiterals </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRLiteral.html">IRLiteral</a> *&#160;</td>
-          <td class="paramname"><em>leftOperand</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classIRLiteral.html">IRLiteral</a> *&#160;</td>
-          <td class="paramname"><em>rightOperand</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classASTBinaryExpression.html">ASTBinaryExpression</a> *&#160;</td>
-          <td class="paramname"><em>binExp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>merges literals of the expression </p>
-<dl class="section note"><dt>Note</dt><dd>reduces the depth of the expression subtree when all children are literals </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">leftOperand</td><td>- const pointer to the irt numerical expression </td></tr>
-    <tr><td class="paramname">rightOperand</td><td>- const pointer to the irt numerical expression @binExp - const pointer to the ast binary expression, contains operation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>result of the merge operation </dd></dl>
-
-</div>
-</div>
-<a id="a76be9e79805360befcc6406e9485c4f3" name="a76be9e79805360befcc6406e9485c4f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76be9e79805360befcc6406e9485c4f3">&#9670;&#160;</a></span>numericalExpression()</h2>
+<a id="a92d346ddd69038d1af3ea09e111b3c21" name="a92d346ddd69038d1af3ea09e111b3c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d346ddd69038d1af3ea09e111b3c21">&#9670;&#160;</a></span>transformNumericalExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRExpression.html">IRExpression</a> &gt; ExpressionIntermediateRepresentation::numericalExpression </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRExpr.html">IRExpr</a> &gt; ExpressionIntermediateRepresentation::transformNumericalExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTExpression.html">ASTExpression</a> *&#160;</td>
-          <td class="paramname"><em>_numexp</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTExpr.html">ASTExpr</a> *&#160;</td>
+          <td class="paramname"><em>astNumericalExpr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -515,7 +433,7 @@ template&lt;typename T &gt; </div>
 <p>turns ast numerical expression into irt numerical expression </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_numexp</td><td>- const pointer to the ast numerical expression </td></tr>
+    <tr><td class="paramname">astNumericalExpr</td><td>- const pointer to the ast numerical expression </td></tr>
   </table>
   </dd>
 </dl>
@@ -523,17 +441,17 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ace9538f5aa586911bfe8834415e4fe3d" name="ace9538f5aa586911bfe8834415e4fe3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace9538f5aa586911bfe8834415e4fe3d">&#9670;&#160;</a></span>relationalExpression()</h2>
+<a id="a89e6e2f401ae5394451e99d83d73ff10" name="a89e6e2f401ae5394451e99d83d73ff10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e6e2f401ae5394451e99d83d73ff10">&#9670;&#160;</a></span>transformRelationalExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRBinaryExpression.html">IRBinaryExpression</a> &gt; ExpressionIntermediateRepresentation::relationalExpression </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRBinaryExpr.html">IRBinaryExpr</a> &gt; ExpressionIntermediateRepresentation::transformRelationalExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTExpression.html">ASTExpression</a> *&#160;</td>
-          <td class="paramname"><em>_relexp</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTExpr.html">ASTExpr</a> *&#160;</td>
+          <td class="paramname"><em>astRelationalExpr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -542,47 +460,12 @@ template&lt;typename T &gt; </div>
 <p>turns ast relational expression into irt relational expression </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_relexp</td><td>- const pointer to the ast relational expression </td></tr>
+    <tr><td class="paramname">astRelationalExpr</td><td>- const pointer to the ast relational expression </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the irt relational expression </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>at the moment only binary expression </dd></dl>
-
-</div>
-</div>
-<a id="abf140c5b81bc63670892ba5497699421" name="abf140c5b81bc63670892ba5497699421"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf140c5b81bc63670892ba5497699421">&#9670;&#160;</a></span>replaceFunctionCall()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRId.html">IRId</a> &gt; ExpressionIntermediateRepresentation::replaceFunctionCall </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTFunctionCall.html">ASTFunctionCall</a> *&#160;</td>
-          <td class="paramname"><em>_functionCall</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>replaces function calls with temporaries </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_functionCall</td><td>- const pointer to the ast function call </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the irt id of the temporary variable </dd></dl>
 
 </div>
 </div>

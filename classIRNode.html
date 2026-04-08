@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: IRNode Class Reference</title>
+<title>MINICPP: IRNode Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -50,29 +50,26 @@ $(function() {
 <p>parent class of all IRT nodes  
  <a href="classIRNode.html#details">More...</a></p>
 
-<p><code>#include &lt;IRNode.hpp&gt;</code></p>
+<p><code>#include &lt;ir_node.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a7ec0106794643f2457fe4858696926" id="r_a0a7ec0106794643f2457fe4858696926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a0a7ec0106794643f2457fe4858696926">IRNode</a> (<a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> ntype)</td></tr>
+<tr class="memitem:a0a7ec0106794643f2457fe4858696926" id="r_a0a7ec0106794643f2457fe4858696926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a0a7ec0106794643f2457fe4858696926">IRNode</a> (<a class="el" href="common_2intermediate-representation-tree_2defs_2ir__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> ntype)</td></tr>
 <tr class="memdesc:a0a7ec0106794643f2457fe4858696926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the irt node.  <br /></td></tr>
 <tr class="separator:a0a7ec0106794643f2457fe4858696926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3aeafbb5333372b8489487f9906b56c" id="r_ad3aeafbb5333372b8489487f9906b56c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#ad3aeafbb5333372b8489487f9906b56c">~IRNode</a> ()</td></tr>
 <tr class="memdesc:ad3aeafbb5333372b8489487f9906b56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs the instance of the irt node.  <br /></td></tr>
 <tr class="separator:ad3aeafbb5333372b8489487f9906b56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dec26fd54ec746dbf90db57b961857f" id="r_a2dec26fd54ec746dbf90db57b961857f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a2dec26fd54ec746dbf90db57b961857f">getNodeType</a> () const noexcept</td></tr>
+<tr class="memitem:a2dec26fd54ec746dbf90db57b961857f" id="r_a2dec26fd54ec746dbf90db57b961857f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2intermediate-representation-tree_2defs_2ir__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a2dec26fd54ec746dbf90db57b961857f">getNodeType</a> () const noexcept</td></tr>
 <tr class="memdesc:a2dec26fd54ec746dbf90db57b961857f"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the node type  <br /></td></tr>
 <tr class="separator:a2dec26fd54ec746dbf90db57b961857f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd3fe214eb949b769828a20f57791ae" id="r_a9cd3fe214eb949b769828a20f57791ae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a9cd3fe214eb949b769828a20f57791ae">toString</a> () const</td></tr>
-<tr class="memdesc:a9cd3fe214eb949b769828a20f57791ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the formatted node type  <br /></td></tr>
-<tr class="separator:a9cd3fe214eb949b769828a20f57791ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f9213b9db78704997096de05ca83a67" id="r_a2f9213b9db78704997096de05ca83a67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a2f9213b9db78704997096de05ca83a67">print</a> (size_t offset) const =0</td></tr>
-<tr class="memdesc:a2f9213b9db78704997096de05ca83a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual function for formatting the string of the node  <br /></td></tr>
-<tr class="separator:a2f9213b9db78704997096de05ca83a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5015be942d47b4f3771efb58886aa39" id="r_ae5015be942d47b4f3771efb58886aa39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#ae5015be942d47b4f3771efb58886aa39">accept</a> (<a class="el" href="classIRVisitor.html">IRVisitor</a> &amp;visitor)=0</td></tr>
+<tr class="memdesc:ae5015be942d47b4f3771efb58886aa39"><td class="mdescLeft">&#160;</td><td class="mdescRight">accepts the ir visitor  <br /></td></tr>
+<tr class="separator:ae5015be942d47b4f3771efb58886aa39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9b64ab8ae87591d5c30540154996b7a0" id="r_a9b64ab8ae87591d5c30540154996b7a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a9b64ab8ae87591d5c30540154996b7a0">nodeType</a></td></tr>
+<tr class="memitem:a9b64ab8ae87591d5c30540154996b7a0" id="r_a9b64ab8ae87591d5c30540154996b7a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2intermediate-representation-tree_2defs_2ir__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a9b64ab8ae87591d5c30540154996b7a0">nodeType</a></td></tr>
 <tr class="memdesc:a9b64ab8ae87591d5c30540154996b7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the irt node  <br /></td></tr>
 <tr class="separator:a9b64ab8ae87591d5c30540154996b7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -88,7 +85,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">IRNode::IRNode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="common_2intermediate-representation-tree_2defs_2ir__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&#160;</td>
           <td class="paramname"><em>ntype</em></td><td>)</td>
           <td></td>
         </tr>
@@ -133,6 +130,42 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae5015be942d47b4f3771efb58886aa39" name="ae5015be942d47b4f3771efb58886aa39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5015be942d47b4f3771efb58886aa39">&#9670;&#160;</a></span>accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IRNode::accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIRVisitor.html">IRVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>accepts the ir visitor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visitor</td><td>- reference to an ir visitor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classIRAssignStmt.html#aac80d660fb0b0d9919b11aa1d32722b3">IRAssignStmt</a>, <a class="el" href="classIRBinaryExpr.html#ae861b82bd05f5610643952a1694dc129">IRBinaryExpr</a>, <a class="el" href="classIRCaseStmt.html#af36149babfca42121795457d3ab467e1">IRCaseStmt</a>, <a class="el" href="classIRCompoundStmt.html#af21f0baf71a130b2dc9e6f90f1ab326e">IRCompoundStmt</a>, <a class="el" href="classIRDefaultStmt.html#abfbca3a501c7a5c5380b8748babb1cae">IRDefaultStmt</a>, <a class="el" href="classIRDoWhileStmt.html#aa61a8cf6686765bcf5532140ce78ddb1">IRDoWhileStmt</a>, <a class="el" href="classIRForStmt.html#a56d0514a6ad85883c0c8c057e60b5c61">IRForStmt</a>, <a class="el" href="classIRFunction.html#a2e0453b5d2099980598532299f91320b">IRFunction</a>, <a class="el" href="classIRFunctionCallExpr.html#a25b3a38f5a1a1a31b8d61136ae6f6d42">IRFunctionCallExpr</a>, <a class="el" href="classIRFunctionCallStmt.html#a3ddfcf8381424f7726d42b927abc612f">IRFunctionCallStmt</a>, <a class="el" href="classIRIdExpr.html#a325c4395f6a2cb240210039583bdcad6">IRIdExpr</a>, <a class="el" href="classIRIfStmt.html#a54d598d2bff7554ef6cab30fda6edabe">IRIfStmt</a>, <a class="el" href="classIRLiteralExpr.html#abd150b0362345e73bbd838b457d1e28d">IRLiteralExpr</a>, <a class="el" href="classIRParameter.html#a5069034ea636c7a7478f5d31ae03d9cd">IRParameter</a>, <a class="el" href="classIRProgram.html#a64524c4c68db8a0f84549d6fe0a0ccf7">IRProgram</a>, <a class="el" href="classIRReturnStmt.html#a5589fe747041bd8ddb3c60eda11183d3">IRReturnStmt</a>, <a class="el" href="classIRSwitchBlockStmt.html#a54f5a7a2ba78c3abf6011df51ce08416">IRSwitchBlockStmt</a>, <a class="el" href="classIRSwitchStmt.html#a211a0ba459222870db2c2b21d4ee0976">IRSwitchStmt</a>, <a class="el" href="classIRTemporaryExpr.html#ad32b8c9554fa5617327890b1a35881bc">IRTemporaryExpr</a>, <a class="el" href="classIRVariableDeclStmt.html#aae33f7aaf9fd533be13856d6d3277ff5">IRVariableDeclStmt</a>, <a class="el" href="classIRWhileStmt.html#a16ee63e29ed7f437205886ac15ec4d19">IRWhileStmt</a>, <a class="el" href="classIRExpr.html#a2835c20487cd6b30b84bbd6c4157a2d3">IRExpr</a>, and <a class="el" href="classIRStmt.html#a081cedef2834ef318f35ed9f6bedbff4">IRStmt</a>.</p>
+
+</div>
+</div>
 <a id="a2dec26fd54ec746dbf90db57b961857f" name="a2dec26fd54ec746dbf90db57b961857f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dec26fd54ec746dbf90db57b961857f">&#9670;&#160;</a></span>getNodeType()</h2>
 
@@ -143,7 +176,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> IRNode::getNodeType </td>
+          <td class="memname"><a class="el" href="common_2intermediate-representation-tree_2defs_2ir__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> IRNode::getNodeType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -161,64 +194,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f9213b9db78704997096de05ca83a67" name="a2f9213b9db78704997096de05ca83a67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f9213b9db78704997096de05ca83a67">&#9670;&#160;</a></span>print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void IRNode::print </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>offset</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>virtual function for formatting the string of the node </p>
-<dl class="section note"><dt>Note</dt><dd>debugging purposes </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">offset</td><td>- indentation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Implemented in <a class="el" href="classIRAssignSt.html#a55396425666fed0f5894d2d81e7bfb6d">IRAssignSt</a>, <a class="el" href="classIRBinaryExpression.html#a288804d0bd1bdbcb1ef75b29d546a138">IRBinaryExpression</a>, <a class="el" href="classIRCaseSt.html#a757920398f63188f900e2ebd9f81c7cd">IRCaseSt</a>, <a class="el" href="classIRCompoundSt.html#a0af17626684852f2ba3e24003b9d1987">IRCompoundSt</a>, <a class="el" href="classIRDefaultSt.html#ab13fdd33a173abb8128d7a9aa510c4ba">IRDefaultSt</a>, <a class="el" href="classIRDoWhileSt.html#a26a33d782549d466801ca141a92aaae2">IRDoWhileSt</a>, <a class="el" href="classIRForSt.html#a675198f7f0e3b7be26e158218dad2619">IRForSt</a>, <a class="el" href="classIRFunction.html#ad4a69cbf932bfa88fd926f1a2f2a686a">IRFunction</a>, <a class="el" href="classIRFunctionCall.html#ae6fa8e3a9fb1f203cbcb374a3a19f558">IRFunctionCall</a>, <a class="el" href="classIRId.html#a362a86902df266acfcc9d0fb2ea20227">IRId</a>, <a class="el" href="classIRIfSt.html#abf62940c282e43842639a7e6f22e65ba">IRIfSt</a>, <a class="el" href="classIRLiteral.html#a1539d12563c9df895b34907285a00238">IRLiteral</a>, <a class="el" href="classIRParameter.html#ae29b6fc817bef547e58c3c6d49552a83">IRParameter</a>, <a class="el" href="classIRPrintfSt.html#a8fe9885b18d666fee16393d5592a7a7f">IRPrintfSt</a>, <a class="el" href="classIRProgram.html#af298399b56dc97d80a8d2474e9696d38">IRProgram</a>, <a class="el" href="classIRReturnSt.html#af2030cab396e64aaa58a337cc5b71013">IRReturnSt</a>, <a class="el" href="classIRSwitchBlock.html#ae5b55d153be0ed8a1aedbce8e88c45ca">IRSwitchBlock</a>, <a class="el" href="classIRSwitchSt.html#a220056e9f9a4dc71066dc37372079d34">IRSwitchSt</a>, <a class="el" href="classIRTemporary.html#a79f93ed92956427b7b19c2b11877f273">IRTemporary</a>, <a class="el" href="classIRVariable.html#a4fd7c16e9b698adfcbd6a0b2f16ca237">IRVariable</a>, <a class="el" href="classIRWhileSt.html#a03943f9304e30e9cdd86a351698a3b72">IRWhileSt</a>, <a class="el" href="classIRExpression.html#ac9a2bb49f85a208f86974ffeefd093eb">IRExpression</a>, and <a class="el" href="classIRStatement.html#ab661b741b13e6561f7ea2d36f7f68abb">IRStatement</a>.</p>
-
-</div>
-</div>
-<a id="a9cd3fe214eb949b769828a20f57791ae" name="a9cd3fe214eb949b769828a20f57791ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cd3fe214eb949b769828a20f57791ae">&#9670;&#160;</a></span>toString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string IRNode::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>getter for the formatted node type </p>
-<dl class="section return"><dt>Returns</dt><dd>type of the node as string </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a9b64ab8ae87591d5c30540154996b7a0" name="a9b64ab8ae87591d5c30540154996b7a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b64ab8ae87591d5c30540154996b7a0">&#9670;&#160;</a></span>nodeType</h2>
@@ -230,7 +205,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> IRNode::nodeType</td>
+          <td class="memname"><a class="el" href="common_2intermediate-representation-tree_2defs_2ir__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> IRNode::nodeType</td>
         </tr>
       </table>
   </td>
@@ -245,8 +220,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>minicpp/common/intermediate-representation-tree/<a class="el" href="IRNode_8hpp.html">IRNode.hpp</a></li>
-<li>minicpp/common/intermediate-representation-tree/source/<a class="el" href="IRNode_8cpp.html">IRNode.cpp</a></li>
+<li>minicpp/common/intermediate-representation-tree/<a class="el" href="ir__node_8hpp.html">ir_node.hpp</a></li>
+<li>minicpp/common/intermediate-representation-tree/source/<a class="el" href="ir__node_8cpp.html">ir_node.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: FunctionIntermediateRepresentation Class Reference</title>
+<title>MINICPP: FunctionIntermediateRepresentation Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -42,7 +42,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classFunctionIntermediateRepresentation-members.html">List of all members</a>  </div>
@@ -60,24 +59,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6de4d0a1f70e68fa7648008b2ffaa4b8" id="r_a6de4d0a1f70e68fa7648008b2ffaa4b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFunctionIntermediateRepresentation.html#a6de4d0a1f70e68fa7648008b2ffaa4b8">FunctionIntermediateRepresentation</a> (std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt; &amp;<a class="el" href="classFunctionIntermediateRepresentation.html#a03ad0c9536a2be4301066ce56e6bd6c7">exceptions</a>)</td></tr>
 <tr class="memdesc:a6de4d0a1f70e68fa7648008b2ffaa4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the function intermediate representation.  <br /></td></tr>
 <tr class="separator:a6de4d0a1f70e68fa7648008b2ffaa4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab704542a41bd1cd9913d5bf5f36a8628" id="r_ab704542a41bd1cd9913d5bf5f36a8628"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRFunction.html">IRFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFunctionIntermediateRepresentation.html#ab704542a41bd1cd9913d5bf5f36a8628">function</a> (const <a class="el" href="classASTFunction.html">ASTFunction</a> *_function)</td></tr>
-<tr class="memdesc:ab704542a41bd1cd9913d5bf5f36a8628"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast function into irt function  <br /></td></tr>
-<tr class="separator:ab704542a41bd1cd9913d5bf5f36a8628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232c142945fe5f0dd6f9c6adb41854c5" id="r_a232c142945fe5f0dd6f9c6adb41854c5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRFunction.html">IRFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFunctionIntermediateRepresentation.html#a232c142945fe5f0dd6f9c6adb41854c5">transformFunction</a> (const <a class="el" href="classASTFunction.html">ASTFunction</a> *astFunction)</td></tr>
+<tr class="memdesc:a232c142945fe5f0dd6f9c6adb41854c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast function into irt function  <br /></td></tr>
+<tr class="separator:a232c142945fe5f0dd6f9c6adb41854c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc995f2aae9a1c3b21879e2fb9837b40" id="r_adc995f2aae9a1c3b21879e2fb9837b40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFunctionIntermediateRepresentation.html#adc995f2aae9a1c3b21879e2fb9837b40">transformParameters</a> (<a class="el" href="classIRFunction.html">IRFunction</a> *irFunction, const <a class="el" href="classASTFunction.html">ASTFunction</a> *astFunction)</td></tr>
+<tr class="memdesc:adc995f2aae9a1c3b21879e2fb9837b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast parameters into irt parameters  <br /></td></tr>
+<tr class="separator:adc995f2aae9a1c3b21879e2fb9837b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128868388e1583698707d87852413746" id="r_a128868388e1583698707d87852413746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFunctionIntermediateRepresentation.html#a128868388e1583698707d87852413746">transformBody</a> (<a class="el" href="classIRFunction.html">IRFunction</a> *irFunction, const <a class="el" href="classASTFunction.html">ASTFunction</a> *astFunction)</td></tr>
+<tr class="memdesc:a128868388e1583698707d87852413746"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns body of the ast function into the body of the irt function  <br /></td></tr>
+<tr class="separator:a128868388e1583698707d87852413746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a76c93335927f9e1158ec6e0beb9238ff" id="r_a76c93335927f9e1158ec6e0beb9238ff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structIRThreadContext.html">IRThreadContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFunctionIntermediateRepresentation.html#a76c93335927f9e1158ec6e0beb9238ff">getContext</a> () noexcept</td></tr>
 <tr class="memdesc:a76c93335927f9e1158ec6e0beb9238ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the context of the function processed by the current thread  <br /></td></tr>
 <tr class="separator:a76c93335927f9e1158ec6e0beb9238ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af09f437fa7572f0c8f02ac73e9c46491" id="r_af09f437fa7572f0c8f02ac73e9c46491"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFunctionIntermediateRepresentation.html#af09f437fa7572f0c8f02ac73e9c46491">parameter</a> (<a class="el" href="classIRFunction.html">IRFunction</a> *_irFunction, const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTParameter.html">ASTParameter</a> &gt; &gt; &amp;_parameters)</td></tr>
-<tr class="memdesc:af09f437fa7572f0c8f02ac73e9c46491"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast parameters into irt parameters  <br /></td></tr>
-<tr class="separator:af09f437fa7572f0c8f02ac73e9c46491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29969d126ae84540b589024f68dc9ea2" id="r_a29969d126ae84540b589024f68dc9ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFunctionIntermediateRepresentation.html#a29969d126ae84540b589024f68dc9ea2">body</a> (<a class="el" href="classIRFunction.html">IRFunction</a> *_irFunction, const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTStatement.html">ASTStatement</a> &gt; &gt; &amp;_body)</td></tr>
-<tr class="memdesc:a29969d126ae84540b589024f68dc9ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns body of the ast function into the body of the irt function  <br /></td></tr>
-<tr class="separator:a29969d126ae84540b589024f68dc9ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -127,78 +123,6 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a29969d126ae84540b589024f68dc9ea2" name="a29969d126ae84540b589024f68dc9ea2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29969d126ae84540b589024f68dc9ea2">&#9670;&#160;</a></span>body()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FunctionIntermediateRepresentation::body </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classIRFunction.html">IRFunction</a> *&#160;</td>
-          <td class="paramname"><em>_irFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTStatement.html">ASTStatement</a> &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>_body</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>turns body of the ast function into the body of the irt function </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_irFunction</td><td>- pointer to the irt function </td></tr>
-    <tr><td class="paramname">_body</td><td>- reference to a const vector of pointers to the statements of the ast body </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab704542a41bd1cd9913d5bf5f36a8628" name="ab704542a41bd1cd9913d5bf5f36a8628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab704542a41bd1cd9913d5bf5f36a8628">&#9670;&#160;</a></span>function()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRFunction.html">IRFunction</a> &gt; FunctionIntermediateRepresentation::function </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTFunction.html">ASTFunction</a> *&#160;</td>
-          <td class="paramname"><em>_function</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>turns ast function into irt function </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_function</td><td>- const pointer to the ast function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the irt function </dd></dl>
-
-</div>
-</div>
 <a id="a76c93335927f9e1158ec6e0beb9238ff" name="a76c93335927f9e1158ec6e0beb9238ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76c93335927f9e1158ec6e0beb9238ff">&#9670;&#160;</a></span>getContext()</h2>
 
@@ -227,26 +151,23 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af09f437fa7572f0c8f02ac73e9c46491" name="af09f437fa7572f0c8f02ac73e9c46491"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af09f437fa7572f0c8f02ac73e9c46491">&#9670;&#160;</a></span>parameter()</h2>
+<a id="a128868388e1583698707d87852413746" name="a128868388e1583698707d87852413746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a128868388e1583698707d87852413746">&#9670;&#160;</a></span>transformBody()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void FunctionIntermediateRepresentation::parameter </td>
+          <td class="memname">void FunctionIntermediateRepresentation::transformBody </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classIRFunction.html">IRFunction</a> *&#160;</td>
-          <td class="paramname"><em>_irFunction</em>, </td>
+          <td class="paramname"><em>irFunction</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTParameter.html">ASTParameter</a> &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>_parameters</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classASTFunction.html">ASTFunction</a> *&#160;</td>
+          <td class="paramname"><em>astFunction</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -254,22 +175,80 @@ Static Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+<p>turns body of the ast function into the body of the irt function </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">irFunction</td><td>- pointer to the irt function </td></tr>
+    <tr><td class="paramname">astFunction</td><td>- const pointer to the ast function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a232c142945fe5f0dd6f9c6adb41854c5" name="a232c142945fe5f0dd6f9c6adb41854c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232c142945fe5f0dd6f9c6adb41854c5">&#9670;&#160;</a></span>transformFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRFunction.html">IRFunction</a> &gt; FunctionIntermediateRepresentation::transformFunction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classASTFunction.html">ASTFunction</a> *&#160;</td>
+          <td class="paramname"><em>astFunction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>turns ast function into irt function </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">astFunction</td><td>- const pointer to the ast function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the irt function </dd></dl>
+
+</div>
+</div>
+<a id="adc995f2aae9a1c3b21879e2fb9837b40" name="adc995f2aae9a1c3b21879e2fb9837b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc995f2aae9a1c3b21879e2fb9837b40">&#9670;&#160;</a></span>transformParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FunctionIntermediateRepresentation::transformParameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIRFunction.html">IRFunction</a> *&#160;</td>
+          <td class="paramname"><em>irFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classASTFunction.html">ASTFunction</a> *&#160;</td>
+          <td class="paramname"><em>astFunction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 <p>turns ast parameters into irt parameters </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_irFunction</td><td>- pointer to the irt function </td></tr>
-    <tr><td class="paramname">_parameters</td><td>- reference to a const vector of pointers to ast parameters </td></tr>
+    <tr><td class="paramname">irFunction</td><td>- pointer to the irt function </td></tr>
+    <tr><td class="paramname">astFunction</td><td>- const pointer to the ast function </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>

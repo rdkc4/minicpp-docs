@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: StatementIntermediateRepresentation Class Reference</title>
+<title>MINICPP: StatementIntermediateRepresentation Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -41,8 +41,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classStatementIntermediateRepresentation-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">StatementIntermediateRepresentation Class Reference</div></div>
 </div><!--header-->
@@ -55,66 +54,63 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1ebdecc097c6463dc26da55761d9ba47" id="r_a1ebdecc097c6463dc26da55761d9ba47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a1ebdecc097c6463dc26da55761d9ba47">StatementIntermediateRepresentation</a> ()</td></tr>
-<tr class="memdesc:a1ebdecc097c6463dc26da55761d9ba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the statement intermediate representation.  <br /></td></tr>
-<tr class="separator:a1ebdecc097c6463dc26da55761d9ba47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d060804dbec4c356e4939fd341e627e" id="r_a5d060804dbec4c356e4939fd341e627e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRStatement.html">IRStatement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a5d060804dbec4c356e4939fd341e627e">statement</a> (const <a class="el" href="classASTStatement.html">ASTStatement</a> *_statement)</td></tr>
-<tr class="memdesc:a5d060804dbec4c356e4939fd341e627e"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast statement into irt statement  <br /></td></tr>
-<tr class="separator:a5d060804dbec4c356e4939fd341e627e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada78bf906c05c4d7a3eef8d0208525d2" id="r_ada78bf906c05c4d7a3eef8d0208525d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#ada78bf906c05c4d7a3eef8d0208525d2">StatementIntermediateRepresentation</a> ()=default</td></tr>
+<tr class="memdesc:ada78bf906c05c4d7a3eef8d0208525d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the statement intermediate representation.  <br /></td></tr>
+<tr class="separator:ada78bf906c05c4d7a3eef8d0208525d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49487ab6dd9d7828512c80d1d2dc60e" id="r_af49487ab6dd9d7828512c80d1d2dc60e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRStmt.html">IRStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#af49487ab6dd9d7828512c80d1d2dc60e">transformStmt</a> (const <a class="el" href="classASTStmt.html">ASTStmt</a> *astStmt)</td></tr>
+<tr class="memdesc:af49487ab6dd9d7828512c80d1d2dc60e"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast statement into irt statement  <br /></td></tr>
+<tr class="separator:af49487ab6dd9d7828512c80d1d2dc60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f07d03a56affa03623ba1bb90af84d" id="r_af4f07d03a56affa03623ba1bb90af84d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRVariableDeclStmt.html">IRVariableDeclStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#af4f07d03a56affa03623ba1bb90af84d">transformVariableDeclStmt</a> (const <a class="el" href="classASTVariableDeclStmt.html">ASTVariableDeclStmt</a> *astVariableDecl)</td></tr>
+<tr class="memdesc:af4f07d03a56affa03623ba1bb90af84d"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast variable declaration into irt variable declaration  <br /></td></tr>
+<tr class="separator:af4f07d03a56affa03623ba1bb90af84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12025057456015d65abb0fad9751da9" id="r_ae12025057456015d65abb0fad9751da9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRIfStmt.html">IRIfStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#ae12025057456015d65abb0fad9751da9">transformIfStmt</a> (const <a class="el" href="classASTIfStmt.html">ASTIfStmt</a> *astIfStmt)</td></tr>
+<tr class="memdesc:ae12025057456015d65abb0fad9751da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast if-statement into irt if-statement  <br /></td></tr>
+<tr class="separator:ae12025057456015d65abb0fad9751da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67136ff68890fa97142d9e8127359533" id="r_a67136ff68890fa97142d9e8127359533"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRCompoundStmt.html">IRCompoundStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a67136ff68890fa97142d9e8127359533">transformCompoundStmt</a> (const <a class="el" href="classASTCompoundStmt.html">ASTCompoundStmt</a> *astCompoundStmt)</td></tr>
+<tr class="memdesc:a67136ff68890fa97142d9e8127359533"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast compound statement into irt compound statement  <br /></td></tr>
+<tr class="separator:a67136ff68890fa97142d9e8127359533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722f2c4076c744c564a3c96369d78e93" id="r_a722f2c4076c744c564a3c96369d78e93"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRAssignStmt.html">IRAssignStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a722f2c4076c744c564a3c96369d78e93">transformAssignStmt</a> (const <a class="el" href="classASTAssignStmt.html">ASTAssignStmt</a> *astAssignStmt)</td></tr>
+<tr class="memdesc:a722f2c4076c744c564a3c96369d78e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast assignment statement into irt assignment statement  <br /></td></tr>
+<tr class="separator:a722f2c4076c744c564a3c96369d78e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e42292e4afe426358091b1d2b61167" id="r_aa8e42292e4afe426358091b1d2b61167"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRReturnStmt.html">IRReturnStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#aa8e42292e4afe426358091b1d2b61167">transformReturnStmt</a> (const <a class="el" href="classASTReturnStmt.html">ASTReturnStmt</a> *astReturnStmt)</td></tr>
+<tr class="memdesc:aa8e42292e4afe426358091b1d2b61167"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast return statement into irt return statement  <br /></td></tr>
+<tr class="separator:aa8e42292e4afe426358091b1d2b61167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80abecd23b1dbf990b6535748b6fd4ac" id="r_a80abecd23b1dbf990b6535748b6fd4ac"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRFunctionCallStmt.html">IRFunctionCallStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a80abecd23b1dbf990b6535748b6fd4ac">transformFunctionCallStmt</a> (const <a class="el" href="classASTFunctionCallStmt.html">ASTFunctionCallStmt</a> *astCallStmt)</td></tr>
+<tr class="memdesc:a80abecd23b1dbf990b6535748b6fd4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast function-call statement into irt function-call statement  <br /></td></tr>
+<tr class="separator:a80abecd23b1dbf990b6535748b6fd4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1277555ada246df11145ddc292e0c72" id="r_ad1277555ada246df11145ddc292e0c72"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRWhileStmt.html">IRWhileStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#ad1277555ada246df11145ddc292e0c72">transformWhileStmt</a> (const <a class="el" href="classASTWhileStmt.html">ASTWhileStmt</a> *astWhileStmt)</td></tr>
+<tr class="memdesc:ad1277555ada246df11145ddc292e0c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast while-statement into irt while-statement  <br /></td></tr>
+<tr class="separator:ad1277555ada246df11145ddc292e0c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca76e981fa3cac81036f77266b799e02" id="r_aca76e981fa3cac81036f77266b799e02"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRForStmt.html">IRForStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#aca76e981fa3cac81036f77266b799e02">transformForStmt</a> (const <a class="el" href="classASTForStmt.html">ASTForStmt</a> *astForStmt)</td></tr>
+<tr class="memdesc:aca76e981fa3cac81036f77266b799e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast for-statement into irt for-statement  <br /></td></tr>
+<tr class="separator:aca76e981fa3cac81036f77266b799e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fa54e03329913185d5c1da821973d8" id="r_a71fa54e03329913185d5c1da821973d8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRDoWhileStmt.html">IRDoWhileStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a71fa54e03329913185d5c1da821973d8">transformDoWhileStmt</a> (const <a class="el" href="classASTDoWhileStmt.html">ASTDoWhileStmt</a> *astDowhileStmt)</td></tr>
+<tr class="memdesc:a71fa54e03329913185d5c1da821973d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast do-while statement into irt do-while statement  <br /></td></tr>
+<tr class="separator:a71fa54e03329913185d5c1da821973d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dd59cc9d3f0aea0db64c622e3e7c76" id="r_a00dd59cc9d3f0aea0db64c622e3e7c76"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRSwitchStmt.html">IRSwitchStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a00dd59cc9d3f0aea0db64c622e3e7c76">transformSwitchStmt</a> (const <a class="el" href="classASTSwitchStmt.html">ASTSwitchStmt</a> *astSwitchStmt)</td></tr>
+<tr class="memdesc:a00dd59cc9d3f0aea0db64c622e3e7c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast switch-statement into irt switch-statement  <br /></td></tr>
+<tr class="separator:a00dd59cc9d3f0aea0db64c622e3e7c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b626d02acecf3f6686a8abf495f9f9" id="r_a40b626d02acecf3f6686a8abf495f9f9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRCaseStmt.html">IRCaseStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a40b626d02acecf3f6686a8abf495f9f9">transformCaseStmt</a> (const <a class="el" href="classASTCaseStmt.html">ASTCaseStmt</a> *astCaseStmt)</td></tr>
+<tr class="memdesc:a40b626d02acecf3f6686a8abf495f9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast case into irt case  <br /></td></tr>
+<tr class="separator:a40b626d02acecf3f6686a8abf495f9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad07f0f9a7159c1628001709c86d06ee" id="r_aad07f0f9a7159c1628001709c86d06ee"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRDefaultStmt.html">IRDefaultStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#aad07f0f9a7159c1628001709c86d06ee">transformDefaultStmt</a> (const <a class="el" href="classASTDefaultStmt.html">ASTDefaultStmt</a> *astDefaultStmt)</td></tr>
+<tr class="memdesc:aad07f0f9a7159c1628001709c86d06ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast default case into irt default case  <br /></td></tr>
+<tr class="separator:aad07f0f9a7159c1628001709c86d06ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fac612cf10837a656256dd6dfc5ac93" id="r_a7fac612cf10837a656256dd6dfc5ac93"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRSwitchBlockStmt.html">IRSwitchBlockStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a7fac612cf10837a656256dd6dfc5ac93">transformSwitchBlockStmt</a> (const <a class="el" href="classASTSwitchBlockStmt.html">ASTSwitchBlockStmt</a> *astSwitchBlockStmt)</td></tr>
+<tr class="memdesc:a7fac612cf10837a656256dd6dfc5ac93"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast switch-block into irt switch-block  <br /></td></tr>
+<tr class="separator:a7fac612cf10837a656256dd6dfc5ac93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab9c321859348349ce8f9c0d8fd220730" id="r_ab9c321859348349ce8f9c0d8fd220730"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRVariable.html">IRVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#ab9c321859348349ce8f9c0d8fd220730">variable</a> (const <a class="el" href="classASTVariable.html">ASTVariable</a> *_variable)</td></tr>
-<tr class="memdesc:ab9c321859348349ce8f9c0d8fd220730"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast variable declaration into irt variable declaration  <br /></td></tr>
-<tr class="separator:ab9c321859348349ce8f9c0d8fd220730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fe80ec68afb33405f0dc7c1b0c3edc4" id="r_a6fe80ec68afb33405f0dc7c1b0c3edc4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRPrintfSt.html">IRPrintfSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a6fe80ec68afb33405f0dc7c1b0c3edc4">printfStatement</a> (const <a class="el" href="classASTPrintfSt.html">ASTPrintfSt</a> *_printf)</td></tr>
-<tr class="memdesc:a6fe80ec68afb33405f0dc7c1b0c3edc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast printf statement into irt printf statement  <br /></td></tr>
-<tr class="separator:a6fe80ec68afb33405f0dc7c1b0c3edc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72f01f25d0b023c267d344caf386422" id="r_ad72f01f25d0b023c267d344caf386422"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRIfSt.html">IRIfSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#ad72f01f25d0b023c267d344caf386422">ifStatement</a> (const <a class="el" href="classASTIfSt.html">ASTIfSt</a> *_if)</td></tr>
-<tr class="memdesc:ad72f01f25d0b023c267d344caf386422"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast if-statement into irt if-statement  <br /></td></tr>
-<tr class="separator:ad72f01f25d0b023c267d344caf386422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72533e848124d34c282de40ae0ea54a4" id="r_a72533e848124d34c282de40ae0ea54a4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRCompoundSt.html">IRCompoundSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a72533e848124d34c282de40ae0ea54a4">compoundStatement</a> (const <a class="el" href="classASTCompoundSt.html">ASTCompoundSt</a> *_compound)</td></tr>
-<tr class="memdesc:a72533e848124d34c282de40ae0ea54a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast compound statement into irt compound statement  <br /></td></tr>
-<tr class="separator:a72533e848124d34c282de40ae0ea54a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6409947f205c94d3dc75ffaaa6bc003c" id="r_a6409947f205c94d3dc75ffaaa6bc003c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRAssignSt.html">IRAssignSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a6409947f205c94d3dc75ffaaa6bc003c">assignmentStatement</a> (const <a class="el" href="classASTAssignSt.html">ASTAssignSt</a> *_assignment)</td></tr>
-<tr class="memdesc:a6409947f205c94d3dc75ffaaa6bc003c"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast assignment statement into irt assignment statement  <br /></td></tr>
-<tr class="separator:a6409947f205c94d3dc75ffaaa6bc003c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3d6fef02105f0a15a19d0874d4de84e" id="r_ac3d6fef02105f0a15a19d0874d4de84e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRReturnSt.html">IRReturnSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#ac3d6fef02105f0a15a19d0874d4de84e">returnStatement</a> (const <a class="el" href="classASTReturnSt.html">ASTReturnSt</a> *_return)</td></tr>
-<tr class="memdesc:ac3d6fef02105f0a15a19d0874d4de84e"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast return statement into irt return statement  <br /></td></tr>
-<tr class="separator:ac3d6fef02105f0a15a19d0874d4de84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1169fbb9ce4d6313e365d7d3fd026a41" id="r_a1169fbb9ce4d6313e365d7d3fd026a41"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRWhileSt.html">IRWhileSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a1169fbb9ce4d6313e365d7d3fd026a41">whileStatement</a> (const <a class="el" href="classASTWhileSt.html">ASTWhileSt</a> *_while)</td></tr>
-<tr class="memdesc:a1169fbb9ce4d6313e365d7d3fd026a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast while-statement into irt while-statement  <br /></td></tr>
-<tr class="separator:a1169fbb9ce4d6313e365d7d3fd026a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfcbd448c5b78da615f69bec0cb3fcbc" id="r_adfcbd448c5b78da615f69bec0cb3fcbc"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRForSt.html">IRForSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#adfcbd448c5b78da615f69bec0cb3fcbc">forStatement</a> (const <a class="el" href="classASTForSt.html">ASTForSt</a> *_for)</td></tr>
-<tr class="memdesc:adfcbd448c5b78da615f69bec0cb3fcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast for-statement into irt for-statement  <br /></td></tr>
-<tr class="separator:adfcbd448c5b78da615f69bec0cb3fcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c2311f40e9bd37581cbe321ffc889eb" id="r_a8c2311f40e9bd37581cbe321ffc889eb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRDoWhileSt.html">IRDoWhileSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a8c2311f40e9bd37581cbe321ffc889eb">doWhileStatement</a> (const <a class="el" href="classASTDoWhileSt.html">ASTDoWhileSt</a> *_dowhile)</td></tr>
-<tr class="memdesc:a8c2311f40e9bd37581cbe321ffc889eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast do-while statement into irt do-while statement  <br /></td></tr>
-<tr class="separator:a8c2311f40e9bd37581cbe321ffc889eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e72ea39ad1de819d948343ed02b7d95" id="r_a8e72ea39ad1de819d948343ed02b7d95"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRSwitchSt.html">IRSwitchSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a8e72ea39ad1de819d948343ed02b7d95">switchStatement</a> (const <a class="el" href="classASTSwitchSt.html">ASTSwitchSt</a> *_switch)</td></tr>
-<tr class="memdesc:a8e72ea39ad1de819d948343ed02b7d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast switch-statement into irt switch-statement  <br /></td></tr>
-<tr class="separator:a8e72ea39ad1de819d948343ed02b7d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a786214c5660a47c83a3f85cd80e2b051" id="r_a786214c5660a47c83a3f85cd80e2b051"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRCaseSt.html">IRCaseSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a786214c5660a47c83a3f85cd80e2b051">_case</a> (const <a class="el" href="classASTCaseSt.html">ASTCaseSt</a> *_astCase)</td></tr>
-<tr class="memdesc:a786214c5660a47c83a3f85cd80e2b051"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast case into irt case  <br /></td></tr>
-<tr class="separator:a786214c5660a47c83a3f85cd80e2b051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae848b5858fa2db86c2cb48a52cf24ab4" id="r_ae848b5858fa2db86c2cb48a52cf24ab4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRDefaultSt.html">IRDefaultSt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#ae848b5858fa2db86c2cb48a52cf24ab4">_default</a> (const <a class="el" href="classASTDefaultSt.html">ASTDefaultSt</a> *_astDefault)</td></tr>
-<tr class="memdesc:ae848b5858fa2db86c2cb48a52cf24ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast default case into irt default case  <br /></td></tr>
-<tr class="separator:ae848b5858fa2db86c2cb48a52cf24ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5c80f2fac4566bdad2e22673ca03af6" id="r_af5c80f2fac4566bdad2e22673ca03af6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIRSwitchBlock.html">IRSwitchBlock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#af5c80f2fac4566bdad2e22673ca03af6">switchBlock</a> (const <a class="el" href="classASTSwitchBlock.html">ASTSwitchBlock</a> *_block)</td></tr>
-<tr class="memdesc:af5c80f2fac4566bdad2e22673ca03af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns ast switch-block into irt switch-block  <br /></td></tr>
-<tr class="separator:af5c80f2fac4566bdad2e22673ca03af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a17f7f0de5e047c1dfe8040658194da14" id="r_a17f7f0de5e047c1dfe8040658194da14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classExpressionIntermediateRepresentation.html">ExpressionIntermediateRepresentation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a17f7f0de5e047c1dfe8040658194da14">expIR</a></td></tr>
-<tr class="memdesc:a17f7f0de5e047c1dfe8040658194da14"><td class="mdescLeft">&#160;</td><td class="mdescRight">intermediate representation specialized for expressions  <br /></td></tr>
-<tr class="separator:a17f7f0de5e047c1dfe8040658194da14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1d6dfb479e1e6e9734f3defc4f8b53ec" id="r_a1d6dfb479e1e6e9734f3defc4f8b53ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classExpressionIntermediateRepresentation.html">ExpressionIntermediateRepresentation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementIntermediateRepresentation.html#a1d6dfb479e1e6e9734f3defc4f8b53ec">exprIR</a></td></tr>
+<tr class="memdesc:a1d6dfb479e1e6e9734f3defc4f8b53ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">intermediate representation specialized for expressions  <br /></td></tr>
+<tr class="separator:a1d6dfb479e1e6e9734f3defc4f8b53ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>turns ast statement into irt statement </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1ebdecc097c6463dc26da55761d9ba47" name="a1ebdecc097c6463dc26da55761d9ba47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ebdecc097c6463dc26da55761d9ba47">&#9670;&#160;</a></span>StatementIntermediateRepresentation()</h2>
+<a id="ada78bf906c05c4d7a3eef8d0208525d2" name="ada78bf906c05c4d7a3eef8d0208525d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada78bf906c05c4d7a3eef8d0208525d2">&#9670;&#160;</a></span>StatementIntermediateRepresentation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,104 +137,26 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a786214c5660a47c83a3f85cd80e2b051" name="a786214c5660a47c83a3f85cd80e2b051"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a786214c5660a47c83a3f85cd80e2b051">&#9670;&#160;</a></span>_case()</h2>
+<a id="a722f2c4076c744c564a3c96369d78e93" name="a722f2c4076c744c564a3c96369d78e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722f2c4076c744c564a3c96369d78e93">&#9670;&#160;</a></span>transformAssignStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRCaseSt.html">IRCaseSt</a> &gt; StatementIntermediateRepresentation::_case </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRAssignStmt.html">IRAssignStmt</a> &gt; StatementIntermediateRepresentation::transformAssignStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTCaseSt.html">ASTCaseSt</a> *&#160;</td>
-          <td class="paramname"><em>_astCase</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTAssignStmt.html">ASTAssignStmt</a> *&#160;</td>
+          <td class="paramname"><em>astAssignStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>turns ast case into irt case </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_astCase</td><td>- const pointer to the ast case </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the irt case </dd></dl>
-
-</div>
-</div>
-<a id="ae848b5858fa2db86c2cb48a52cf24ab4" name="ae848b5858fa2db86c2cb48a52cf24ab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae848b5858fa2db86c2cb48a52cf24ab4">&#9670;&#160;</a></span>_default()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRDefaultSt.html">IRDefaultSt</a> &gt; StatementIntermediateRepresentation::_default </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTDefaultSt.html">ASTDefaultSt</a> *&#160;</td>
-          <td class="paramname"><em>_astDefault</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>turns ast default case into irt default case </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_astDefault</td><td>- const pointer to the ast default case </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the irt default case </dd></dl>
-
-</div>
-</div>
-<a id="a6409947f205c94d3dc75ffaaa6bc003c" name="a6409947f205c94d3dc75ffaaa6bc003c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6409947f205c94d3dc75ffaaa6bc003c">&#9670;&#160;</a></span>assignmentStatement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRAssignSt.html">IRAssignSt</a> &gt; StatementIntermediateRepresentation::assignmentStatement </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTAssignSt.html">ASTAssignSt</a> *&#160;</td>
-          <td class="paramname"><em>_assignment</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>turns ast assignment statement into irt assignment statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_assignment</td><td>- const pointer to the ast assignment statement </td></tr>
+    <tr><td class="paramname">astAssignStmt</td><td>- const pointer to the ast assignment statement </td></tr>
   </table>
   </dd>
 </dl>
@@ -246,34 +164,53 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a72533e848124d34c282de40ae0ea54a4" name="a72533e848124d34c282de40ae0ea54a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72533e848124d34c282de40ae0ea54a4">&#9670;&#160;</a></span>compoundStatement()</h2>
+<a id="a40b626d02acecf3f6686a8abf495f9f9" name="a40b626d02acecf3f6686a8abf495f9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b626d02acecf3f6686a8abf495f9f9">&#9670;&#160;</a></span>transformCaseStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRCompoundSt.html">IRCompoundSt</a> &gt; StatementIntermediateRepresentation::compoundStatement </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRCaseStmt.html">IRCaseStmt</a> &gt; StatementIntermediateRepresentation::transformCaseStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTCompoundSt.html">ASTCompoundSt</a> *&#160;</td>
-          <td class="paramname"><em>_compound</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTCaseStmt.html">ASTCaseStmt</a> *&#160;</td>
+          <td class="paramname"><em>astCaseStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+<p>turns ast case into irt case </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">astCaseStmt</td><td>- const pointer to the ast case </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the irt case </dd></dl>
+
+</div>
+</div>
+<a id="a67136ff68890fa97142d9e8127359533" name="a67136ff68890fa97142d9e8127359533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67136ff68890fa97142d9e8127359533">&#9670;&#160;</a></span>transformCompoundStmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRCompoundStmt.html">IRCompoundStmt</a> &gt; StatementIntermediateRepresentation::transformCompoundStmt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classASTCompoundStmt.html">ASTCompoundStmt</a> *&#160;</td>
+          <td class="paramname"><em>astCompoundStmt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 <p>turns ast compound statement into irt compound statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_compound</td><td>- const pointer to the ast compound statement </td></tr>
+    <tr><td class="paramname">astCompoundStmt</td><td>- const pointer to the ast compound statement </td></tr>
   </table>
   </dd>
 </dl>
@@ -281,34 +218,53 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8c2311f40e9bd37581cbe321ffc889eb" name="a8c2311f40e9bd37581cbe321ffc889eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c2311f40e9bd37581cbe321ffc889eb">&#9670;&#160;</a></span>doWhileStatement()</h2>
+<a id="aad07f0f9a7159c1628001709c86d06ee" name="aad07f0f9a7159c1628001709c86d06ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad07f0f9a7159c1628001709c86d06ee">&#9670;&#160;</a></span>transformDefaultStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRDoWhileSt.html">IRDoWhileSt</a> &gt; StatementIntermediateRepresentation::doWhileStatement </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRDefaultStmt.html">IRDefaultStmt</a> &gt; StatementIntermediateRepresentation::transformDefaultStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTDoWhileSt.html">ASTDoWhileSt</a> *&#160;</td>
-          <td class="paramname"><em>_dowhile</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTDefaultStmt.html">ASTDefaultStmt</a> *&#160;</td>
+          <td class="paramname"><em>astDefaultStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+<p>turns ast default case into irt default case </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">astDefaultStmt</td><td>- const pointer to the ast default case </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the irt default case </dd></dl>
+
+</div>
+</div>
+<a id="a71fa54e03329913185d5c1da821973d8" name="a71fa54e03329913185d5c1da821973d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fa54e03329913185d5c1da821973d8">&#9670;&#160;</a></span>transformDoWhileStmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRDoWhileStmt.html">IRDoWhileStmt</a> &gt; StatementIntermediateRepresentation::transformDoWhileStmt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classASTDoWhileStmt.html">ASTDoWhileStmt</a> *&#160;</td>
+          <td class="paramname"><em>astDowhileStmt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 <p>turns ast do-while statement into irt do-while statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_dowhile</td><td>- const pointer to the ast do-while statement </td></tr>
+    <tr><td class="paramname">astDowhileStmt</td><td>- const pointer to the ast do-while statement </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,34 +272,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adfcbd448c5b78da615f69bec0cb3fcbc" name="adfcbd448c5b78da615f69bec0cb3fcbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfcbd448c5b78da615f69bec0cb3fcbc">&#9670;&#160;</a></span>forStatement()</h2>
+<a id="aca76e981fa3cac81036f77266b799e02" name="aca76e981fa3cac81036f77266b799e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca76e981fa3cac81036f77266b799e02">&#9670;&#160;</a></span>transformForStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRForSt.html">IRForSt</a> &gt; StatementIntermediateRepresentation::forStatement </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRForStmt.html">IRForStmt</a> &gt; StatementIntermediateRepresentation::transformForStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTForSt.html">ASTForSt</a> *&#160;</td>
-          <td class="paramname"><em>_for</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTForStmt.html">ASTForStmt</a> *&#160;</td>
+          <td class="paramname"><em>astForStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>turns ast for-statement into irt for-statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_for</td><td>- const pointer to the ast for-statement </td></tr>
+    <tr><td class="paramname">astForStmt</td><td>- const pointer to the ast for-statement </td></tr>
   </table>
   </dd>
 </dl>
@@ -351,34 +299,53 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad72f01f25d0b023c267d344caf386422" name="ad72f01f25d0b023c267d344caf386422"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72f01f25d0b023c267d344caf386422">&#9670;&#160;</a></span>ifStatement()</h2>
+<a id="a80abecd23b1dbf990b6535748b6fd4ac" name="a80abecd23b1dbf990b6535748b6fd4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80abecd23b1dbf990b6535748b6fd4ac">&#9670;&#160;</a></span>transformFunctionCallStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRIfSt.html">IRIfSt</a> &gt; StatementIntermediateRepresentation::ifStatement </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRFunctionCallStmt.html">IRFunctionCallStmt</a> &gt; StatementIntermediateRepresentation::transformFunctionCallStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTIfSt.html">ASTIfSt</a> *&#160;</td>
-          <td class="paramname"><em>_if</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTFunctionCallStmt.html">ASTFunctionCallStmt</a> *&#160;</td>
+          <td class="paramname"><em>astCallStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+<p>turns ast function-call statement into irt function-call statement </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">astCallStmt</td><td>- const pointer to the ast function-call statement </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the irt function-call statement </dd></dl>
+
+</div>
+</div>
+<a id="ae12025057456015d65abb0fad9751da9" name="ae12025057456015d65abb0fad9751da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12025057456015d65abb0fad9751da9">&#9670;&#160;</a></span>transformIfStmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRIfStmt.html">IRIfStmt</a> &gt; StatementIntermediateRepresentation::transformIfStmt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classASTIfStmt.html">ASTIfStmt</a> *&#160;</td>
+          <td class="paramname"><em>astIfStmt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 <p>turns ast if-statement into irt if-statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_if</td><td>- const pointer to the ast if-statement </td></tr>
+    <tr><td class="paramname">astIfStmt</td><td>- const pointer to the ast if-statement </td></tr>
   </table>
   </dd>
 </dl>
@@ -386,69 +353,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6fe80ec68afb33405f0dc7c1b0c3edc4" name="a6fe80ec68afb33405f0dc7c1b0c3edc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fe80ec68afb33405f0dc7c1b0c3edc4">&#9670;&#160;</a></span>printfStatement()</h2>
+<a id="aa8e42292e4afe426358091b1d2b61167" name="aa8e42292e4afe426358091b1d2b61167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e42292e4afe426358091b1d2b61167">&#9670;&#160;</a></span>transformReturnStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRPrintfSt.html">IRPrintfSt</a> &gt; StatementIntermediateRepresentation::printfStatement </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRReturnStmt.html">IRReturnStmt</a> &gt; StatementIntermediateRepresentation::transformReturnStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTPrintfSt.html">ASTPrintfSt</a> *&#160;</td>
-          <td class="paramname"><em>_printf</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTReturnStmt.html">ASTReturnStmt</a> *&#160;</td>
+          <td class="paramname"><em>astReturnStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>turns ast printf statement into irt printf statement </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_printf</td><td>- const pointer to the ast printf statement </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the irt printf statement </dd></dl>
-
-</div>
-</div>
-<a id="ac3d6fef02105f0a15a19d0874d4de84e" name="ac3d6fef02105f0a15a19d0874d4de84e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3d6fef02105f0a15a19d0874d4de84e">&#9670;&#160;</a></span>returnStatement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRReturnSt.html">IRReturnSt</a> &gt; StatementIntermediateRepresentation::returnStatement </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTReturnSt.html">ASTReturnSt</a> *&#160;</td>
-          <td class="paramname"><em>_return</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>turns ast return statement into irt return statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_return</td><td>- const pointer to the ast return statement </td></tr>
+    <tr><td class="paramname">astReturnStmt</td><td>- const pointer to the ast return statement </td></tr>
   </table>
   </dd>
 </dl>
@@ -456,17 +380,17 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d060804dbec4c356e4939fd341e627e" name="a5d060804dbec4c356e4939fd341e627e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d060804dbec4c356e4939fd341e627e">&#9670;&#160;</a></span>statement()</h2>
+<a id="af49487ab6dd9d7828512c80d1d2dc60e" name="af49487ab6dd9d7828512c80d1d2dc60e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49487ab6dd9d7828512c80d1d2dc60e">&#9670;&#160;</a></span>transformStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRStatement.html">IRStatement</a> &gt; StatementIntermediateRepresentation::statement </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRStmt.html">IRStmt</a> &gt; StatementIntermediateRepresentation::transformStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTStatement.html">ASTStatement</a> *&#160;</td>
-          <td class="paramname"><em>_statement</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTStmt.html">ASTStmt</a> *&#160;</td>
+          <td class="paramname"><em>astStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -475,7 +399,7 @@ Protected Attributes</h2></td></tr>
 <p>turns ast statement into irt statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_statement</td><td>- const pointer to the ast statement </td></tr>
+    <tr><td class="paramname">astStmt</td><td>- const pointer to the ast statement </td></tr>
   </table>
   </dd>
 </dl>
@@ -483,34 +407,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af5c80f2fac4566bdad2e22673ca03af6" name="af5c80f2fac4566bdad2e22673ca03af6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5c80f2fac4566bdad2e22673ca03af6">&#9670;&#160;</a></span>switchBlock()</h2>
+<a id="a7fac612cf10837a656256dd6dfc5ac93" name="a7fac612cf10837a656256dd6dfc5ac93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fac612cf10837a656256dd6dfc5ac93">&#9670;&#160;</a></span>transformSwitchBlockStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRSwitchBlock.html">IRSwitchBlock</a> &gt; StatementIntermediateRepresentation::switchBlock </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRSwitchBlockStmt.html">IRSwitchBlockStmt</a> &gt; StatementIntermediateRepresentation::transformSwitchBlockStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTSwitchBlock.html">ASTSwitchBlock</a> *&#160;</td>
-          <td class="paramname"><em>_block</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTSwitchBlockStmt.html">ASTSwitchBlockStmt</a> *&#160;</td>
+          <td class="paramname"><em>astSwitchBlockStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>turns ast switch-block into irt switch-block </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_block</td><td>- const pointer to the ast switch-block </td></tr>
+    <tr><td class="paramname">astSwitchBlockStmt</td><td>- const pointer to the ast switch-block </td></tr>
   </table>
   </dd>
 </dl>
@@ -518,34 +434,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8e72ea39ad1de819d948343ed02b7d95" name="a8e72ea39ad1de819d948343ed02b7d95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e72ea39ad1de819d948343ed02b7d95">&#9670;&#160;</a></span>switchStatement()</h2>
+<a id="a00dd59cc9d3f0aea0db64c622e3e7c76" name="a00dd59cc9d3f0aea0db64c622e3e7c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00dd59cc9d3f0aea0db64c622e3e7c76">&#9670;&#160;</a></span>transformSwitchStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRSwitchSt.html">IRSwitchSt</a> &gt; StatementIntermediateRepresentation::switchStatement </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRSwitchStmt.html">IRSwitchStmt</a> &gt; StatementIntermediateRepresentation::transformSwitchStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTSwitchSt.html">ASTSwitchSt</a> *&#160;</td>
-          <td class="paramname"><em>_switch</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTSwitchStmt.html">ASTSwitchStmt</a> *&#160;</td>
+          <td class="paramname"><em>astSwitchStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>turns ast switch-statement into irt switch-statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_switch</td><td>- const pointer to the ast switch-statement </td></tr>
+    <tr><td class="paramname">astSwitchStmt</td><td>- const pointer to the ast switch-statement </td></tr>
   </table>
   </dd>
 </dl>
@@ -553,34 +461,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab9c321859348349ce8f9c0d8fd220730" name="ab9c321859348349ce8f9c0d8fd220730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9c321859348349ce8f9c0d8fd220730">&#9670;&#160;</a></span>variable()</h2>
+<a id="af4f07d03a56affa03623ba1bb90af84d" name="af4f07d03a56affa03623ba1bb90af84d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f07d03a56affa03623ba1bb90af84d">&#9670;&#160;</a></span>transformVariableDeclStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRVariable.html">IRVariable</a> &gt; StatementIntermediateRepresentation::variable </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRVariableDeclStmt.html">IRVariableDeclStmt</a> &gt; StatementIntermediateRepresentation::transformVariableDeclStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTVariable.html">ASTVariable</a> *&#160;</td>
-          <td class="paramname"><em>_variable</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTVariableDeclStmt.html">ASTVariableDeclStmt</a> *&#160;</td>
+          <td class="paramname"><em>astVariableDecl</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>turns ast variable declaration into irt variable declaration </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_variable</td><td>- const pointer to the ast variable declaration </td></tr>
+    <tr><td class="paramname">astVariableDecl</td><td>- const pointer to the ast variable declaration </td></tr>
   </table>
   </dd>
 </dl>
@@ -588,34 +488,26 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1169fbb9ce4d6313e365d7d3fd026a41" name="a1169fbb9ce4d6313e365d7d3fd026a41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1169fbb9ce4d6313e365d7d3fd026a41">&#9670;&#160;</a></span>whileStatement()</h2>
+<a id="ad1277555ada246df11145ddc292e0c72" name="ad1277555ada246df11145ddc292e0c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1277555ada246df11145ddc292e0c72">&#9670;&#160;</a></span>transformWhileStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRWhileSt.html">IRWhileSt</a> &gt; StatementIntermediateRepresentation::whileStatement </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classIRWhileStmt.html">IRWhileStmt</a> &gt; StatementIntermediateRepresentation::transformWhileStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classASTWhileSt.html">ASTWhileSt</a> *&#160;</td>
-          <td class="paramname"><em>_while</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classASTWhileStmt.html">ASTWhileStmt</a> *&#160;</td>
+          <td class="paramname"><em>astWhileStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>turns ast while-statement into irt while-statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_while</td><td>- const pointer to the ast while-statement </td></tr>
+    <tr><td class="paramname">astWhileStmt</td><td>- const pointer to the ast while-statement </td></tr>
   </table>
   </dd>
 </dl>
@@ -624,8 +516,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a17f7f0de5e047c1dfe8040658194da14" name="a17f7f0de5e047c1dfe8040658194da14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17f7f0de5e047c1dfe8040658194da14">&#9670;&#160;</a></span>expIR</h2>
+<a id="a1d6dfb479e1e6e9734f3defc4f8b53ec" name="a1d6dfb479e1e6e9734f3defc4f8b53ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6dfb479e1e6e9734f3defc4f8b53ec">&#9670;&#160;</a></span>exprIR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -634,12 +526,12 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classExpressionIntermediateRepresentation.html">ExpressionIntermediateRepresentation</a> StatementIntermediateRepresentation::expIR</td>
+          <td class="memname"><a class="el" href="classExpressionIntermediateRepresentation.html">ExpressionIntermediateRepresentation</a> StatementIntermediateRepresentation::exprIR</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

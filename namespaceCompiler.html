@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: Compiler Namespace Reference</title>
+<title>MINICPP: Compiler Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -40,6 +40,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Compiler Namespace Reference</div></div>
@@ -49,16 +50,27 @@ $(function() {
 <p>Module that orchestrates the process of compiling source code.  
 <a href="namespaceCompiler.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCompiler_1_1CompileOptions.html">CompileOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure containing the compile options  <a href="structCompiler_1_1CompileOptions.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCompiler_1_1PreprocessResult.html">PreprocessResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">result of the preprocessing  <a href="structCompiler_1_1PreprocessResult.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a74c618dec2975a32ea6523ce28592c4d" id="r_a74c618dec2975a32ea6523ce28592c4d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a> { <br />
 &#160;&#160;<a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4da990ec9d80b959c65e4509bc5c95e05e9">NO_ERR</a>
+, <a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4daa081c49c34c0af7c36d68db5cf415dfa">PREPROCESS_ERR</a>
 , <a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4da0e7acde284c5e9e985b314fd7328b184">LEXICAL_ERR</a>
 , <a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4da5b956a3dbc26d0a517f7ecfe387e9046">SYNTAX_ERR</a>
-, <a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4da201db194ea3406242dfc87c7a072a655">SEMANTIC_ERR</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4dadc749d1c0b93e065a25f8d2aa1203e3b">IR_ERR</a>
+&#160;&#160;<a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4da201db194ea3406242dfc87c7a072a655">SEMANTIC_ERR</a>
+, <a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4dadc749d1c0b93e065a25f8d2aa1203e3b">IR_ERR</a>
 , <a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4da937d3629889c6cf00bd27f024bb4d1bc">CODEGEN_ERR</a>
+, <a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4dae0c4fa66cb69ed614837e969bfd6afe2">ASM_LINK_ERR</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a74c618dec2975a32ea6523ce28592c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit codes of the compiler  <a href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">More...</a><br /></td></tr>
@@ -66,24 +78,42 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4859ec9e6b4f62867df9c96466cfe2af" id="r_a4859ec9e6b4f62867df9c96466cfe2af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCompiler_1_1CompileOptions.html">CompileOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a4859ec9e6b4f62867df9c96466cfe2af">parseOptions</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a4859ec9e6b4f62867df9c96466cfe2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses arguments into compiler options  <br /></td></tr>
+<tr class="separator:a4859ec9e6b4f62867df9c96466cfe2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9711b7a9818ddaadde2055c68cf99fdb" id="r_a9711b7a9818ddaadde2055c68cf99fdb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a9711b7a9818ddaadde2055c68cf99fdb">readSourceCode</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:a9711b7a9818ddaadde2055c68cf99fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads the source code from the input file  <br /></td></tr>
+<tr class="separator:a9711b7a9818ddaadde2055c68cf99fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a89d3a23f553ac0b6c2055502cd5b8b" id="r_a7a89d3a23f553ac0b6c2055502cd5b8b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structCompiler_1_1PreprocessResult.html">PreprocessResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a7a89d3a23f553ac0b6c2055502cd5b8b">preprocess</a> (const std::string &amp;source)</td></tr>
+<tr class="memdesc:a7a89d3a23f553ac0b6c2055502cd5b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">preprocesses the source code  <br /></td></tr>
+<tr class="separator:a7a89d3a23f553ac0b6c2055502cd5b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82e26f984904fc404f46db4238c9ff2f" id="r_a82e26f984904fc404f46db4238c9ff2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a82e26f984904fc404f46db4238c9ff2f">lexicalAnalysis</a> (<a class="el" href="classLexer.html">Lexer</a> &amp;lexer)</td></tr>
 <tr class="memdesc:a82e26f984904fc404f46db4238c9ff2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs lexical analysis of the code  <br /></td></tr>
 <tr class="separator:a82e26f984904fc404f46db4238c9ff2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7e038b9d3b92f0481a175bd4fb5ff44" id="r_ae7e038b9d3b92f0481a175bd4fb5ff44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#ae7e038b9d3b92f0481a175bd4fb5ff44">syntaxAnalysis</a> (<a class="el" href="classLexer.html">Lexer</a> &amp;lexer, std::unique_ptr&lt; <a class="el" href="classASTProgram.html">ASTProgram</a> &gt; &amp;astProgram)</td></tr>
 <tr class="memdesc:ae7e038b9d3b92f0481a175bd4fb5ff44"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs syntax analysis of the code  <br /></td></tr>
 <tr class="separator:ae7e038b9d3b92f0481a175bd4fb5ff44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88bf99186515c629c8c37dc6ddbc53d7" id="r_a88bf99186515c629c8c37dc6ddbc53d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a88bf99186515c629c8c37dc6ddbc53d7">semanticAnalysis</a> (std::unique_ptr&lt; <a class="el" href="classASTProgram.html">ASTProgram</a> &gt; &amp;astProgram)</td></tr>
-<tr class="memdesc:a88bf99186515c629c8c37dc6ddbc53d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs semantic analysis of the code  <br /></td></tr>
-<tr class="separator:a88bf99186515c629c8c37dc6ddbc53d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b1c8976de709b0e2ebe9d30a5bf0952" id="r_a1b1c8976de709b0e2ebe9d30a5bf0952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a1b1c8976de709b0e2ebe9d30a5bf0952">transformASTToIRT</a> (std::unique_ptr&lt; <a class="el" href="classASTProgram.html">ASTProgram</a> &gt; &amp;astProgram, std::unique_ptr&lt; <a class="el" href="classIRProgram.html">IRProgram</a> &gt; &amp;irProgram)</td></tr>
-<tr class="memdesc:a1b1c8976de709b0e2ebe9d30a5bf0952"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs transformation of the code from AST to IRT  <br /></td></tr>
-<tr class="separator:a1b1c8976de709b0e2ebe9d30a5bf0952"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a361e93a6ae59129e04408c575d4daa7d" id="r_a361e93a6ae59129e04408c575d4daa7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a361e93a6ae59129e04408c575d4daa7d">generateCode</a> (std::unique_ptr&lt; <a class="el" href="classIRProgram.html">IRProgram</a> &gt; &amp;irProgram, const std::string_view output)</td></tr>
-<tr class="memdesc:a361e93a6ae59129e04408c575d4daa7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs code generation  <br /></td></tr>
-<tr class="separator:a361e93a6ae59129e04408c575d4daa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3038331b62fd59324135e5e7316f4bba" id="r_a3038331b62fd59324135e5e7316f4bba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a3038331b62fd59324135e5e7316f4bba">compile</a> (std::string_view input, std::string_view output)</td></tr>
-<tr class="memdesc:a3038331b62fd59324135e5e7316f4bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs compilation of the code  <br /></td></tr>
-<tr class="separator:a3038331b62fd59324135e5e7316f4bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1286f4f01c359c2f0a16f87edd1440" id="r_a8e1286f4f01c359c2f0a16f87edd1440"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a8e1286f4f01c359c2f0a16f87edd1440">semanticAnalysis</a> (std::unique_ptr&lt; <a class="el" href="classASTProgram.html">ASTProgram</a> &gt; &amp;astProgram, <a class="el" href="classThreadPool.html">ThreadPool</a> &amp;threadPool)</td></tr>
+<tr class="memdesc:a8e1286f4f01c359c2f0a16f87edd1440"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs semantic analysis of the code  <br /></td></tr>
+<tr class="separator:a8e1286f4f01c359c2f0a16f87edd1440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3150f8f4e148d36d612e9fa558edbd67" id="r_a3150f8f4e148d36d612e9fa558edbd67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a3150f8f4e148d36d612e9fa558edbd67">transformASTToIRT</a> (std::unique_ptr&lt; <a class="el" href="classASTProgram.html">ASTProgram</a> &gt; &amp;astProgram, std::unique_ptr&lt; <a class="el" href="classIRProgram.html">IRProgram</a> &gt; &amp;irProgram, <a class="el" href="classThreadPool.html">ThreadPool</a> &amp;threadPool)</td></tr>
+<tr class="memdesc:a3150f8f4e148d36d612e9fa558edbd67"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs transformation of the code from AST to IRT  <br /></td></tr>
+<tr class="separator:a3150f8f4e148d36d612e9fa558edbd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac704d0ed371c72c501ef9f5f050ea2ab" id="r_ac704d0ed371c72c501ef9f5f050ea2ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#ac704d0ed371c72c501ef9f5f050ea2ab">generateProgram</a> (const <a class="el" href="classIRProgram.html">IRProgram</a> *irProgram, const std::string_view output, <a class="el" href="classThreadPool.html">ThreadPool</a> &amp;threadPool)</td></tr>
+<tr class="memdesc:ac704d0ed371c72c501ef9f5f050ea2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs code generation  <br /></td></tr>
+<tr class="separator:ac704d0ed371c72c501ef9f5f050ea2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8038c561bd1d5bdb7764d6cf1a331bc0" id="r_a8038c561bd1d5bdb7764d6cf1a331bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a8038c561bd1d5bdb7764d6cf1a331bc0">assembleAndLink</a> (const <a class="el" href="classIRProgram.html">IRProgram</a> *irProgram, const std::string_view output)</td></tr>
+<tr class="memdesc:a8038c561bd1d5bdb7764d6cf1a331bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">translates assembly files into executable  <br /></td></tr>
+<tr class="separator:a8038c561bd1d5bdb7764d6cf1a331bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44dd12844dccc86c69039d079537813" id="r_ac44dd12844dccc86c69039d079537813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">ExitCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#ac44dd12844dccc86c69039d079537813">compile</a> (<a class="el" href="structCompiler_1_1CompileOptions.html">CompileOptions</a> options)</td></tr>
+<tr class="memdesc:ac44dd12844dccc86c69039d079537813"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs compilation of the code  <br /></td></tr>
+<tr class="separator:ac44dd12844dccc86c69039d079537813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb8e54f767504a807a34b6749fc6526" id="r_a7cb8e54f767504a807a34b6749fc6526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a7cb8e54f767504a807a34b6749fc6526">dumpAST</a> (<a class="el" href="classASTProgram.html">ASTProgram</a> *program, std::ostream &amp;out=std::cout)</td></tr>
+<tr class="memdesc:a7cb8e54f767504a807a34b6749fc6526"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps the structure of the ast program  <br /></td></tr>
+<tr class="separator:a7cb8e54f767504a807a34b6749fc6526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ea80ff1b06d4d1f947db913bd79104" id="r_a28ea80ff1b06d4d1f947db913bd79104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCompiler.html#a28ea80ff1b06d4d1f947db913bd79104">dumpIR</a> (<a class="el" href="classIRProgram.html">IRProgram</a> *program, std::ostream &amp;out=std::cout)</td></tr>
+<tr class="memdesc:a28ea80ff1b06d4d1f947db913bd79104"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps the structure of the ir  <br /></td></tr>
+<tr class="separator:a28ea80ff1b06d4d1f947db913bd79104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Module that orchestrates the process of compiling source code. </p>
@@ -111,64 +141,28 @@ Functions</h2></td></tr>
 <p>exit codes of the compiler </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a74c618dec2975a32ea6523ce28592c4da990ec9d80b959c65e4509bc5c95e05e9" name="a74c618dec2975a32ea6523ce28592c4da990ec9d80b959c65e4509bc5c95e05e9"></a>NO_ERR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74c618dec2975a32ea6523ce28592c4daa081c49c34c0af7c36d68db5cf415dfa" name="a74c618dec2975a32ea6523ce28592c4daa081c49c34c0af7c36d68db5cf415dfa"></a>PREPROCESS_ERR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a74c618dec2975a32ea6523ce28592c4da0e7acde284c5e9e985b314fd7328b184" name="a74c618dec2975a32ea6523ce28592c4da0e7acde284c5e9e985b314fd7328b184"></a>LEXICAL_ERR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a74c618dec2975a32ea6523ce28592c4da5b956a3dbc26d0a517f7ecfe387e9046" name="a74c618dec2975a32ea6523ce28592c4da5b956a3dbc26d0a517f7ecfe387e9046"></a>SYNTAX_ERR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a74c618dec2975a32ea6523ce28592c4da201db194ea3406242dfc87c7a072a655" name="a74c618dec2975a32ea6523ce28592c4da201db194ea3406242dfc87c7a072a655"></a>SEMANTIC_ERR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a74c618dec2975a32ea6523ce28592c4dadc749d1c0b93e065a25f8d2aa1203e3b" name="a74c618dec2975a32ea6523ce28592c4dadc749d1c0b93e065a25f8d2aa1203e3b"></a>IR_ERR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a74c618dec2975a32ea6523ce28592c4da937d3629889c6cf00bd27f024bb4d1bc" name="a74c618dec2975a32ea6523ce28592c4da937d3629889c6cf00bd27f024bb4d1bc"></a>CODEGEN_ERR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74c618dec2975a32ea6523ce28592c4dae0c4fa66cb69ed614837e969bfd6afe2" name="a74c618dec2975a32ea6523ce28592c4dae0c4fa66cb69ed614837e969bfd6afe2"></a>ASM_LINK_ERR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3038331b62fd59324135e5e7316f4bba" name="a3038331b62fd59324135e5e7316f4bba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3038331b62fd59324135e5e7316f4bba">&#9670;&#160;</a></span>compile()</h2>
+<a id="a8038c561bd1d5bdb7764d6cf1a331bc0" name="a8038c561bd1d5bdb7764d6cf1a331bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8038c561bd1d5bdb7764d6cf1a331bc0">&#9670;&#160;</a></span>assembleAndLink()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">Compiler::ExitCode</a> Compiler::compile </td>
+          <td class="memname"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">Compiler::ExitCode</a> Compiler::assembleAndLink </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>performs compilation of the code </p>
-<p>lexer -&gt; parser -&gt; analyzer -&gt; intermediate-representation -&gt; code-generation </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input</td><td>- source code </td></tr>
-    <tr><td class="paramname">output</td><td>- path of the output file </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>exit code depending on the result of the compilation </dd></dl>
-
-</div>
-</div>
-<a id="a361e93a6ae59129e04408c575d4daa7d" name="a361e93a6ae59129e04408c575d4daa7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a361e93a6ae59129e04408c575d4daa7d">&#9670;&#160;</a></span>generateCode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">Compiler::ExitCode</a> Compiler::generateCode </td>
-          <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classIRProgram.html">IRProgram</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classIRProgram.html">IRProgram</a> *&#160;</td>
           <td class="paramname"><em>irProgram</em>, </td>
         </tr>
         <tr>
@@ -185,11 +179,158 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>translates assembly files into executable </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">irProgram</td><td>- const pointer to the irt program </td></tr>
+    <tr><td class="paramname">output</td><td>- path of the output file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ASM_LINK_ERR if it fails to generate executable, NO_ERR otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ac44dd12844dccc86c69039d079537813" name="ac44dd12844dccc86c69039d079537813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac44dd12844dccc86c69039d079537813">&#9670;&#160;</a></span>compile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">Compiler::ExitCode</a> Compiler::compile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCompiler_1_1CompileOptions.html">Compiler::CompileOptions</a>&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>performs compilation of the code </p>
+<p>preprocessing -&gt; lexer -&gt; parser -&gt; analyzer -&gt; intermediate-representation -&gt; code-generation -&gt; asm + link </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>- source code </td></tr>
+    <tr><td class="paramname">output</td><td>- path of the output file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>exit code depending on the result of the compilation </dd></dl>
+
+</div>
+</div>
+<a id="a7cb8e54f767504a807a34b6749fc6526" name="a7cb8e54f767504a807a34b6749fc6526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb8e54f767504a807a34b6749fc6526">&#9670;&#160;</a></span>dumpAST()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::dumpAST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classASTProgram.html">ASTProgram</a> *&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em> = <code>std::cout</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dumps the structure of the ast program </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">program</td><td>- const pointer to the ast program </td></tr>
+    <tr><td class="paramname">out</td><td>- output stream, defaults to std::cout </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28ea80ff1b06d4d1f947db913bd79104" name="a28ea80ff1b06d4d1f947db913bd79104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ea80ff1b06d4d1f947db913bd79104">&#9670;&#160;</a></span>dumpIR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::dumpIR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIRProgram.html">IRProgram</a> *&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em> = <code>std::cout</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dumps the structure of the ir </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">program</td><td>- const pointer to the ir program </td></tr>
+    <tr><td class="paramname">out</td><td>- output stream, defaults to std::cout </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac704d0ed371c72c501ef9f5f050ea2ab" name="ac704d0ed371c72c501ef9f5f050ea2ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac704d0ed371c72c501ef9f5f050ea2ab">&#9670;&#160;</a></span>generateProgram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">Compiler::ExitCode</a> Compiler::generateProgram </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIRProgram.html">IRProgram</a> *&#160;</td>
+          <td class="paramname"><em>irProgram</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string_view&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classThreadPool.html">ThreadPool</a> &amp;&#160;</td>
+          <td class="paramname"><em>threadPool</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>performs code generation </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">irProgram</td><td>- reference to the pointer of the IRT program </td></tr>
+    <tr><td class="paramname">irProgram</td><td>- const pointer to the IRT program </td></tr>
     <tr><td class="paramname">output</td><td>- path of the output file </td></tr>
+    <tr><td class="paramname">threadPool</td><td>- reference to a thread pool </td></tr>
   </table>
   </dd>
 </dl>
@@ -224,8 +365,107 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a88bf99186515c629c8c37dc6ddbc53d7" name="a88bf99186515c629c8c37dc6ddbc53d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88bf99186515c629c8c37dc6ddbc53d7">&#9670;&#160;</a></span>semanticAnalysis()</h2>
+<a id="a4859ec9e6b4f62867df9c96466cfe2af" name="a4859ec9e6b4f62867df9c96466cfe2af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4859ec9e6b4f62867df9c96466cfe2af">&#9670;&#160;</a></span>parseOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCompiler_1_1CompileOptions.html">Compiler::CompileOptions</a> Compiler::parseOptions </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parses arguments into compiler options </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>- number of args </td></tr>
+    <tr><td class="paramname">argv</td><td>- pointer to the first argument </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>compile options</dd></dl>
+<p>CLI: ./minicpp &lt;input&gt; [&ndash;dump-ast &ndash;dump-ir -s] [-o &lt;output&gt;]</p>
+<p>&lt;input&gt; - path to input file, mandatory .mcpp extension</p>
+<p>Options:</p>
+<p>&ndash;dump-ast - dumps the structure of the ast</p>
+<p>&ndash;dump-ir - dumps the structure of the ir</p>
+<p>-s - stops after generating .s file</p>
+<p>-o &lt;output&gt; - path to output file </p>
+
+</div>
+</div>
+<a id="a7a89d3a23f553ac0b6c2055502cd5b8b" name="a7a89d3a23f553ac0b6c2055502cd5b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a89d3a23f553ac0b6c2055502cd5b8b">&#9670;&#160;</a></span>preprocess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structCompiler_1_1PreprocessResult.html">Compiler::PreprocessResult</a> Compiler::preprocess </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>preprocesses the source code </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>- source code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pair (ExitCode, vector of preprocessed files), ExitCode is NO_ERR if preprocessing succeeded, PREPROCESS_ERR if it failed </dd></dl>
+
+</div>
+</div>
+<a id="a9711b7a9818ddaadde2055c68cf99fdb" name="a9711b7a9818ddaadde2055c68cf99fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9711b7a9818ddaadde2055c68cf99fdb">&#9670;&#160;</a></span>readSourceCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Compiler::readSourceCode </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reads the source code from the input file </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>- path to input file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>source code </dd></dl>
+
+</div>
+</div>
+<a id="a8e1286f4f01c359c2f0a16f87edd1440" name="a8e1286f4f01c359c2f0a16f87edd1440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1286f4f01c359c2f0a16f87edd1440">&#9670;&#160;</a></span>semanticAnalysis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,8 +474,18 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="namespaceCompiler.html#a74c618dec2975a32ea6523ce28592c4d">Compiler::ExitCode</a> Compiler::semanticAnalysis </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classASTProgram.html">ASTProgram</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>astProgram</em></td><td>)</td>
+          <td class="paramname"><em>astProgram</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classThreadPool.html">ThreadPool</a> &amp;&#160;</td>
+          <td class="paramname"><em>threadPool</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -244,6 +494,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">astProgram</td><td>- reference to the pointer of the AST program </td></tr>
+    <tr><td class="paramname">threadPool</td><td>- reference to a thread pool </td></tr>
   </table>
   </dd>
 </dl>
@@ -289,8 +540,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1b1c8976de709b0e2ebe9d30a5bf0952" name="a1b1c8976de709b0e2ebe9d30a5bf0952"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b1c8976de709b0e2ebe9d30a5bf0952">&#9670;&#160;</a></span>transformASTToIRT()</h2>
+<a id="a3150f8f4e148d36d612e9fa558edbd67" name="a3150f8f4e148d36d612e9fa558edbd67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3150f8f4e148d36d612e9fa558edbd67">&#9670;&#160;</a></span>transformASTToIRT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +556,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classIRProgram.html">IRProgram</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>irProgram</em>&#160;</td>
+          <td class="paramname"><em>irProgram</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classThreadPool.html">ThreadPool</a> &amp;&#160;</td>
+          <td class="paramname"><em>threadPool</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -320,6 +577,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">astProgram</td><td>- reference to the pointer of the AST program </td></tr>
     <tr><td class="paramname">irProgram</td><td>- reference to the pointer of the IRT program </td></tr>
+    <tr><td class="paramname">threadPool</td><td>- reference to a thread pool </td></tr>
   </table>
   </dd>
 </dl>

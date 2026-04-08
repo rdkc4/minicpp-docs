@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: AsmGenerator::Instruction Namespace Reference</title>
+<title>MINICPP: AsmGenerator::Instruction Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -49,6 +49,9 @@ $(function() {
   <div class="headertitle"><div class="title">AsmGenerator::Instruction Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Module for generating the x86-64 asm instructions.  
+<a href="namespaceAsmGenerator_1_1Instruction.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -97,11 +100,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a410a0dbe3bfa02b8857762dd20282000" id="r_a410a0dbe3bfa02b8857762dd20282000"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAsmGenerator_1_1Instruction.html#a410a0dbe3bfa02b8857762dd20282000">regSize</a> = 8</td></tr>
+<tr class="memitem:a410a0dbe3bfa02b8857762dd20282000" id="r_a410a0dbe3bfa02b8857762dd20282000"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAsmGenerator_1_1Instruction.html#a410a0dbe3bfa02b8857762dd20282000">regSize</a> {8}</td></tr>
 <tr class="memdesc:a410a0dbe3bfa02b8857762dd20282000"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of the register in bytes  <br /></td></tr>
 <tr class="separator:a410a0dbe3bfa02b8857762dd20282000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Module for generating the x86-64 asm instructions. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7e8b211fb679481060d50f003c6ee4aa" name="a7e8b211fb679481060d50f003c6ee4aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e8b211fb679481060d50f003c6ee4aa">&#9670;&#160;</a></span>genCall()</h2>
 
@@ -181,7 +186,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>cmp l, r </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>cmp l, r </p>
 
 </div>
 </div>
@@ -210,7 +215,7 @@ Variables</h2></td></tr>
 </dl>
 <p>mov rax, rdi</p>
 <p>movq $60, rax</p>
-<p>syscall </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>syscall </p>
 
 </div>
 </div>
@@ -238,7 +243,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <p>mov rbp, rsp</p>
-<p>pop rbp </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>pop rbp </p>
 
 </div>
 </div>
@@ -266,7 +271,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <p>push rbp</p>
-<p>mov rsp, rbp </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>mov rsp, rbp </p>
 
 </div>
 </div>
@@ -311,7 +316,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>jmp label </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>jmp label </p>
 
 </div>
 </div>
@@ -349,7 +354,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>label: </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>label: </p>
 
 </div>
 </div>
@@ -401,7 +406,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>movext l, r </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>movext l, r </p>
 
 </div>
 </div>
@@ -428,7 +433,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -480,7 +484,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>op l (, r) </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>op l (, r) </p>
 
 </div>
 </div>
@@ -518,7 +522,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>pop r </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>pop r </p>
 
 </div>
 </div>
@@ -556,7 +560,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>push r </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>push r </p>
 
 </div>
 </div>
@@ -583,7 +587,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>ret </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>ret </p>
 
 </div>
 </div>
@@ -618,7 +622,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t AsmGenerator::Instruction::regSize = 8</td>
+          <td class="memname">constexpr size_t AsmGenerator::Instruction::regSize {8}</td>
         </tr>
       </table>
   </td>

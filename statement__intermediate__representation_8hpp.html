@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: minicpp/intermediate-representation/statement_intermediate_representation.hpp File Reference</title>
+<title>MINICPP: minicpp/intermediate-representation/statement_intermediate_representation.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -49,28 +49,28 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &quot;<a class="el" href="ASTStatement_8hpp.html">../common/abstract-syntax-tree/ASTStatement.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTVariable_8hpp.html">../common/abstract-syntax-tree/ASTVariable.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTPrintfSt_8hpp.html">../common/abstract-syntax-tree/ASTPrintfSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTIfSt_8hpp.html">../common/abstract-syntax-tree/ASTIfSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTCompoundSt_8hpp.html">../common/abstract-syntax-tree/ASTCompoundSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTAssignSt_8hpp.html">../common/abstract-syntax-tree/ASTAssignSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTReturnSt_8hpp.html">../common/abstract-syntax-tree/ASTReturnSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTWhileSt_8hpp.html">../common/abstract-syntax-tree/ASTWhileSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTForSt_8hpp.html">../common/abstract-syntax-tree/ASTForSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTDoWhileSt_8hpp.html">../common/abstract-syntax-tree/ASTDoWhileSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ASTSwitchSt_8hpp.html">../common/abstract-syntax-tree/ASTSwitchSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRStatement_8hpp.html">../common/intermediate-representation-tree/IRStatement.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRVariable_8hpp.html">../common/intermediate-representation-tree/IRVariable.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRPrintfSt_8hpp.html">../common/intermediate-representation-tree/IRPrintfSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRIfSt_8hpp.html">../common/intermediate-representation-tree/IRIfSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRCompoundSt_8hpp.html">../common/intermediate-representation-tree/IRCompoundSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRAssignSt_8hpp.html">../common/intermediate-representation-tree/IRAssignSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRReturnSt_8hpp.html">../common/intermediate-representation-tree/IRReturnSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRWhileSt_8hpp.html">../common/intermediate-representation-tree/IRWhileSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRForSt_8hpp.html">../common/intermediate-representation-tree/IRForSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRDoWhileSt_8hpp.html">../common/intermediate-representation-tree/IRDoWhileSt.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRSwitchSt_8hpp.html">../common/intermediate-representation-tree/IRSwitchSt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__stmt_8hpp.html">../common/abstract-syntax-tree/ast_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__variable__decl__stmt_8hpp.html">../common/abstract-syntax-tree/ast_variable_decl_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__if__stmt_8hpp.html">../common/abstract-syntax-tree/ast_if_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__compound__stmt_8hpp.html">../common/abstract-syntax-tree/ast_compound_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__assign__stmt_8hpp.html">../common/abstract-syntax-tree/ast_assign_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__return__stmt_8hpp.html">../common/abstract-syntax-tree/ast_return_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__while__stmt_8hpp.html">../common/abstract-syntax-tree/ast_while_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__for__stmt_8hpp.html">../common/abstract-syntax-tree/ast_for_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__dowhile__stmt_8hpp.html">../common/abstract-syntax-tree/ast_dowhile_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__switch__stmt_8hpp.html">../common/abstract-syntax-tree/ast_switch_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__function__call__stmt_8hpp.html">../common/abstract-syntax-tree/ast_function_call_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__stmt_8hpp.html">../common/intermediate-representation-tree/ir_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__variable__decl__stmt_8hpp.html">../common/intermediate-representation-tree/ir_variable_decl_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__if__stmt_8hpp.html">../common/intermediate-representation-tree/ir_if_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__compound__stmt_8hpp.html">../common/intermediate-representation-tree/ir_compound_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__assign__stmt_8hpp.html">../common/intermediate-representation-tree/ir_assign_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__return__stmt_8hpp.html">../common/intermediate-representation-tree/ir_return_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__while__stmt_8hpp.html">../common/intermediate-representation-tree/ir_while_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__for__stmt_8hpp.html">../common/intermediate-representation-tree/ir_for_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__dowhile__stmt_8hpp.html">../common/intermediate-representation-tree/ir_dowhile_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__switch__stmt_8hpp.html">../common/intermediate-representation-tree/ir_switch_stmt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__function__call__stmt_8hpp.html">../common/intermediate-representation-tree/ir_function_call_stmt.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="expression__intermediate__representation_8hpp.html">expression_intermediate_representation.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>

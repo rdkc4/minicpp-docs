@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: TokenConsumer Class Reference</title>
+<title>MINICPP: TokenConsumer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -47,7 +47,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classLexer.html" title="Lexical analysis of the input.">Lexer</a> wrapper.  
+<p><a class="el" href="classLexer.html" title="Lexical analysis of the input.">Lexer</a> wrapper, shared across parsers, non-owning.  
  <a href="classTokenConsumer.html#details">More...</a></p>
 
 <p><code>#include &lt;token_consumer.hpp&gt;</code></p>
@@ -80,9 +80,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:adb7ea8649915caf153db9d5f0cecd21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classLexer.html" title="Lexical analysis of the input.">Lexer</a> wrapper. </p>
-<p>shared across parsers</p>
-<p>non-owning </p>
+<div class="textblock"><p><a class="el" href="classLexer.html" title="Lexical analysis of the input.">Lexer</a> wrapper, shared across parsers, non-owning. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac225be360223dc8aa44911d2202aea4b" name="ac225be360223dc8aa44911d2202aea4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac225be360223dc8aa44911d2202aea4b">&#9670;&#160;</a></span>TokenConsumer()</h2>
@@ -141,7 +139,6 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -174,7 +171,6 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -224,13 +220,12 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>moving on to the next token </p>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -252,7 +247,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

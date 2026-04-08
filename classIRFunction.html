@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: IRFunction Class Reference</title>
+<title>MINICPP: IRFunction Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -50,62 +50,65 @@ $(function() {
 <p>IRT representation for the function.  
  <a href="classIRFunction.html#details">More...</a></p>
 
-<p><code>#include &lt;IRFunction.hpp&gt;</code></p>
+<p><code>#include &lt;ir_function.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3abd8adcf7cd85ea146d857bef5e0ac2" id="r_a3abd8adcf7cd85ea146d857bef5e0ac2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a3abd8adcf7cd85ea146d857bef5e0ac2">IRFunction</a> (<a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> ntype, const std::string &amp;funcName, <a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a> <a class="el" href="classIRFunction.html#a5de8390a315036e2778e1965671149d0">type</a>)</td></tr>
-<tr class="memdesc:a3abd8adcf7cd85ea146d857bef5e0ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the irt function.  <br /></td></tr>
-<tr class="separator:a3abd8adcf7cd85ea146d857bef5e0ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f6c38ee26385a37d2ea753f50a2aca" id="r_a05f6c38ee26385a37d2ea753f50a2aca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a05f6c38ee26385a37d2ea753f50a2aca">IRFunction</a> (const std::string &amp;funcName, <a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="el" href="classIRFunction.html#a49ea34bc86c7b552d8f072320a3893e1">type</a>)</td></tr>
+<tr class="memdesc:a05f6c38ee26385a37d2ea753f50a2aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the irt function.  <br /></td></tr>
+<tr class="separator:a05f6c38ee26385a37d2ea753f50a2aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeb1363b0bb5a138a2a1b4342f4dbeef" id="r_aeeb1363b0bb5a138a2a1b4342f4dbeef"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classIRParameter.html">IRParameter</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#aeeb1363b0bb5a138a2a1b4342f4dbeef">getParameters</a> () const noexcept</td></tr>
 <tr class="memdesc:aeeb1363b0bb5a138a2a1b4342f4dbeef"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the parameters of the function  <br /></td></tr>
 <tr class="separator:aeeb1363b0bb5a138a2a1b4342f4dbeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bfbd4c728628d32097430f27baef089" id="r_a3bfbd4c728628d32097430f27baef089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a3bfbd4c728628d32097430f27baef089">addParameter</a> (std::unique_ptr&lt; <a class="el" href="classIRParameter.html">IRParameter</a> &gt; parameter)</td></tr>
 <tr class="memdesc:a3bfbd4c728628d32097430f27baef089"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds new parameter to the function  <br /></td></tr>
 <tr class="separator:a3bfbd4c728628d32097430f27baef089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082caeb6587312f35071c4a41d5c8730" id="r_a082caeb6587312f35071c4a41d5c8730"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classIRStatement.html">IRStatement</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a082caeb6587312f35071c4a41d5c8730">getBody</a> () const noexcept</td></tr>
-<tr class="memdesc:a082caeb6587312f35071c4a41d5c8730"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the body of the function  <br /></td></tr>
-<tr class="separator:a082caeb6587312f35071c4a41d5c8730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bad8d236c4d4caf8c0c915030a64943" id="r_a9bad8d236c4d4caf8c0c915030a64943"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a9bad8d236c4d4caf8c0c915030a64943">addStatement</a> (std::unique_ptr&lt; <a class="el" href="classIRStatement.html">IRStatement</a> &gt; statement)</td></tr>
-<tr class="memdesc:a9bad8d236c4d4caf8c0c915030a64943"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds new statement to the body  <br /></td></tr>
-<tr class="separator:a9bad8d236c4d4caf8c0c915030a64943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23eb6d51a107c3df4004a9d70e01ec63" id="r_a23eb6d51a107c3df4004a9d70e01ec63"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classIRStmt.html">IRStmt</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a23eb6d51a107c3df4004a9d70e01ec63">getBody</a> () const noexcept</td></tr>
+<tr class="memdesc:a23eb6d51a107c3df4004a9d70e01ec63"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the body of the function  <br /></td></tr>
+<tr class="separator:a23eb6d51a107c3df4004a9d70e01ec63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d96c62fec01723e829c1f4f6778a567" id="r_a4d96c62fec01723e829c1f4f6778a567"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a4d96c62fec01723e829c1f4f6778a567">addStatement</a> (std::unique_ptr&lt; <a class="el" href="classIRStmt.html">IRStmt</a> &gt; stmt)</td></tr>
+<tr class="memdesc:a4d96c62fec01723e829c1f4f6778a567"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds new statement to the body  <br /></td></tr>
+<tr class="separator:a4d96c62fec01723e829c1f4f6778a567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8c7407f261a88353ebb0d891b686af" id="r_afe8c7407f261a88353ebb0d891b686af"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#afe8c7407f261a88353ebb0d891b686af">getFunctionName</a> () const noexcept</td></tr>
 <tr class="memdesc:afe8c7407f261a88353ebb0d891b686af"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the name of the function  <br /></td></tr>
 <tr class="separator:afe8c7407f261a88353ebb0d891b686af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e0615cee7f773b8fd6884315a579d9" id="r_a64e0615cee7f773b8fd6884315a579d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a64e0615cee7f773b8fd6884315a579d9">setFunctionName</a> (const std::string &amp;funcName)</td></tr>
 <tr class="memdesc:a64e0615cee7f773b8fd6884315a579d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes function's name  <br /></td></tr>
 <tr class="separator:a64e0615cee7f773b8fd6884315a579d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad7da116ce934e7abd3a5fc24cde41b8" id="r_aad7da116ce934e7abd3a5fc24cde41b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#aad7da116ce934e7abd3a5fc24cde41b8">getType</a> () const noexcept</td></tr>
-<tr class="memdesc:aad7da116ce934e7abd3a5fc24cde41b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the return type of the function  <br /></td></tr>
-<tr class="separator:aad7da116ce934e7abd3a5fc24cde41b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cc3a1f08897fe51346ea12656565ec2" id="r_a6cc3a1f08897fe51346ea12656565ec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a6cc3a1f08897fe51346ea12656565ec2">setType</a> (<a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a> t) noexcept</td></tr>
-<tr class="memdesc:a6cc3a1f08897fe51346ea12656565ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the return type of the function  <br /></td></tr>
-<tr class="separator:a6cc3a1f08897fe51346ea12656565ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73119de269923ab3d6d60b28c1f7437" id="r_ae73119de269923ab3d6d60b28c1f7437"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#ae73119de269923ab3d6d60b28c1f7437">getType</a> () const noexcept</td></tr>
+<tr class="memdesc:ae73119de269923ab3d6d60b28c1f7437"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the return type of the function  <br /></td></tr>
+<tr class="separator:ae73119de269923ab3d6d60b28c1f7437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabcfb7589933666e30e37d6e5fd52e8e" id="r_aabcfb7589933666e30e37d6e5fd52e8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#aabcfb7589933666e30e37d6e5fd52e8e">setType</a> (<a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> returnType) noexcept</td></tr>
+<tr class="memdesc:aabcfb7589933666e30e37d6e5fd52e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the return type of the function  <br /></td></tr>
+<tr class="separator:aabcfb7589933666e30e37d6e5fd52e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c83e143037bf7bea7fd45b243046b5" id="r_ab4c83e143037bf7bea7fd45b243046b5"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#ab4c83e143037bf7bea7fd45b243046b5">getRequiredMemory</a> () const noexcept</td></tr>
 <tr class="memdesc:ab4c83e143037bf7bea7fd45b243046b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the amount of bytes function takes on the stack  <br /></td></tr>
 <tr class="separator:ab4c83e143037bf7bea7fd45b243046b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5906a9c2ed7fbcbad329dc24fdeaacea" id="r_a5906a9c2ed7fbcbad329dc24fdeaacea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a5906a9c2ed7fbcbad329dc24fdeaacea">setRequiredMemory</a> (const std::string &amp;size)</td></tr>
 <tr class="memdesc:a5906a9c2ed7fbcbad329dc24fdeaacea"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the amount of bytes reserved for the stack  <br /></td></tr>
 <tr class="separator:a5906a9c2ed7fbcbad329dc24fdeaacea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d23687f66b4b12ca4eb0c488c16ccbf" id="r_a0d23687f66b4b12ca4eb0c488c16ccbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a0d23687f66b4b12ca4eb0c488c16ccbf">eliminateDead</a> (size_t startIdx)</td></tr>
-<tr class="memdesc:a0d23687f66b4b12ca4eb0c488c16ccbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">eliminates statements of the function's body that appear after the node that always returns  <br /></td></tr>
-<tr class="separator:a0d23687f66b4b12ca4eb0c488c16ccbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a69cbf932bfa88fd926f1a2f2a686a" id="r_ad4a69cbf932bfa88fd926f1a2f2a686a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#ad4a69cbf932bfa88fd926f1a2f2a686a">print</a> (size_t offset) const override</td></tr>
-<tr class="memdesc:ad4a69cbf932bfa88fd926f1a2f2a686a"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints formatted string of the function node  <br /></td></tr>
-<tr class="separator:ad4a69cbf932bfa88fd926f1a2f2a686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e93e6c4671b735c5cfd0d59b4bdbedf" id="r_a6e93e6c4671b735c5cfd0d59b4bdbedf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a6e93e6c4671b735c5cfd0d59b4bdbedf">eliminateDeadStmts</a> (size_t startIdx)</td></tr>
+<tr class="memdesc:a6e93e6c4671b735c5cfd0d59b4bdbedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">eliminates statements of the function's body that appear after the node that always returns  <br /></td></tr>
+<tr class="separator:a6e93e6c4671b735c5cfd0d59b4bdbedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaae70523a8296e77795de0cfb9f43ce" id="r_adaae70523a8296e77795de0cfb9f43ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#adaae70523a8296e77795de0cfb9f43ce">setPredefined</a> (bool <a class="el" href="classIRFunction.html#ab9d6b38041d31735c084794c515121b4">isPredefined</a>) noexcept</td></tr>
+<tr class="memdesc:adaae70523a8296e77795de0cfb9f43ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets predifined flag of a function  <br /></td></tr>
+<tr class="separator:adaae70523a8296e77795de0cfb9f43ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d6b38041d31735c084794c515121b4" id="r_ab9d6b38041d31735c084794c515121b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#ab9d6b38041d31735c084794c515121b4">isPredefined</a> () const noexcept</td></tr>
+<tr class="memdesc:ab9d6b38041d31735c084794c515121b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if function is predifined  <br /></td></tr>
+<tr class="separator:ab9d6b38041d31735c084794c515121b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0453b5d2099980598532299f91320b" id="r_a2e0453b5d2099980598532299f91320b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a2e0453b5d2099980598532299f91320b">accept</a> (<a class="el" href="classIRVisitor.html">IRVisitor</a> &amp;visitor) override</td></tr>
+<tr class="memdesc:a2e0453b5d2099980598532299f91320b"><td class="mdescLeft">&#160;</td><td class="mdescRight">accepts the ir visitor  <br /></td></tr>
+<tr class="separator:a2e0453b5d2099980598532299f91320b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIRNode"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIRNode')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIRNode.html">IRNode</a></td></tr>
-<tr class="memitem:a0a7ec0106794643f2457fe4858696926 inherit pub_methods_classIRNode" id="r_a0a7ec0106794643f2457fe4858696926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a0a7ec0106794643f2457fe4858696926">IRNode</a> (<a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> ntype)</td></tr>
+<tr class="memitem:a0a7ec0106794643f2457fe4858696926 inherit pub_methods_classIRNode" id="r_a0a7ec0106794643f2457fe4858696926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a0a7ec0106794643f2457fe4858696926">IRNode</a> (<a class="el" href="common_2intermediate-representation-tree_2defs_2ir__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> ntype)</td></tr>
 <tr class="memdesc:a0a7ec0106794643f2457fe4858696926 inherit pub_methods_classIRNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the irt node.  <br /></td></tr>
 <tr class="separator:a0a7ec0106794643f2457fe4858696926 inherit pub_methods_classIRNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3aeafbb5333372b8489487f9906b56c inherit pub_methods_classIRNode" id="r_ad3aeafbb5333372b8489487f9906b56c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#ad3aeafbb5333372b8489487f9906b56c">~IRNode</a> ()</td></tr>
 <tr class="memdesc:ad3aeafbb5333372b8489487f9906b56c inherit pub_methods_classIRNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs the instance of the irt node.  <br /></td></tr>
 <tr class="separator:ad3aeafbb5333372b8489487f9906b56c inherit pub_methods_classIRNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dec26fd54ec746dbf90db57b961857f inherit pub_methods_classIRNode" id="r_a2dec26fd54ec746dbf90db57b961857f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a2dec26fd54ec746dbf90db57b961857f">getNodeType</a> () const noexcept</td></tr>
+<tr class="memitem:a2dec26fd54ec746dbf90db57b961857f inherit pub_methods_classIRNode" id="r_a2dec26fd54ec746dbf90db57b961857f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2intermediate-representation-tree_2defs_2ir__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a2dec26fd54ec746dbf90db57b961857f">getNodeType</a> () const noexcept</td></tr>
 <tr class="memdesc:a2dec26fd54ec746dbf90db57b961857f inherit pub_methods_classIRNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the node type  <br /></td></tr>
 <tr class="separator:a2dec26fd54ec746dbf90db57b961857f inherit pub_methods_classIRNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd3fe214eb949b769828a20f57791ae inherit pub_methods_classIRNode" id="r_a9cd3fe214eb949b769828a20f57791ae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRNode.html#a9cd3fe214eb949b769828a20f57791ae">toString</a> () const</td></tr>
-<tr class="memdesc:a9cd3fe214eb949b769828a20f57791ae inherit pub_methods_classIRNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the formatted node type  <br /></td></tr>
-<tr class="separator:a9cd3fe214eb949b769828a20f57791ae inherit pub_methods_classIRNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -115,21 +118,24 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5a7c53171e04c855c2131300774cf155" id="r_a5a7c53171e04c855c2131300774cf155"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a5a7c53171e04c855c2131300774cf155">requiredMemory</a></td></tr>
 <tr class="memdesc:a5a7c53171e04c855c2131300774cf155"><td class="mdescLeft">&#160;</td><td class="mdescRight">memory required for the stack of the function  <br /></td></tr>
 <tr class="separator:a5a7c53171e04c855c2131300774cf155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de8390a315036e2778e1965671149d0" id="r_a5de8390a315036e2778e1965671149d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a5de8390a315036e2778e1965671149d0">type</a></td></tr>
-<tr class="memdesc:a5de8390a315036e2778e1965671149d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">return type of the function  <br /></td></tr>
-<tr class="separator:a5de8390a315036e2778e1965671149d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ea34bc86c7b552d8f072320a3893e1" id="r_a49ea34bc86c7b552d8f072320a3893e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a49ea34bc86c7b552d8f072320a3893e1">type</a></td></tr>
+<tr class="memdesc:a49ea34bc86c7b552d8f072320a3893e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">return type of the function  <br /></td></tr>
+<tr class="separator:a49ea34bc86c7b552d8f072320a3893e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa13a1d31d466182e94480915a74675" id="r_adaa13a1d31d466182e94480915a74675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#adaa13a1d31d466182e94480915a74675">predefined</a></td></tr>
+<tr class="memdesc:adaa13a1d31d466182e94480915a74675"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if function is predefined  <br /></td></tr>
+<tr class="separator:adaa13a1d31d466182e94480915a74675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4a14a7c1bb9b02121f8678122853025" id="r_ac4a14a7c1bb9b02121f8678122853025"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classIRParameter.html">IRParameter</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#ac4a14a7c1bb9b02121f8678122853025">parameters</a></td></tr>
 <tr class="memdesc:ac4a14a7c1bb9b02121f8678122853025"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of pointers to parameters of the function  <br /></td></tr>
 <tr class="separator:ac4a14a7c1bb9b02121f8678122853025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a999832d8f53a5a4391071d2c89afba5a" id="r_a999832d8f53a5a4391071d2c89afba5a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classIRStatement.html">IRStatement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a999832d8f53a5a4391071d2c89afba5a">body</a></td></tr>
-<tr class="memdesc:a999832d8f53a5a4391071d2c89afba5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of pointers to statements of the body  <br /></td></tr>
-<tr class="separator:a999832d8f53a5a4391071d2c89afba5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4576d7884bf117c039c44c55fac004ee" id="r_a4576d7884bf117c039c44c55fac004ee"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classIRStmt.html">IRStmt</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRFunction.html#a4576d7884bf117c039c44c55fac004ee">body</a></td></tr>
+<tr class="memdesc:a4576d7884bf117c039c44c55fac004ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of pointers to statements of the body  <br /></td></tr>
+<tr class="separator:a4576d7884bf117c039c44c55fac004ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IRT representation for the function. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3abd8adcf7cd85ea146d857bef5e0ac2" name="a3abd8adcf7cd85ea146d857bef5e0ac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3abd8adcf7cd85ea146d857bef5e0ac2">&#9670;&#160;</a></span>IRFunction()</h2>
+<a id="a05f6c38ee26385a37d2ea753f50a2aca" name="a05f6c38ee26385a37d2ea753f50a2aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f6c38ee26385a37d2ea753f50a2aca">&#9670;&#160;</a></span>IRFunction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,19 +143,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">IRFunction::IRFunction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="IRTree__defs_8hpp.html#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&#160;</td>
-          <td class="paramname"><em>ntype</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>funcName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td>
           <td class="paramname"><em>type</em>&#160;</td>
         </tr>
         <tr>
@@ -163,7 +163,6 @@ Private Attributes</h2></td></tr>
 <p>Creates the instance of the irt function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ntype</td><td>- type of the irt node </td></tr>
     <tr><td class="paramname">funcName</td><td>- name of the function </td></tr>
     <tr><td class="paramname">type</td><td>- return type of the function </td></tr>
   </table>
@@ -173,6 +172,42 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2e0453b5d2099980598532299f91320b" name="a2e0453b5d2099980598532299f91320b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e0453b5d2099980598532299f91320b">&#9670;&#160;</a></span>accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRFunction::accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIRVisitor.html">IRVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>accepts the ir visitor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visitor</td><td>- reference to an ir visitor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classIRNode.html#ae5015be942d47b4f3771efb58886aa39">IRNode</a>.</p>
+
+</div>
+</div>
 <a id="a3bfbd4c728628d32097430f27baef089" name="a3bfbd4c728628d32097430f27baef089"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3bfbd4c728628d32097430f27baef089">&#9670;&#160;</a></span>addParameter()</h2>
 
@@ -196,12 +231,11 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a9bad8d236c4d4caf8c0c915030a64943" name="a9bad8d236c4d4caf8c0c915030a64943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bad8d236c4d4caf8c0c915030a64943">&#9670;&#160;</a></span>addStatement()</h2>
+<a id="a4d96c62fec01723e829c1f4f6778a567" name="a4d96c62fec01723e829c1f4f6778a567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d96c62fec01723e829c1f4f6778a567">&#9670;&#160;</a></span>addStatement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,8 +243,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void IRFunction::addStatement </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classIRStatement.html">IRStatement</a> &gt;&#160;</td>
-          <td class="paramname"><em>statement</em></td><td>)</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classIRStmt.html">IRStmt</a> &gt;&#160;</td>
+          <td class="paramname"><em>stmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -219,22 +253,21 @@ Private Attributes</h2></td></tr>
 <p>adds new statement to the body </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">statement</td><td>- pointer to the statement that is being added </td></tr>
+    <tr><td class="paramname">stmt</td><td>- pointer to the statement that is being added </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a0d23687f66b4b12ca4eb0c488c16ccbf" name="a0d23687f66b4b12ca4eb0c488c16ccbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d23687f66b4b12ca4eb0c488c16ccbf">&#9670;&#160;</a></span>eliminateDead()</h2>
+<a id="a6e93e6c4671b735c5cfd0d59b4bdbedf" name="a6e93e6c4671b735c5cfd0d59b4bdbedf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e93e6c4671b735c5cfd0d59b4bdbedf">&#9670;&#160;</a></span>eliminateDeadStmts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void IRFunction::eliminateDead </td>
+          <td class="memname">void IRFunction::eliminateDeadStmts </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>startIdx</em></td><td>)</td>
@@ -250,12 +283,11 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a082caeb6587312f35071c4a41d5c8730" name="a082caeb6587312f35071c4a41d5c8730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a082caeb6587312f35071c4a41d5c8730">&#9670;&#160;</a></span>getBody()</h2>
+<a id="a23eb6d51a107c3df4004a9d70e01ec63" name="a23eb6d51a107c3df4004a9d70e01ec63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23eb6d51a107c3df4004a9d70e01ec63">&#9670;&#160;</a></span>getBody()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +296,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classIRStatement.html">IRStatement</a> &gt; &gt; &amp; IRFunction::getBody </td>
+          <td class="memname">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classIRStmt.html">IRStmt</a> &gt; &gt; &amp; IRFunction::getBody </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -366,8 +398,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aad7da116ce934e7abd3a5fc24cde41b8" name="aad7da116ce934e7abd3a5fc24cde41b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad7da116ce934e7abd3a5fc24cde41b8">&#9670;&#160;</a></span>getType()</h2>
+<a id="ae73119de269923ab3d6d60b28c1f7437" name="ae73119de269923ab3d6d60b28c1f7437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73119de269923ab3d6d60b28c1f7437">&#9670;&#160;</a></span>getType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,7 +408,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a> IRFunction::getType </td>
+          <td class="memname"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> IRFunction::getType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -394,8 +426,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4a69cbf932bfa88fd926f1a2f2a686a" name="ad4a69cbf932bfa88fd926f1a2f2a686a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4a69cbf932bfa88fd926f1a2f2a686a">&#9670;&#160;</a></span>print()</h2>
+<a id="ab9d6b38041d31735c084794c515121b4" name="ab9d6b38041d31735c084794c515121b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d6b38041d31735c084794c515121b4">&#9670;&#160;</a></span>isPredefined()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,31 +436,21 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void IRFunction::print </td>
+          <td class="memname">bool IRFunction::isPredefined </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>prints formatted string of the function node </p>
-<dl class="section note"><dt>Note</dt><dd>debugging purposes </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">offset</td><td>- indentation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Implements <a class="el" href="classIRNode.html#a2f9213b9db78704997096de05ca83a67">IRNode</a>.</p>
+<p>checks if function is predifined </p>
+<dl class="section return"><dt>Returns</dt><dd>true if function is predefined, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -455,7 +477,40 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="adaae70523a8296e77795de0cfb9f43ce" name="adaae70523a8296e77795de0cfb9f43ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaae70523a8296e77795de0cfb9f43ce">&#9670;&#160;</a></span>setPredefined()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRFunction::setPredefined </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isPredefined</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets predifined flag of a function </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isPredefined</td><td>- flag for predefined function </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -482,12 +537,11 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a6cc3a1f08897fe51346ea12656565ec2" name="a6cc3a1f08897fe51346ea12656565ec2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cc3a1f08897fe51346ea12656565ec2">&#9670;&#160;</a></span>setType()</h2>
+<a id="aabcfb7589933666e30e37d6e5fd52e8e" name="aabcfb7589933666e30e37d6e5fd52e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabcfb7589933666e30e37d6e5fd52e8e">&#9670;&#160;</a></span>setType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,8 +552,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void IRFunction::setType </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a>&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td>
+          <td class="paramname"><em>returnType</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -513,17 +567,16 @@ Private Attributes</h2></td></tr>
 <p>initializes the return type of the function </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- return type of the function </td></tr>
+    <tr><td class="paramname">returnType</td><td>- return type of the function </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a999832d8f53a5a4391071d2c89afba5a" name="a999832d8f53a5a4391071d2c89afba5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a999832d8f53a5a4391071d2c89afba5a">&#9670;&#160;</a></span>body</h2>
+<a id="a4576d7884bf117c039c44c55fac004ee" name="a4576d7884bf117c039c44c55fac004ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4576d7884bf117c039c44c55fac004ee">&#9670;&#160;</a></span>body</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +585,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classIRStatement.html">IRStatement</a>&gt; &gt; IRFunction::body</td>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classIRStmt.html">IRStmt</a>&gt; &gt; IRFunction::body</td>
         </tr>
       </table>
   </td>
@@ -594,6 +647,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="adaa13a1d31d466182e94480915a74675" name="adaa13a1d31d466182e94480915a74675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa13a1d31d466182e94480915a74675">&#9670;&#160;</a></span>predefined</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IRFunction::predefined</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>flag if function is predefined </p>
+
+</div>
+</div>
 <a id="a5a7c53171e04c855c2131300774cf155" name="a5a7c53171e04c855c2131300774cf155"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a7c53171e04c855c2131300774cf155">&#9670;&#160;</a></span>requiredMemory</h2>
 
@@ -618,8 +695,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5de8390a315036e2778e1965671149d0" name="a5de8390a315036e2778e1965671149d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5de8390a315036e2778e1965671149d0">&#9670;&#160;</a></span>type</h2>
+<a id="a49ea34bc86c7b552d8f072320a3893e1" name="a49ea34bc86c7b552d8f072320a3893e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ea34bc86c7b552d8f072320a3893e1">&#9670;&#160;</a></span>type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,7 +705,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a> IRFunction::type</td>
+          <td class="memname"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> IRFunction::type</td>
         </tr>
       </table>
   </td>
@@ -643,8 +720,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>minicpp/common/intermediate-representation-tree/<a class="el" href="IRFunction_8hpp.html">IRFunction.hpp</a></li>
-<li>minicpp/common/intermediate-representation-tree/source/<a class="el" href="IRFunction_8cpp.html">IRFunction.cpp</a></li>
+<li>minicpp/common/intermediate-representation-tree/<a class="el" href="ir__function_8hpp.html">ir_function.hpp</a></li>
+<li>minicpp/common/intermediate-representation-tree/source/<a class="el" href="ir__function_8cpp.html">ir_function.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

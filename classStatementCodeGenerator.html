@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: StatementCodeGenerator Class Reference</title>
+<title>MINICPP: StatementCodeGenerator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -41,7 +41,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classStatementCodeGenerator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">StatementCodeGenerator Class Reference</div></div>
@@ -55,45 +54,42 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a184f730616a8c8867688ae3a402ca371" id="r_a184f730616a8c8867688ae3a402ca371"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a184f730616a8c8867688ae3a402ca371">StatementCodeGenerator</a> ()</td></tr>
-<tr class="memdesc:a184f730616a8c8867688ae3a402ca371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the code generator specialized for statements.  <br /></td></tr>
-<tr class="separator:a184f730616a8c8867688ae3a402ca371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07cc524ca5967de142f3636f5b2d22a3" id="r_a07cc524ca5967de142f3636f5b2d22a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a07cc524ca5967de142f3636f5b2d22a3">generateStatement</a> (const <a class="el" href="classIRStatement.html">IRStatement</a> *_statement)</td></tr>
-<tr class="memdesc:a07cc524ca5967de142f3636f5b2d22a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the statement  <br /></td></tr>
-<tr class="separator:a07cc524ca5967de142f3636f5b2d22a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ab52f9220ec9b51d6693d2531fdcb2181" id="r_ab52f9220ec9b51d6693d2531fdcb2181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#ab52f9220ec9b51d6693d2531fdcb2181">generateVariable</a> (const <a class="el" href="classIRVariable.html">IRVariable</a> *_variable)</td></tr>
-<tr class="memdesc:ab52f9220ec9b51d6693d2531fdcb2181"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the variable declaration  <br /></td></tr>
-<tr class="separator:ab52f9220ec9b51d6693d2531fdcb2181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72139812ca364e060b4169b673fd4cf4" id="r_a72139812ca364e060b4169b673fd4cf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a72139812ca364e060b4169b673fd4cf4">generatePrintfStatement</a> (const <a class="el" href="classIRPrintfSt.html">IRPrintfSt</a> *_printf)</td></tr>
-<tr class="memdesc:a72139812ca364e060b4169b673fd4cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the printf statement  <br /></td></tr>
-<tr class="separator:a72139812ca364e060b4169b673fd4cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae088489c286de783c3af262ec040188" id="r_aae088489c286de783c3af262ec040188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#aae088489c286de783c3af262ec040188">generateIfStatement</a> (const <a class="el" href="classIRIfSt.html">IRIfSt</a> *_if)</td></tr>
-<tr class="memdesc:aae088489c286de783c3af262ec040188"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the if-statement  <br /></td></tr>
-<tr class="separator:aae088489c286de783c3af262ec040188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e0be4e70874dac4840512374de97fe3" id="r_a8e0be4e70874dac4840512374de97fe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a8e0be4e70874dac4840512374de97fe3">generateWhileStatement</a> (const <a class="el" href="classIRWhileSt.html">IRWhileSt</a> *_while)</td></tr>
-<tr class="memdesc:a8e0be4e70874dac4840512374de97fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the while-statement  <br /></td></tr>
-<tr class="separator:a8e0be4e70874dac4840512374de97fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e66bbe5443e594c476f2d425251724" id="r_a21e66bbe5443e594c476f2d425251724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a21e66bbe5443e594c476f2d425251724">generateForStatement</a> (const <a class="el" href="classIRForSt.html">IRForSt</a> *_for)</td></tr>
-<tr class="memdesc:a21e66bbe5443e594c476f2d425251724"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the for-statement  <br /></td></tr>
-<tr class="separator:a21e66bbe5443e594c476f2d425251724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5d572efd1fade4b9e92b02f57537b8a" id="r_ab5d572efd1fade4b9e92b02f57537b8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#ab5d572efd1fade4b9e92b02f57537b8a">generateDoWhileStatement</a> (const <a class="el" href="classIRDoWhileSt.html">IRDoWhileSt</a> *_dowhile)</td></tr>
-<tr class="memdesc:ab5d572efd1fade4b9e92b02f57537b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the do-while statement  <br /></td></tr>
-<tr class="separator:ab5d572efd1fade4b9e92b02f57537b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a933ba5baca4cb37e5cc7a573d3c2071b" id="r_a933ba5baca4cb37e5cc7a573d3c2071b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a933ba5baca4cb37e5cc7a573d3c2071b">generateCompoundStatement</a> (const <a class="el" href="classIRCompoundSt.html">IRCompoundSt</a> *_compound)</td></tr>
-<tr class="memdesc:a933ba5baca4cb37e5cc7a573d3c2071b"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the compound statement  <br /></td></tr>
-<tr class="separator:a933ba5baca4cb37e5cc7a573d3c2071b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acecda17ceee1097b1e7dde70e4a27914" id="r_acecda17ceee1097b1e7dde70e4a27914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#acecda17ceee1097b1e7dde70e4a27914">generateAssignmentStatement</a> (const <a class="el" href="classIRAssignSt.html">IRAssignSt</a> *_assignment)</td></tr>
-<tr class="memdesc:acecda17ceee1097b1e7dde70e4a27914"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the assignment statement  <br /></td></tr>
-<tr class="separator:acecda17ceee1097b1e7dde70e4a27914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af35f382ae1d1f61dc831542cf3d6a388" id="r_af35f382ae1d1f61dc831542cf3d6a388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#af35f382ae1d1f61dc831542cf3d6a388">generateReturnStatement</a> (const <a class="el" href="classIRReturnSt.html">IRReturnSt</a> *_return)</td></tr>
-<tr class="memdesc:af35f382ae1d1f61dc831542cf3d6a388"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the return statement  <br /></td></tr>
-<tr class="separator:af35f382ae1d1f61dc831542cf3d6a388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaae51db25cc8346145a437bcf5ac1551" id="r_aaae51db25cc8346145a437bcf5ac1551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#aaae51db25cc8346145a437bcf5ac1551">generateSwitchStatement</a> (const <a class="el" href="classIRSwitchSt.html">IRSwitchSt</a> *_switch)</td></tr>
-<tr class="memdesc:aaae51db25cc8346145a437bcf5ac1551"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the switch-statement  <br /></td></tr>
-<tr class="separator:aaae51db25cc8346145a437bcf5ac1551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abced63f49398003b4d82437fb89b0009" id="r_abced63f49398003b4d82437fb89b0009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#abced63f49398003b4d82437fb89b0009">StatementCodeGenerator</a> ()=default</td></tr>
+<tr class="memdesc:abced63f49398003b4d82437fb89b0009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the code generator specialized for statements.  <br /></td></tr>
+<tr class="separator:abced63f49398003b4d82437fb89b0009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314a2726c52bcca822cbdb0632f0e7b7" id="r_a314a2726c52bcca822cbdb0632f0e7b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a314a2726c52bcca822cbdb0632f0e7b7">generateStmt</a> (const <a class="el" href="classIRStmt.html">IRStmt</a> *stmt)</td></tr>
+<tr class="memdesc:a314a2726c52bcca822cbdb0632f0e7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the statement  <br /></td></tr>
+<tr class="separator:a314a2726c52bcca822cbdb0632f0e7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c172bb2c29ced24676e2a9ec290e6f1" id="r_a5c172bb2c29ced24676e2a9ec290e6f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a5c172bb2c29ced24676e2a9ec290e6f1">generateVariableDeclStmt</a> (const <a class="el" href="classIRVariableDeclStmt.html">IRVariableDeclStmt</a> *variableDecl)</td></tr>
+<tr class="memdesc:a5c172bb2c29ced24676e2a9ec290e6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the variable declaration  <br /></td></tr>
+<tr class="separator:a5c172bb2c29ced24676e2a9ec290e6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32aea12223f5d02204512b1f99021b43" id="r_a32aea12223f5d02204512b1f99021b43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a32aea12223f5d02204512b1f99021b43">generateIfStmt</a> (const <a class="el" href="classIRIfStmt.html">IRIfStmt</a> *ifStmt)</td></tr>
+<tr class="memdesc:a32aea12223f5d02204512b1f99021b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the if-statement  <br /></td></tr>
+<tr class="separator:a32aea12223f5d02204512b1f99021b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e54e132f5d8af67ef9dfc15cb5036f6" id="r_a9e54e132f5d8af67ef9dfc15cb5036f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a9e54e132f5d8af67ef9dfc15cb5036f6">generateWhileStmt</a> (const <a class="el" href="classIRWhileStmt.html">IRWhileStmt</a> *whileStmt)</td></tr>
+<tr class="memdesc:a9e54e132f5d8af67ef9dfc15cb5036f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the while-statement  <br /></td></tr>
+<tr class="separator:a9e54e132f5d8af67ef9dfc15cb5036f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450e6a157a841c6268d7cc4e389dcbd5" id="r_a450e6a157a841c6268d7cc4e389dcbd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a450e6a157a841c6268d7cc4e389dcbd5">generateForStmt</a> (const <a class="el" href="classIRForStmt.html">IRForStmt</a> *forStmt)</td></tr>
+<tr class="memdesc:a450e6a157a841c6268d7cc4e389dcbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the for-statement  <br /></td></tr>
+<tr class="separator:a450e6a157a841c6268d7cc4e389dcbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a02058ea2076a20db455ee8d97386de" id="r_a5a02058ea2076a20db455ee8d97386de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a5a02058ea2076a20db455ee8d97386de">generateDoWhileStmt</a> (const <a class="el" href="classIRDoWhileStmt.html">IRDoWhileStmt</a> *dowhileStmt)</td></tr>
+<tr class="memdesc:a5a02058ea2076a20db455ee8d97386de"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the do-while statement  <br /></td></tr>
+<tr class="separator:a5a02058ea2076a20db455ee8d97386de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18733928e6bcf4adafa3b88096b489fa" id="r_a18733928e6bcf4adafa3b88096b489fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a18733928e6bcf4adafa3b88096b489fa">generateCompoundStmt</a> (const <a class="el" href="classIRCompoundStmt.html">IRCompoundStmt</a> *compoundStmt)</td></tr>
+<tr class="memdesc:a18733928e6bcf4adafa3b88096b489fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the compound statement  <br /></td></tr>
+<tr class="separator:a18733928e6bcf4adafa3b88096b489fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace555db46bac116cce5a23aebad0acb6" id="r_ace555db46bac116cce5a23aebad0acb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#ace555db46bac116cce5a23aebad0acb6">generateAssignStmt</a> (const <a class="el" href="classIRAssignStmt.html">IRAssignStmt</a> *assignStmt)</td></tr>
+<tr class="memdesc:ace555db46bac116cce5a23aebad0acb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the assignment statement  <br /></td></tr>
+<tr class="separator:ace555db46bac116cce5a23aebad0acb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac0e4d29f73ee68785e321058b9646e" id="r_a1ac0e4d29f73ee68785e321058b9646e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a1ac0e4d29f73ee68785e321058b9646e">generateReturnStmt</a> (const <a class="el" href="classIRReturnStmt.html">IRReturnStmt</a> *returnStmt)</td></tr>
+<tr class="memdesc:a1ac0e4d29f73ee68785e321058b9646e"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the return statement  <br /></td></tr>
+<tr class="separator:a1ac0e4d29f73ee68785e321058b9646e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e25ef663c8da9b1fa79ddb5a0a8ceb8" id="r_a1e25ef663c8da9b1fa79ddb5a0a8ceb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a1e25ef663c8da9b1fa79ddb5a0a8ceb8">generateFunctionCallStmt</a> (const <a class="el" href="classIRFunctionCallStmt.html">IRFunctionCallStmt</a> *callStmt)</td></tr>
+<tr class="memdesc:a1e25ef663c8da9b1fa79ddb5a0a8ceb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the function-call statement  <br /></td></tr>
+<tr class="separator:a1e25ef663c8da9b1fa79ddb5a0a8ceb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8bb446e538ba1aadbb6a7ba956be08" id="r_a8f8bb446e538ba1aadbb6a7ba956be08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatementCodeGenerator.html#a8f8bb446e538ba1aadbb6a7ba956be08">generateSwitchStmt</a> (const <a class="el" href="classIRSwitchStmt.html">IRSwitchStmt</a> *switchStmt)</td></tr>
+<tr class="memdesc:a8f8bb446e538ba1aadbb6a7ba956be08"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates asm code for the switch-statement  <br /></td></tr>
+<tr class="separator:a8f8bb446e538ba1aadbb6a7ba956be08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -104,8 +100,8 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>code generator specialized for statements </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a184f730616a8c8867688ae3a402ca371" name="a184f730616a8c8867688ae3a402ca371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a184f730616a8c8867688ae3a402ca371">&#9670;&#160;</a></span>StatementCodeGenerator()</h2>
+<a id="abced63f49398003b4d82437fb89b0009" name="abced63f49398003b4d82437fb89b0009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abced63f49398003b4d82437fb89b0009">&#9670;&#160;</a></span>StatementCodeGenerator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,262 +128,199 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="acecda17ceee1097b1e7dde70e4a27914" name="acecda17ceee1097b1e7dde70e4a27914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acecda17ceee1097b1e7dde70e4a27914">&#9670;&#160;</a></span>generateAssignmentStatement()</h2>
+<a id="ace555db46bac116cce5a23aebad0acb6" name="ace555db46bac116cce5a23aebad0acb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace555db46bac116cce5a23aebad0acb6">&#9670;&#160;</a></span>generateAssignStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generateAssignmentStatement </td>
+          <td class="memname">void StatementCodeGenerator::generateAssignStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRAssignSt.html">IRAssignSt</a> *&#160;</td>
-          <td class="paramname"><em>_assignment</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRAssignStmt.html">IRAssignStmt</a> *&#160;</td>
+          <td class="paramname"><em>assignStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>generates asm code for the assignment statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_assignment</td><td>- const pointer to the irt assignment statement </td></tr>
+    <tr><td class="paramname">assignStmt</td><td>- const pointer to the irt assignment statement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a933ba5baca4cb37e5cc7a573d3c2071b" name="a933ba5baca4cb37e5cc7a573d3c2071b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a933ba5baca4cb37e5cc7a573d3c2071b">&#9670;&#160;</a></span>generateCompoundStatement()</h2>
+<a id="a18733928e6bcf4adafa3b88096b489fa" name="a18733928e6bcf4adafa3b88096b489fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18733928e6bcf4adafa3b88096b489fa">&#9670;&#160;</a></span>generateCompoundStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generateCompoundStatement </td>
+          <td class="memname">void StatementCodeGenerator::generateCompoundStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRCompoundSt.html">IRCompoundSt</a> *&#160;</td>
-          <td class="paramname"><em>_compound</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRCompoundStmt.html">IRCompoundStmt</a> *&#160;</td>
+          <td class="paramname"><em>compoundStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>generates asm code for the compound statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_compound</td><td>- const pointer to the irt compound statement </td></tr>
+    <tr><td class="paramname">compoundStmt</td><td>- const pointer to the irt compound statement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="ab5d572efd1fade4b9e92b02f57537b8a" name="ab5d572efd1fade4b9e92b02f57537b8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5d572efd1fade4b9e92b02f57537b8a">&#9670;&#160;</a></span>generateDoWhileStatement()</h2>
+<a id="a5a02058ea2076a20db455ee8d97386de" name="a5a02058ea2076a20db455ee8d97386de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a02058ea2076a20db455ee8d97386de">&#9670;&#160;</a></span>generateDoWhileStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generateDoWhileStatement </td>
+          <td class="memname">void StatementCodeGenerator::generateDoWhileStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRDoWhileSt.html">IRDoWhileSt</a> *&#160;</td>
-          <td class="paramname"><em>_dowhile</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRDoWhileStmt.html">IRDoWhileStmt</a> *&#160;</td>
+          <td class="paramname"><em>dowhileStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>generates asm code for the do-while statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_dowhile</td><td>- const pointer to the irt do-while statement </td></tr>
+    <tr><td class="paramname">dowhileStmt</td><td>- const pointer to the irt do-while statement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a21e66bbe5443e594c476f2d425251724" name="a21e66bbe5443e594c476f2d425251724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e66bbe5443e594c476f2d425251724">&#9670;&#160;</a></span>generateForStatement()</h2>
+<a id="a450e6a157a841c6268d7cc4e389dcbd5" name="a450e6a157a841c6268d7cc4e389dcbd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450e6a157a841c6268d7cc4e389dcbd5">&#9670;&#160;</a></span>generateForStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generateForStatement </td>
+          <td class="memname">void StatementCodeGenerator::generateForStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRForSt.html">IRForSt</a> *&#160;</td>
-          <td class="paramname"><em>_for</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRForStmt.html">IRForStmt</a> *&#160;</td>
+          <td class="paramname"><em>forStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>generates asm code for the for-statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_for</td><td>- const pointer to the irt for-statement </td></tr>
+    <tr><td class="paramname">forStmt</td><td>- const pointer to the irt for-statement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="aae088489c286de783c3af262ec040188" name="aae088489c286de783c3af262ec040188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae088489c286de783c3af262ec040188">&#9670;&#160;</a></span>generateIfStatement()</h2>
+<a id="a1e25ef663c8da9b1fa79ddb5a0a8ceb8" name="a1e25ef663c8da9b1fa79ddb5a0a8ceb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e25ef663c8da9b1fa79ddb5a0a8ceb8">&#9670;&#160;</a></span>generateFunctionCallStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generateIfStatement </td>
+          <td class="memname">void StatementCodeGenerator::generateFunctionCallStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRIfSt.html">IRIfSt</a> *&#160;</td>
-          <td class="paramname"><em>_if</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRFunctionCallStmt.html">IRFunctionCallStmt</a> *&#160;</td>
+          <td class="paramname"><em>callStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+<p>generates asm code for the function-call statement </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callStmt</td><td>- const pointer to the irt function-call statement </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a32aea12223f5d02204512b1f99021b43" name="a32aea12223f5d02204512b1f99021b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32aea12223f5d02204512b1f99021b43">&#9670;&#160;</a></span>generateIfStmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatementCodeGenerator::generateIfStmt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIRIfStmt.html">IRIfStmt</a> *&#160;</td>
+          <td class="paramname"><em>ifStmt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 <p>generates asm code for the if-statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_if</td><td>- const pointer to the irt if-statement </td></tr>
+    <tr><td class="paramname">ifStmt</td><td>- const pointer to the irt if-statement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a72139812ca364e060b4169b673fd4cf4" name="a72139812ca364e060b4169b673fd4cf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72139812ca364e060b4169b673fd4cf4">&#9670;&#160;</a></span>generatePrintfStatement()</h2>
+<a id="a1ac0e4d29f73ee68785e321058b9646e" name="a1ac0e4d29f73ee68785e321058b9646e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac0e4d29f73ee68785e321058b9646e">&#9670;&#160;</a></span>generateReturnStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generatePrintfStatement </td>
+          <td class="memname">void StatementCodeGenerator::generateReturnStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRPrintfSt.html">IRPrintfSt</a> *&#160;</td>
-          <td class="paramname"><em>_printf</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRReturnStmt.html">IRReturnStmt</a> *&#160;</td>
+          <td class="paramname"><em>returnStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>generates asm code for the printf statement </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_printf</td><td>- const pointer to the irt printf statement </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="af35f382ae1d1f61dc831542cf3d6a388" name="af35f382ae1d1f61dc831542cf3d6a388"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af35f382ae1d1f61dc831542cf3d6a388">&#9670;&#160;</a></span>generateReturnStatement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void StatementCodeGenerator::generateReturnStatement </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRReturnSt.html">IRReturnSt</a> *&#160;</td>
-          <td class="paramname"><em>_return</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>generates asm code for the return statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_return</td><td>- const pointer to the irt return statement </td></tr>
+    <tr><td class="paramname">returnStmt</td><td>- const pointer to the irt return statement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a07cc524ca5967de142f3636f5b2d22a3" name="a07cc524ca5967de142f3636f5b2d22a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07cc524ca5967de142f3636f5b2d22a3">&#9670;&#160;</a></span>generateStatement()</h2>
+<a id="a314a2726c52bcca822cbdb0632f0e7b7" name="a314a2726c52bcca822cbdb0632f0e7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314a2726c52bcca822cbdb0632f0e7b7">&#9670;&#160;</a></span>generateStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generateStatement </td>
+          <td class="memname">void StatementCodeGenerator::generateStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRStatement.html">IRStatement</a> *&#160;</td>
-          <td class="paramname"><em>_statement</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRStmt.html">IRStmt</a> *&#160;</td>
+          <td class="paramname"><em>stmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -396,116 +329,88 @@ Private Attributes</h2></td></tr>
 <p>generates asm code for the statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_statement</td><td>- const pointer to the irt statement </td></tr>
+    <tr><td class="paramname">stmt</td><td>- const pointer to the irt statement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="aaae51db25cc8346145a437bcf5ac1551" name="aaae51db25cc8346145a437bcf5ac1551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaae51db25cc8346145a437bcf5ac1551">&#9670;&#160;</a></span>generateSwitchStatement()</h2>
+<a id="a8f8bb446e538ba1aadbb6a7ba956be08" name="a8f8bb446e538ba1aadbb6a7ba956be08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8bb446e538ba1aadbb6a7ba956be08">&#9670;&#160;</a></span>generateSwitchStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generateSwitchStatement </td>
+          <td class="memname">void StatementCodeGenerator::generateSwitchStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRSwitchSt.html">IRSwitchSt</a> *&#160;</td>
-          <td class="paramname"><em>_switch</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRSwitchStmt.html">IRSwitchStmt</a> *&#160;</td>
+          <td class="paramname"><em>switchStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>generates asm code for the switch-statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_switch</td><td>- const pointer to the irt switch-statement </td></tr>
+    <tr><td class="paramname">switchStmt</td><td>- const pointer to the irt switch-statement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="ab52f9220ec9b51d6693d2531fdcb2181" name="ab52f9220ec9b51d6693d2531fdcb2181"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab52f9220ec9b51d6693d2531fdcb2181">&#9670;&#160;</a></span>generateVariable()</h2>
+<a id="a5c172bb2c29ced24676e2a9ec290e6f1" name="a5c172bb2c29ced24676e2a9ec290e6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c172bb2c29ced24676e2a9ec290e6f1">&#9670;&#160;</a></span>generateVariableDeclStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generateVariable </td>
+          <td class="memname">void StatementCodeGenerator::generateVariableDeclStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRVariable.html">IRVariable</a> *&#160;</td>
-          <td class="paramname"><em>_variable</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRVariableDeclStmt.html">IRVariableDeclStmt</a> *&#160;</td>
+          <td class="paramname"><em>variableDecl</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>generates asm code for the variable declaration </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_variable</td><td>- const pointer to the irt variable declaration </td></tr>
+    <tr><td class="paramname">variableDecl</td><td>- const pointer to the irt variable declaration </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a8e0be4e70874dac4840512374de97fe3" name="a8e0be4e70874dac4840512374de97fe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e0be4e70874dac4840512374de97fe3">&#9670;&#160;</a></span>generateWhileStatement()</h2>
+<a id="a9e54e132f5d8af67ef9dfc15cb5036f6" name="a9e54e132f5d8af67ef9dfc15cb5036f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e54e132f5d8af67ef9dfc15cb5036f6">&#9670;&#160;</a></span>generateWhileStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StatementCodeGenerator::generateWhileStatement </td>
+          <td class="memname">void StatementCodeGenerator::generateWhileStmt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRWhileSt.html">IRWhileSt</a> *&#160;</td>
-          <td class="paramname"><em>_while</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIRWhileStmt.html">IRWhileStmt</a> *&#160;</td>
+          <td class="paramname"><em>whileStmt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>generates asm code for the while-statement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_while</td><td>- const pointer to the irt while-statement </td></tr>
+    <tr><td class="paramname">whileStmt</td><td>- const pointer to the irt while-statement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>

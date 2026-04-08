@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: ASTFunction Class Reference</title>
+<title>MINICPP: ASTFunction Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -50,36 +50,48 @@ $(function() {
 <p>AST node representing function node.  
  <a href="classASTFunction.html#details">More...</a></p>
 
-<p><code>#include &lt;ASTFunction.hpp&gt;</code></p>
+<p><code>#include &lt;ast_function.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a78fb785f8de91cfc765b128d9822c9e6" id="r_a78fb785f8de91cfc765b128d9822c9e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a78fb785f8de91cfc765b128d9822c9e6">ASTFunction</a> (const <a class="el" href="structToken.html">Token</a> &amp;<a class="el" href="classASTNode.html#a99c0fc8e2fe4c99fbe85d0d195cfab57">token</a>, <a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> ntype, <a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a> <a class="el" href="classASTFunction.html#a8f245b23cf284b6566103961a616e4d6">type</a>=<a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32a245d11a3709454cc69b2de7911073d57">Types::NO_TYPE</a>)</td></tr>
-<tr class="memdesc:a78fb785f8de91cfc765b128d9822c9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the ast function.  <br /></td></tr>
-<tr class="separator:a78fb785f8de91cfc765b128d9822c9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab917c247fd98f655f9f6ac1dfc1f3ed9" id="r_ab917c247fd98f655f9f6ac1dfc1f3ed9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#ab917c247fd98f655f9f6ac1dfc1f3ed9">ASTFunction</a> (const <a class="el" href="structToken.html">Token</a> &amp;<a class="el" href="classASTNode.html#a99c0fc8e2fe4c99fbe85d0d195cfab57">token</a>, <a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="el" href="classASTFunction.html#a075e61596535c59de86f8b7f0c7df053">type</a>=<a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57">Type::NO_TYPE</a>)</td></tr>
+<tr class="memdesc:ab917c247fd98f655f9f6ac1dfc1f3ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the ast function.  <br /></td></tr>
+<tr class="separator:ab917c247fd98f655f9f6ac1dfc1f3ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299caa68612842029f812376639b709a" id="r_a299caa68612842029f812376639b709a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTParameter.html">ASTParameter</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a299caa68612842029f812376639b709a">getParameters</a> () const noexcept</td></tr>
 <tr class="memdesc:a299caa68612842029f812376639b709a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the function parameters  <br /></td></tr>
 <tr class="separator:a299caa68612842029f812376639b709a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a752b1a3ae754e7bcdece1612dc0a299f" id="r_a752b1a3ae754e7bcdece1612dc0a299f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTStatement.html">ASTStatement</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a752b1a3ae754e7bcdece1612dc0a299f">getBody</a> () const noexcept</td></tr>
-<tr class="memdesc:a752b1a3ae754e7bcdece1612dc0a299f"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the body of the function  <br /></td></tr>
-<tr class="separator:a752b1a3ae754e7bcdece1612dc0a299f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3260b794706953b37884943eaa6b20" id="r_a2e3260b794706953b37884943eaa6b20"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTStmt.html">ASTStmt</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a2e3260b794706953b37884943eaa6b20">getBody</a> () const noexcept</td></tr>
+<tr class="memdesc:a2e3260b794706953b37884943eaa6b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the body of the function  <br /></td></tr>
+<tr class="separator:a2e3260b794706953b37884943eaa6b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45682088e6d3d1b45b46749a924074a" id="r_ac45682088e6d3d1b45b46749a924074a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#ac45682088e6d3d1b45b46749a924074a">addParameter</a> (std::unique_ptr&lt; <a class="el" href="classASTParameter.html">ASTParameter</a> &gt; parameter)</td></tr>
 <tr class="memdesc:ac45682088e6d3d1b45b46749a924074a"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds new parameter to parameters  <br /></td></tr>
 <tr class="separator:ac45682088e6d3d1b45b46749a924074a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca582ca51d69d57eda8c846c536c0ac0" id="r_aca582ca51d69d57eda8c846c536c0ac0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#aca582ca51d69d57eda8c846c536c0ac0">addStatement</a> (std::unique_ptr&lt; <a class="el" href="classASTStatement.html">ASTStatement</a> &gt; statement)</td></tr>
-<tr class="memdesc:aca582ca51d69d57eda8c846c536c0ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds new statement to body  <br /></td></tr>
-<tr class="separator:aca582ca51d69d57eda8c846c536c0ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae355b528b431e105da89ae034f214378" id="r_ae355b528b431e105da89ae034f214378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#ae355b528b431e105da89ae034f214378">getType</a> () const noexcept</td></tr>
-<tr class="memdesc:ae355b528b431e105da89ae034f214378"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for return type  <br /></td></tr>
-<tr class="separator:ae355b528b431e105da89ae034f214378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cbb8d3536365c41e837d8dd83ad2eb" id="r_a42cbb8d3536365c41e837d8dd83ad2eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a42cbb8d3536365c41e837d8dd83ad2eb">addStatement</a> (std::unique_ptr&lt; <a class="el" href="classASTStmt.html">ASTStmt</a> &gt; statement)</td></tr>
+<tr class="memdesc:a42cbb8d3536365c41e837d8dd83ad2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds new statement to body  <br /></td></tr>
+<tr class="separator:a42cbb8d3536365c41e837d8dd83ad2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a61bdcd8b24e7338c5bb4d53580addc" id="r_a3a61bdcd8b24e7338c5bb4d53580addc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a3a61bdcd8b24e7338c5bb4d53580addc">setPredefined</a> (bool <a class="el" href="classASTFunction.html#a67cf88e079937de4269b2ee8d3012175">isPredefined</a>) noexcept</td></tr>
+<tr class="memdesc:a3a61bdcd8b24e7338c5bb4d53580addc"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets predifined flag of a function  <br /></td></tr>
+<tr class="separator:a3a61bdcd8b24e7338c5bb4d53580addc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c8f9dcaf884d4427fe1961d23510cf" id="r_a39c8f9dcaf884d4427fe1961d23510cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a39c8f9dcaf884d4427fe1961d23510cf">getType</a> () const noexcept</td></tr>
+<tr class="memdesc:a39c8f9dcaf884d4427fe1961d23510cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for return type  <br /></td></tr>
+<tr class="separator:a39c8f9dcaf884d4427fe1961d23510cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cf88e079937de4269b2ee8d3012175" id="r_a67cf88e079937de4269b2ee8d3012175"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a67cf88e079937de4269b2ee8d3012175">isPredefined</a> () const noexcept</td></tr>
+<tr class="memdesc:a67cf88e079937de4269b2ee8d3012175"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if function is predifined  <br /></td></tr>
+<tr class="separator:a67cf88e079937de4269b2ee8d3012175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe1775544be45265b2da4f46681dd163" id="r_abe1775544be45265b2da4f46681dd163"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#abe1775544be45265b2da4f46681dd163">getParameterCount</a> () const noexcept</td></tr>
 <tr class="memdesc:abe1775544be45265b2da4f46681dd163"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the amount of parameters  <br /></td></tr>
 <tr class="separator:abe1775544be45265b2da4f46681dd163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77482cbd94d64358341a76e1a31d4960" id="r_a77482cbd94d64358341a76e1a31d4960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a77482cbd94d64358341a76e1a31d4960">print</a> (size_t offset) const override</td></tr>
-<tr class="memdesc:a77482cbd94d64358341a76e1a31d4960"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints function node  <br /></td></tr>
-<tr class="separator:a77482cbd94d64358341a76e1a31d4960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f006efba244247d8c4f1da3c2197242" id="r_a6f006efba244247d8c4f1da3c2197242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a6f006efba244247d8c4f1da3c2197242">setAlwaysReturns</a> (bool returns) noexcept</td></tr>
+<tr class="memdesc:a6f006efba244247d8c4f1da3c2197242"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the always return flag  <br /></td></tr>
+<tr class="separator:a6f006efba244247d8c4f1da3c2197242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160c2433a6417c13a237b6b6c6064ee1" id="r_a160c2433a6417c13a237b6b6c6064ee1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a160c2433a6417c13a237b6b6c6064ee1">alwaysReturnsValue</a> () const noexcept</td></tr>
+<tr class="memdesc:a160c2433a6417c13a237b6b6c6064ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the always returns flag  <br /></td></tr>
+<tr class="separator:a160c2433a6417c13a237b6b6c6064ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb78a9938cc500799a7ab56fa57bf3f" id="r_a2cb78a9938cc500799a7ab56fa57bf3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a2cb78a9938cc500799a7ab56fa57bf3f">accept</a> (<a class="el" href="classASTVisitor.html">ASTVisitor</a> &amp;visitor) override</td></tr>
+<tr class="memdesc:a2cb78a9938cc500799a7ab56fa57bf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">accepts the ast visitor  <br /></td></tr>
+<tr class="separator:a2cb78a9938cc500799a7ab56fa57bf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classASTNode"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classASTNode')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classASTNode.html">ASTNode</a></td></tr>
-<tr class="memitem:acf99dd3860649c905d7caf9e4a4f6817 inherit pub_methods_classASTNode" id="r_acf99dd3860649c905d7caf9e4a4f6817"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#acf99dd3860649c905d7caf9e4a4f6817">ASTNode</a> (const <a class="el" href="structToken.html">Token</a> <a class="el" href="classASTNode.html#a99c0fc8e2fe4c99fbe85d0d195cfab57">token</a>, <a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> ntype)</td></tr>
+<tr class="memitem:acf99dd3860649c905d7caf9e4a4f6817 inherit pub_methods_classASTNode" id="r_acf99dd3860649c905d7caf9e4a4f6817"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#acf99dd3860649c905d7caf9e4a4f6817">ASTNode</a> (const <a class="el" href="structToken.html">Token</a> <a class="el" href="classASTNode.html#a99c0fc8e2fe4c99fbe85d0d195cfab57">token</a>, <a class="el" href="ast__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> ntype)</td></tr>
 <tr class="memdesc:acf99dd3860649c905d7caf9e4a4f6817 inherit pub_methods_classASTNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the ast node.  <br /></td></tr>
 <tr class="separator:acf99dd3860649c905d7caf9e4a4f6817 inherit pub_methods_classASTNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a691f37fa038eb183280effeb8ba4e inherit pub_methods_classASTNode" id="r_a41a691f37fa038eb183280effeb8ba4e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a41a691f37fa038eb183280effeb8ba4e">~ASTNode</a> ()</td></tr>
@@ -88,30 +100,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a25ce82a6eb32e128ac18b7e15876d865 inherit pub_methods_classASTNode" id="r_a25ce82a6eb32e128ac18b7e15876d865"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structToken.html">Token</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a25ce82a6eb32e128ac18b7e15876d865">getToken</a> () const noexcept</td></tr>
 <tr class="memdesc:a25ce82a6eb32e128ac18b7e15876d865 inherit pub_methods_classASTNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for a token of the node  <br /></td></tr>
 <tr class="separator:a25ce82a6eb32e128ac18b7e15876d865 inherit pub_methods_classASTNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7faaa16fd5b8e8cd91cc79a17bcab6f7 inherit pub_methods_classASTNode" id="r_a7faaa16fd5b8e8cd91cc79a17bcab6f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a7faaa16fd5b8e8cd91cc79a17bcab6f7">getNodeType</a> () const noexcept</td></tr>
+<tr class="memitem:a7faaa16fd5b8e8cd91cc79a17bcab6f7 inherit pub_methods_classASTNode" id="r_a7faaa16fd5b8e8cd91cc79a17bcab6f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ast__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a7faaa16fd5b8e8cd91cc79a17bcab6f7">getNodeType</a> () const noexcept</td></tr>
 <tr class="memdesc:a7faaa16fd5b8e8cd91cc79a17bcab6f7 inherit pub_methods_classASTNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the node type  <br /></td></tr>
 <tr class="separator:a7faaa16fd5b8e8cd91cc79a17bcab6f7 inherit pub_methods_classASTNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89d671041463b81a029cd7ca2eaeffc7 inherit pub_methods_classASTNode" id="r_a89d671041463b81a029cd7ca2eaeffc7"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a89d671041463b81a029cd7ca2eaeffc7">toString</a> () const</td></tr>
-<tr class="memdesc:a89d671041463b81a029cd7ca2eaeffc7 inherit pub_methods_classASTNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper for displaying the content of the node  <br /></td></tr>
-<tr class="separator:a89d671041463b81a029cd7ca2eaeffc7 inherit pub_methods_classASTNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8f245b23cf284b6566103961a616e4d6" id="r_a8f245b23cf284b6566103961a616e4d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a8f245b23cf284b6566103961a616e4d6">type</a></td></tr>
-<tr class="memdesc:a8f245b23cf284b6566103961a616e4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">return type of the function  <br /></td></tr>
-<tr class="separator:a8f245b23cf284b6566103961a616e4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075e61596535c59de86f8b7f0c7df053" id="r_a075e61596535c59de86f8b7f0c7df053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a075e61596535c59de86f8b7f0c7df053">type</a></td></tr>
+<tr class="memdesc:a075e61596535c59de86f8b7f0c7df053"><td class="mdescLeft">&#160;</td><td class="mdescRight">return type of the function  <br /></td></tr>
+<tr class="separator:a075e61596535c59de86f8b7f0c7df053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1dbd6d617473a9ebcd49c8702651284" id="r_af1dbd6d617473a9ebcd49c8702651284"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#af1dbd6d617473a9ebcd49c8702651284">predefined</a></td></tr>
+<tr class="memdesc:af1dbd6d617473a9ebcd49c8702651284"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if function is predefined  <br /></td></tr>
+<tr class="separator:af1dbd6d617473a9ebcd49c8702651284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c3c8155a6c1bbb0ce25e6d5bc0ffeb" id="r_ab9c3c8155a6c1bbb0ce25e6d5bc0ffeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#ab9c3c8155a6c1bbb0ce25e6d5bc0ffeb">alwaysReturns</a></td></tr>
+<tr class="memdesc:ab9c3c8155a6c1bbb0ce25e6d5bc0ffeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if function always returns, only for functions that return value  <br /></td></tr>
+<tr class="separator:ab9c3c8155a6c1bbb0ce25e6d5bc0ffeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f53967252d76f76d687ec005ee363bf" id="r_a8f53967252d76f76d687ec005ee363bf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTParameter.html">ASTParameter</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a8f53967252d76f76d687ec005ee363bf">parameters</a></td></tr>
 <tr class="memdesc:a8f53967252d76f76d687ec005ee363bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of pointers to parameters of the function  <br /></td></tr>
 <tr class="separator:a8f53967252d76f76d687ec005ee363bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad750b2fa940213d217aac34cbeb23ca2" id="r_ad750b2fa940213d217aac34cbeb23ca2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTStatement.html">ASTStatement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#ad750b2fa940213d217aac34cbeb23ca2">body</a></td></tr>
-<tr class="memdesc:ad750b2fa940213d217aac34cbeb23ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of pointers to statements of the body  <br /></td></tr>
-<tr class="separator:ad750b2fa940213d217aac34cbeb23ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175355e1f244c9af69a0af7841119be3" id="r_a175355e1f244c9af69a0af7841119be3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTStmt.html">ASTStmt</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTFunction.html#a175355e1f244c9af69a0af7841119be3">body</a></td></tr>
+<tr class="memdesc:a175355e1f244c9af69a0af7841119be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of pointers to statements of the body  <br /></td></tr>
+<tr class="separator:a175355e1f244c9af69a0af7841119be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>AST node representing function node. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a78fb785f8de91cfc765b128d9822c9e6" name="a78fb785f8de91cfc765b128d9822c9e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78fb785f8de91cfc765b128d9822c9e6">&#9670;&#160;</a></span>ASTFunction()</h2>
+<a id="ab917c247fd98f655f9f6ac1dfc1f3ed9" name="ab917c247fd98f655f9f6ac1dfc1f3ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab917c247fd98f655f9f6ac1dfc1f3ed9">&#9670;&#160;</a></span>ASTFunction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,14 +140,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>&#160;</td>
-          <td class="paramname"><em>ntype</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a>&#160;</td>
-          <td class="paramname"><em>type</em> = <code><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32a245d11a3709454cc69b2de7911073d57">Types::NO_TYPE</a></code>&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57">Type::NO_TYPE</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -146,7 +155,6 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">token</td><td>- const reference to the token </td></tr>
-    <tr><td class="paramname">ntype</td><td>- type of the ast node </td></tr>
     <tr><td class="paramname">type</td><td>- return type of the function </td></tr>
   </table>
   </dd>
@@ -155,6 +163,42 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2cb78a9938cc500799a7ab56fa57bf3f" name="a2cb78a9938cc500799a7ab56fa57bf3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb78a9938cc500799a7ab56fa57bf3f">&#9670;&#160;</a></span>accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ASTFunction::accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classASTVisitor.html">ASTVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>accepts the ast visitor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visitor</td><td>- reference to an ast visitor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classASTNode.html#a9301aa1407df3e9f1b50a89a28d092d2">ASTNode</a>.</p>
+
+</div>
+</div>
 <a id="ac45682088e6d3d1b45b46749a924074a" name="ac45682088e6d3d1b45b46749a924074a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac45682088e6d3d1b45b46749a924074a">&#9670;&#160;</a></span>addParameter()</h2>
 
@@ -178,12 +222,11 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="aca582ca51d69d57eda8c846c536c0ac0" name="aca582ca51d69d57eda8c846c536c0ac0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca582ca51d69d57eda8c846c536c0ac0">&#9670;&#160;</a></span>addStatement()</h2>
+<a id="a42cbb8d3536365c41e837d8dd83ad2eb" name="a42cbb8d3536365c41e837d8dd83ad2eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42cbb8d3536365c41e837d8dd83ad2eb">&#9670;&#160;</a></span>addStatement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +234,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void ASTFunction::addStatement </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classASTStatement.html">ASTStatement</a> &gt;&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classASTStmt.html">ASTStmt</a> &gt;&#160;</td>
           <td class="paramname"><em>statement</em></td><td>)</td>
           <td></td>
         </tr>
@@ -205,12 +248,11 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="a752b1a3ae754e7bcdece1612dc0a299f" name="a752b1a3ae754e7bcdece1612dc0a299f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a752b1a3ae754e7bcdece1612dc0a299f">&#9670;&#160;</a></span>getBody()</h2>
+<a id="a160c2433a6417c13a237b6b6c6064ee1" name="a160c2433a6417c13a237b6b6c6064ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160c2433a6417c13a237b6b6c6064ee1">&#9670;&#160;</a></span>alwaysReturnsValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +261,35 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTStatement.html">ASTStatement</a> &gt; &gt; &amp; ASTFunction::getBody </td>
+          <td class="memname">bool ASTFunction::alwaysReturnsValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the always returns flag </p>
+<dl class="section return"><dt>Returns</dt><dd>true if function always returns value, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a2e3260b794706953b37884943eaa6b20" name="a2e3260b794706953b37884943eaa6b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3260b794706953b37884943eaa6b20">&#9670;&#160;</a></span>getBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classASTStmt.html">ASTStmt</a> &gt; &gt; &amp; ASTFunction::getBody </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -293,8 +363,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae355b528b431e105da89ae034f214378" name="ae355b528b431e105da89ae034f214378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae355b528b431e105da89ae034f214378">&#9670;&#160;</a></span>getType()</h2>
+<a id="a39c8f9dcaf884d4427fe1961d23510cf" name="a39c8f9dcaf884d4427fe1961d23510cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c8f9dcaf884d4427fe1961d23510cf">&#9670;&#160;</a></span>getType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +373,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a> ASTFunction::getType </td>
+          <td class="memname"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> ASTFunction::getType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -321,8 +391,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a77482cbd94d64358341a76e1a31d4960" name="a77482cbd94d64358341a76e1a31d4960"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77482cbd94d64358341a76e1a31d4960">&#9670;&#160;</a></span>print()</h2>
+<a id="a67cf88e079937de4269b2ee8d3012175" name="a67cf88e079937de4269b2ee8d3012175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67cf88e079937de4269b2ee8d3012175">&#9670;&#160;</a></span>isPredefined()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,37 +401,26 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ASTFunction::print </td>
+          <td class="memname">bool ASTFunction::isPredefined </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>prints function node </p>
-<dl class="section note"><dt>Note</dt><dd>debugging purposes </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">offset</td><td>- indentation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Implements <a class="el" href="classASTNode.html#af6d3bb87f636677edb27c946d74cec33">ASTNode</a>.</p>
+<p>checks if function is predifined </p>
+<dl class="section return"><dt>Returns</dt><dd>true if function is predefined, false otherwise </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad750b2fa940213d217aac34cbeb23ca2" name="ad750b2fa940213d217aac34cbeb23ca2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad750b2fa940213d217aac34cbeb23ca2">&#9670;&#160;</a></span>body</h2>
+<a id="a6f006efba244247d8c4f1da3c2197242" name="a6f006efba244247d8c4f1da3c2197242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f006efba244247d8c4f1da3c2197242">&#9670;&#160;</a></span>setAlwaysReturns()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,7 +429,100 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classASTStatement.html">ASTStatement</a>&gt; &gt; ASTFunction::body</td>
+          <td class="memname">void ASTFunction::setAlwaysReturns </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>returns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the always return flag </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">returns</td><td>- flag whether function returns or not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a61bdcd8b24e7338c5bb4d53580addc" name="a3a61bdcd8b24e7338c5bb4d53580addc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a61bdcd8b24e7338c5bb4d53580addc">&#9670;&#160;</a></span>setPredefined()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ASTFunction::setPredefined </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isPredefined</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets predifined flag of a function </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isPredefined</td><td>- flag for predefined function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab9c3c8155a6c1bbb0ce25e6d5bc0ffeb" name="ab9c3c8155a6c1bbb0ce25e6d5bc0ffeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c3c8155a6c1bbb0ce25e6d5bc0ffeb">&#9670;&#160;</a></span>alwaysReturns</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ASTFunction::alwaysReturns</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>flag if function always returns, only for functions that return value </p>
+
+</div>
+</div>
+<a id="a175355e1f244c9af69a0af7841119be3" name="a175355e1f244c9af69a0af7841119be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175355e1f244c9af69a0af7841119be3">&#9670;&#160;</a></span>body</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classASTStmt.html">ASTStmt</a>&gt; &gt; ASTFunction::body</td>
         </tr>
       </table>
   </td>
@@ -408,8 +560,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f245b23cf284b6566103961a616e4d6" name="a8f245b23cf284b6566103961a616e4d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f245b23cf284b6566103961a616e4d6">&#9670;&#160;</a></span>type</h2>
+<a id="af1dbd6d617473a9ebcd49c8702651284" name="af1dbd6d617473a9ebcd49c8702651284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1dbd6d617473a9ebcd49c8702651284">&#9670;&#160;</a></span>predefined</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +570,31 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defs_8hpp.html#a8aaeba5aed18516d10d61fe3139c9d32">Types</a> ASTFunction::type</td>
+          <td class="memname">bool ASTFunction::predefined</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>flag if function is predefined </p>
+
+</div>
+</div>
+<a id="a075e61596535c59de86f8b7f0c7df053" name="a075e61596535c59de86f8b7f0c7df053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075e61596535c59de86f8b7f0c7df053">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> ASTFunction::type</td>
         </tr>
       </table>
   </td>
@@ -433,8 +609,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>minicpp/common/abstract-syntax-tree/<a class="el" href="ASTFunction_8hpp.html">ASTFunction.hpp</a></li>
-<li>minicpp/common/abstract-syntax-tree/source/<a class="el" href="ASTFunction_8cpp.html">ASTFunction.cpp</a></li>
+<li>minicpp/common/abstract-syntax-tree/<a class="el" href="ast__function_8hpp.html">ast_function.hpp</a></li>
+<li>minicpp/common/abstract-syntax-tree/source/<a class="el" href="ast__function_8cpp.html">ast_function.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

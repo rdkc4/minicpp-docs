@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: Minicpp</title>
+<title>MINICPP: Minicpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -42,7 +42,7 @@ $(function() {
   <div class="headertitle"><div class="title">Minicpp </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_minicpp_2mainpage"></a>Mini C compiler written in C++23, targeting x86_64 architecture.</p>
+<div class="textblock"><p><a class="anchor" id="md_minicpp_2mainpage"></a>Mini compiler written in C++23, targeting x86_64 architecture.</p>
 <h2><a class="anchor" id="autotoc_md1"></a>
 Getting Started</h2>
 <h3><a class="anchor" id="autotoc_md2"></a>
@@ -53,7 +53,7 @@ Prerequisites</h3>
 <li><b>Pthread Support</b> (the build uses the -pthread flag)</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md3"></a>
-Optional (for running unit tests)</h3>
+Unit Tests (optional)</h3>
 <ul>
 <li><b>Google Test (gtest)</b> for running unit tests.</li>
 </ul>
@@ -63,29 +63,22 @@ Installation</h3>
 <li>Clone the repository: <div class="fragment"><div class="line">git clone https://github.com/rdkc4/minicpp.git</div>
 <div class="line">cd minicpp</div>
 </div><!-- fragment --></li>
-<li>Build the project: <div class="fragment"><div class="line">make</div>
-</div><!-- fragment --> or (recommended, to use all available cores for a faster build): <div class="fragment"><div class="line">make -j$(nproc)</div>
+<li>Build the project: <div class="fragment"><div class="line">make [-j$(nproc)]</div>
 </div><!-- fragment --></li>
 </ol>
 <h3><a class="anchor" id="autotoc_md5"></a>
 Usage</h3>
-<p>To compile a source file, run: </p><div class="fragment"><div class="line">./minicpp &lt;source-file&gt; # Default output file: output.s</div>
-</div><!-- fragment --><p> Alternatively, you can specify a custom output file: </p><div class="fragment"><div class="line">./minicpp &lt;source-file&gt; &lt;output-file&gt;</div>
-</div><!-- fragment --><p> Where:</p><ul>
-<li>&lt;source-file&gt; - file you want to compile (e.g. testfile.txt)</li>
-<li>&lt;output-file&gt; - optional output file name (defaults to output.s if not provided)</li>
+<p>To compile a source file, run: </p><div class="fragment"><div class="line">./minicpp &lt;source-file&gt; [-o &lt;output-file&gt;] [--dump-ast --dump-ir -s]</div>
+</div><!-- fragment --><p>Where:</p><ul>
+<li>&lt;source-file&gt; - file you want to compile (e.g. testfile.mcpp)</li>
+<li>-o &lt;output-file&gt; - output file name, no extension (optional, defaults to "output" if not provided)</li>
+<li>&ndash;dump-ast - dumps the structure of the abstract syntax tree (optional)</li>
+<li>&ndash;dump-ir - dumps the structure of the intermediate representation (optional)</li>
+<li>-s - stop compilation after generating .s file</li>
 </ul>
-<p>Creating an executable: </p><div class="fragment"><div class="line"># assemble to object file</div>
-<div class="line">as output.s -o output.o</div>
-<div class="line"># link to create executable</div>
-<div class="line">ld output.o -o executable</div>
-</div><!-- fragment --><p>Running the executable: </p><div class="fragment"><div class="line"># run the executable</div>
-<div class="line">./executable</div>
-<div class="line"># print return value</div>
-<div class="line">echo $?</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
-Unit Tests (optional)</h3>
-<p>Running the tests: </p><div class="fragment"><div class="line">make test</div>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Unit Tests</h3>
+<p>Running the tests: </p><div class="fragment"><div class="line">make test [-j$(nproc)]</div>
 </div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

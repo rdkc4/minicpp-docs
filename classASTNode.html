@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: ASTNode Class Reference</title>
+<title>MINICPP: ASTNode Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -50,11 +50,11 @@ $(function() {
 <p>parent of AST nodes of all types  
  <a href="classASTNode.html#details">More...</a></p>
 
-<p><code>#include &lt;ASTNode.hpp&gt;</code></p>
+<p><code>#include &lt;ast_node.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acf99dd3860649c905d7caf9e4a4f6817" id="r_acf99dd3860649c905d7caf9e4a4f6817"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#acf99dd3860649c905d7caf9e4a4f6817">ASTNode</a> (const <a class="el" href="structToken.html">Token</a> <a class="el" href="classASTNode.html#a99c0fc8e2fe4c99fbe85d0d195cfab57">token</a>, <a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> ntype)</td></tr>
+<tr class="memitem:acf99dd3860649c905d7caf9e4a4f6817" id="r_acf99dd3860649c905d7caf9e4a4f6817"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#acf99dd3860649c905d7caf9e4a4f6817">ASTNode</a> (const <a class="el" href="structToken.html">Token</a> <a class="el" href="classASTNode.html#a99c0fc8e2fe4c99fbe85d0d195cfab57">token</a>, <a class="el" href="ast__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> ntype)</td></tr>
 <tr class="memdesc:acf99dd3860649c905d7caf9e4a4f6817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the ast node.  <br /></td></tr>
 <tr class="separator:acf99dd3860649c905d7caf9e4a4f6817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a691f37fa038eb183280effeb8ba4e" id="r_a41a691f37fa038eb183280effeb8ba4e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a41a691f37fa038eb183280effeb8ba4e">~ASTNode</a> ()</td></tr>
@@ -63,22 +63,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a25ce82a6eb32e128ac18b7e15876d865" id="r_a25ce82a6eb32e128ac18b7e15876d865"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structToken.html">Token</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a25ce82a6eb32e128ac18b7e15876d865">getToken</a> () const noexcept</td></tr>
 <tr class="memdesc:a25ce82a6eb32e128ac18b7e15876d865"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for a token of the node  <br /></td></tr>
 <tr class="separator:a25ce82a6eb32e128ac18b7e15876d865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7faaa16fd5b8e8cd91cc79a17bcab6f7" id="r_a7faaa16fd5b8e8cd91cc79a17bcab6f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a7faaa16fd5b8e8cd91cc79a17bcab6f7">getNodeType</a> () const noexcept</td></tr>
+<tr class="memitem:a7faaa16fd5b8e8cd91cc79a17bcab6f7" id="r_a7faaa16fd5b8e8cd91cc79a17bcab6f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ast__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a7faaa16fd5b8e8cd91cc79a17bcab6f7">getNodeType</a> () const noexcept</td></tr>
 <tr class="memdesc:a7faaa16fd5b8e8cd91cc79a17bcab6f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the node type  <br /></td></tr>
 <tr class="separator:a7faaa16fd5b8e8cd91cc79a17bcab6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89d671041463b81a029cd7ca2eaeffc7" id="r_a89d671041463b81a029cd7ca2eaeffc7"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a89d671041463b81a029cd7ca2eaeffc7">toString</a> () const</td></tr>
-<tr class="memdesc:a89d671041463b81a029cd7ca2eaeffc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper for displaying the content of the node  <br /></td></tr>
-<tr class="separator:a89d671041463b81a029cd7ca2eaeffc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6d3bb87f636677edb27c946d74cec33" id="r_af6d3bb87f636677edb27c946d74cec33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#af6d3bb87f636677edb27c946d74cec33">print</a> (size_t offset) const =0</td></tr>
-<tr class="memdesc:af6d3bb87f636677edb27c946d74cec33"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints ast node  <br /></td></tr>
-<tr class="separator:af6d3bb87f636677edb27c946d74cec33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9301aa1407df3e9f1b50a89a28d092d2" id="r_a9301aa1407df3e9f1b50a89a28d092d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a9301aa1407df3e9f1b50a89a28d092d2">accept</a> (<a class="el" href="classASTVisitor.html">ASTVisitor</a> &amp;visitor)=0</td></tr>
+<tr class="memdesc:a9301aa1407df3e9f1b50a89a28d092d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">accepts the ast visitor  <br /></td></tr>
+<tr class="separator:a9301aa1407df3e9f1b50a89a28d092d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a99c0fc8e2fe4c99fbe85d0d195cfab57" id="r_a99c0fc8e2fe4c99fbe85d0d195cfab57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structToken.html">Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a99c0fc8e2fe4c99fbe85d0d195cfab57">token</a></td></tr>
 <tr class="memdesc:a99c0fc8e2fe4c99fbe85d0d195cfab57"><td class="mdescLeft">&#160;</td><td class="mdescRight">token describing the ast node  <br /></td></tr>
 <tr class="separator:a99c0fc8e2fe4c99fbe85d0d195cfab57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7471f9c1f31a92a92cfa3993e8e97791" id="r_a7471f9c1f31a92a92cfa3993e8e97791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a7471f9c1f31a92a92cfa3993e8e97791">nodeType</a></td></tr>
+<tr class="memitem:a7471f9c1f31a92a92cfa3993e8e97791" id="r_a7471f9c1f31a92a92cfa3993e8e97791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ast__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classASTNode.html#a7471f9c1f31a92a92cfa3993e8e97791">nodeType</a></td></tr>
 <tr class="memdesc:a7471f9c1f31a92a92cfa3993e8e97791"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the ast node  <br /></td></tr>
 <tr class="separator:a7471f9c1f31a92a92cfa3993e8e97791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -100,7 +97,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="ast__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>&#160;</td>
           <td class="paramname"><em>ntype</em>&#160;</td>
         </tr>
         <tr>
@@ -150,6 +147,42 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9301aa1407df3e9f1b50a89a28d092d2" name="a9301aa1407df3e9f1b50a89a28d092d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9301aa1407df3e9f1b50a89a28d092d2">&#9670;&#160;</a></span>accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ASTNode::accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classASTVisitor.html">ASTVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>accepts the ast visitor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visitor</td><td>- reference to an ast visitor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classASTAssignStmt.html#ad0d4dce5b9aa877981f14e7d2d77c89d">ASTAssignStmt</a>, <a class="el" href="classASTBinaryExpr.html#af94c6f93d6b79a1eaebe2ee7e03882fe">ASTBinaryExpr</a>, <a class="el" href="classASTCaseStmt.html#a61329bc539a2007438751dacf6d8ae95">ASTCaseStmt</a>, <a class="el" href="classASTCompoundStmt.html#a9d86c4103ca3d8cd8e327c468083727b">ASTCompoundStmt</a>, <a class="el" href="classASTDefaultStmt.html#adf7361da39cbbdbea72e66e818228f78">ASTDefaultStmt</a>, <a class="el" href="classASTDoWhileStmt.html#a26b4bf18ddbf27a9cb1cecfc436a6873">ASTDoWhileStmt</a>, <a class="el" href="classASTForStmt.html#a019d9f3c1b9b9548dd2d06d2eb38f7f7">ASTForStmt</a>, <a class="el" href="classASTFunction.html#a2cb78a9938cc500799a7ab56fa57bf3f">ASTFunction</a>, <a class="el" href="classASTFunctionCallExpr.html#a591239e9fe1596b52914683f4f8106e5">ASTFunctionCallExpr</a>, <a class="el" href="classASTFunctionCallStmt.html#a03420b3cad51c72b39ef28dc197ec595">ASTFunctionCallStmt</a>, <a class="el" href="classASTIdExpr.html#a903e01db0b691e31dd432903576522d3">ASTIdExpr</a>, <a class="el" href="classASTIfStmt.html#a59364b6a416b7f9f114e173f52c5e0d6">ASTIfStmt</a>, <a class="el" href="classASTIncludeDir.html#aea2f31bd6ae66ce06ea4cd115cda9398">ASTIncludeDir</a>, <a class="el" href="classASTLiteralExpr.html#a634692fe3cdb9f242798bfe9c0928d62">ASTLiteralExpr</a>, <a class="el" href="classASTParameter.html#a2328e8cd2d248caf325a13f60045dd2a">ASTParameter</a>, <a class="el" href="classASTProgram.html#aa436cb024ffcc9d2596ce21db495922d">ASTProgram</a>, <a class="el" href="classASTReturnStmt.html#a50d6ae635ce0642488d0de6645fc84f4">ASTReturnStmt</a>, <a class="el" href="classASTSwitchBlockStmt.html#aab5f91366e7cac09709b97a6e4bf3aa0">ASTSwitchBlockStmt</a>, <a class="el" href="classASTSwitchStmt.html#a2fda69260aa27e23bca30fd5ad319b18">ASTSwitchStmt</a>, <a class="el" href="classASTVariableDeclStmt.html#a80940e936333eec211d815b276685cc0">ASTVariableDeclStmt</a>, <a class="el" href="classASTWhileStmt.html#ae33530747330d2815d008727e26228c9">ASTWhileStmt</a>, <a class="el" href="classASTDir.html#aa24d97cada5794353560e4ea09fafe26">ASTDir</a>, <a class="el" href="classASTExpr.html#aa6ea38b874b592dc6d29b27d7bbe5b2e">ASTExpr</a>, and <a class="el" href="classASTStmt.html#a9bbb778b96d98f70253b4d6fa877fdfe">ASTStmt</a>.</p>
+
+</div>
+</div>
 <a id="a7faaa16fd5b8e8cd91cc79a17bcab6f7" name="a7faaa16fd5b8e8cd91cc79a17bcab6f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7faaa16fd5b8e8cd91cc79a17bcab6f7">&#9670;&#160;</a></span>getNodeType()</h2>
 
@@ -160,7 +193,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> ASTNode::getNodeType </td>
+          <td class="memname"><a class="el" href="ast__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> ASTNode::getNodeType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -206,65 +239,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af6d3bb87f636677edb27c946d74cec33" name="af6d3bb87f636677edb27c946d74cec33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6d3bb87f636677edb27c946d74cec33">&#9670;&#160;</a></span>print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ASTNode::print </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>offset</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>prints ast node </p>
-<dl class="section note"><dt>Note</dt><dd>debugging purposes </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">offset</td><td>- indentation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Implemented in <a class="el" href="classASTAssignSt.html#a98aa348696adc47843385202c8e2b197">ASTAssignSt</a>, <a class="el" href="classASTBinaryExpression.html#adef61606203e9cf3d5fe82fc6961e3c1">ASTBinaryExpression</a>, <a class="el" href="classASTCaseSt.html#a2bc2a6c988c1acbd8cc2882ca5a3608f">ASTCaseSt</a>, <a class="el" href="classASTCompoundSt.html#ad164c4fff69dd9fc74a49674487424d6">ASTCompoundSt</a>, <a class="el" href="classASTDefaultSt.html#af6af49edd73f9602c4b27fb8dfb9fa38">ASTDefaultSt</a>, <a class="el" href="classASTDoWhileSt.html#ac6835784f8b00b59ed73ba1e675dd8a1">ASTDoWhileSt</a>, <a class="el" href="classASTForSt.html#af765f10d3d99351c4434b3ecfa12e5e4">ASTForSt</a>, <a class="el" href="classASTFunction.html#a77482cbd94d64358341a76e1a31d4960">ASTFunction</a>, <a class="el" href="classASTFunctionCall.html#abb989a8998335a30986be3ffc86694e6">ASTFunctionCall</a>, <a class="el" href="classASTId.html#af6f4c8205b046f983b82df0094fffbf3">ASTId</a>, <a class="el" href="classASTIfSt.html#accaa9440f477563e798d4a776d90983b">ASTIfSt</a>, <a class="el" href="classASTLiteral.html#a68702c954afc40777f227650aebdd8d1">ASTLiteral</a>, <a class="el" href="classASTParameter.html#ad9d2866ba31bd72aa84cf891ae47dd2d">ASTParameter</a>, <a class="el" href="classASTPrintfSt.html#a4ae85054bfa30ada04d2cc63676c66de">ASTPrintfSt</a>, <a class="el" href="classASTProgram.html#a5893ee5f2c5ea1241bec21b53d7c2aac">ASTProgram</a>, <a class="el" href="classASTReturnSt.html#aedc401d8db1c7ee9f2067539216b8190">ASTReturnSt</a>, <a class="el" href="classASTSwitchBlock.html#a0184308d24192959b1643106f74df096">ASTSwitchBlock</a>, <a class="el" href="classASTSwitchSt.html#a2f625b56f68afa8e2bf9b806f026f341">ASTSwitchSt</a>, <a class="el" href="classASTVariable.html#aa5e39ad546c3f490d54285307b6ec1d1">ASTVariable</a>, <a class="el" href="classASTWhileSt.html#a6b8ed9e783fa1acc86813cbd1061954d">ASTWhileSt</a>, <a class="el" href="classASTExpression.html#a4928b31de548f95da0e4aa68d3dfc7c5">ASTExpression</a>, and <a class="el" href="classASTStatement.html#a76988bed130071310ea482a1eb73f8ae">ASTStatement</a>.</p>
-
-</div>
-</div>
-<a id="a89d671041463b81a029cd7ca2eaeffc7" name="a89d671041463b81a029cd7ca2eaeffc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89d671041463b81a029cd7ca2eaeffc7">&#9670;&#160;</a></span>toString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string ASTNode::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>helper for displaying the content of the node </p>
-<dl class="section note"><dt>Note</dt><dd>debugging purposes </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>formatted content of the node </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a7471f9c1f31a92a92cfa3993e8e97791" name="a7471f9c1f31a92a92cfa3993e8e97791"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7471f9c1f31a92a92cfa3993e8e97791">&#9670;&#160;</a></span>nodeType</h2>
@@ -276,7 +250,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ASTree__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> ASTNode::nodeType</td>
+          <td class="memname"><a class="el" href="ast__defs_8hpp.html#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> ASTNode::nodeType</td>
         </tr>
       </table>
   </td>
@@ -315,8 +289,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>minicpp/common/abstract-syntax-tree/<a class="el" href="ASTNode_8hpp.html">ASTNode.hpp</a></li>
-<li>minicpp/common/abstract-syntax-tree/source/<a class="el" href="ASTNode_8cpp.html">ASTNode.cpp</a></li>
+<li>minicpp/common/abstract-syntax-tree/<a class="el" href="ast__node_8hpp.html">ast_node.hpp</a></li>
+<li>minicpp/common/abstract-syntax-tree/source/<a class="el" href="ast__node_8cpp.html">ast_node.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

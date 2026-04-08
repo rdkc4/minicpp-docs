@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: minicpp/optimization/constant_folding.hpp File Reference</title>
+<title>MINICPP: minicpp/optimization/constant_folding.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -50,10 +50,14 @@ $(function() {
   <div class="headertitle"><div class="title">constant_folding.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;format&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;<a class="el" href="defs_8hpp.html">../common/defs/defs.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ast__binary__expr_8hpp.html">../common/abstract-syntax-tree/ast_binary_expr.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__expr_8hpp.html">../common/intermediate-representation-tree/ir_expr.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ir__literal__expr_8hpp.html">../common/intermediate-representation-tree/ir_literal_expr.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -63,21 +67,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceOptimization" id="r_namespaceOptimization"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOptimization.html">Optimization</a></td></tr>
-<tr class="memdesc:namespaceOptimization"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module for optimizations of the IRT. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceConstantFolding" id="r_namespaceConstantFolding"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceConstantFolding.html">ConstantFolding</a></td></tr>
-<tr class="memdesc:namespaceConstantFolding"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module for computing the operations that can be resolved in a compile-time. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceOptimization_1_1ConstantFolding" id="r_namespaceOptimization_1_1ConstantFolding"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOptimization_1_1ConstantFolding.html">Optimization::ConstantFolding</a></td></tr>
+<tr class="memdesc:namespaceOptimization_1_1ConstantFolding"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module for computing the operations that can be resolved in a compile-time. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceOptimization" id="r_namespaceOptimization"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOptimization.html">Optimization</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a02c8468ccd67b8948056f6061295523b" id="r_a02c8468ccd67b8948056f6061295523b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a02c8468ccd67b8948056f6061295523b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">MergeResult</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOptimization_1_1ConstantFolding.html#a02c8468ccd67b8948056f6061295523b">Optimization::ConstantFolding::mergeValues</a> (T l, T r, <a class="el" href="defs_8hpp.html#abc7ab5c65d618af3ff99c6e2d372c1f7">Operators</a> op, size_t line, size_t column)</td></tr>
-<tr class="memdesc:a02c8468ccd67b8948056f6061295523b"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs operation on two constants  <br /></td></tr>
-<tr class="separator:a02c8468ccd67b8948056f6061295523b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea71b17c86bb58e2b2e7a65c5d691986" id="r_aea71b17c86bb58e2b2e7a65c5d691986"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aea71b17c86bb58e2b2e7a65c5d691986"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">MergeResult</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOptimization_1_1ConstantFolding.html#aea71b17c86bb58e2b2e7a65c5d691986">Optimization::ConstantFolding::mergeValues</a> (T l, T r, <a class="el" href="defs_8hpp.html#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> op, size_t line, size_t column)</td></tr>
+<tr class="memdesc:aea71b17c86bb58e2b2e7a65c5d691986"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs operation on two constants  <br /></td></tr>
+<tr class="separator:aea71b17c86bb58e2b2e7a65c5d691986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23eccc8ce113d24720f6ed4e183e743" id="r_ae23eccc8ce113d24720f6ed4e183e743"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae23eccc8ce113d24720f6ed4e183e743"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOptimization_1_1ConstantFolding.html#ae23eccc8ce113d24720f6ed4e183e743">Optimization::ConstantFolding::getOperandValue</a> (const <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> *operand)</td></tr>
+<tr class="memdesc:ae23eccc8ce113d24720f6ed4e183e743"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to get operand value  <br /></td></tr>
+<tr class="separator:ae23eccc8ce113d24720f6ed4e183e743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f71636027f2a7190ce7ff0170e8646" id="r_a82f71636027f2a7190ce7ff0170e8646"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a82f71636027f2a7190ce7ff0170e8646"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">MergeResult</a>&lt; std::unique_ptr&lt; <a class="el" href="classIRExpr.html">IRExpr</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOptimization_1_1ConstantFolding.html#a82f71636027f2a7190ce7ff0170e8646">Optimization::ConstantFolding::mergeLiterals</a> (const <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> *leftOperand, const <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> *rightOperand, const <a class="el" href="classASTBinaryExpr.html">ASTBinaryExpr</a> *binExp)</td></tr>
+<tr class="memdesc:a82f71636027f2a7190ce7ff0170e8646"><td class="mdescLeft">&#160;</td><td class="mdescRight">merges literals of the expression  <br /></td></tr>
+<tr class="separator:a82f71636027f2a7190ce7ff0170e8646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

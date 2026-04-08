@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: ScopeManager Class Reference</title>
+<title>MINICPP: ScopeManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -72,12 +72,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a708a8755063648f894b5cab44a8e3c13" id="r_a708a8755063648f894b5cab44a8e3c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSymbol.html">Symbol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopeManager.html#a708a8755063648f894b5cab44a8e3c13">getSymbol</a> (const std::string &amp;name) const</td></tr>
 <tr class="memdesc:a708a8755063648f894b5cab44a8e3c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the symbol from the symbol table  <br /></td></tr>
 <tr class="separator:a708a8755063648f894b5cab44a8e3c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dbd426367509273629cfbbf45cbe713" id="r_a5dbd426367509273629cfbbf45cbe713"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopeManager.html#a5dbd426367509273629cfbbf45cbe713">lookupSymbol</a> (const std::string &amp;name, std::initializer_list&lt; <a class="el" href="defs_8hpp.html#a95fa734fba226d1f7ab63c7765497b8e">Kinds</a> &gt; kind) const</td></tr>
-<tr class="memdesc:a5dbd426367509273629cfbbf45cbe713"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if symbol exists in a table  <br /></td></tr>
-<tr class="separator:a5dbd426367509273629cfbbf45cbe713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a316a2b9fc946e3a47311b7a5f12d9bb6" id="r_a316a2b9fc946e3a47311b7a5f12d9bb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopeManager.html#a316a2b9fc946e3a47311b7a5f12d9bb6">printSymbolTable</a> () const</td></tr>
-<tr class="memdesc:a316a2b9fc946e3a47311b7a5f12d9bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints all symbols from the symbol table  <br /></td></tr>
-<tr class="separator:a316a2b9fc946e3a47311b7a5f12d9bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02107178b5c81c2b0bcf1b6ec0bc8362" id="r_a02107178b5c81c2b0bcf1b6ec0bc8362"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classSymbol.html">Symbol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopeManager.html#a02107178b5c81c2b0bcf1b6ec0bc8362">lookupSymbol</a> (const std::string &amp;name, std::initializer_list&lt; <a class="el" href="defs_8hpp.html#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a> &gt; kinds) const</td></tr>
+<tr class="memdesc:a02107178b5c81c2b0bcf1b6ec0bc8362"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if symbol exists in a table  <br /></td></tr>
+<tr class="separator:a02107178b5c81c2b0bcf1b6ec0bc8362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c973595fbe787f30f6e47d551c2d94" id="r_a76c973595fbe787f30f6e47d551c2d94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScopeManager.html#a76c973595fbe787f30f6e47d551c2d94">clear</a> () noexcept</td></tr>
+<tr class="memdesc:a76c973595fbe787f30f6e47d551c2d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">clears all scopes  <br /></td></tr>
+<tr class="separator:a76c973595fbe787f30f6e47d551c2d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -118,6 +118,33 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a76c973595fbe787f30f6e47d551c2d94" name="a76c973595fbe787f30f6e47d551c2d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c973595fbe787f30f6e47d551c2d94">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScopeManager::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>clears all scopes </p>
+
+</div>
+</div>
 <a id="a708a8755063648f894b5cab44a8e3c13" name="a708a8755063648f894b5cab44a8e3c13"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a708a8755063648f894b5cab44a8e3c13">&#9670;&#160;</a></span>getSymbol()</h2>
 
@@ -173,14 +200,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5dbd426367509273629cfbbf45cbe713" name="a5dbd426367509273629cfbbf45cbe713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dbd426367509273629cfbbf45cbe713">&#9670;&#160;</a></span>lookupSymbol()</h2>
+<a id="a02107178b5c81c2b0bcf1b6ec0bc8362" name="a02107178b5c81c2b0bcf1b6ec0bc8362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02107178b5c81c2b0bcf1b6ec0bc8362">&#9670;&#160;</a></span>lookupSymbol()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool ScopeManager::lookupSymbol </td>
+          <td class="memname">const <a class="el" href="classSymbol.html">Symbol</a> * ScopeManager::lookupSymbol </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -188,8 +215,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="defs_8hpp.html#a95fa734fba226d1f7ab63c7765497b8e">Kinds</a> &gt;&#160;</td>
-          <td class="paramname"><em>kind</em>&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="defs_8hpp.html#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a> &gt;&#160;</td>
+          <td class="paramname"><em>kinds</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -203,11 +230,11 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>- name of the symbol </td></tr>
-    <tr><td class="paramname">kind</td><td>- list of kinds that symbol is allowed to have </td></tr>
+    <tr><td class="paramname">kinds</td><td>- list of kinds that symbol is allowed to have </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if symbol of given name and kind exists, false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>const pointer to symbol if symbol exists, nullptr otherwise </dd></dl>
 
 </div>
 </div>
@@ -227,28 +254,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>removing a stack when scope is exited and clearing symbols that are expired </p>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="a316a2b9fc946e3a47311b7a5f12d9bb6" name="a316a2b9fc946e3a47311b7a5f12d9bb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a316a2b9fc946e3a47311b7a5f12d9bb6">&#9670;&#160;</a></span>printSymbolTable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ScopeManager::printSymbolTable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>prints all symbols from the symbol table </p>
-<dl class="section note"><dt>Note</dt><dd>debugging purposes </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -268,7 +273,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>adding an empty stack when new scope is entered </p>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>

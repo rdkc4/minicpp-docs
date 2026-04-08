@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: CodeGenerator Class Reference</title>
+<title>MINICPP: CodeGenerator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -57,12 +57,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af71e60b00df93ff4cd98f81e58a64da0" id="r_af71e60b00df93ff4cd98f81e58a64da0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeGenerator.html#af71e60b00df93ff4cd98f81e58a64da0">CodeGenerator</a> (const std::string &amp;filePath)</td></tr>
-<tr class="memdesc:af71e60b00df93ff4cd98f81e58a64da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the code generator.  <br /></td></tr>
-<tr class="separator:af71e60b00df93ff4cd98f81e58a64da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642585bacc41ffb6073d013601400710" id="r_a642585bacc41ffb6073d013601400710"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeGenerator.html#a642585bacc41ffb6073d013601400710">generateCode</a> (const <a class="el" href="classIRProgram.html">IRProgram</a> *_root)</td></tr>
-<tr class="memdesc:a642585bacc41ffb6073d013601400710"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts the code generation of the program  <br /></td></tr>
-<tr class="separator:a642585bacc41ffb6073d013601400710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af281e0148d09b4df4899ae2a7d910296" id="r_af281e0148d09b4df4899ae2a7d910296"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeGenerator.html#af281e0148d09b4df4899ae2a7d910296">CodeGenerator</a> (const std::string &amp;filePath, <a class="el" href="classThreadPool.html">ThreadPool</a> &amp;<a class="el" href="classCodeGenerator.html#ac097fe1eba6264b6991328794678fddc">threadPool</a>)</td></tr>
+<tr class="memdesc:af281e0148d09b4df4899ae2a7d910296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the code generator.  <br /></td></tr>
+<tr class="separator:af281e0148d09b4df4899ae2a7d910296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bf2eec98ebafcc0665e32443e929a4" id="r_a71bf2eec98ebafcc0665e32443e929a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeGenerator.html#a71bf2eec98ebafcc0665e32443e929a4">generateProgram</a> (const <a class="el" href="classIRProgram.html">IRProgram</a> *program)</td></tr>
+<tr class="memdesc:a71bf2eec98ebafcc0665e32443e929a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts the code generation of the program  <br /></td></tr>
+<tr class="separator:a71bf2eec98ebafcc0665e32443e929a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3943aac652ef5da0fb6c5304f2eea1" id="r_a1a3943aac652ef5da0fb6c5304f2eea1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeGenerator.html#a1a3943aac652ef5da0fb6c5304f2eea1">successful</a> () const noexcept</td></tr>
 <tr class="memdesc:a1a3943aac652ef5da0fb6c5304f2eea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the code generation was successful  <br /></td></tr>
 <tr class="separator:a1a3943aac652ef5da0fb6c5304f2eea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -75,12 +75,15 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a03d8d8fa4cd179005c37cb2995000902" id="r_a03d8d8fa4cd179005c37cb2995000902"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeGenerator.html#a03d8d8fa4cd179005c37cb2995000902">writeCode</a> (const <a class="el" href="classIRProgram.html">IRProgram</a> *_root)</td></tr>
-<tr class="memdesc:a03d8d8fa4cd179005c37cb2995000902"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes generated code into asm file  <br /></td></tr>
-<tr class="separator:a03d8d8fa4cd179005c37cb2995000902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f9fc7ac413d1bd9fd1b40f2a48b4e2" id="r_a66f9fc7ac413d1bd9fd1b40f2a48b4e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeGenerator.html#a66f9fc7ac413d1bd9fd1b40f2a48b4e2">writeCode</a> (const <a class="el" href="classIRProgram.html">IRProgram</a> *program)</td></tr>
+<tr class="memdesc:a66f9fc7ac413d1bd9fd1b40f2a48b4e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes generated code into asm file  <br /></td></tr>
+<tr class="separator:a66f9fc7ac413d1bd9fd1b40f2a48b4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ac097fe1eba6264b6991328794678fddc" id="r_ac097fe1eba6264b6991328794678fddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool.html">ThreadPool</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeGenerator.html#ac097fe1eba6264b6991328794678fddc">threadPool</a></td></tr>
+<tr class="memdesc:ac097fe1eba6264b6991328794678fddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">thread pool for parallel function code generation  <br /></td></tr>
+<tr class="separator:ac097fe1eba6264b6991328794678fddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19c5fc8011524e8fbe6e3abce4f1351c" id="r_a19c5fc8011524e8fbe6e3abce4f1351c"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCodeGenerator.html#a19c5fc8011524e8fbe6e3abce4f1351c">outputPath</a></td></tr>
 <tr class="memdesc:a19c5fc8011524e8fbe6e3abce4f1351c"><td class="mdescLeft">&#160;</td><td class="mdescRight">output file path (.s)  <br /></td></tr>
 <tr class="separator:a19c5fc8011524e8fbe6e3abce4f1351c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,13 +102,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generates the code for the x86-64 asm </p>
-<p>$ as -o output.o output.s</p>
-<p>$ ld -o output output.o</p>
-<p>$ ./output</p>
-<p>$ echo $? - prints return value </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af71e60b00df93ff4cd98f81e58a64da0" name="af71e60b00df93ff4cd98f81e58a64da0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af71e60b00df93ff4cd98f81e58a64da0">&#9670;&#160;</a></span>CodeGenerator()</h2>
+<a id="af281e0148d09b4df4899ae2a7d910296" name="af281e0148d09b4df4899ae2a7d910296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af281e0148d09b4df4899ae2a7d910296">&#9670;&#160;</a></span>CodeGenerator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,8 +113,18 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">CodeGenerator::CodeGenerator </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classThreadPool.html">ThreadPool</a> &amp;&#160;</td>
+          <td class="paramname"><em>threadPool</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -124,6 +133,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filePath</td><td>- path for the output asm file </td></tr>
+    <tr><td class="paramname">threadPool</td><td>- reference to a thread pool </td></tr>
   </table>
   </dd>
 </dl>
@@ -131,17 +141,17 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a642585bacc41ffb6073d013601400710" name="a642585bacc41ffb6073d013601400710"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a642585bacc41ffb6073d013601400710">&#9670;&#160;</a></span>generateCode()</h2>
+<a id="a71bf2eec98ebafcc0665e32443e929a4" name="a71bf2eec98ebafcc0665e32443e929a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71bf2eec98ebafcc0665e32443e929a4">&#9670;&#160;</a></span>generateProgram()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CodeGenerator::generateCode </td>
+          <td class="memname">void CodeGenerator::generateProgram </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIRProgram.html">IRProgram</a> *&#160;</td>
-          <td class="paramname"><em>_root</em></td><td>)</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -150,11 +160,10 @@ Static Private Attributes</h2></td></tr>
 <p>starts the code generation of the program </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_root</td><td>- const pointer to the irt program </td></tr>
+    <tr><td class="paramname">program</td><td>- const pointer to the irt program </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -214,8 +223,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a03d8d8fa4cd179005c37cb2995000902" name="a03d8d8fa4cd179005c37cb2995000902"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03d8d8fa4cd179005c37cb2995000902">&#9670;&#160;</a></span>writeCode()</h2>
+<a id="a66f9fc7ac413d1bd9fd1b40f2a48b4e2" name="a66f9fc7ac413d1bd9fd1b40f2a48b4e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f9fc7ac413d1bd9fd1b40f2a48b4e2">&#9670;&#160;</a></span>writeCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +236,7 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">void CodeGenerator::writeCode </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIRProgram.html">IRProgram</a> *&#160;</td>
-          <td class="paramname"><em>_root</em></td><td>)</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -241,11 +250,10 @@ Static Private Attributes</h2></td></tr>
 <p>writes generated code into asm file </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_root</td><td>- const pointer to the root of the program </td></tr>
+    <tr><td class="paramname">program</td><td>- const pointer to the root of the program </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -343,6 +351,30 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>output file path (.s) </p>
+
+</div>
+</div>
+<a id="ac097fe1eba6264b6991328794678fddc" name="ac097fe1eba6264b6991328794678fddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac097fe1eba6264b6991328794678fddc">&#9670;&#160;</a></span>threadPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classThreadPool.html">ThreadPool</a>&amp; CodeGenerator::threadPool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>thread pool for parallel function code generation </p>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Minicpp: Member List</title>
+<title>MINICPP: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Minicpp
+   <div id="projectname">MINICPP
    </div>
   </td>
  </tr>
@@ -45,18 +45,17 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classExpressionParser.html">ExpressionParser</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#aff05f19fe17a4f772368b0166b44c99e">_operator</a>(bool isRel=false)</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#a7c505363e722d80783a42601b7ad2df5">argument</a>(ASTFunctionCall *_functionCall)</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#aca2ef1607a07539af5aec7d2904b9122">expression</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#a05102d853c79f0250086ec7c0a24d90e">ExpressionParser</a>(TokenConsumer &amp;consumer)</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#ad0df35fc6ba708374160bf8830d76f6b">functionCall</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#abb5b253a4d4dd8935cd110102dee75a8">getPrecedence</a>(const std::string &amp;op) const noexcept</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#af66298431f824748ab08f446e0ff4517">id</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#aa0cfe8fb614429ac3a9c1a49caf60790">literal</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#a7f72aad3dcd752ff302dbb218094ab8d">numericalExpression</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#ad203aa5f3ba2eaaeee89fef1fdbe9c1c">relationalExpression</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#aeb08a817900ded25a50f53d88e508013">rpnToTree</a>(std::stack&lt; std::unique_ptr&lt; ASTExpression &gt; &gt; &amp;rpn, std::unique_ptr&lt; ASTExpression &gt; &amp;root) const</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#a69df76539e9e39beb789483feae11b22">tokenConsumer</a></td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#a05102d853c79f0250086ec7c0a24d90e">ExpressionParser</a>(TokenConsumer &amp;consumer)</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#a25936080f499bf6fc3360eb2e01395b6">getPrecedence</a>(std::string_view op) const noexcept</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#a2570813b9ec16a07e314073b72f240e1">parseArguments</a>(ASTFunctionCallExpr *callExpr)</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#ad3a2a54187e69af884655dc79b4101b0">parseArithmeticExpr</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#a0d831b63623b0d7fbec89913cc6a5ef6">parseExpr</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#a4f5d399ffa3577ccea5ffdc6be4877f4">parseFunctionCallExpr</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#a7c99c183427ccb2aaaa1256e3ae6f86f">parseIdExpr</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#a6052c9e76703bdb84d0232851b2184d0">parseLiteralExpr</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#a3ce78eeb69096b6f739ab2439df3009c">parseOperator</a>(bool isRel=false)</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classExpressionParser.html#aab5dfea63a40a00274486bf1c5c26dbf">parseRelationalExpr</a>()</td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExpressionParser.html#a69df76539e9e39beb789483feae11b22">tokenConsumer</a></td><td class="entry"><a class="el" href="classExpressionParser.html">ExpressionParser</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
