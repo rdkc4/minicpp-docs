@@ -125,30 +125,36 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a1612b1a47b54bc0d375290aebb684c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles operators, updates position  <br /></td></tr>
 <tr class="memitem:aa98a3ecea0cda4eb7fab59b2101e2676" id="r_aa98a3ecea0cda4eb7fab59b2101e2676"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa98a3ecea0cda4eb7fab59b2101e2676">handleRelationalOperator</a> ()</td></tr>
 <tr class="memdesc:aa98a3ecea0cda4eb7fab59b2101e2676"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles relational operator  <br /></td></tr>
+<tr class="memitem:abbddad2bfcecb48256837df4516f70ae" id="r_abbddad2bfcecb48256837df4516f70ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbddad2bfcecb48256837df4516f70ae">handleLogicalOperator</a> ()</td></tr>
+<tr class="memdesc:abbddad2bfcecb48256837df4516f70ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles logical operator  <br /></td></tr>
 <tr class="memitem:aed6da0413ea1006d1081245c4e7a02b7" id="r_aed6da0413ea1006d1081245c4e7a02b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed6da0413ea1006d1081245c4e7a02b7">handleAssignOperator</a> ()</td></tr>
 <tr class="memdesc:aed6da0413ea1006d1081245c4e7a02b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles assign operator  <br /></td></tr>
 <tr class="memitem:a27b2a50aadb5244f588071c1be5e0395" id="r_a27b2a50aadb5244f588071c1be5e0395"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27b2a50aadb5244f588071c1be5e0395">handleBitwiseOperator</a> ()</td></tr>
 <tr class="memdesc:a27b2a50aadb5244f588071c1be5e0395"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles bitwise operator  <br /></td></tr>
 <tr class="memitem:a4b7391f69928ddea28b9dce16f7af6d0" id="r_a4b7391f69928ddea28b9dce16f7af6d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b7391f69928ddea28b9dce16f7af6d0">handleArithmeticOperator</a> ()</td></tr>
 <tr class="memdesc:a4b7391f69928ddea28b9dce16f7af6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles arithmetic operator  <br /></td></tr>
+<tr class="memitem:aaaac816fb5df354b3365cc3dc65d7a46" id="r_aaaac816fb5df354b3365cc3dc65d7a46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaac816fb5df354b3365cc3dc65d7a46">emitOperator</a> (<a class="el" href="structLexeme.html">Lexeme</a> operatorLexeme, <a class="el" href="token__defs_8hpp.html#ac68159df472771bc9a86ab903af0d7a4">GeneralTokenType</a> gtype=<a class="el" href="token__defs_8hpp.html#ac68159df472771bc9a86ab903af0d7a4a986496ca5b23669b8661171566a167c3">GeneralTokenType::OPERATOR</a>)</td></tr>
+<tr class="memdesc:aaaac816fb5df354b3365cc3dc65d7a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the operator token  <br /></td></tr>
 <tr class="memitem:a054cacca03ceb7d467a23eb69b9c1cf0" id="r_a054cacca03ceb7d467a23eb69b9c1cf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a054cacca03ceb7d467a23eb69b9c1cf0">handlePunctuation</a> ()</td></tr>
 <tr class="memdesc:a054cacca03ceb7d467a23eb69b9c1cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles punctuations, updates position  <br /></td></tr>
 <tr class="memitem:a4c666959d2ac51e6bc2a963d507d3c3b" id="r_a4c666959d2ac51e6bc2a963d507d3c3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c666959d2ac51e6bc2a963d507d3c3b">handleInvalid</a> ()</td></tr>
 <tr class="memdesc:a4c666959d2ac51e6bc2a963d507d3c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles invalid characters, updates position  <br /></td></tr>
-<tr class="memitem:a3b5924726ff2adec802060c0be734ac2" id="r_a3b5924726ff2adec802060c0be734ac2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b5924726ff2adec802060c0be734ac2">isKeyword</a> (std::string_view value) const noexcept</td></tr>
-<tr class="memdesc:a3b5924726ff2adec802060c0be734ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is a keyword  <br /></td></tr>
+<tr class="memitem:a4136ee9bc9138c84d322ee54676b83a6" id="r_a4136ee9bc9138c84d322ee54676b83a6"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4136ee9bc9138c84d322ee54676b83a6">tryGetKeyword</a> (std::string_view value) const noexcept</td></tr>
+<tr class="memdesc:a4136ee9bc9138c84d322ee54676b83a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is a keyword  <br /></td></tr>
 <tr class="memitem:a868d9ce57a9d2306e9c6ea95c0b36599" id="r_a868d9ce57a9d2306e9c6ea95c0b36599"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a868d9ce57a9d2306e9c6ea95c0b36599">canPrecedeSignedLiteral</a> (<a class="el" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a> type) const noexcept</td></tr>
 <tr class="memdesc:a868d9ce57a9d2306e9c6ea95c0b36599"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if type can precede signed literal  <br /></td></tr>
 <tr class="memitem:a62939779a3120ed1205cd1735780b3c8" id="r_a62939779a3120ed1205cd1735780b3c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62939779a3120ed1205cd1735780b3c8">isSignedNumber</a> () const noexcept</td></tr>
 <tr class="memdesc:a62939779a3120ed1205cd1735780b3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is a signed literal  <br /></td></tr>
-<tr class="memitem:ada3146da53da0ac8568936e7715dfb0f" id="r_ada3146da53da0ac8568936e7715dfb0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada3146da53da0ac8568936e7715dfb0f">isAssignOperator</a> () const noexcept</td></tr>
-<tr class="memdesc:ada3146da53da0ac8568936e7715dfb0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if current sequence of characters is an assignment operator  <br /></td></tr>
-<tr class="memitem:ae1a09c86a475768d503f9bf08eef40c5" id="r_ae1a09c86a475768d503f9bf08eef40c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1a09c86a475768d503f9bf08eef40c5">isArithmeticOperator</a> () const noexcept</td></tr>
-<tr class="memdesc:ae1a09c86a475768d503f9bf08eef40c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is an arithmetic operator  <br /></td></tr>
-<tr class="memitem:a784a0ec6bfa933d1824398a6ae5dc6df" id="r_a784a0ec6bfa933d1824398a6ae5dc6df"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a784a0ec6bfa933d1824398a6ae5dc6df">isBitwiseOperator</a> () const noexcept</td></tr>
-<tr class="memdesc:a784a0ec6bfa933d1824398a6ae5dc6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is a bitwise operator  <br /></td></tr>
-<tr class="memitem:a2c156f936cd4a3c999e68b2227f8e75b" id="r_a2c156f936cd4a3c999e68b2227f8e75b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c156f936cd4a3c999e68b2227f8e75b">isRelationalOperator</a> () const noexcept</td></tr>
-<tr class="memdesc:a2c156f936cd4a3c999e68b2227f8e75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is a relational operator  <br /></td></tr>
+<tr class="memitem:a178644eb168946ecd123cf845efa901b" id="r_a178644eb168946ecd123cf845efa901b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a178644eb168946ecd123cf845efa901b">tryGetAssignOperator</a> () const noexcept</td></tr>
+<tr class="memdesc:a178644eb168946ecd123cf845efa901b"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if current sequence of characters is an assignment operator  <br /></td></tr>
+<tr class="memitem:a8ed2dcaece27d9ddaafd1001f83ffeb0" id="r_a8ed2dcaece27d9ddaafd1001f83ffeb0"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ed2dcaece27d9ddaafd1001f83ffeb0">tryGetArithmeticOperator</a> () const noexcept</td></tr>
+<tr class="memdesc:a8ed2dcaece27d9ddaafd1001f83ffeb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is an arithmetic operator  <br /></td></tr>
+<tr class="memitem:a482dfc578bfcda22df75dd41d598e3c3" id="r_a482dfc578bfcda22df75dd41d598e3c3"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a482dfc578bfcda22df75dd41d598e3c3">tryGetBitwiseOperator</a> () const noexcept</td></tr>
+<tr class="memdesc:a482dfc578bfcda22df75dd41d598e3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is a bitwise operator  <br /></td></tr>
+<tr class="memitem:a77a836a71be4aa221cd52454e366a1a3" id="r_a77a836a71be4aa221cd52454e366a1a3"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77a836a71be4aa221cd52454e366a1a3">tryGetLogicalOperator</a> () const noexcept</td></tr>
+<tr class="memdesc:a77a836a71be4aa221cd52454e366a1a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is a logical operator  <br /></td></tr>
+<tr class="memitem:a33f5e806633adc02c6c25e7384985d61" id="r_a33f5e806633adc02c6c25e7384985d61"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33f5e806633adc02c6c25e7384985d61">tryGetRelationalOperator</a> () const noexcept</td></tr>
+<tr class="memdesc:a33f5e806633adc02c6c25e7384985d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the current sequence of characters is a relational operator  <br /></td></tr>
 <tr class="memitem:a7227787220fc373d0e9c2f1fede53052" id="r_a7227787220fc373d0e9c2f1fede53052"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7227787220fc373d0e9c2f1fede53052">isValidIndex</a> (size_t offset=0) const noexcept</td></tr>
 <tr class="memdesc:a7227787220fc373d0e9c2f1fede53052"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the position is valid  <br /></td></tr>
 <tr class="memitem:a726fbd53640856d9c467df553a220cc9" id="r_a726fbd53640856d9c467df553a220cc9"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a726fbd53640856d9c467df553a220cc9">isIdentifierSequence</a> (char c) const noexcept</td></tr>
@@ -444,6 +450,44 @@ Private Attributes</h2></td></tr>
 
 <p>gets the token that should be parsed at the moment </p>
 <dl class="section return"><dt>Returns</dt><dd>const reference of the current token </dd></dl>
+
+</div>
+</div>
+<a id="aaaac816fb5df354b3365cc3dc65d7a46" name="aaaac816fb5df354b3365cc3dc65d7a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaac816fb5df354b3365cc3dc65d7a46">&#9670;&#160;</a></span>emitOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Lexer::emitOperator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structLexeme.html">Lexeme</a></td>          <td class="paramname"><span class="paramname"><em>operatorLexeme</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="token__defs_8hpp.html#ac68159df472771bc9a86ab903af0d7a4">GeneralTokenType</a></td>          <td class="paramname"><span class="paramname"><em>gtype</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="token__defs_8hpp.html#ac68159df472771bc9a86ab903af0d7a4a986496ca5b23669b8661171566a167c3">GeneralTokenType::OPERATOR</a></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generates the operator token </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">operatorLexeme</td><td>- type and length of the operator </td></tr>
+    <tr><td class="paramname">gtype</td><td>- general token type of the token </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -877,6 +921,34 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="abbddad2bfcecb48256837df4516f70ae" name="abbddad2bfcecb48256837df4516f70ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbddad2bfcecb48256837df4516f70ae">&#9670;&#160;</a></span>handleLogicalOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Lexer::handleLogicalOperator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>handles logical operator </p>
+<dl class="section return"><dt>Returns</dt><dd>true if sequence is a logical operator, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="aac6c909ee074b2770899e64661b0286d" name="aac6c909ee074b2770899e64661b0286d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac6c909ee074b2770899e64661b0286d">&#9670;&#160;</a></span>handleMultiLineComment()</h2>
 
@@ -1047,12 +1119,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>handles relational operator </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">opLen</td><td>- length of the operator </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>true if sequence is a relational operator, false otherwise </dd></dl>
 
 </div>
@@ -1175,90 +1241,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1a09c86a475768d503f9bf08eef40c5" name="ae1a09c86a475768d503f9bf08eef40c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1a09c86a475768d503f9bf08eef40c5">&#9670;&#160;</a></span>isArithmeticOperator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Lexer::isArithmeticOperator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>checks if the current sequence of characters is an arithmetic operator </p>
-<p>arithmetic operators: +, -, *, / </p><dl class="section return"><dt>Returns</dt><dd>true if sequence matches arithmetic operator, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="ada3146da53da0ac8568936e7715dfb0f" name="ada3146da53da0ac8568936e7715dfb0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada3146da53da0ac8568936e7715dfb0f">&#9670;&#160;</a></span>isAssignOperator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Lexer::isAssignOperator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>checks if current sequence of characters is an assignment operator </p>
-<dl class="section return"><dt>Returns</dt><dd>true if sequence matches assign operator, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a784a0ec6bfa933d1824398a6ae5dc6df" name="a784a0ec6bfa933d1824398a6ae5dc6df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a784a0ec6bfa933d1824398a6ae5dc6df">&#9670;&#160;</a></span>isBitwiseOperator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Lexer::isBitwiseOperator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>checks if the current sequence of characters is a bitwise operator </p>
-<p>bitwise operators: &lt;&lt;, &gt;&gt;, &amp;, |, ^ </p><dl class="section return"><dt>Returns</dt><dd>length of the bitwise operator, 0 when it is not a bitwise operator </dd></dl>
-
-</div>
-</div>
 <a id="a785e6462e9631aa19a3e47e614242327" name="a785e6462e9631aa19a3e47e614242327"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a785e6462e9631aa19a3e47e614242327">&#9670;&#160;</a></span>isDigit()</h2>
 
@@ -1324,40 +1306,6 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if character is a part of id sequence, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a3b5924726ff2adec802060c0be734ac2" name="a3b5924726ff2adec802060c0be734ac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b5924726ff2adec802060c0be734ac2">&#9670;&#160;</a></span>isKeyword()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Lexer::isKeyword </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>checks if the current sequence of characters is a keyword </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>- const string representing id or keyword </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if sequence matches keyword, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -1448,34 +1396,6 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if character is a new line, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a2c156f936cd4a3c999e68b2227f8e75b" name="a2c156f936cd4a3c999e68b2227f8e75b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c156f936cd4a3c999e68b2227f8e75b">&#9670;&#160;</a></span>isRelationalOperator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Lexer::isRelationalOperator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>checks if the current sequence of characters is a relational operator </p>
-<p>relational operators: &lt;, &gt;, &lt;=, &gt;=, ==, != </p><dl class="section return"><dt>Returns</dt><dd>length of the relational operator, 0 when it is not the relational operator </dd></dl>
 
 </div>
 </div>
@@ -1701,6 +1621,180 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>translating input into a sequence of tokens </p>
+
+</div>
+</div>
+<a id="a8ed2dcaece27d9ddaafd1001f83ffeb0" name="a8ed2dcaece27d9ddaafd1001f83ffeb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed2dcaece27d9ddaafd1001f83ffeb0">&#9670;&#160;</a></span>tryGetArithmeticOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt; Lexer::tryGetArithmeticOperator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>checks if the current sequence of characters is an arithmetic operator </p>
+<p>arithmetic operators: +, -, *, / </p><dl class="section return"><dt>Returns</dt><dd>lexeme of arithmetic operator if sequence matches arithmetic operator, nullopt otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a178644eb168946ecd123cf845efa901b" name="a178644eb168946ecd123cf845efa901b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a178644eb168946ecd123cf845efa901b">&#9670;&#160;</a></span>tryGetAssignOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt; Lexer::tryGetAssignOperator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>checks if current sequence of characters is an assignment operator </p>
+<dl class="section return"><dt>Returns</dt><dd>lexeme of assign operator if sequence matches assign operator, nullopt otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a482dfc578bfcda22df75dd41d598e3c3" name="a482dfc578bfcda22df75dd41d598e3c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482dfc578bfcda22df75dd41d598e3c3">&#9670;&#160;</a></span>tryGetBitwiseOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt; Lexer::tryGetBitwiseOperator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>checks if the current sequence of characters is a bitwise operator </p>
+<p>bitwise operators: &lt;&lt;, &gt;&gt;, &amp;, |, ^ </p><dl class="section return"><dt>Returns</dt><dd>lexeme of the bitwise operator when sequence is a bitwise operator, nullopt otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a4136ee9bc9138c84d322ee54676b83a6" name="a4136ee9bc9138c84d322ee54676b83a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4136ee9bc9138c84d322ee54676b83a6">&#9670;&#160;</a></span>tryGetKeyword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a> &gt; Lexer::tryGetKeyword </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>checks if the current sequence of characters is a keyword </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- string representing keyword </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>token type of the keyword if sequence is keyword, nullopt otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a77a836a71be4aa221cd52454e366a1a3" name="a77a836a71be4aa221cd52454e366a1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77a836a71be4aa221cd52454e366a1a3">&#9670;&#160;</a></span>tryGetLogicalOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt; Lexer::tryGetLogicalOperator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>checks if the current sequence of characters is a logical operator </p>
+<p>logical operators: &amp;&amp;, || </p><dl class="section return"><dt>Returns</dt><dd>lexeme of the logical operator when sequence is a logical operator, nullopt otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a33f5e806633adc02c6c25e7384985d61" name="a33f5e806633adc02c6c25e7384985d61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f5e806633adc02c6c25e7384985d61">&#9670;&#160;</a></span>tryGetRelationalOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structLexeme.html">Lexeme</a> &gt; Lexer::tryGetRelationalOperator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>checks if the current sequence of characters is a relational operator </p>
+<p>relational operators: &lt;, &gt;, &lt;=, &gt;=, ==, != </p><dl class="section return"><dt>Returns</dt><dd>lexeme of the relational operator if sequence matches relational operatr, nullopt otherwise </dd></dl>
 
 </div>
 </div>

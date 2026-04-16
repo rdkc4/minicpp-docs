@@ -53,7 +53,7 @@ $(function() {
   <div class="headertitle"><div class="title">preprocessing_libs.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;string_view&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -63,19 +63,19 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a53518c1db05f081e7effa912b649a93c" id="r_a53518c1db05f081e7effa912b649a93c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#a53518c1db05f081e7effa912b649a93c">Preprocessing::Libs::generateLibSourcePath</a> (const std::string &amp;libName)</td></tr>
-<tr class="memdesc:a53518c1db05f081e7effa912b649a93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the relative path to the source file  <br /></td></tr>
-<tr class="memitem:a8794076f2d0a4eb9b69463d3471bdf7e" id="r_a8794076f2d0a4eb9b69463d3471bdf7e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#a8794076f2d0a4eb9b69463d3471bdf7e">Preprocessing::Libs::generateLibObjPath</a> (const std::string &amp;libName)</td></tr>
-<tr class="memdesc:a8794076f2d0a4eb9b69463d3471bdf7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the relative path to the object file  <br /></td></tr>
+<tr class="memitem:a5d5f0b0b7efd42125f5cb980b6f0317d" id="r_a5d5f0b0b7efd42125f5cb980b6f0317d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#a5d5f0b0b7efd42125f5cb980b6f0317d">Preprocessing::Libs::generateLibSourcePath</a> (std::string_view libName)</td></tr>
+<tr class="memdesc:a5d5f0b0b7efd42125f5cb980b6f0317d"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the relative path to the source file  <br /></td></tr>
+<tr class="memitem:a93f26b396ded8619cb20d022aec1f46c" id="r_a93f26b396ded8619cb20d022aec1f46c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#a93f26b396ded8619cb20d022aec1f46c">Preprocessing::Libs::generateLibObjPath</a> (std::string_view libName)</td></tr>
+<tr class="memdesc:a93f26b396ded8619cb20d022aec1f46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the relative path to the object file  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8ff2e16753d1a65c35dfe2bcc8be830f" id="r_a8ff2e16753d1a65c35dfe2bcc8be830f"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#a8ff2e16753d1a65c35dfe2bcc8be830f">Preprocessing::Libs::relativeLibPath</a> { &quot;./libmcpp/&quot; }</td></tr>
-<tr class="memdesc:a8ff2e16753d1a65c35dfe2bcc8be830f"><td class="mdescLeft">&#160;</td><td class="mdescRight">relative path to standard library  <br /></td></tr>
-<tr class="memitem:a2df44f2e54b14a48a0c66012f74415ed" id="r_a2df44f2e54b14a48a0c66012f74415ed"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#a2df44f2e54b14a48a0c66012f74415ed">Preprocessing::Libs::objExt</a> { &quot;.o&quot; }</td></tr>
-<tr class="memdesc:a2df44f2e54b14a48a0c66012f74415ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">extension of the object file  <br /></td></tr>
-<tr class="memitem:a8e0e90ae960335778b26b2bf67fd9880" id="r_a8e0e90ae960335778b26b2bf67fd9880"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#a8e0e90ae960335778b26b2bf67fd9880">Preprocessing::Libs::mcppExt</a> { &quot;.mcpp&quot; }</td></tr>
-<tr class="memdesc:a8e0e90ae960335778b26b2bf67fd9880"><td class="mdescLeft">&#160;</td><td class="mdescRight">extension of the source file  <br /></td></tr>
+<tr class="memitem:ac4bbb4ed2397487391cc8439b6ae29dd" id="r_ac4bbb4ed2397487391cc8439b6ae29dd"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#ac4bbb4ed2397487391cc8439b6ae29dd">Preprocessing::Libs::relativeLibPath</a> { &quot;./libmcpp/&quot; }</td></tr>
+<tr class="memdesc:ac4bbb4ed2397487391cc8439b6ae29dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">relative path to standard library  <br /></td></tr>
+<tr class="memitem:ad5dad0251bcc449cb32f7f65230cfdd0" id="r_ad5dad0251bcc449cb32f7f65230cfdd0"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#ad5dad0251bcc449cb32f7f65230cfdd0">Preprocessing::Libs::objExt</a> { &quot;.o&quot; }</td></tr>
+<tr class="memdesc:ad5dad0251bcc449cb32f7f65230cfdd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">extension of the object file  <br /></td></tr>
+<tr class="memitem:af2e36e992807b56924932fe24d8e6191" id="r_af2e36e992807b56924932fe24d8e6191"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePreprocessing_1_1Libs.html#af2e36e992807b56924932fe24d8e6191">Preprocessing::Libs::mcppExt</a> { &quot;.mcpp&quot; }</td></tr>
+<tr class="memdesc:af2e36e992807b56924932fe24d8e6191"><td class="mdescLeft">&#160;</td><td class="mdescRight">extension of the source file  <br /></td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

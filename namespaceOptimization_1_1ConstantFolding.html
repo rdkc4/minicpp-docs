@@ -66,18 +66,18 @@ Functions</h2></td></tr>
 <tr class="memitem:aea71b17c86bb58e2b2e7a65c5d691986" id="r_aea71b17c86bb58e2b2e7a65c5d691986"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:aea71b17c86bb58e2b2e7a65c5d691986 template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">MergeResult</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea71b17c86bb58e2b2e7a65c5d691986">mergeValues</a> (T l, T r, <a class="el" href="defs_8hpp.html#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> op, size_t line, size_t column)</td></tr>
 <tr class="memdesc:aea71b17c86bb58e2b2e7a65c5d691986"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs operation on two constants  <br /></td></tr>
-<tr class="memitem:ae23eccc8ce113d24720f6ed4e183e743" id="r_ae23eccc8ce113d24720f6ed4e183e743"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
-<tr class="memitem:ae23eccc8ce113d24720f6ed4e183e743 template"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae23eccc8ce113d24720f6ed4e183e743">getOperandValue</a> (const <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> *operand)</td></tr>
-<tr class="memdesc:ae23eccc8ce113d24720f6ed4e183e743"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to get operand value  <br /></td></tr>
-<tr class="memitem:a82f71636027f2a7190ce7ff0170e8646" id="r_a82f71636027f2a7190ce7ff0170e8646"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
-<tr class="memitem:a82f71636027f2a7190ce7ff0170e8646 template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">MergeResult</a>&lt; std::unique_ptr&lt; <a class="el" href="classIRExpr.html">IRExpr</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82f71636027f2a7190ce7ff0170e8646">mergeLiterals</a> (const <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> *leftOperand, const <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> *rightOperand, const <a class="el" href="classASTBinaryExpr.html">ASTBinaryExpr</a> *binExp)</td></tr>
-<tr class="memdesc:a82f71636027f2a7190ce7ff0170e8646"><td class="mdescLeft">&#160;</td><td class="mdescRight">merges literals of the expression  <br /></td></tr>
+<tr class="memitem:a6373fe1e3c7f1e63146395a9c2de57bf" id="r_a6373fe1e3c7f1e63146395a9c2de57bf"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a6373fe1e3c7f1e63146395a9c2de57bf template"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6373fe1e3c7f1e63146395a9c2de57bf">getOperandValue</a> (const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *operand)</td></tr>
+<tr class="memdesc:a6373fe1e3c7f1e63146395a9c2de57bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to get operand value  <br /></td></tr>
+<tr class="memitem:a8e2e18c98d623ee5f8174a0f8edf9887" id="r_a8e2e18c98d623ee5f8174a0f8edf9887"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a8e2e18c98d623ee5f8174a0f8edf9887 template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">MergeResult</a>&lt; std::unique_ptr&lt; <a class="el" href="classIR_1_1node_1_1IRExpr.html">IR::node::IRExpr</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e2e18c98d623ee5f8174a0f8edf9887">mergeLiterals</a> (const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *leftOperand, const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *rightOperand, const <a class="el" href="classAST_1_1node_1_1ASTBinaryExpr.html">AST::node::ASTBinaryExpr</a> *binExp)</td></tr>
+<tr class="memdesc:a8e2e18c98d623ee5f8174a0f8edf9887"><td class="mdescLeft">&#160;</td><td class="mdescRight">merges literals of the expression  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Module for computing the operations that can be resolved in a compile-time. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ae23eccc8ce113d24720f6ed4e183e743" name="ae23eccc8ce113d24720f6ed4e183e743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae23eccc8ce113d24720f6ed4e183e743">&#9670;&#160;</a></span>getOperandValue()</h2>
+<a id="a6373fe1e3c7f1e63146395a9c2de57bf" name="a6373fe1e3c7f1e63146395a9c2de57bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6373fe1e3c7f1e63146395a9c2de57bf">&#9670;&#160;</a></span>getOperandValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -87,7 +87,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname">T Optimization::ConstantFolding::getOperandValue </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>operand</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>operand</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -98,8 +98,8 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a82f71636027f2a7190ce7ff0170e8646" name="a82f71636027f2a7190ce7ff0170e8646"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82f71636027f2a7190ce7ff0170e8646">&#9670;&#160;</a></span>mergeLiterals()</h2>
+<a id="a8e2e18c98d623ee5f8174a0f8edf9887" name="a8e2e18c98d623ee5f8174a0f8edf9887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2e18c98d623ee5f8174a0f8edf9887">&#9670;&#160;</a></span>mergeLiterals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,19 +107,19 @@ template&lt;typename T&gt; </div>
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">MergeResult</a>&lt; std::unique_ptr&lt; <a class="el" href="classIRExpr.html">IRExpr</a> &gt; &gt; Optimization::ConstantFolding::mergeLiterals </td>
+          <td class="memname"><a class="el" href="structOptimization_1_1ConstantFolding_1_1MergeResult.html">MergeResult</a>&lt; std::unique_ptr&lt; <a class="el" href="classIR_1_1node_1_1IRExpr.html">IR::node::IRExpr</a> &gt; &gt; Optimization::ConstantFolding::mergeLiterals </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>leftOperand</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>leftOperand</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classIRLiteralExpr.html">IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>rightOperand</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>rightOperand</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classASTBinaryExpr.html">ASTBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binExp</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classAST_1_1node_1_1ASTBinaryExpr.html">AST::node::ASTBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binExp</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -128,8 +128,8 @@ template&lt;typename T&gt; </div>
 <dl class="section note"><dt>Note</dt><dd>reduces the depth of the expression subtree when all children are literals </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">leftOperand</td><td>- const pointer to the irt numerical expression </td></tr>
-    <tr><td class="paramname">rightOperand</td><td>- const pointer to the irt numerical expression </td></tr>
+    <tr><td class="paramname">leftOperand</td><td>- const pointer to the irt literal expression </td></tr>
+    <tr><td class="paramname">rightOperand</td><td>- const pointer to the irt literal expression </td></tr>
     <tr><td class="paramname">binExp</td><td>- const pointer to the ast binary expression, contains operation </td></tr>
   </table>
   </dd>

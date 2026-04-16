@@ -47,139 +47,72 @@ $(function() {
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">ast_defs.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:AST_3A_3Adefs" id="r_AST_3A_3Adefs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAST_1_1defs.html">AST::defs</a></td></tr>
+<tr class="memdesc:namespaceAST_1_1defs"><td class="mdescLeft">&#160;</td><td class="mdescRight">module defining the definitions of abstract syntax tree <br /></td></tr>
+<tr class="memitem:AST" id="r_AST"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAST.html">AST</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a247241e21886b2bcee2bec0d837db248" id="r_a247241e21886b2bcee2bec0d837db248"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a> { <br />
-&#160;&#160;<a class="el" href="#a247241e21886b2bcee2bec0d837db248ac9c31422636176fa93724df8b6e3ef31">PROGRAM</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a6a72a6a776662a244f82d31e9274a07b">FUNCTION</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248abf1d4bbf6ed8626603df4a7cac94ee8c">PARAMETER</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248ac1561b120842fabe1310417083827590">DIR</a>
+<tr class="memitem:acb823a6e2cab7c6ef74223e3f03010dd" id="r_acb823a6e2cab7c6ef74223e3f03010dd"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dd">AST::defs::ASTNodeType</a> { <br />
+&#160;&#160;<a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddac9c31422636176fa93724df8b6e3ef31">AST::defs::PROGRAM</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda6a72a6a776662a244f82d31e9274a07b">AST::defs::FUNCTION</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddabf1d4bbf6ed8626603df4a7cac94ee8c">AST::defs::PARAMETER</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddac1561b120842fabe1310417083827590">AST::defs::DIR</a>
 , <br />
-&#160;&#160;<a class="el" href="#a247241e21886b2bcee2bec0d837db248a61dfd69d3c097758595bfd85e0344742">INCLUDE_DIR</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248adff47c0c8768c9c5259c949005d404a7">STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a06fbd666241a6ec37c4a42c801b1c9c7">VARIABLE_DECL_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248af78e279d6b0afba2361c50e0594557a8">COMPOUND_STMT</a>
+&#160;&#160;<a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda61dfd69d3c097758595bfd85e0344742">AST::defs::INCLUDE_DIR</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddadff47c0c8768c9c5259c949005d404a7">AST::defs::STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda06fbd666241a6ec37c4a42c801b1c9c7">AST::defs::VARIABLE_DECL_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddaf78e279d6b0afba2361c50e0594557a8">AST::defs::COMPOUND_STMT</a>
 , <br />
-&#160;&#160;<a class="el" href="#a247241e21886b2bcee2bec0d837db248a1877b9f488f2fb7cb70d039f1fcbf33c">ASSIGN_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a9eeeea6ff7f6f2e3a6b03baf772e159e">RETURN_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a7462b06a126a3c2a6d705abe17cfcb30">FUNCTION_CALL_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a305d413ba7c7459976d92e83cd48a7ff">IF_STMT</a>
+&#160;&#160;<a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda1877b9f488f2fb7cb70d039f1fcbf33c">AST::defs::ASSIGN_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda9eeeea6ff7f6f2e3a6b03baf772e159e">AST::defs::RETURN_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda7462b06a126a3c2a6d705abe17cfcb30">AST::defs::FUNCTION_CALL_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda305d413ba7c7459976d92e83cd48a7ff">AST::defs::IF_STMT</a>
 , <br />
-&#160;&#160;<a class="el" href="#a247241e21886b2bcee2bec0d837db248ac47fc7692e9a0f6839fe9c6d4ec8bc73">WHILE_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248aba8a68a1601696e450f05d1809d48437">FOR_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a8ecc06b9c8c7d0507cb10d619614c7b1">DOWHILE_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a8f78e5622b8ceb3d02d680c96381a6e8">SWITCH_STMT</a>
+&#160;&#160;<a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddac47fc7692e9a0f6839fe9c6d4ec8bc73">AST::defs::WHILE_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddaba8a68a1601696e450f05d1809d48437">AST::defs::FOR_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda8ecc06b9c8c7d0507cb10d619614c7b1">AST::defs::DOWHILE_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda8f78e5622b8ceb3d02d680c96381a6e8">AST::defs::SWITCH_STMT</a>
 , <br />
-&#160;&#160;<a class="el" href="#a247241e21886b2bcee2bec0d837db248a68b33b1ad534dd13415a77f32ae0d323">CASE_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a3261670638471888fd8aafe02f938d58">DEFAULT_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a34749bb6720e33e3866349091b55dd73">SWITCH_BLOCK_STMT</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248a50e2e173829592be93e1b1fb86c82dc1">BREAK_STMT</a>
+&#160;&#160;<a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda68b33b1ad534dd13415a77f32ae0d323">AST::defs::CASE_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda3261670638471888fd8aafe02f938d58">AST::defs::DEFAULT_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda34749bb6720e33e3866349091b55dd73">AST::defs::SWITCH_BLOCK_STMT</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda50e2e173829592be93e1b1fb86c82dc1">AST::defs::BREAK_STMT</a>
 , <br />
-&#160;&#160;<a class="el" href="#a247241e21886b2bcee2bec0d837db248ab0cd8af157ed30eaa1980da18b07a38d">EXPR</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248ae827a923ae10d45f7a21311970ee2d8c">BINARY_EXPR</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248adebdc2f095d6d8df4d86030813dcba3c">FUNCTION_CALL_EXPR</a>
-, <a class="el" href="#a247241e21886b2bcee2bec0d837db248ad0906bfcefec670d1eed3f9c7da5581b">LITERAL_EXPR</a>
+&#160;&#160;<a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddab0cd8af157ed30eaa1980da18b07a38d">AST::defs::EXPR</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddae827a923ae10d45f7a21311970ee2d8c">AST::defs::BINARY_EXPR</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddadebdc2f095d6d8df4d86030813dcba3c">AST::defs::FUNCTION_CALL_EXPR</a>
+, <a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010ddad0906bfcefec670d1eed3f9c7da5581b">AST::defs::LITERAL_EXPR</a>
 , <br />
-&#160;&#160;<a class="el" href="#a247241e21886b2bcee2bec0d837db248a6a4b510785f8f1818c105adb699eeed2">ID_EXPR</a>
+&#160;&#160;<a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda6a4b510785f8f1818c105adb699eeed2">AST::defs::ID_EXPR</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a247241e21886b2bcee2bec0d837db248"><td class="mdescLeft">&#160;</td><td class="mdescRight">types of the ast nodes  <a href="#a247241e21886b2bcee2bec0d837db248">More...</a><br /></td></tr>
+<tr class="memdesc:acb823a6e2cab7c6ef74223e3f03010dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">types of the ast nodes  <a href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dd">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a4c87b6c0b4834d47755dde529c4d61db" id="r_a4c87b6c0b4834d47755dde529c4d61db"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAST_1_1defs.html#a4c87b6c0b4834d47755dde529c4d61db">AST::defs::astNodeTypeToStr</a> (<a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dd">ASTNodeType</a> type)</td></tr>
+<tr class="memdesc:a4c87b6c0b4834d47755dde529c4d61db"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the string representation of the string node  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae8d493c65afacfbab76514863eee7bde" id="r_ae8d493c65afacfbab76514863eee7bde"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; <a class="el" href="#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8d493c65afacfbab76514863eee7bde">astNodeTypeToString</a></td></tr>
-<tr class="memdesc:ae8d493c65afacfbab76514863eee7bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps ast node type to a string  <br /></td></tr>
+<tr class="memitem:a896a445d99f3307e7c08697d91bddb4f" id="r_a896a445d99f3307e7c08697d91bddb4f"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAST_1_1defs.html#a896a445d99f3307e7c08697d91bddb4f">AST::defs::AST_NODE_TYPE_COUNT</a> { static_cast&lt;size_t&gt;(<a class="el" href="namespaceAST_1_1defs.html#acb823a6e2cab7c6ef74223e3f03010dda6a4b510785f8f1818c105adb699eeed2">ASTNodeType::ID_EXPR</a>) + 1 }</td></tr>
+<tr class="memdesc:a896a445d99f3307e7c08697d91bddb4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of ast node types  <br /></td></tr>
+<tr class="memitem:a459d4d3470b420cd5377c4c510f8f2b3" id="r_a459d4d3470b420cd5377c4c510f8f2b3"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view, <a class="el" href="namespaceAST_1_1defs.html#a896a445d99f3307e7c08697d91bddb4f">AST_NODE_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceAST_1_1defs.html#a459d4d3470b420cd5377c4c510f8f2b3">AST::defs::astNodeTypeStringRepresentations</a></td></tr>
+<tr class="memdesc:a459d4d3470b420cd5377c4c510f8f2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps ast node types to their string representations  <br /></td></tr>
 </table>
-<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
-<a id="a247241e21886b2bcee2bec0d837db248" name="a247241e21886b2bcee2bec0d837db248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a247241e21886b2bcee2bec0d837db248">&#9670;&#160;</a></span>ASTNodeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>types of the ast nodes </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248ac9c31422636176fa93724df8b6e3ef31" name="a247241e21886b2bcee2bec0d837db248ac9c31422636176fa93724df8b6e3ef31"></a>PROGRAM&#160;</td><td class="fielddoc"><p>program structure </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a6a72a6a776662a244f82d31e9274a07b" name="a247241e21886b2bcee2bec0d837db248a6a72a6a776662a244f82d31e9274a07b"></a>FUNCTION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248abf1d4bbf6ed8626603df4a7cac94ee8c" name="a247241e21886b2bcee2bec0d837db248abf1d4bbf6ed8626603df4a7cac94ee8c"></a>PARAMETER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248ac1561b120842fabe1310417083827590" name="a247241e21886b2bcee2bec0d837db248ac1561b120842fabe1310417083827590"></a>DIR&#160;</td><td class="fielddoc"><p>preprocessor / directives </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a61dfd69d3c097758595bfd85e0344742" name="a247241e21886b2bcee2bec0d837db248a61dfd69d3c097758595bfd85e0344742"></a>INCLUDE_DIR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248adff47c0c8768c9c5259c949005d404a7" name="a247241e21886b2bcee2bec0d837db248adff47c0c8768c9c5259c949005d404a7"></a>STMT&#160;</td><td class="fielddoc"><p>statements </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a06fbd666241a6ec37c4a42c801b1c9c7" name="a247241e21886b2bcee2bec0d837db248a06fbd666241a6ec37c4a42c801b1c9c7"></a>VARIABLE_DECL_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248af78e279d6b0afba2361c50e0594557a8" name="a247241e21886b2bcee2bec0d837db248af78e279d6b0afba2361c50e0594557a8"></a>COMPOUND_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a1877b9f488f2fb7cb70d039f1fcbf33c" name="a247241e21886b2bcee2bec0d837db248a1877b9f488f2fb7cb70d039f1fcbf33c"></a>ASSIGN_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a9eeeea6ff7f6f2e3a6b03baf772e159e" name="a247241e21886b2bcee2bec0d837db248a9eeeea6ff7f6f2e3a6b03baf772e159e"></a>RETURN_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a7462b06a126a3c2a6d705abe17cfcb30" name="a247241e21886b2bcee2bec0d837db248a7462b06a126a3c2a6d705abe17cfcb30"></a>FUNCTION_CALL_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a305d413ba7c7459976d92e83cd48a7ff" name="a247241e21886b2bcee2bec0d837db248a305d413ba7c7459976d92e83cd48a7ff"></a>IF_STMT&#160;</td><td class="fielddoc"><p>control flow statements </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248ac47fc7692e9a0f6839fe9c6d4ec8bc73" name="a247241e21886b2bcee2bec0d837db248ac47fc7692e9a0f6839fe9c6d4ec8bc73"></a>WHILE_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248aba8a68a1601696e450f05d1809d48437" name="a247241e21886b2bcee2bec0d837db248aba8a68a1601696e450f05d1809d48437"></a>FOR_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a8ecc06b9c8c7d0507cb10d619614c7b1" name="a247241e21886b2bcee2bec0d837db248a8ecc06b9c8c7d0507cb10d619614c7b1"></a>DOWHILE_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a8f78e5622b8ceb3d02d680c96381a6e8" name="a247241e21886b2bcee2bec0d837db248a8f78e5622b8ceb3d02d680c96381a6e8"></a>SWITCH_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a68b33b1ad534dd13415a77f32ae0d323" name="a247241e21886b2bcee2bec0d837db248a68b33b1ad534dd13415a77f32ae0d323"></a>CASE_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a3261670638471888fd8aafe02f938d58" name="a247241e21886b2bcee2bec0d837db248a3261670638471888fd8aafe02f938d58"></a>DEFAULT_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a34749bb6720e33e3866349091b55dd73" name="a247241e21886b2bcee2bec0d837db248a34749bb6720e33e3866349091b55dd73"></a>SWITCH_BLOCK_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a50e2e173829592be93e1b1fb86c82dc1" name="a247241e21886b2bcee2bec0d837db248a50e2e173829592be93e1b1fb86c82dc1"></a>BREAK_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248ab0cd8af157ed30eaa1980da18b07a38d" name="a247241e21886b2bcee2bec0d837db248ab0cd8af157ed30eaa1980da18b07a38d"></a>EXPR&#160;</td><td class="fielddoc"><p>expressions </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248ae827a923ae10d45f7a21311970ee2d8c" name="a247241e21886b2bcee2bec0d837db248ae827a923ae10d45f7a21311970ee2d8c"></a>BINARY_EXPR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248adebdc2f095d6d8df4d86030813dcba3c" name="a247241e21886b2bcee2bec0d837db248adebdc2f095d6d8df4d86030813dcba3c"></a>FUNCTION_CALL_EXPR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248ad0906bfcefec670d1eed3f9c7da5581b" name="a247241e21886b2bcee2bec0d837db248ad0906bfcefec670d1eed3f9c7da5581b"></a>LITERAL_EXPR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a247241e21886b2bcee2bec0d837db248a6a4b510785f8f1818c105adb699eeed2" name="a247241e21886b2bcee2bec0d837db248a6a4b510785f8f1818c105adb699eeed2"></a>ID_EXPR&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="ae8d493c65afacfbab76514863eee7bde" name="ae8d493c65afacfbab76514863eee7bde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8d493c65afacfbab76514863eee7bde">&#9670;&#160;</a></span>astNodeTypeToString</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::unordered_map&lt;<a class="el" href="#a247241e21886b2bcee2bec0d837db248">ASTNodeType</a>, std::string&gt; astNodeTypeToString</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>maps ast node type to a string </p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

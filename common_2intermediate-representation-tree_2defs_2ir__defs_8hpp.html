@@ -48,301 +48,111 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">ir_defs.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;unordered_set&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &quot;<a class="el" href="defs_8hpp.html">../../defs/defs.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:Operation" id="r_Operation"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOperation.html">Operation</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps type to the operation specialized for the type  <a href="structOperation.html#details">More...</a><br /></td></tr>
+<tr class="memitem:IR_3A_3Adefs_3A_3AOperation" id="r_IR_3A_3Adefs_3A_3AOperation"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIR_1_1defs_1_1Operation.html">IR::defs::Operation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps type to the operation specialized for the type  <a href="structIR_1_1defs_1_1Operation.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:IR_3A_3Adefs" id="r_IR_3A_3Adefs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIR_1_1defs.html">IR::defs</a></td></tr>
+<tr class="memdesc:namespaceIR_1_1defs"><td class="mdescLeft">&#160;</td><td class="mdescRight">module defining the definitions of the intermediate representation <br /></td></tr>
+<tr class="memitem:IR" id="r_IR"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIR.html">IR</a></td></tr>
+<tr class="memdesc:namespaceIR"><td class="mdescLeft">&#160;</td><td class="mdescRight">module of the intermediate representation <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ab231aad32844e292a6ed70aca6b30488" id="r_ab231aad32844e292a6ed70aca6b30488"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> { <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488ac9c31422636176fa93724df8b6e3ef31">PROGRAM</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a6a72a6a776662a244f82d31e9274a07b">FUNCTION</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488abf1d4bbf6ed8626603df4a7cac94ee8c">PARAMETER</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488ae61ad9b2553a293b4a3f4d3b4fa5ab31">VARIABLE</a>
+<tr class="memitem:ad705b0626204129f78ec4ba6cc13afb0" id="r_ad705b0626204129f78ec4ba6cc13afb0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0">IR::defs::IRNodeType</a> { <br />
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ac9c31422636176fa93724df8b6e3ef31">IR::defs::PROGRAM</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a6a72a6a776662a244f82d31e9274a07b">IR::defs::FUNCTION</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0abf1d4bbf6ed8626603df4a7cac94ee8c">IR::defs::PARAMETER</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ae61ad9b2553a293b4a3f4d3b4fa5ab31">IR::defs::VARIABLE</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488ade6ee2b5d856295add4d5e3631fbfb93">IF</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488ac0ca84371abbc18f52fd48e32195cd15">WHILE</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488ac27ea6470bcf61db4613e22d67136aab">DO_WHILE</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a7885ad399f9cab93cb42befbe402c588">FOR</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ade6ee2b5d856295add4d5e3631fbfb93">IR::defs::IF</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ac0ca84371abbc18f52fd48e32195cd15">IR::defs::WHILE</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ac27ea6470bcf61db4613e22d67136aab">IR::defs::DO_WHILE</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a7885ad399f9cab93cb42befbe402c588">IR::defs::FOR</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488a756a113833040dfb33e27830fba5e901">COMPOUND</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488affd6976a2b4f6934eb075d0013316ff1">ASSIGN</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488aa2bec276a54439fe011eb523b845dac5">RETURN</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488aead3c555ed9dda1fe36712ce9ac873c2">CALL_STMT</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a756a113833040dfb33e27830fba5e901">IR::defs::COMPOUND</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0affd6976a2b4f6934eb075d0013316ff1">IR::defs::ASSIGN</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0aa2bec276a54439fe011eb523b845dac5">IR::defs::RETURN</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0aead3c555ed9dda1fe36712ce9ac873c2">IR::defs::CALL_STMT</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488a4239f063a3d4fb9d38a0182be6e39e76">SWITCH</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488abea5438a9521adc1b23a9117024bbb43">CASE</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a09bd6376d82fb09cb7498d600b195600">SWITCH_BLOCK</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a5b39c8b553c821e7cddc6da64b5bd2ee">DEFAULT</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a4239f063a3d4fb9d38a0182be6e39e76">IR::defs::SWITCH</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0abea5438a9521adc1b23a9117024bbb43">IR::defs::CASE</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a09bd6376d82fb09cb7498d600b195600">IR::defs::SWITCH_BLOCK</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a5b39c8b553c821e7cddc6da64b5bd2ee">IR::defs::DEFAULT</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488a14d6a3e0201f58bfe7c01e775973e80e">BREAK</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a39e02cdeda38ebf7d4a898b900cf0776">TEMPORARY</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488aca3547acb9162b49fb4a6594ed9b3030">CALL</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a8dda46c0fff4137b6f660f56255d967e">ARGUMENT</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a14d6a3e0201f58bfe7c01e775973e80e">IR::defs::BREAK</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a39e02cdeda38ebf7d4a898b900cf0776">IR::defs::TEMPORARY</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0aca3547acb9162b49fb4a6594ed9b3030">IR::defs::CALL</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a8dda46c0fff4137b6f660f56255d967e">IR::defs::ARGUMENT</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488ab718adec73e04ce3ec720dd11a06a308">ID</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488aa0000d7769148184776f1d17656921b0">LITERAL</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a9eeb52badb613229884838847294b90d">ADD</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a241dd841abade20fcb27b8a9f494e1eb">SUB</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ab718adec73e04ce3ec720dd11a06a308">IR::defs::ID</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0aa0000d7769148184776f1d17656921b0">IR::defs::LITERAL</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a9eeb52badb613229884838847294b90d">IR::defs::ADD</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a241dd841abade20fcb27b8a9f494e1eb">IR::defs::SUB</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488a29bbf66f7f8529ec47e394fb5a36c646">DIV</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a2cdf52a55876063ec93b7d18bc741f6c">MUL</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a558ffc8f5770d8e4f95f51d822685532">AND</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a1d00e7dce692e8dc3f6877f035e3a616">OR</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a2cdf52a55876063ec93b7d18bc741f6c">IR::defs::MUL</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a29bbf66f7f8529ec47e394fb5a36c646">IR::defs::DIV</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a558ffc8f5770d8e4f95f51d822685532">IR::defs::AND</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a1d00e7dce692e8dc3f6877f035e3a616">IR::defs::OR</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488a97675eb3f268048604dc5155511a2a4d">XOR</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488abb0b9165d75b1fd27d0a869b036baa3c">SHL</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488aa9fbf652584d2904a8bf8246e7b3387c">SAL</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a10ab606ab9efe239a011d327d9301edd">SHR</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a97675eb3f268048604dc5155511a2a4d">IR::defs::XOR</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0abb0b9165d75b1fd27d0a869b036baa3c">IR::defs::SHL</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0aa9fbf652584d2904a8bf8246e7b3387c">IR::defs::SAL</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a10ab606ab9efe239a011d327d9301edd">IR::defs::SHR</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488a269bdc1fb1aadcc5b575a68220158602">SAR</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a5cbc764daeacd3be7f410f42511c1edb">CMP</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488afa5199613525eb9f67ae6d8f3ca8db14">JG</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a58806e006b14b04a535784a5462d09b0">JA</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a269bdc1fb1aadcc5b575a68220158602">IR::defs::SAR</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a5471bbbe632b8222dcbbf8e5755d1e98">IR::defs::ANDL</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a0f4fd0dd93fd8034781d91475381de3f">IR::defs::ORL</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a5cbc764daeacd3be7f410f42511c1edb">IR::defs::CMP</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488a1db930052867457acfde0ae416c8b1f9">JL</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a1ae317c33bd344440157e85303d49d82">JB</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488aa28dafa80de5e3b89bb0d9a44993c42f">JGE</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488ab6578b6b4edde194e75a092f18c52235">JAE</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0afa5199613525eb9f67ae6d8f3ca8db14">IR::defs::JG</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a58806e006b14b04a535784a5462d09b0">IR::defs::JA</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a1db930052867457acfde0ae416c8b1f9">IR::defs::JL</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a1ae317c33bd344440157e85303d49d82">IR::defs::JB</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488a7f684bd682a2fa65c32bf83662374807">JLE</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a2dec95cc7ea83666c522afe62699afbb">JBE</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488a069b38cf28a10a4a128a408ce11d2789">JE</a>
-, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488ad339c7f89820d6b83f759ad9d1f95ead">JNE</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0aa28dafa80de5e3b89bb0d9a44993c42f">IR::defs::JGE</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ab6578b6b4edde194e75a092f18c52235">IR::defs::JAE</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a7f684bd682a2fa65c32bf83662374807">IR::defs::JLE</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a2dec95cc7ea83666c522afe62699afbb">IR::defs::JBE</a>
 , <br />
-&#160;&#160;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488ab50339a10e1de285ac99d4c3990b8693">NONE</a>
+&#160;&#160;<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0a069b38cf28a10a4a128a408ce11d2789">IR::defs::JE</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ad339c7f89820d6b83f759ad9d1f95ead">IR::defs::JNE</a>
+, <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ab50339a10e1de285ac99d4c3990b8693">IR::defs::NONE</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ab231aad32844e292a6ed70aca6b30488"><td class="mdescLeft">&#160;</td><td class="mdescRight">types of the irt nodes  <a href="#ab231aad32844e292a6ed70aca6b30488">More...</a><br /></td></tr>
+<tr class="memdesc:ad705b0626204129f78ec4ba6cc13afb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">types of the irt nodes  <a href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2954c835e2ad1c61e6af3c96ad5ad7db" id="r_a2954c835e2ad1c61e6af3c96ad5ad7db"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIR_1_1defs.html#a2954c835e2ad1c61e6af3c96ad5ad7db">IR::defs::irNodeToStr</a> (<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0">IRNodeType</a> nodeType)</td></tr>
+<tr class="memdesc:a2954c835e2ad1c61e6af3c96ad5ad7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the string representation of the ir node  <br /></td></tr>
+<tr class="memitem:a21de8357cecdf661f712ac40fcf6efb3" id="r_a21de8357cecdf661f712ac40fcf6efb3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIR_1_1defs.html#a21de8357cecdf661f712ac40fcf6efb3">IR::defs::resolveOperator</a> (<a class="el" href="defs_8hpp.html#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> op, <a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type)</td></tr>
+<tr class="memdesc:a21de8357cecdf661f712ac40fcf6efb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the node that represents operation  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a4568168080b38ed6b5060093c0d2047e" id="r_a4568168080b38ed6b5060093c0d2047e"><td class="memItemLeft" align="right" valign="top">const std::unordered_set&lt; <a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4568168080b38ed6b5060093c0d2047e">irOperators</a></td></tr>
-<tr class="memdesc:a4568168080b38ed6b5060093c0d2047e"><td class="mdescLeft">&#160;</td><td class="mdescRight">set of all irt operators  <br /></td></tr>
-<tr class="memitem:ade8d5681cdf4f57abd459f0328085353" id="r_ade8d5681cdf4f57abd459f0328085353"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; <a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade8d5681cdf4f57abd459f0328085353">irNodeToString</a></td></tr>
-<tr class="memdesc:ade8d5681cdf4f57abd459f0328085353"><td class="mdescLeft">&#160;</td><td class="mdescRight">translates irt node types to string  <br /></td></tr>
-<tr class="memitem:aed8af2872f3571a07dc6a1904ed7237c" id="r_aed8af2872f3571a07dc6a1904ed7237c"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; std::string, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed8af2872f3571a07dc6a1904ed7237c">stringToArop</a></td></tr>
-<tr class="memdesc:aed8af2872f3571a07dc6a1904ed7237c"><td class="mdescLeft">&#160;</td><td class="mdescRight">translates strings to arithmetic operator nodes  <br /></td></tr>
-<tr class="memitem:a56e4e06b00a4623e7045764a6c095ff7" id="r_a56e4e06b00a4623e7045764a6c095ff7"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; std::string, std::vector&lt; <a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56e4e06b00a4623e7045764a6c095ff7">stringToBitop</a></td></tr>
-<tr class="memdesc:a56e4e06b00a4623e7045764a6c095ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">translates strings to bitwise operators  <br /></td></tr>
-<tr class="memitem:af4d22276818e7ef729c72fc4a9637b49" id="r_af4d22276818e7ef729c72fc4a9637b49"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; <a class="el" href="defs_8hpp.html#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a>, <a class="el" href="structOperation.html">Operation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4d22276818e7ef729c72fc4a9637b49">operatorToIRNodeType</a></td></tr>
-<tr class="memdesc:af4d22276818e7ef729c72fc4a9637b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps the operators to the operation  <br /></td></tr>
+<tr class="memitem:a70dbc287c0a96c3870846af07a960563" id="r_a70dbc287c0a96c3870846af07a960563"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIR_1_1defs.html#a70dbc287c0a96c3870846af07a960563">IR::defs::IR_NODE_TYPE_COUNT</a> { static_cast&lt;size_t&gt;(<a class="el" href="namespaceIR_1_1defs.html#ad705b0626204129f78ec4ba6cc13afb0ab50339a10e1de285ac99d4c3990b8693">IRNodeType::NONE</a>) + 1 }</td></tr>
+<tr class="memdesc:a70dbc287c0a96c3870846af07a960563"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of ir node types  <br /></td></tr>
+<tr class="memitem:a00fc35e162ebe871064ea49fa168892d" id="r_a00fc35e162ebe871064ea49fa168892d"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view, <a class="el" href="namespaceIR_1_1defs.html#a70dbc287c0a96c3870846af07a960563">IR_NODE_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIR_1_1defs.html#a00fc35e162ebe871064ea49fa168892d">IR::defs::irNodeTypeStringRepresentations</a></td></tr>
+<tr class="memdesc:a00fc35e162ebe871064ea49fa168892d"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps the ir node types to their string representation  <br /></td></tr>
+<tr class="memitem:a022b2ee557eb1f8efb929b7972a8ae1c" id="r_a022b2ee557eb1f8efb929b7972a8ae1c"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; <a class="el" href="structIR_1_1defs_1_1Operation.html">Operation</a>, <a class="el" href="defs_8hpp.html#aeb9f557079314461babda61aef04540b">OPERATOR_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIR_1_1defs.html#a022b2ee557eb1f8efb929b7972a8ae1c">IR::defs::operationTable</a></td></tr>
+<tr class="memdesc:a022b2ee557eb1f8efb929b7972a8ae1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps operator to ir instruction node  <br /></td></tr>
 </table>
-<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
-<a id="ab231aad32844e292a6ed70aca6b30488" name="ab231aad32844e292a6ed70aca6b30488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab231aad32844e292a6ed70aca6b30488">&#9670;&#160;</a></span>IRNodeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>types of the irt nodes </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488ac9c31422636176fa93724df8b6e3ef31" name="ab231aad32844e292a6ed70aca6b30488ac9c31422636176fa93724df8b6e3ef31"></a>PROGRAM&#160;</td><td class="fielddoc"><p>program structure </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a6a72a6a776662a244f82d31e9274a07b" name="ab231aad32844e292a6ed70aca6b30488a6a72a6a776662a244f82d31e9274a07b"></a>FUNCTION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488abf1d4bbf6ed8626603df4a7cac94ee8c" name="ab231aad32844e292a6ed70aca6b30488abf1d4bbf6ed8626603df4a7cac94ee8c"></a>PARAMETER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488ae61ad9b2553a293b4a3f4d3b4fa5ab31" name="ab231aad32844e292a6ed70aca6b30488ae61ad9b2553a293b4a3f4d3b4fa5ab31"></a>VARIABLE&#160;</td><td class="fielddoc"><p>statements </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488ade6ee2b5d856295add4d5e3631fbfb93" name="ab231aad32844e292a6ed70aca6b30488ade6ee2b5d856295add4d5e3631fbfb93"></a>IF&#160;</td><td class="fielddoc"><p>control flow statements </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488ac0ca84371abbc18f52fd48e32195cd15" name="ab231aad32844e292a6ed70aca6b30488ac0ca84371abbc18f52fd48e32195cd15"></a>WHILE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488ac27ea6470bcf61db4613e22d67136aab" name="ab231aad32844e292a6ed70aca6b30488ac27ea6470bcf61db4613e22d67136aab"></a>DO_WHILE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a7885ad399f9cab93cb42befbe402c588" name="ab231aad32844e292a6ed70aca6b30488a7885ad399f9cab93cb42befbe402c588"></a>FOR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a756a113833040dfb33e27830fba5e901" name="ab231aad32844e292a6ed70aca6b30488a756a113833040dfb33e27830fba5e901"></a>COMPOUND&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488affd6976a2b4f6934eb075d0013316ff1" name="ab231aad32844e292a6ed70aca6b30488affd6976a2b4f6934eb075d0013316ff1"></a>ASSIGN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488aa2bec276a54439fe011eb523b845dac5" name="ab231aad32844e292a6ed70aca6b30488aa2bec276a54439fe011eb523b845dac5"></a>RETURN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488aead3c555ed9dda1fe36712ce9ac873c2" name="ab231aad32844e292a6ed70aca6b30488aead3c555ed9dda1fe36712ce9ac873c2"></a>CALL_STMT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a4239f063a3d4fb9d38a0182be6e39e76" name="ab231aad32844e292a6ed70aca6b30488a4239f063a3d4fb9d38a0182be6e39e76"></a>SWITCH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488abea5438a9521adc1b23a9117024bbb43" name="ab231aad32844e292a6ed70aca6b30488abea5438a9521adc1b23a9117024bbb43"></a>CASE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a09bd6376d82fb09cb7498d600b195600" name="ab231aad32844e292a6ed70aca6b30488a09bd6376d82fb09cb7498d600b195600"></a>SWITCH_BLOCK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a5b39c8b553c821e7cddc6da64b5bd2ee" name="ab231aad32844e292a6ed70aca6b30488a5b39c8b553c821e7cddc6da64b5bd2ee"></a>DEFAULT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a14d6a3e0201f58bfe7c01e775973e80e" name="ab231aad32844e292a6ed70aca6b30488a14d6a3e0201f58bfe7c01e775973e80e"></a>BREAK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a39e02cdeda38ebf7d4a898b900cf0776" name="ab231aad32844e292a6ed70aca6b30488a39e02cdeda38ebf7d4a898b900cf0776"></a>TEMPORARY&#160;</td><td class="fielddoc"><p>values </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488aca3547acb9162b49fb4a6594ed9b3030" name="ab231aad32844e292a6ed70aca6b30488aca3547acb9162b49fb4a6594ed9b3030"></a>CALL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a8dda46c0fff4137b6f660f56255d967e" name="ab231aad32844e292a6ed70aca6b30488a8dda46c0fff4137b6f660f56255d967e"></a>ARGUMENT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488ab718adec73e04ce3ec720dd11a06a308" name="ab231aad32844e292a6ed70aca6b30488ab718adec73e04ce3ec720dd11a06a308"></a>ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488aa0000d7769148184776f1d17656921b0" name="ab231aad32844e292a6ed70aca6b30488aa0000d7769148184776f1d17656921b0"></a>LITERAL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a9eeb52badb613229884838847294b90d" name="ab231aad32844e292a6ed70aca6b30488a9eeb52badb613229884838847294b90d"></a>ADD&#160;</td><td class="fielddoc"><p>arithmetic operations </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a241dd841abade20fcb27b8a9f494e1eb" name="ab231aad32844e292a6ed70aca6b30488a241dd841abade20fcb27b8a9f494e1eb"></a>SUB&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a29bbf66f7f8529ec47e394fb5a36c646" name="ab231aad32844e292a6ed70aca6b30488a29bbf66f7f8529ec47e394fb5a36c646"></a>DIV&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a2cdf52a55876063ec93b7d18bc741f6c" name="ab231aad32844e292a6ed70aca6b30488a2cdf52a55876063ec93b7d18bc741f6c"></a>MUL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a558ffc8f5770d8e4f95f51d822685532" name="ab231aad32844e292a6ed70aca6b30488a558ffc8f5770d8e4f95f51d822685532"></a>AND&#160;</td><td class="fielddoc"><p>bitwise operations </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a1d00e7dce692e8dc3f6877f035e3a616" name="ab231aad32844e292a6ed70aca6b30488a1d00e7dce692e8dc3f6877f035e3a616"></a>OR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a97675eb3f268048604dc5155511a2a4d" name="ab231aad32844e292a6ed70aca6b30488a97675eb3f268048604dc5155511a2a4d"></a>XOR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488abb0b9165d75b1fd27d0a869b036baa3c" name="ab231aad32844e292a6ed70aca6b30488abb0b9165d75b1fd27d0a869b036baa3c"></a>SHL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488aa9fbf652584d2904a8bf8246e7b3387c" name="ab231aad32844e292a6ed70aca6b30488aa9fbf652584d2904a8bf8246e7b3387c"></a>SAL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a10ab606ab9efe239a011d327d9301edd" name="ab231aad32844e292a6ed70aca6b30488a10ab606ab9efe239a011d327d9301edd"></a>SHR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a269bdc1fb1aadcc5b575a68220158602" name="ab231aad32844e292a6ed70aca6b30488a269bdc1fb1aadcc5b575a68220158602"></a>SAR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a5cbc764daeacd3be7f410f42511c1edb" name="ab231aad32844e292a6ed70aca6b30488a5cbc764daeacd3be7f410f42511c1edb"></a>CMP&#160;</td><td class="fielddoc"><p>comparison </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488afa5199613525eb9f67ae6d8f3ca8db14" name="ab231aad32844e292a6ed70aca6b30488afa5199613525eb9f67ae6d8f3ca8db14"></a>JG&#160;</td><td class="fielddoc"><p>conditional jumps </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a58806e006b14b04a535784a5462d09b0" name="ab231aad32844e292a6ed70aca6b30488a58806e006b14b04a535784a5462d09b0"></a>JA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a1db930052867457acfde0ae416c8b1f9" name="ab231aad32844e292a6ed70aca6b30488a1db930052867457acfde0ae416c8b1f9"></a>JL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a1ae317c33bd344440157e85303d49d82" name="ab231aad32844e292a6ed70aca6b30488a1ae317c33bd344440157e85303d49d82"></a>JB&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488aa28dafa80de5e3b89bb0d9a44993c42f" name="ab231aad32844e292a6ed70aca6b30488aa28dafa80de5e3b89bb0d9a44993c42f"></a>JGE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488ab6578b6b4edde194e75a092f18c52235" name="ab231aad32844e292a6ed70aca6b30488ab6578b6b4edde194e75a092f18c52235"></a>JAE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a7f684bd682a2fa65c32bf83662374807" name="ab231aad32844e292a6ed70aca6b30488a7f684bd682a2fa65c32bf83662374807"></a>JLE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a2dec95cc7ea83666c522afe62699afbb" name="ab231aad32844e292a6ed70aca6b30488a2dec95cc7ea83666c522afe62699afbb"></a>JBE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488a069b38cf28a10a4a128a408ce11d2789" name="ab231aad32844e292a6ed70aca6b30488a069b38cf28a10a4a128a408ce11d2789"></a>JE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488ad339c7f89820d6b83f759ad9d1f95ead" name="ab231aad32844e292a6ed70aca6b30488ad339c7f89820d6b83f759ad9d1f95ead"></a>JNE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab231aad32844e292a6ed70aca6b30488ab50339a10e1de285ac99d4c3990b8693" name="ab231aad32844e292a6ed70aca6b30488ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"><p>special </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="ade8d5681cdf4f57abd459f0328085353" name="ade8d5681cdf4f57abd459f0328085353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade8d5681cdf4f57abd459f0328085353">&#9670;&#160;</a></span>irNodeToString</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::unordered_map&lt;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>, std::string&gt; irNodeToString</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>translates irt node types to string </p>
-
-</div>
-</div>
-<a id="a4568168080b38ed6b5060093c0d2047e" name="a4568168080b38ed6b5060093c0d2047e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4568168080b38ed6b5060093c0d2047e">&#9670;&#160;</a></span>irOperators</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::unordered_set&lt;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&gt; irOperators</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>set of all irt operators </p>
-
-</div>
-</div>
-<a id="af4d22276818e7ef729c72fc4a9637b49" name="af4d22276818e7ef729c72fc4a9637b49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4d22276818e7ef729c72fc4a9637b49">&#9670;&#160;</a></span>operatorToIRNodeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::unordered_map&lt;<a class="el" href="defs_8hpp.html#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a>, <a class="el" href="structOperation.html">Operation</a>&gt; operatorToIRNodeType</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>maps the operators to the operation </p>
-
-</div>
-</div>
-<a id="aed8af2872f3571a07dc6a1904ed7237c" name="aed8af2872f3571a07dc6a1904ed7237c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed8af2872f3571a07dc6a1904ed7237c">&#9670;&#160;</a></span>stringToArop</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::unordered_map&lt;std::string, <a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&gt; stringToArop</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>translates strings to arithmetic operator nodes </p>
-
-</div>
-</div>
-<a id="a56e4e06b00a4623e7045764a6c095ff7" name="a56e4e06b00a4623e7045764a6c095ff7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56e4e06b00a4623e7045764a6c095ff7">&#9670;&#160;</a></span>stringToBitop</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::unordered_map&lt;std::string, std::vector&lt;<a class="el" href="#ab231aad32844e292a6ed70aca6b30488">IRNodeType</a>&gt; &gt; stringToBitop</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>translates strings to bitwise operators </p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

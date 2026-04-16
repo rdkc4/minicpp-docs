@@ -59,34 +59,34 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ebab424d1aa904d52537e0ab38a4d4b" id="r_a9ebab424d1aa904d52537e0ab38a4d4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ebab424d1aa904d52537e0ab38a4d4b">StatementParser</a> (<a class="el" href="classTokenConsumer.html">TokenConsumer</a> &amp;consumer)</td></tr>
 <tr class="memdesc:a9ebab424d1aa904d52537e0ab38a4d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new instance of the parser specialized for statements.  <br /></td></tr>
-<tr class="memitem:a7f5ec1abffde197d2c372442a120d1ad" id="r_a7f5ec1abffde197d2c372442a120d1ad"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTStmt.html">ASTStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f5ec1abffde197d2c372442a120d1ad">parseStmt</a> ()</td></tr>
-<tr class="memdesc:a7f5ec1abffde197d2c372442a120d1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses statement  <br /></td></tr>
-<tr class="memitem:aba8249cd9fe27c7a5f6fb364b97c8f2f" id="r_aba8249cd9fe27c7a5f6fb364b97c8f2f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTVariableDeclStmt.html">ASTVariableDeclStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba8249cd9fe27c7a5f6fb364b97c8f2f">parseVariableDeclStmt</a> ()</td></tr>
-<tr class="memdesc:aba8249cd9fe27c7a5f6fb364b97c8f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses variable declaration  <br /></td></tr>
-<tr class="memitem:a022c562d23bfd3701f6ef860baaf46be" id="r_a022c562d23bfd3701f6ef860baaf46be"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTCompoundStmt.html">ASTCompoundStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a022c562d23bfd3701f6ef860baaf46be">parseCompoundStmt</a> ()</td></tr>
-<tr class="memdesc:a022c562d23bfd3701f6ef860baaf46be"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses compound statement  <br /></td></tr>
-<tr class="memitem:afc455c7d210673a7e183be7c7928e91b" id="r_afc455c7d210673a7e183be7c7928e91b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTAssignStmt.html">ASTAssignStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc455c7d210673a7e183be7c7928e91b">parseAssignStmt</a> (bool expectsSemicolon=true)</td></tr>
-<tr class="memdesc:afc455c7d210673a7e183be7c7928e91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses assignment statement  <br /></td></tr>
-<tr class="memitem:a329127fe554b351aa8114028f7d25cce" id="r_a329127fe554b351aa8114028f7d25cce"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTReturnStmt.html">ASTReturnStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a329127fe554b351aa8114028f7d25cce">parseReturnStmt</a> ()</td></tr>
-<tr class="memdesc:a329127fe554b351aa8114028f7d25cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses return statement  <br /></td></tr>
-<tr class="memitem:adec974c5474f6fef178bbe3a52b859ba" id="r_adec974c5474f6fef178bbe3a52b859ba"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTIfStmt.html">ASTIfStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adec974c5474f6fef178bbe3a52b859ba">parseIfStmt</a> ()</td></tr>
-<tr class="memdesc:adec974c5474f6fef178bbe3a52b859ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses if statement  <br /></td></tr>
-<tr class="memitem:ae69d85b2d85f4e42650f9330b0cb9635" id="r_ae69d85b2d85f4e42650f9330b0cb9635"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTWhileStmt.html">ASTWhileStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae69d85b2d85f4e42650f9330b0cb9635">parseWhileStmt</a> ()</td></tr>
-<tr class="memdesc:ae69d85b2d85f4e42650f9330b0cb9635"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses while statement  <br /></td></tr>
-<tr class="memitem:aaa2d213dbcfb5a9aeaa7af1c00c32e2e" id="r_aaa2d213dbcfb5a9aeaa7af1c00c32e2e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTForStmt.html">ASTForStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa2d213dbcfb5a9aeaa7af1c00c32e2e">parseForStmt</a> ()</td></tr>
-<tr class="memdesc:aaa2d213dbcfb5a9aeaa7af1c00c32e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses for statement  <br /></td></tr>
-<tr class="memitem:a47535cd3e215e4ac19623f3d8be8c6aa" id="r_a47535cd3e215e4ac19623f3d8be8c6aa"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTDoWhileStmt.html">ASTDoWhileStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47535cd3e215e4ac19623f3d8be8c6aa">parseDoWhileStmt</a> ()</td></tr>
-<tr class="memdesc:a47535cd3e215e4ac19623f3d8be8c6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses do-while statement  <br /></td></tr>
-<tr class="memitem:a2bd388ab8e0966ead44e93d4dcd7fc21" id="r_a2bd388ab8e0966ead44e93d4dcd7fc21"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTFunctionCallStmt.html">ASTFunctionCallStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bd388ab8e0966ead44e93d4dcd7fc21">parseFunctionCallStmt</a> ()</td></tr>
-<tr class="memdesc:a2bd388ab8e0966ead44e93d4dcd7fc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses function-call statement  <br /></td></tr>
-<tr class="memitem:a8e1ec67e0e1c96362836dcfdc801ab65" id="r_a8e1ec67e0e1c96362836dcfdc801ab65"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTSwitchStmt.html">ASTSwitchStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e1ec67e0e1c96362836dcfdc801ab65">parseSwitchStmt</a> ()</td></tr>
-<tr class="memdesc:a8e1ec67e0e1c96362836dcfdc801ab65"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses switch statement  <br /></td></tr>
-<tr class="memitem:a4d063925ed25f8cb4a58057e9250a048" id="r_a4d063925ed25f8cb4a58057e9250a048"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTSwitchBlockStmt.html">ASTSwitchBlockStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d063925ed25f8cb4a58057e9250a048">parseSwitchBlockStmt</a> ()</td></tr>
-<tr class="memdesc:a4d063925ed25f8cb4a58057e9250a048"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses swtich-case block  <br /></td></tr>
-<tr class="memitem:ab49d7bfb0eca1ff10144e54c930dae92" id="r_ab49d7bfb0eca1ff10144e54c930dae92"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTCaseStmt.html">ASTCaseStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab49d7bfb0eca1ff10144e54c930dae92">parseCaseStmt</a> ()</td></tr>
-<tr class="memdesc:ab49d7bfb0eca1ff10144e54c930dae92"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses case of the switch statement  <br /></td></tr>
-<tr class="memitem:a0d26c6eb64ec3098843060e9a44dfb42" id="r_a0d26c6eb64ec3098843060e9a44dfb42"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classASTDefaultStmt.html">ASTDefaultStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d26c6eb64ec3098843060e9a44dfb42">parseDefaultStmt</a> ()</td></tr>
-<tr class="memdesc:a0d26c6eb64ec3098843060e9a44dfb42"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses default case of the switch statement  <br /></td></tr>
+<tr class="memitem:a1f750cd071279b04acf9d551d7469194" id="r_a1f750cd071279b04acf9d551d7469194"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTStmt.html">AST::node::ASTStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f750cd071279b04acf9d551d7469194">parseStmt</a> ()</td></tr>
+<tr class="memdesc:a1f750cd071279b04acf9d551d7469194"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses statement  <br /></td></tr>
+<tr class="memitem:a92ba58f9a4c37bbd923e9d25a5d94131" id="r_a92ba58f9a4c37bbd923e9d25a5d94131"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTVariableDeclStmt.html">AST::node::ASTVariableDeclStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ba58f9a4c37bbd923e9d25a5d94131">parseVariableDeclStmt</a> ()</td></tr>
+<tr class="memdesc:a92ba58f9a4c37bbd923e9d25a5d94131"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses variable declaration  <br /></td></tr>
+<tr class="memitem:a46b8bbe4d2c456ceca45a2e605544910" id="r_a46b8bbe4d2c456ceca45a2e605544910"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTCompoundStmt.html">AST::node::ASTCompoundStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46b8bbe4d2c456ceca45a2e605544910">parseCompoundStmt</a> ()</td></tr>
+<tr class="memdesc:a46b8bbe4d2c456ceca45a2e605544910"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses compound statement  <br /></td></tr>
+<tr class="memitem:a0fbddbe3b0ed160dec03888145af5a64" id="r_a0fbddbe3b0ed160dec03888145af5a64"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTAssignStmt.html">AST::node::ASTAssignStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fbddbe3b0ed160dec03888145af5a64">parseAssignStmt</a> (bool expectsSemicolon=true)</td></tr>
+<tr class="memdesc:a0fbddbe3b0ed160dec03888145af5a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses assignment statement  <br /></td></tr>
+<tr class="memitem:ac93d684f82864c5921a24da496fe4b61" id="r_ac93d684f82864c5921a24da496fe4b61"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTReturnStmt.html">AST::node::ASTReturnStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac93d684f82864c5921a24da496fe4b61">parseReturnStmt</a> ()</td></tr>
+<tr class="memdesc:ac93d684f82864c5921a24da496fe4b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses return statement  <br /></td></tr>
+<tr class="memitem:a429e55a00940124fb94b17515fd8d3ff" id="r_a429e55a00940124fb94b17515fd8d3ff"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTIfStmt.html">AST::node::ASTIfStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a429e55a00940124fb94b17515fd8d3ff">parseIfStmt</a> ()</td></tr>
+<tr class="memdesc:a429e55a00940124fb94b17515fd8d3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses if statement  <br /></td></tr>
+<tr class="memitem:a5873125933b25e9a1fcb62d949a02468" id="r_a5873125933b25e9a1fcb62d949a02468"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTWhileStmt.html">AST::node::ASTWhileStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5873125933b25e9a1fcb62d949a02468">parseWhileStmt</a> ()</td></tr>
+<tr class="memdesc:a5873125933b25e9a1fcb62d949a02468"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses while statement  <br /></td></tr>
+<tr class="memitem:a66f1b505d5de9e9783e702b697e5038d" id="r_a66f1b505d5de9e9783e702b697e5038d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTForStmt.html">AST::node::ASTForStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66f1b505d5de9e9783e702b697e5038d">parseForStmt</a> ()</td></tr>
+<tr class="memdesc:a66f1b505d5de9e9783e702b697e5038d"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses for statement  <br /></td></tr>
+<tr class="memitem:ab6a475eb701f5271235e54e9e4c73168" id="r_ab6a475eb701f5271235e54e9e4c73168"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTDoWhileStmt.html">AST::node::ASTDoWhileStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6a475eb701f5271235e54e9e4c73168">parseDoWhileStmt</a> ()</td></tr>
+<tr class="memdesc:ab6a475eb701f5271235e54e9e4c73168"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses do-while statement  <br /></td></tr>
+<tr class="memitem:a0c292c2d227de7ffbed4797d15725987" id="r_a0c292c2d227de7ffbed4797d15725987"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTFunctionCallStmt.html">AST::node::ASTFunctionCallStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c292c2d227de7ffbed4797d15725987">parseFunctionCallStmt</a> ()</td></tr>
+<tr class="memdesc:a0c292c2d227de7ffbed4797d15725987"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses function-call statement  <br /></td></tr>
+<tr class="memitem:a432808fb7bcf6c518a558f3b4549fae3" id="r_a432808fb7bcf6c518a558f3b4549fae3"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTSwitchStmt.html">AST::node::ASTSwitchStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a432808fb7bcf6c518a558f3b4549fae3">parseSwitchStmt</a> ()</td></tr>
+<tr class="memdesc:a432808fb7bcf6c518a558f3b4549fae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses switch statement  <br /></td></tr>
+<tr class="memitem:a2b1aa4c563d099f6f46fd0efda5dc9ec" id="r_a2b1aa4c563d099f6f46fd0efda5dc9ec"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTSwitchBlockStmt.html">AST::node::ASTSwitchBlockStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b1aa4c563d099f6f46fd0efda5dc9ec">parseSwitchBlockStmt</a> ()</td></tr>
+<tr class="memdesc:a2b1aa4c563d099f6f46fd0efda5dc9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses swtich-case block  <br /></td></tr>
+<tr class="memitem:ab935504ecc1f24923d328b85ccad6929" id="r_ab935504ecc1f24923d328b85ccad6929"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTCaseStmt.html">AST::node::ASTCaseStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab935504ecc1f24923d328b85ccad6929">parseCaseStmt</a> ()</td></tr>
+<tr class="memdesc:ab935504ecc1f24923d328b85ccad6929"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses case of the switch statement  <br /></td></tr>
+<tr class="memitem:aaebd39c3c772e6e157df810cfe7f7ca1" id="r_aaebd39c3c772e6e157df810cfe7f7ca1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTDefaultStmt.html">AST::node::ASTDefaultStmt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaebd39c3c772e6e157df810cfe7f7ca1">parseDefaultStmt</a> ()</td></tr>
+<tr class="memdesc:aaebd39c3c772e6e157df810cfe7f7ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses default case of the switch statement  <br /></td></tr>
 <tr class="memitem:a4e0c894abf3b391309318d985241cf70" id="r_a4e0c894abf3b391309318d985241cf70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e0c894abf3b391309318d985241cf70">parseBreakStmt</a> ()</td></tr>
 <tr class="memdesc:a4e0c894abf3b391309318d985241cf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses break statement  <br /></td></tr>
 </table><table class="memberdecls">
@@ -126,14 +126,14 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="afc455c7d210673a7e183be7c7928e91b" name="afc455c7d210673a7e183be7c7928e91b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc455c7d210673a7e183be7c7928e91b">&#9670;&#160;</a></span>parseAssignStmt()</h2>
+<a id="a0fbddbe3b0ed160dec03888145af5a64" name="a0fbddbe3b0ed160dec03888145af5a64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fbddbe3b0ed160dec03888145af5a64">&#9670;&#160;</a></span>parseAssignStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTAssignStmt.html">ASTAssignStmt</a> &gt; StatementParser::parseAssignStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTAssignStmt.html">AST::node::ASTAssignStmt</a> &gt; StatementParser::parseAssignStmt </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>expectsSemicolon</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
           <td></td>
@@ -148,7 +148,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>ASSIGNMENT_STATEMENT : ID ASSIGN NUMERICAL_EXPRESSION SEMICOLON </p><dl class="section return"><dt>Returns</dt><dd>pointer to an assignment statement node </dd></dl>
+<p>ASSIGNMENT_STATEMENT : ID ASSIGN EXPRESSION SEMICOLON </p><dl class="section return"><dt>Returns</dt><dd>pointer to an assignment statement node </dd></dl>
 
 </div>
 </div>
@@ -172,14 +172,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab49d7bfb0eca1ff10144e54c930dae92" name="ab49d7bfb0eca1ff10144e54c930dae92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab49d7bfb0eca1ff10144e54c930dae92">&#9670;&#160;</a></span>parseCaseStmt()</h2>
+<a id="ab935504ecc1f24923d328b85ccad6929" name="ab935504ecc1f24923d328b85ccad6929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab935504ecc1f24923d328b85ccad6929">&#9670;&#160;</a></span>parseCaseStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTCaseStmt.html">ASTCaseStmt</a> &gt; StatementParser::parseCaseStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTCaseStmt.html">AST::node::ASTCaseStmt</a> &gt; StatementParser::parseCaseStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -192,14 +192,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a022c562d23bfd3701f6ef860baaf46be" name="a022c562d23bfd3701f6ef860baaf46be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a022c562d23bfd3701f6ef860baaf46be">&#9670;&#160;</a></span>parseCompoundStmt()</h2>
+<a id="a46b8bbe4d2c456ceca45a2e605544910" name="a46b8bbe4d2c456ceca45a2e605544910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b8bbe4d2c456ceca45a2e605544910">&#9670;&#160;</a></span>parseCompoundStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTCompoundStmt.html">ASTCompoundStmt</a> &gt; StatementParser::parseCompoundStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTCompoundStmt.html">AST::node::ASTCompoundStmt</a> &gt; StatementParser::parseCompoundStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -208,18 +208,18 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>parses compound statement </p>
-<p>COMPOUND_STATEMENT : LBRACKET (STATEMENT)? RBRACKET </p><dl class="section return"><dt>Returns</dt><dd>pointer to a compound statement node </dd></dl>
+<p>COMPOUND_STATEMENT : LBRACE (STATEMENT)? RBRACE </p><dl class="section return"><dt>Returns</dt><dd>pointer to a compound statement node </dd></dl>
 
 </div>
 </div>
-<a id="a0d26c6eb64ec3098843060e9a44dfb42" name="a0d26c6eb64ec3098843060e9a44dfb42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d26c6eb64ec3098843060e9a44dfb42">&#9670;&#160;</a></span>parseDefaultStmt()</h2>
+<a id="aaebd39c3c772e6e157df810cfe7f7ca1" name="aaebd39c3c772e6e157df810cfe7f7ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaebd39c3c772e6e157df810cfe7f7ca1">&#9670;&#160;</a></span>parseDefaultStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTDefaultStmt.html">ASTDefaultStmt</a> &gt; StatementParser::parseDefaultStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTDefaultStmt.html">AST::node::ASTDefaultStmt</a> &gt; StatementParser::parseDefaultStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -232,14 +232,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a47535cd3e215e4ac19623f3d8be8c6aa" name="a47535cd3e215e4ac19623f3d8be8c6aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47535cd3e215e4ac19623f3d8be8c6aa">&#9670;&#160;</a></span>parseDoWhileStmt()</h2>
+<a id="ab6a475eb701f5271235e54e9e4c73168" name="ab6a475eb701f5271235e54e9e4c73168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a475eb701f5271235e54e9e4c73168">&#9670;&#160;</a></span>parseDoWhileStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTDoWhileStmt.html">ASTDoWhileStmt</a> &gt; StatementParser::parseDoWhileStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTDoWhileStmt.html">AST::node::ASTDoWhileStmt</a> &gt; StatementParser::parseDoWhileStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -248,18 +248,18 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>parses do-while statement </p>
-<p>DO_WHILE_STATEMENT : DO STATEMENT WHILE LPAREN RELATIONAL_EXPRESSION RPAREN SEMICOLON </p><dl class="section return"><dt>Returns</dt><dd>pointer to a do-while statement node </dd></dl>
+<p>DO_WHILE_STATEMENT : DO STATEMENT WHILE LPAREN EXPRESSION RPAREN SEMICOLON </p><dl class="section return"><dt>Returns</dt><dd>pointer to a do-while statement node </dd></dl>
 
 </div>
 </div>
-<a id="aaa2d213dbcfb5a9aeaa7af1c00c32e2e" name="aaa2d213dbcfb5a9aeaa7af1c00c32e2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa2d213dbcfb5a9aeaa7af1c00c32e2e">&#9670;&#160;</a></span>parseForStmt()</h2>
+<a id="a66f1b505d5de9e9783e702b697e5038d" name="a66f1b505d5de9e9783e702b697e5038d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f1b505d5de9e9783e702b697e5038d">&#9670;&#160;</a></span>parseForStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTForStmt.html">ASTForStmt</a> &gt; StatementParser::parseForStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTForStmt.html">AST::node::ASTForStmt</a> &gt; StatementParser::parseForStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -268,18 +268,18 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>parses for statement </p>
-<p>FOR_STATEMENT : FOR LPAREN (ASSIGN_STATEMENT SEMICOLON)? (RELATIONAL_EXPRESSION SEMICOLON)? (ASSIGNMENT_STATEMENT)? RPAREN STATEMENT </p><dl class="section return"><dt>Returns</dt><dd>pointer to a for statement node </dd></dl>
+<p>FOR_STATEMENT : FOR LPAREN (ASSIGN_STATEMENT SEMICOLON)? (EXPRESSION SEMICOLON)? (ASSIGNMENT_STATEMENT)? RPAREN STATEMENT </p><dl class="section return"><dt>Returns</dt><dd>pointer to a for statement node </dd></dl>
 
 </div>
 </div>
-<a id="a2bd388ab8e0966ead44e93d4dcd7fc21" name="a2bd388ab8e0966ead44e93d4dcd7fc21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bd388ab8e0966ead44e93d4dcd7fc21">&#9670;&#160;</a></span>parseFunctionCallStmt()</h2>
+<a id="a0c292c2d227de7ffbed4797d15725987" name="a0c292c2d227de7ffbed4797d15725987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c292c2d227de7ffbed4797d15725987">&#9670;&#160;</a></span>parseFunctionCallStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTFunctionCallStmt.html">ASTFunctionCallStmt</a> &gt; StatementParser::parseFunctionCallStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTFunctionCallStmt.html">AST::node::ASTFunctionCallStmt</a> &gt; StatementParser::parseFunctionCallStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -292,14 +292,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adec974c5474f6fef178bbe3a52b859ba" name="adec974c5474f6fef178bbe3a52b859ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adec974c5474f6fef178bbe3a52b859ba">&#9670;&#160;</a></span>parseIfStmt()</h2>
+<a id="a429e55a00940124fb94b17515fd8d3ff" name="a429e55a00940124fb94b17515fd8d3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429e55a00940124fb94b17515fd8d3ff">&#9670;&#160;</a></span>parseIfStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTIfStmt.html">ASTIfStmt</a> &gt; StatementParser::parseIfStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTIfStmt.html">AST::node::ASTIfStmt</a> &gt; StatementParser::parseIfStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -309,20 +309,20 @@ Private Attributes</h2></td></tr>
 
 <p>parses if statement </p>
 <p>IF_STATEMENT</p>
-<p>: IF LPAREN RELATIONAL_EXPRESSION RPAREN STATEMENT</p>
+<p>: IF LPAREN EXPRESSION RPAREN STATEMENT</p>
 <p>| IF_STATEMENT ELSE IF STATEMENT</p>
 <p>| IF_STATEMENT ELSE STATEMENT </p><dl class="section return"><dt>Returns</dt><dd>pointer to an if statement node </dd></dl>
 
 </div>
 </div>
-<a id="a329127fe554b351aa8114028f7d25cce" name="a329127fe554b351aa8114028f7d25cce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a329127fe554b351aa8114028f7d25cce">&#9670;&#160;</a></span>parseReturnStmt()</h2>
+<a id="ac93d684f82864c5921a24da496fe4b61" name="ac93d684f82864c5921a24da496fe4b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93d684f82864c5921a24da496fe4b61">&#9670;&#160;</a></span>parseReturnStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTReturnStmt.html">ASTReturnStmt</a> &gt; StatementParser::parseReturnStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTReturnStmt.html">AST::node::ASTReturnStmt</a> &gt; StatementParser::parseReturnStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -331,18 +331,18 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>parses return statement </p>
-<p>RETURN_STATEMENT : RETURN (NUMERICAL_EXPRESSION)? SEMICOLON </p><dl class="section return"><dt>Returns</dt><dd>pointer to a return statement node </dd></dl>
+<p>RETURN_STATEMENT : RETURN (EXPRESSION)? SEMICOLON </p><dl class="section return"><dt>Returns</dt><dd>pointer to a return statement node </dd></dl>
 
 </div>
 </div>
-<a id="a7f5ec1abffde197d2c372442a120d1ad" name="a7f5ec1abffde197d2c372442a120d1ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f5ec1abffde197d2c372442a120d1ad">&#9670;&#160;</a></span>parseStmt()</h2>
+<a id="a1f750cd071279b04acf9d551d7469194" name="a1f750cd071279b04acf9d551d7469194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f750cd071279b04acf9d551d7469194">&#9670;&#160;</a></span>parseStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTStmt.html">ASTStmt</a> &gt; StatementParser::parseStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTStmt.html">AST::node::ASTStmt</a> &gt; StatementParser::parseStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -364,14 +364,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d063925ed25f8cb4a58057e9250a048" name="a4d063925ed25f8cb4a58057e9250a048"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d063925ed25f8cb4a58057e9250a048">&#9670;&#160;</a></span>parseSwitchBlockStmt()</h2>
+<a id="a2b1aa4c563d099f6f46fd0efda5dc9ec" name="a2b1aa4c563d099f6f46fd0efda5dc9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1aa4c563d099f6f46fd0efda5dc9ec">&#9670;&#160;</a></span>parseSwitchBlockStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTSwitchBlockStmt.html">ASTSwitchBlockStmt</a> &gt; StatementParser::parseSwitchBlockStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTSwitchBlockStmt.html">AST::node::ASTSwitchBlockStmt</a> &gt; StatementParser::parseSwitchBlockStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -384,14 +384,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8e1ec67e0e1c96362836dcfdc801ab65" name="a8e1ec67e0e1c96362836dcfdc801ab65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e1ec67e0e1c96362836dcfdc801ab65">&#9670;&#160;</a></span>parseSwitchStmt()</h2>
+<a id="a432808fb7bcf6c518a558f3b4549fae3" name="a432808fb7bcf6c518a558f3b4549fae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432808fb7bcf6c518a558f3b4549fae3">&#9670;&#160;</a></span>parseSwitchStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTSwitchStmt.html">ASTSwitchStmt</a> &gt; StatementParser::parseSwitchStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTSwitchStmt.html">AST::node::ASTSwitchStmt</a> &gt; StatementParser::parseSwitchStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -400,18 +400,18 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>parses switch statement </p>
-<p>SWITCH_STATEMENT : SWITCH LPAREN ID RPAREN LBRACKET (_CASE)+ (_DEFAULT)? RBRACKET </p><dl class="section return"><dt>Returns</dt><dd>pointer to a switch statement node </dd></dl>
+<p>SWITCH_STATEMENT : SWITCH LPAREN ID RPAREN LBRACE (_CASE)+ (_DEFAULT)? RBRACE </p><dl class="section return"><dt>Returns</dt><dd>pointer to a switch statement node </dd></dl>
 
 </div>
 </div>
-<a id="aba8249cd9fe27c7a5f6fb364b97c8f2f" name="aba8249cd9fe27c7a5f6fb364b97c8f2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba8249cd9fe27c7a5f6fb364b97c8f2f">&#9670;&#160;</a></span>parseVariableDeclStmt()</h2>
+<a id="a92ba58f9a4c37bbd923e9d25a5d94131" name="a92ba58f9a4c37bbd923e9d25a5d94131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ba58f9a4c37bbd923e9d25a5d94131">&#9670;&#160;</a></span>parseVariableDeclStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTVariableDeclStmt.html">ASTVariableDeclStmt</a> &gt; StatementParser::parseVariableDeclStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTVariableDeclStmt.html">AST::node::ASTVariableDeclStmt</a> &gt; StatementParser::parseVariableDeclStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -420,18 +420,18 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>parses variable declaration </p>
-<p>VARIABLE_DECL : TYPE ID (ASSIGN NUMERICAL_EXPRESSION)? SEMICOLON </p><dl class="section return"><dt>Returns</dt><dd>pointer to a variable declaration node </dd></dl>
+<p>VARIABLE_DECL : TYPE ID (ASSIGN EXPRESSION)? SEMICOLON </p><dl class="section return"><dt>Returns</dt><dd>pointer to a variable declaration node </dd></dl>
 
 </div>
 </div>
-<a id="ae69d85b2d85f4e42650f9330b0cb9635" name="ae69d85b2d85f4e42650f9330b0cb9635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae69d85b2d85f4e42650f9330b0cb9635">&#9670;&#160;</a></span>parseWhileStmt()</h2>
+<a id="a5873125933b25e9a1fcb62d949a02468" name="a5873125933b25e9a1fcb62d949a02468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5873125933b25e9a1fcb62d949a02468">&#9670;&#160;</a></span>parseWhileStmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classASTWhileStmt.html">ASTWhileStmt</a> &gt; StatementParser::parseWhileStmt </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classAST_1_1node_1_1ASTWhileStmt.html">AST::node::ASTWhileStmt</a> &gt; StatementParser::parseWhileStmt </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -440,7 +440,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>parses while statement </p>
-<p>WHILE_STATEMENT : WHILE LPAREN RELATIONAL_EXPRESSION RPAREN STATEMENT </p><dl class="section return"><dt>Returns</dt><dd>pointer to a while statement node </dd></dl>
+<p>WHILE_STATEMENT : WHILE LPAREN EXPRESSION RPAREN STATEMENT </p><dl class="section return"><dt>Returns</dt><dd>pointer to a while statement node </dd></dl>
 
 </div>
 </div>

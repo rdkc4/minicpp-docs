@@ -48,18 +48,19 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">defs.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
+<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
 <code>#include &quot;<a class="el" href="token__defs_8hpp.html">../token/defs/token_defs.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7" id="r_a1d1cfd8ffb84e947f82999c682b666a7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <br />
-&#160;&#160;<a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57">NO_TYPE</a>
+&#160;&#160;<a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57">NO_TYPE</a> = 0
 , <a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7a53f93baa3057821107c750323892fa92">INT</a>
 , <a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7aaf36b47f395cd01f48b8fc1013665054">UNSIGNED</a>
 , <a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7a6d0c9fc747131795e6e5d0c5119f12cb">VOID</a>
@@ -69,7 +70,7 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a1d1cfd8ffb84e947f82999c682b666a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">types supported by the compiler  <a href="#a1d1cfd8ffb84e947f82999c682b666a7">More...</a><br /></td></tr>
 <tr class="memitem:aa10c9e8951b8ccf714a59ec321bdac5b" id="r_aa10c9e8951b8ccf714a59ec321bdac5b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a> { <br />
-&#160;&#160;<a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5babef7d044742c25ff9152766a0808068a">NO_KIND</a>
+&#160;&#160;<a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5babef7d044742c25ff9152766a0808068a">NO_KIND</a> = 0
 , <a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5baa4e36ae36e52be95ee5c8d2bc974dfd8">LIT</a>
 , <a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5baa69020db0ccbd083e3df17a9227c8813">FUN</a>
 , <a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5bad6f4440b8633f973d33c78928bdac2e1">VAR</a>
@@ -79,7 +80,7 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aa10c9e8951b8ccf714a59ec321bdac5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">kinds of symbols  <a href="#aa10c9e8951b8ccf714a59ec321bdac5b">More...</a><br /></td></tr>
 <tr class="memitem:a7215803e478cdd4bdf4f1b8087cae87b" id="r_a7215803e478cdd4bdf4f1b8087cae87b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> { <br />
-&#160;&#160;<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba14b52fa379dea9171c3eb958d7fa5795">NO_OP</a>
+&#160;&#160;<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba14b52fa379dea9171c3eb958d7fa5795">NO_OP</a> = 0
 , <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba9eeb52badb613229884838847294b90d">ADD</a>
 , <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba241dd841abade20fcb27b8a9f494e1eb">SUB</a>
 , <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba2cdf52a55876063ec93b7d18bc741f6c">MUL</a>
@@ -91,29 +92,51 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87badff23c74b1d8d80f33e8a894964c74d7">LSHIFT</a>
 , <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87bad13eccc8e378c60e2f9620ce4c77f963">RSHIFT</a>
-, <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba1798e8c3621ca53d9e3a80d257306000">LESS</a>
-, <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87bae7e72355289e404b762d4cf88824d23b">GREATER</a>
+, <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba5471bbbe632b8222dcbbf8e5755d1e98">ANDL</a>
+, <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba0f4fd0dd93fd8034781d91475381de3f">ORL</a>
 , <br />
-&#160;&#160;<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba8a72211a539c4f44dcaa446209076da6">LEQUAL</a>
+&#160;&#160;<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba1798e8c3621ca53d9e3a80d257306000">LESS</a>
+, <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87bae7e72355289e404b762d4cf88824d23b">GREATER</a>
+, <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba8a72211a539c4f44dcaa446209076da6">LEQUAL</a>
 , <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba9e63a520a6e8fefd37a5fa966d96f3bc">GEQUAL</a>
-, <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba969f331a87d8c958473c32b4d0e61a44">EQUAL</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba969f331a87d8c958473c32b4d0e61a44">EQUAL</a>
 , <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba08c21e015248267a01d727848c97b40a">NEQUAL</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a7215803e478cdd4bdf4f1b8087cae87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">operators supported by the compiler  <a href="#a7215803e478cdd4bdf4f1b8087cae87b">More...</a><br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a69725c0896189dc282afa7d9ad7d4b31" id="r_a69725c0896189dc282afa7d9ad7d4b31"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69725c0896189dc282afa7d9ad7d4b31">tokenTypeToOperator</a> (<a class="el" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a> type)</td></tr>
+<tr class="memdesc:a69725c0896189dc282afa7d9ad7d4b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the operator of the underlying token type  <br /></td></tr>
+<tr class="memitem:a6e92226b1ebf767871171787ee299793" id="r_a6e92226b1ebf767871171787ee299793"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e92226b1ebf767871171787ee299793">typeToStr</a> (<a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type)</td></tr>
+<tr class="memdesc:a6e92226b1ebf767871171787ee299793"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the string representation of the type  <br /></td></tr>
+<tr class="memitem:a8c0215b7e175579d3c262f2a9594cfcf" id="r_a8c0215b7e175579d3c262f2a9594cfcf"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c0215b7e175579d3c262f2a9594cfcf">tokenTypeToType</a> (<a class="el" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a> type)</td></tr>
+<tr class="memdesc:a8c0215b7e175579d3c262f2a9594cfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the type representation of the token type  <br /></td></tr>
+<tr class="memitem:af9c6ceac5a7f42c441b444ea1d19f3b6" id="r_af9c6ceac5a7f42c441b444ea1d19f3b6"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9c6ceac5a7f42c441b444ea1d19f3b6">kindToStr</a> (<a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a> kind)</td></tr>
+<tr class="memdesc:af9c6ceac5a7f42c441b444ea1d19f3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the string representation of the kind  <br /></td></tr>
+<tr class="memitem:aa5320962e99b9d8121b7d98852450d7d" id="r_aa5320962e99b9d8121b7d98852450d7d"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5320962e99b9d8121b7d98852450d7d">operatorToStr</a> (<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> op)</td></tr>
+<tr class="memdesc:aa5320962e99b9d8121b7d98852450d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the string representation of the operator  <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa2abb9aa4cafec76d4e59f16b6ae2b00" id="r_aa2abb9aa4cafec76d4e59f16b6ae2b00"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; std::string, <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2abb9aa4cafec76d4e59f16b6ae2b00">stringToOperator</a></td></tr>
-<tr class="memdesc:aa2abb9aa4cafec76d4e59f16b6ae2b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps string to an operator  <br /></td></tr>
-<tr class="memitem:a5e80e684ab3531fcad6bdc0594693224" id="r_a5e80e684ab3531fcad6bdc0594693224"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; <a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e80e684ab3531fcad6bdc0594693224">typeToString</a></td></tr>
-<tr class="memdesc:a5e80e684ab3531fcad6bdc0594693224"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps type to a string  <br /></td></tr>
-<tr class="memitem:ab92c0d245853b5a8d7f9e97a28777229" id="r_ab92c0d245853b5a8d7f9e97a28777229"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; <a class="el" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a>, <a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab92c0d245853b5a8d7f9e97a28777229">tokenTypeToType</a></td></tr>
-<tr class="memdesc:ab92c0d245853b5a8d7f9e97a28777229"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps token type to a type  <br /></td></tr>
-<tr class="memitem:a6f79d5092577d12590c48d4cc3c732e4" id="r_a6f79d5092577d12590c48d4cc3c732e4"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; <a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f79d5092577d12590c48d4cc3c732e4">kindToString</a></td></tr>
-<tr class="memdesc:a6f79d5092577d12590c48d4cc3c732e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps kind to a string  <br /></td></tr>
-<tr class="memitem:a604e899c871c0fdd3a83b3d73709d51b" id="r_a604e899c871c0fdd3a83b3d73709d51b"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a>, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a604e899c871c0fdd3a83b3d73709d51b">operatorToString</a></td></tr>
-<tr class="memdesc:a604e899c871c0fdd3a83b3d73709d51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps operator to a string  <br /></td></tr>
+<tr class="memitem:af0b27c00904ed3936c375007cfb223f4" id="r_af0b27c00904ed3936c375007cfb223f4"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0b27c00904ed3936c375007cfb223f4">TYPE_COUNT</a> { static_cast&lt;size_t&gt;(<a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7ae1f2d5134ed2543d38a0de9751cf75d9">Type::AUTO</a>) + 1 }</td></tr>
+<tr class="memdesc:af0b27c00904ed3936c375007cfb223f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of types  <br /></td></tr>
+<tr class="memitem:a8b59afcad7efddc6ec16051d2468ce9f" id="r_a8b59afcad7efddc6ec16051d2468ce9f"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b59afcad7efddc6ec16051d2468ce9f">KIND_COUNT</a> { static_cast&lt;size_t&gt;(<a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5ba48caee294091d0d36427460deac26c62">Kind::PAR</a>) + 1 }</td></tr>
+<tr class="memdesc:a8b59afcad7efddc6ec16051d2468ce9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of kinds  <br /></td></tr>
+<tr class="memitem:aeb9f557079314461babda61aef04540b" id="r_aeb9f557079314461babda61aef04540b"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb9f557079314461babda61aef04540b">OPERATOR_COUNT</a> = static_cast&lt;size_t&gt;(<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba08c21e015248267a01d727848c97b40a">Operator::NEQUAL</a>) + 1</td></tr>
+<tr class="memdesc:aeb9f557079314461babda61aef04540b"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of operators  <br /></td></tr>
+<tr class="memitem:a1f0c0ae5f18edfbd7a037fd73e68ba6a" id="r_a1f0c0ae5f18edfbd7a037fd73e68ba6a"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a>, <a class="el" href="token__defs_8hpp.html#abe63dbea41297138078c6fea213e6665">TOKEN_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f0c0ae5f18edfbd7a037fd73e68ba6a">tokenTypeOperatorRepresentations</a></td></tr>
+<tr class="memdesc:a1f0c0ae5f18edfbd7a037fd73e68ba6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps token type to operator  <br /></td></tr>
+<tr class="memitem:a87097552f5b1da5dcd6d6a7d13f81033" id="r_a87097552f5b1da5dcd6d6a7d13f81033"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view, <a class="el" href="#af0b27c00904ed3936c375007cfb223f4">TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87097552f5b1da5dcd6d6a7d13f81033">typeStringRepresentations</a></td></tr>
+<tr class="memdesc:a87097552f5b1da5dcd6d6a7d13f81033"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps types to their string representation  <br /></td></tr>
+<tr class="memitem:a909227f14541fc983a974b9c74c5143c" id="r_a909227f14541fc983a974b9c74c5143c"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; <a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>, <a class="el" href="token__defs_8hpp.html#abe63dbea41297138078c6fea213e6665">TOKEN_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a909227f14541fc983a974b9c74c5143c">tokenTypeTypeRepresentations</a></td></tr>
+<tr class="memdesc:a909227f14541fc983a974b9c74c5143c"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps token type to type  <br /></td></tr>
+<tr class="memitem:a33cc78f099c2f559af2da24d42e6389d" id="r_a33cc78f099c2f559af2da24d42e6389d"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view, <a class="el" href="#a8b59afcad7efddc6ec16051d2468ce9f">KIND_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33cc78f099c2f559af2da24d42e6389d">kindStringRepresentations</a></td></tr>
+<tr class="memdesc:a33cc78f099c2f559af2da24d42e6389d"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps kinds to their string representations  <br /></td></tr>
+<tr class="memitem:a4154118a9f4d81a6076c04d860c13763" id="r_a4154118a9f4d81a6076c04d860c13763"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view, <a class="el" href="#aeb9f557079314461babda61aef04540b">OPERATOR_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4154118a9f4d81a6076c04d860c13763">operatorStringRepresentations</a></td></tr>
+<tr class="memdesc:a4154118a9f4d81a6076c04d860c13763"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps operators to their string representations  <br /></td></tr>
 </table>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
 <a id="aa10c9e8951b8ccf714a59ec321bdac5b" name="aa10c9e8951b8ccf714a59ec321bdac5b"></a>
@@ -181,6 +204,9 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a7215803e478cdd4bdf4f1b8087cae87ba97675eb3f268048604dc5155511a2a4d" name="a7215803e478cdd4bdf4f1b8087cae87ba97675eb3f268048604dc5155511a2a4d"></a>XOR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7215803e478cdd4bdf4f1b8087cae87badff23c74b1d8d80f33e8a894964c74d7" name="a7215803e478cdd4bdf4f1b8087cae87badff23c74b1d8d80f33e8a894964c74d7"></a>LSHIFT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7215803e478cdd4bdf4f1b8087cae87bad13eccc8e378c60e2f9620ce4c77f963" name="a7215803e478cdd4bdf4f1b8087cae87bad13eccc8e378c60e2f9620ce4c77f963"></a>RSHIFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7215803e478cdd4bdf4f1b8087cae87ba5471bbbe632b8222dcbbf8e5755d1e98" name="a7215803e478cdd4bdf4f1b8087cae87ba5471bbbe632b8222dcbbf8e5755d1e98"></a>ANDL&#160;</td><td class="fielddoc"><p>logical </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7215803e478cdd4bdf4f1b8087cae87ba0f4fd0dd93fd8034781d91475381de3f" name="a7215803e478cdd4bdf4f1b8087cae87ba0f4fd0dd93fd8034781d91475381de3f"></a>ORL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7215803e478cdd4bdf4f1b8087cae87ba1798e8c3621ca53d9e3a80d257306000" name="a7215803e478cdd4bdf4f1b8087cae87ba1798e8c3621ca53d9e3a80d257306000"></a>LESS&#160;</td><td class="fielddoc"><p>relational </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7215803e478cdd4bdf4f1b8087cae87bae7e72355289e404b762d4cf88824d23b" name="a7215803e478cdd4bdf4f1b8087cae87bae7e72355289e404b762d4cf88824d23b"></a>GREATER&#160;</td><td class="fielddoc"></td></tr>
@@ -223,9 +249,180 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="af9c6ceac5a7f42c441b444ea1d19f3b6" name="af9c6ceac5a7f42c441b444ea1d19f3b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c6ceac5a7f42c441b444ea1d19f3b6">&#9670;&#160;</a></span>kindToStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view kindToStr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the string representation of the kind </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kind</td><td>- kind of the token </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string representation of the kind </dd></dl>
+
+</div>
+</div>
+<a id="aa5320962e99b9d8121b7d98852450d7d" name="aa5320962e99b9d8121b7d98852450d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5320962e99b9d8121b7d98852450d7d">&#9670;&#160;</a></span>operatorToStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view operatorToStr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a></td>          <td class="paramname"><span class="paramname"><em>op</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the string representation of the operator </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>- operator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string representation of the operator </dd></dl>
+
+</div>
+</div>
+<a id="a69725c0896189dc282afa7d9ad7d4b31" name="a69725c0896189dc282afa7d9ad7d4b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69725c0896189dc282afa7d9ad7d4b31">&#9670;&#160;</a></span>tokenTypeToOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> tokenTypeToOperator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the operator of the underlying token type </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>- type of the token </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>operator of the underlying token type, if token type is not an operator, returns <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba14b52fa379dea9171c3eb958d7fa5795">Operator::NO_OP</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8c0215b7e175579d3c262f2a9594cfcf" name="a8c0215b7e175579d3c262f2a9594cfcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0215b7e175579d3c262f2a9594cfcf">&#9670;&#160;</a></span>tokenTypeToType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> tokenTypeToType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the type representation of the token type </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>- type of the token </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>type representation of the token type, if token is not type, it returns <a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57">Type::NO_TYPE</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6e92226b1ebf767871171787ee299793" name="a6e92226b1ebf767871171787ee299793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e92226b1ebf767871171787ee299793">&#9670;&#160;</a></span>typeToStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view typeToStr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the string representation of the type </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>- type (e.g. int, unsigned) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string representation of the type </dd></dl>
+
+</div>
+</div>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="a6f79d5092577d12590c48d4cc3c732e4" name="a6f79d5092577d12590c48d4cc3c732e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f79d5092577d12590c48d4cc3c732e4">&#9670;&#160;</a></span>kindToString</h2>
+<a id="a8b59afcad7efddc6ec16051d2468ce9f" name="a8b59afcad7efddc6ec16051d2468ce9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b59afcad7efddc6ec16051d2468ce9f">&#9670;&#160;</a></span>KIND_COUNT</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,22 +431,22 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::unordered_map&lt;<a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a>, std::string&gt; kindToString</td>
+          <td class="memname">size_t KIND_COUNT { static_cast&lt;size_t&gt;(<a class="el" href="#aa10c9e8951b8ccf714a59ec321bdac5ba48caee294091d0d36427460deac26c62">Kind::PAR</a>) + 1 }</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>maps kind to a string </p>
+<p>number of kinds </p>
 
 </div>
 </div>
-<a id="a604e899c871c0fdd3a83b3d73709d51b" name="a604e899c871c0fdd3a83b3d73709d51b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a604e899c871c0fdd3a83b3d73709d51b">&#9670;&#160;</a></span>operatorToString</h2>
+<a id="a33cc78f099c2f559af2da24d42e6389d" name="a33cc78f099c2f559af2da24d42e6389d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33cc78f099c2f559af2da24d42e6389d">&#9670;&#160;</a></span>kindStringRepresentations</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,22 +455,48 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::unordered_map&lt;<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a>, std::string&gt; operatorToString</td>
+          <td class="memname">std::array&lt;std::string_view, <a class="el" href="#a8b59afcad7efddc6ec16051d2468ce9f">KIND_COUNT</a>&gt; kindStringRepresentations</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>maps operator to a string </p>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    [] {</div>
+<div class="line">        </div>
+<div class="line">        <span class="keyword">constexpr</span> <span class="keyword">auto</span> idx {</div>
+<div class="line">            [](<a class="code hl_enumeration" href="#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a> kind) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">size_t</span> {</div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(kind);</div>
+<div class="line">            }</div>
+<div class="line">        };</div>
+<div class="line"> </div>
+<div class="line">        std::array&lt;std::string_view, KIND_COUNT&gt; kinds{};</div>
+<div class="line"> </div>
+<div class="line">        kinds[idx(<a class="code hl_enumvalue" href="#aa10c9e8951b8ccf714a59ec321bdac5babef7d044742c25ff9152766a0808068a">Kind::NO_KIND</a>)] = <span class="stringliteral">&quot;NO_KIND&quot;</span>;</div>
+<div class="line">        kinds[idx(<a class="code hl_enumvalue" href="#aa10c9e8951b8ccf714a59ec321bdac5baa4e36ae36e52be95ee5c8d2bc974dfd8">Kind::LIT</a>)]     = <span class="stringliteral">&quot;LIT&quot;</span>;</div>
+<div class="line">        kinds[idx(<a class="code hl_enumvalue" href="#aa10c9e8951b8ccf714a59ec321bdac5baa69020db0ccbd083e3df17a9227c8813">Kind::FUN</a>)]     = <span class="stringliteral">&quot;FUN&quot;</span>;</div>
+<div class="line">        kinds[idx(<a class="code hl_enumvalue" href="#aa10c9e8951b8ccf714a59ec321bdac5bad6f4440b8633f973d33c78928bdac2e1">Kind::VAR</a>)]     = <span class="stringliteral">&quot;VAR&quot;</span>;</div>
+<div class="line">        kinds[idx(<a class="code hl_enumvalue" href="#aa10c9e8951b8ccf714a59ec321bdac5ba48caee294091d0d36427460deac26c62">Kind::PAR</a>)]     = <span class="stringliteral">&quot;PAR&quot;</span>;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">return</span> kinds;</div>
+<div class="line">    }()</div>
+<div class="line">}</div>
+<div class="ttc" id="adefs_8hpp_html_aa10c9e8951b8ccf714a59ec321bdac5b"><div class="ttname"><a href="#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a></div><div class="ttdeci">Kind</div><div class="ttdoc">kinds of symbols</div><div class="ttdef"><b>Definition</b> defs.hpp:28</div></div>
+<div class="ttc" id="adefs_8hpp_html_aa10c9e8951b8ccf714a59ec321bdac5ba48caee294091d0d36427460deac26c62"><div class="ttname"><a href="#aa10c9e8951b8ccf714a59ec321bdac5ba48caee294091d0d36427460deac26c62">Kind::PAR</a></div><div class="ttdeci">@ PAR</div><div class="ttdef"><b>Definition</b> defs.hpp:33</div></div>
+<div class="ttc" id="adefs_8hpp_html_aa10c9e8951b8ccf714a59ec321bdac5baa4e36ae36e52be95ee5c8d2bc974dfd8"><div class="ttname"><a href="#aa10c9e8951b8ccf714a59ec321bdac5baa4e36ae36e52be95ee5c8d2bc974dfd8">Kind::LIT</a></div><div class="ttdeci">@ LIT</div><div class="ttdef"><b>Definition</b> defs.hpp:30</div></div>
+<div class="ttc" id="adefs_8hpp_html_aa10c9e8951b8ccf714a59ec321bdac5baa69020db0ccbd083e3df17a9227c8813"><div class="ttname"><a href="#aa10c9e8951b8ccf714a59ec321bdac5baa69020db0ccbd083e3df17a9227c8813">Kind::FUN</a></div><div class="ttdeci">@ FUN</div><div class="ttdef"><b>Definition</b> defs.hpp:31</div></div>
+<div class="ttc" id="adefs_8hpp_html_aa10c9e8951b8ccf714a59ec321bdac5babef7d044742c25ff9152766a0808068a"><div class="ttname"><a href="#aa10c9e8951b8ccf714a59ec321bdac5babef7d044742c25ff9152766a0808068a">Kind::NO_KIND</a></div><div class="ttdeci">@ NO_KIND</div><div class="ttdef"><b>Definition</b> defs.hpp:29</div></div>
+<div class="ttc" id="adefs_8hpp_html_aa10c9e8951b8ccf714a59ec321bdac5bad6f4440b8633f973d33c78928bdac2e1"><div class="ttname"><a href="#aa10c9e8951b8ccf714a59ec321bdac5bad6f4440b8633f973d33c78928bdac2e1">Kind::VAR</a></div><div class="ttdeci">@ VAR</div><div class="ttdef"><b>Definition</b> defs.hpp:32</div></div>
+</div><!-- fragment -->
+<p>maps kinds to their string representations </p>
 
 </div>
 </div>
-<a id="aa2abb9aa4cafec76d4e59f16b6ae2b00" name="aa2abb9aa4cafec76d4e59f16b6ae2b00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2abb9aa4cafec76d4e59f16b6ae2b00">&#9670;&#160;</a></span>stringToOperator</h2>
+<a id="aeb9f557079314461babda61aef04540b" name="aeb9f557079314461babda61aef04540b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9f557079314461babda61aef04540b">&#9670;&#160;</a></span>OPERATOR_COUNT</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,22 +505,22 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::unordered_map&lt;std::string, <a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a>&gt; stringToOperator</td>
+          <td class="memname">size_t OPERATOR_COUNT = static_cast&lt;size_t&gt;(<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87ba08c21e015248267a01d727848c97b40a">Operator::NEQUAL</a>) + 1</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>maps string to an operator </p>
+<p>number of operators </p>
 
 </div>
 </div>
-<a id="ab92c0d245853b5a8d7f9e97a28777229" name="ab92c0d245853b5a8d7f9e97a28777229"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab92c0d245853b5a8d7f9e97a28777229">&#9670;&#160;</a></span>tokenTypeToType</h2>
+<a id="a4154118a9f4d81a6076c04d860c13763" name="a4154118a9f4d81a6076c04d860c13763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4154118a9f4d81a6076c04d860c13763">&#9670;&#160;</a></span>operatorStringRepresentations</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,22 +529,22 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::unordered_map&lt;<a class="el" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a>, <a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&gt; tokenTypeToType</td>
+          <td class="memname">std::array&lt;std::string_view, <a class="el" href="#aeb9f557079314461babda61aef04540b">OPERATOR_COUNT</a>&gt; operatorStringRepresentations</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>maps token type to a type </p>
+<p>maps operators to their string representations </p>
 
 </div>
 </div>
-<a id="a5e80e684ab3531fcad6bdc0594693224" name="a5e80e684ab3531fcad6bdc0594693224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e80e684ab3531fcad6bdc0594693224">&#9670;&#160;</a></span>typeToString</h2>
+<a id="a1f0c0ae5f18edfbd7a037fd73e68ba6a" name="a1f0c0ae5f18edfbd7a037fd73e68ba6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f0c0ae5f18edfbd7a037fd73e68ba6a">&#9670;&#160;</a></span>tokenTypeOperatorRepresentations</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,17 +553,138 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::unordered_map&lt;<a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>, std::string&gt; typeToString</td>
+          <td class="memname">std::array&lt;<a class="el" href="#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a>, <a class="el" href="token__defs_8hpp.html#abe63dbea41297138078c6fea213e6665">TOKEN_TYPE_COUNT</a>&gt; tokenTypeOperatorRepresentations</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>maps type to a string </p>
+<p>maps token type to operator </p>
+
+</div>
+</div>
+<a id="a909227f14541fc983a974b9c74c5143c" name="a909227f14541fc983a974b9c74c5143c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a909227f14541fc983a974b9c74c5143c">&#9670;&#160;</a></span>tokenTypeTypeRepresentations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>, <a class="el" href="token__defs_8hpp.html#abe63dbea41297138078c6fea213e6665">TOKEN_TYPE_COUNT</a>&gt; tokenTypeTypeRepresentations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    [] {</div>
+<div class="line">        </div>
+<div class="line">        <span class="keyword">constexpr</span> <span class="keyword">auto</span> idx {</div>
+<div class="line">            [](<a class="code hl_enumeration" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a> type) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">size_t</span> {</div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(type);</div>
+<div class="line">            }</div>
+<div class="line">        };</div>
+<div class="line"> </div>
+<div class="line">        std::array&lt;Type, TOKEN_TYPE_COUNT&gt; types{};</div>
+<div class="line"> </div>
+<div class="line">        types[idx(<a class="code hl_enumvalue" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921a53f93baa3057821107c750323892fa92">TokenType::INT</a>)]      = <a class="code hl_enumvalue" href="#a1d1cfd8ffb84e947f82999c682b666a7a53f93baa3057821107c750323892fa92">Type::INT</a>;</div>
+<div class="line">        types[idx(<a class="code hl_enumvalue" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921aaf36b47f395cd01f48b8fc1013665054">TokenType::UNSIGNED</a>)] = <a class="code hl_enumvalue" href="#a1d1cfd8ffb84e947f82999c682b666a7aaf36b47f395cd01f48b8fc1013665054">Type::UNSIGNED</a>;</div>
+<div class="line">        types[idx(<a class="code hl_enumvalue" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921a6d0c9fc747131795e6e5d0c5119f12cb">TokenType::VOID</a>)]     = <a class="code hl_enumvalue" href="#a1d1cfd8ffb84e947f82999c682b666a7a6d0c9fc747131795e6e5d0c5119f12cb">Type::VOID</a>;</div>
+<div class="line">        types[idx(<a class="code hl_enumvalue" href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921ae1f2d5134ed2543d38a0de9751cf75d9">TokenType::AUTO</a>)]     = <a class="code hl_enumvalue" href="#a1d1cfd8ffb84e947f82999c682b666a7ae1f2d5134ed2543d38a0de9751cf75d9">Type::AUTO</a>;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">return</span> types;</div>
+<div class="line">    }()</div>
+<div class="line">}</div>
+<div class="ttc" id="adefs_8hpp_html_a1d1cfd8ffb84e947f82999c682b666a7a53f93baa3057821107c750323892fa92"><div class="ttname"><a href="#a1d1cfd8ffb84e947f82999c682b666a7a53f93baa3057821107c750323892fa92">Type::INT</a></div><div class="ttdeci">@ INT</div><div class="ttdef"><b>Definition</b> defs.hpp:15</div></div>
+<div class="ttc" id="adefs_8hpp_html_a1d1cfd8ffb84e947f82999c682b666a7a6d0c9fc747131795e6e5d0c5119f12cb"><div class="ttname"><a href="#a1d1cfd8ffb84e947f82999c682b666a7a6d0c9fc747131795e6e5d0c5119f12cb">Type::VOID</a></div><div class="ttdeci">@ VOID</div><div class="ttdef"><b>Definition</b> defs.hpp:17</div></div>
+<div class="ttc" id="adefs_8hpp_html_a1d1cfd8ffb84e947f82999c682b666a7aaf36b47f395cd01f48b8fc1013665054"><div class="ttname"><a href="#a1d1cfd8ffb84e947f82999c682b666a7aaf36b47f395cd01f48b8fc1013665054">Type::UNSIGNED</a></div><div class="ttdeci">@ UNSIGNED</div><div class="ttdef"><b>Definition</b> defs.hpp:16</div></div>
+<div class="ttc" id="adefs_8hpp_html_a1d1cfd8ffb84e947f82999c682b666a7ae1f2d5134ed2543d38a0de9751cf75d9"><div class="ttname"><a href="#a1d1cfd8ffb84e947f82999c682b666a7ae1f2d5134ed2543d38a0de9751cf75d9">Type::AUTO</a></div><div class="ttdeci">@ AUTO</div><div class="ttdef"><b>Definition</b> defs.hpp:18</div></div>
+<div class="ttc" id="atoken__defs_8hpp_html_aa520fbf142ba1e7e659590c07da31921"><div class="ttname"><a href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921">TokenType</a></div><div class="ttdeci">TokenType</div><div class="ttdoc">types of the tokens defined by the compiler</div><div class="ttdef"><b>Definition</b> token_defs.hpp:11</div></div>
+<div class="ttc" id="atoken__defs_8hpp_html_aa520fbf142ba1e7e659590c07da31921a53f93baa3057821107c750323892fa92"><div class="ttname"><a href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921a53f93baa3057821107c750323892fa92">TokenType::INT</a></div><div class="ttdeci">@ INT</div><div class="ttdoc">type keywords</div><div class="ttdef"><b>Definition</b> token_defs.hpp:67</div></div>
+<div class="ttc" id="atoken__defs_8hpp_html_aa520fbf142ba1e7e659590c07da31921a6d0c9fc747131795e6e5d0c5119f12cb"><div class="ttname"><a href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921a6d0c9fc747131795e6e5d0c5119f12cb">TokenType::VOID</a></div><div class="ttdeci">@ VOID</div><div class="ttdef"><b>Definition</b> token_defs.hpp:69</div></div>
+<div class="ttc" id="atoken__defs_8hpp_html_aa520fbf142ba1e7e659590c07da31921aaf36b47f395cd01f48b8fc1013665054"><div class="ttname"><a href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921aaf36b47f395cd01f48b8fc1013665054">TokenType::UNSIGNED</a></div><div class="ttdeci">@ UNSIGNED</div><div class="ttdef"><b>Definition</b> token_defs.hpp:68</div></div>
+<div class="ttc" id="atoken__defs_8hpp_html_aa520fbf142ba1e7e659590c07da31921ae1f2d5134ed2543d38a0de9751cf75d9"><div class="ttname"><a href="token__defs_8hpp.html#aa520fbf142ba1e7e659590c07da31921ae1f2d5134ed2543d38a0de9751cf75d9">TokenType::AUTO</a></div><div class="ttdeci">@ AUTO</div><div class="ttdef"><b>Definition</b> token_defs.hpp:70</div></div>
+</div><!-- fragment -->
+<p>maps token type to type </p>
+
+</div>
+</div>
+<a id="af0b27c00904ed3936c375007cfb223f4" name="af0b27c00904ed3936c375007cfb223f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b27c00904ed3936c375007cfb223f4">&#9670;&#160;</a></span>TYPE_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t TYPE_COUNT { static_cast&lt;size_t&gt;(<a class="el" href="#a1d1cfd8ffb84e947f82999c682b666a7ae1f2d5134ed2543d38a0de9751cf75d9">Type::AUTO</a>) + 1 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of types </p>
+
+</div>
+</div>
+<a id="a87097552f5b1da5dcd6d6a7d13f81033" name="a87097552f5b1da5dcd6d6a7d13f81033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87097552f5b1da5dcd6d6a7d13f81033">&#9670;&#160;</a></span>typeStringRepresentations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;std::string_view, <a class="el" href="#af0b27c00904ed3936c375007cfb223f4">TYPE_COUNT</a>&gt; typeStringRepresentations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    [] {</div>
+<div class="line">        </div>
+<div class="line">        <span class="keyword">constexpr</span> <span class="keyword">auto</span> idx {</div>
+<div class="line">            [](<a class="code hl_enumeration" href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">size_t</span> {</div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(type);</div>
+<div class="line">            }</div>
+<div class="line">        };</div>
+<div class="line">        std::array&lt;std::string_view, TYPE_COUNT&gt; types{};</div>
+<div class="line"> </div>
+<div class="line">        types[idx(<a class="code hl_enumvalue" href="#a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57">Type::NO_TYPE</a>)]  = <span class="stringliteral">&quot;no_type&quot;</span>;</div>
+<div class="line">        types[idx(<a class="code hl_enumvalue" href="#a1d1cfd8ffb84e947f82999c682b666a7a53f93baa3057821107c750323892fa92">Type::INT</a>)]      = <span class="stringliteral">&quot;int&quot;</span>;</div>
+<div class="line">        types[idx(<a class="code hl_enumvalue" href="#a1d1cfd8ffb84e947f82999c682b666a7aaf36b47f395cd01f48b8fc1013665054">Type::UNSIGNED</a>)] = <span class="stringliteral">&quot;unsigned&quot;</span>;</div>
+<div class="line">        types[idx(<a class="code hl_enumvalue" href="#a1d1cfd8ffb84e947f82999c682b666a7a6d0c9fc747131795e6e5d0c5119f12cb">Type::VOID</a>)]     = <span class="stringliteral">&quot;void&quot;</span>;</div>
+<div class="line">        types[idx(<a class="code hl_enumvalue" href="#a1d1cfd8ffb84e947f82999c682b666a7ae1f2d5134ed2543d38a0de9751cf75d9">Type::AUTO</a>)]     = <span class="stringliteral">&quot;auto&quot;</span>;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">return</span> types;</div>
+<div class="line">    }()</div>
+<div class="line">}</div>
+<div class="ttc" id="adefs_8hpp_html_a1d1cfd8ffb84e947f82999c682b666a7"><div class="ttname"><a href="#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">types supported by the compiler</div><div class="ttdef"><b>Definition</b> defs.hpp:13</div></div>
+<div class="ttc" id="adefs_8hpp_html_a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57"><div class="ttname"><a href="#a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57">Type::NO_TYPE</a></div><div class="ttdeci">@ NO_TYPE</div><div class="ttdef"><b>Definition</b> defs.hpp:14</div></div>
+</div><!-- fragment -->
+<p>maps types to their string representation </p>
 
 </div>
 </div>
