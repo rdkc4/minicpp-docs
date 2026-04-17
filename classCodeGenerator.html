@@ -44,10 +44,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classCodeGenerator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CodeGenerator Class Reference</div></div>
 </div><!--header-->
@@ -60,44 +58,34 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af281e0148d09b4df4899ae2a7d910296" id="r_af281e0148d09b4df4899ae2a7d910296"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af281e0148d09b4df4899ae2a7d910296">CodeGenerator</a> (const std::string &amp;filePath, <a class="el" href="classThreadPool.html">ThreadPool</a> &amp;<a class="el" href="#ac097fe1eba6264b6991328794678fddc">threadPool</a>)</td></tr>
-<tr class="memdesc:af281e0148d09b4df4899ae2a7d910296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the code generator.  <br /></td></tr>
-<tr class="memitem:a6a8f89bf8edab28d9e4034424546a4d0" id="r_a6a8f89bf8edab28d9e4034424546a4d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a8f89bf8edab28d9e4034424546a4d0">generateProgram</a> (const <a class="el" href="classIR_1_1node_1_1IRProgram.html">IR::node::IRProgram</a> *program)</td></tr>
-<tr class="memdesc:a6a8f89bf8edab28d9e4034424546a4d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts the code generation of the program  <br /></td></tr>
+<tr class="memitem:a660aa105d50c127cd720acfd037ec50f" id="r_a660aa105d50c127cd720acfd037ec50f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a660aa105d50c127cd720acfd037ec50f">CodeGenerator</a> (std::string_view filePath, <a class="el" href="classThreadPool.html">ThreadPool</a> &amp;<a class="el" href="#ac097fe1eba6264b6991328794678fddc">threadPool</a>)</td></tr>
+<tr class="memdesc:a660aa105d50c127cd720acfd037ec50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the code generator.  <br /></td></tr>
+<tr class="memitem:a5f0108d02a3d568ed68389311da40662" id="r_a5f0108d02a3d568ed68389311da40662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f0108d02a3d568ed68389311da40662">generateProgram</a> (const <a class="el" href="classir_1_1IRProgram.html">ir::IRProgram</a> *program)</td></tr>
+<tr class="memdesc:a5f0108d02a3d568ed68389311da40662"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts the code generation of the program  <br /></td></tr>
 <tr class="memitem:a1a3943aac652ef5da0fb6c5304f2eea1" id="r_a1a3943aac652ef5da0fb6c5304f2eea1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a3943aac652ef5da0fb6c5304f2eea1">successful</a> () const noexcept</td></tr>
 <tr class="memdesc:a1a3943aac652ef5da0fb6c5304f2eea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the code generation was successful  <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c7d107d628df8b21d1e3c47874dc213" id="r_a8c7d107d628df8b21d1e3c47874dc213"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c7d107d628df8b21d1e3c47874dc213">getNextLabelNum</a> () noexcept</td></tr>
-<tr class="memdesc:a8c7d107d628df8b21d1e3c47874dc213"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the unique number for the label  <br /></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7fcfa4c61f302b69b9a9b3fcadbf357c" id="r_a7fcfa4c61f302b69b9a9b3fcadbf357c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fcfa4c61f302b69b9a9b3fcadbf357c">writeCode</a> (const <a class="el" href="classIR_1_1node_1_1IRProgram.html">IR::node::IRProgram</a> *program)</td></tr>
-<tr class="memdesc:a7fcfa4c61f302b69b9a9b3fcadbf357c"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes generated code into asm file  <br /></td></tr>
+<tr class="memitem:acd991b0d340fe195300f83544f0b6fbc" id="r_acd991b0d340fe195300f83544f0b6fbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd991b0d340fe195300f83544f0b6fbc">writeCode</a> (const <a class="el" href="classir_1_1IRProgram.html">ir::IRProgram</a> *program)</td></tr>
+<tr class="memdesc:acd991b0d340fe195300f83544f0b6fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes generated code into asm file  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a01c01912499e79ea344b47c290ccb58f" id="r_a01c01912499e79ea344b47c290ccb58f"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01c01912499e79ea344b47c290ccb58f">asmCode</a></td></tr>
+<tr class="memdesc:a01c01912499e79ea344b47c290ccb58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps the name of the function to its assembly code  <br /></td></tr>
+<tr class="memitem:af90732c35441fcd52ee77aab04a40ebf" id="r_af90732c35441fcd52ee77aab04a40ebf"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af90732c35441fcd52ee77aab04a40ebf">mtx</a></td></tr>
+<tr class="memdesc:af90732c35441fcd52ee77aab04a40ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex protecting the asmCode  <br /></td></tr>
 <tr class="memitem:ac097fe1eba6264b6991328794678fddc" id="r_ac097fe1eba6264b6991328794678fddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadPool.html">ThreadPool</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac097fe1eba6264b6991328794678fddc">threadPool</a></td></tr>
 <tr class="memdesc:ac097fe1eba6264b6991328794678fddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">thread pool for parallel function code generation  <br /></td></tr>
 <tr class="memitem:a19c5fc8011524e8fbe6e3abce4f1351c" id="r_a19c5fc8011524e8fbe6e3abce4f1351c"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19c5fc8011524e8fbe6e3abce4f1351c">outputPath</a></td></tr>
 <tr class="memdesc:a19c5fc8011524e8fbe6e3abce4f1351c"><td class="mdescLeft">&#160;</td><td class="mdescRight">output file path (.s)  <br /></td></tr>
-<tr class="memitem:a82cd0f2ffe62379c6cc7ff190023a5b9" id="r_a82cd0f2ffe62379c6cc7ff190023a5b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFunctionCodeGenerator.html">FunctionCodeGenerator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82cd0f2ffe62379c6cc7ff190023a5b9">funcGenerator</a></td></tr>
-<tr class="memdesc:a82cd0f2ffe62379c6cc7ff190023a5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">code generator specialized for generating functions  <br /></td></tr>
-<tr class="memitem:a01c01912499e79ea344b47c290ccb58f" id="r_a01c01912499e79ea344b47c290ccb58f"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01c01912499e79ea344b47c290ccb58f">asmCode</a></td></tr>
-<tr class="memdesc:a01c01912499e79ea344b47c290ccb58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps the name of the function to its assembly code  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a6dd98c2b07850679bc7c2dc864d4c260" id="r_a6dd98c2b07850679bc7c2dc864d4c260"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dd98c2b07850679bc7c2dc864d4c260">labelNum</a> { 0 }</td></tr>
-<tr class="memdesc:a6dd98c2b07850679bc7c2dc864d4c260"><td class="mdescLeft">&#160;</td><td class="mdescRight">number for the next label  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generates the code for the x86-64 asm </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af281e0148d09b4df4899ae2a7d910296" name="af281e0148d09b4df4899ae2a7d910296"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af281e0148d09b4df4899ae2a7d910296">&#9670;&#160;</a></span>CodeGenerator()</h2>
+<a id="a660aa105d50c127cd720acfd037ec50f" name="a660aa105d50c127cd720acfd037ec50f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660aa105d50c127cd720acfd037ec50f">&#9670;&#160;</a></span>CodeGenerator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -105,7 +93,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">CodeGenerator::CodeGenerator </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -127,8 +115,8 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a6a8f89bf8edab28d9e4034424546a4d0" name="a6a8f89bf8edab28d9e4034424546a4d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a8f89bf8edab28d9e4034424546a4d0">&#9670;&#160;</a></span>generateProgram()</h2>
+<a id="a5f0108d02a3d568ed68389311da40662" name="a5f0108d02a3d568ed68389311da40662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0108d02a3d568ed68389311da40662">&#9670;&#160;</a></span>generateProgram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +124,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void CodeGenerator::generateProgram </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRProgram.html">IR::node::IRProgram</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRProgram.html">ir::IRProgram</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -149,34 +137,6 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a8c7d107d628df8b21d1e3c47874dc213" name="a8c7d107d628df8b21d1e3c47874dc213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c7d107d628df8b21d1e3c47874dc213">&#9670;&#160;</a></span>getNextLabelNum()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t CodeGenerator::getNextLabelNum </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>generates the unique number for the label </p>
-<dl class="section return"><dt>Returns</dt><dd>number of the label </dd></dl>
 
 </div>
 </div>
@@ -208,8 +168,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7fcfa4c61f302b69b9a9b3fcadbf357c" name="a7fcfa4c61f302b69b9a9b3fcadbf357c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fcfa4c61f302b69b9a9b3fcadbf357c">&#9670;&#160;</a></span>writeCode()</h2>
+<a id="acd991b0d340fe195300f83544f0b6fbc" name="acd991b0d340fe195300f83544f0b6fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd991b0d340fe195300f83544f0b6fbc">&#9670;&#160;</a></span>writeCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,7 +180,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void CodeGenerator::writeCode </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRProgram.html">IR::node::IRProgram</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRProgram.html">ir::IRProgram</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -266,8 +226,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a82cd0f2ffe62379c6cc7ff190023a5b9" name="a82cd0f2ffe62379c6cc7ff190023a5b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82cd0f2ffe62379c6cc7ff190023a5b9">&#9670;&#160;</a></span>funcGenerator</h2>
+<a id="af90732c35441fcd52ee77aab04a40ebf" name="af90732c35441fcd52ee77aab04a40ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af90732c35441fcd52ee77aab04a40ebf">&#9670;&#160;</a></span>mtx</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +236,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classFunctionCodeGenerator.html">FunctionCodeGenerator</a> CodeGenerator::funcGenerator</td>
+          <td class="memname">std::mutex CodeGenerator::mtx</td>
         </tr>
       </table>
   </td>
@@ -286,31 +246,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>code generator specialized for generating functions </p>
-
-</div>
-</div>
-<a id="a6dd98c2b07850679bc7c2dc864d4c260" name="a6dd98c2b07850679bc7c2dc864d4c260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dd98c2b07850679bc7c2dc864d4c260">&#9670;&#160;</a></span>labelNum</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt; size_t &gt; CodeGenerator::labelNum { 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>number for the next label </p>
+<p>mutex protecting the asmCode </p>
 
 </div>
 </div>

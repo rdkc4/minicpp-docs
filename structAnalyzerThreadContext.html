@@ -53,12 +53,12 @@ $(function() {
 <p>context of the thread checking semantics of the function  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;analyzer_defs.hpp&gt;</code></p>
+<p><code>#include &lt;analyzer_ctx.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2736e6b797ef10259afc060729301ad7" id="r_a2736e6b797ef10259afc060729301ad7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2736e6b797ef10259afc060729301ad7">init</a> (std::string_view funcName, <a class="el" href="classScopeManager.html">ScopeManager</a> *scopeMng)</td></tr>
-<tr class="memdesc:a2736e6b797ef10259afc060729301ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the context of the thread  <br /></td></tr>
+<tr class="memitem:a4f3b645a8373d02c22133f5f9ff1c304" id="r_a4f3b645a8373d02c22133f5f9ff1c304"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f3b645a8373d02c22133f5f9ff1c304">init</a> (std::string_view funcName, <a class="el" href="classsym_1_1ScopeManager.html">sym::ScopeManager</a> *scopeMng)</td></tr>
+<tr class="memdesc:a4f3b645a8373d02c22133f5f9ff1c304"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the context of the thread  <br /></td></tr>
 <tr class="memitem:a84760b1a4bdc233646906ce1b0d2d42d" id="r_a84760b1a4bdc233646906ce1b0d2d42d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84760b1a4bdc233646906ce1b0d2d42d">reset</a> ()</td></tr>
 <tr class="memdesc:a84760b1a4bdc233646906ce1b0d2d42d"><td class="mdescLeft">&#160;</td><td class="mdescRight">resets the context of the thread  <br /></td></tr>
 </table><table class="memberdecls">
@@ -66,16 +66,16 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8f7be20125a551a35a6d739c1df746dc" id="r_a8f7be20125a551a35a6d739c1df746dc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f7be20125a551a35a6d739c1df746dc">functionName</a> {&quot;&quot;}</td></tr>
 <tr class="memdesc:a8f7be20125a551a35a6d739c1df746dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the function analyzed by the thread  <br /></td></tr>
-<tr class="memitem:a08db25bd682a0499135ff1f51298247b" id="r_a08db25bd682a0499135ff1f51298247b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScopeManager.html">ScopeManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08db25bd682a0499135ff1f51298247b">scopeManager</a> {nullptr}</td></tr>
-<tr class="memdesc:a08db25bd682a0499135ff1f51298247b"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the function scope manager  <br /></td></tr>
+<tr class="memitem:ae8bceef5f9aa61e834dd54dcc656296d" id="r_ae8bceef5f9aa61e834dd54dcc656296d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsym_1_1ScopeManager.html">sym::ScopeManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8bceef5f9aa61e834dd54dcc656296d">scopeManager</a> {nullptr}</td></tr>
+<tr class="memdesc:ae8bceef5f9aa61e834dd54dcc656296d"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the function scope manager  <br /></td></tr>
 <tr class="memitem:acb37acc97dfc430ea4c0e05fd340a7fc" id="r_acb37acc97dfc430ea4c0e05fd340a7fc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb37acc97dfc430ea4c0e05fd340a7fc">semanticErrors</a></td></tr>
 <tr class="memdesc:acb37acc97dfc430ea4c0e05fd340a7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector for exception messages  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>context of the thread checking semantics of the function </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a2736e6b797ef10259afc060729301ad7" name="a2736e6b797ef10259afc060729301ad7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2736e6b797ef10259afc060729301ad7">&#9670;&#160;</a></span>init()</h2>
+<a id="a4f3b645a8373d02c22133f5f9ff1c304" name="a4f3b645a8373d02c22133f5f9ff1c304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f3b645a8373d02c22133f5f9ff1c304">&#9670;&#160;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -91,7 +91,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classScopeManager.html">ScopeManager</a> *</td>          <td class="paramname"><span class="paramname"><em>scopeMng</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classsym_1_1ScopeManager.html">sym::ScopeManager</a> *</td>          <td class="paramname"><span class="paramname"><em>scopeMng</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -156,14 +156,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a08db25bd682a0499135ff1f51298247b" name="a08db25bd682a0499135ff1f51298247b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08db25bd682a0499135ff1f51298247b">&#9670;&#160;</a></span>scopeManager</h2>
+<a id="ae8bceef5f9aa61e834dd54dcc656296d" name="ae8bceef5f9aa61e834dd54dcc656296d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8bceef5f9aa61e834dd54dcc656296d">&#9670;&#160;</a></span>scopeManager</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classScopeManager.html">ScopeManager</a>* AnalyzerThreadContext::scopeManager {nullptr}</td>
+          <td class="memname"><a class="el" href="classsym_1_1ScopeManager.html">sym::ScopeManager</a>* AnalyzerThreadContext::scopeManager {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,7 +189,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>minicpp/analyzer/defs/<a class="el" href="analyzer__defs_8hpp.html">analyzer_defs.hpp</a></li>
+<li>minicpp/analyzer/ctx/<a class="el" href="analyzer__ctx_8hpp.html">analyzer_ctx.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

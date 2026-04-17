@@ -45,6 +45,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classExpressionCodeGenerator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ExpressionCodeGenerator Class Reference</div></div>
 </div><!--header-->
@@ -57,28 +58,28 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6e2670c9cfbe4028bd79c70c8f251218" id="r_a6e2670c9cfbe4028bd79c70c8f251218"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e2670c9cfbe4028bd79c70c8f251218">ExpressionCodeGenerator</a> ()=default</td></tr>
-<tr class="memdesc:a6e2670c9cfbe4028bd79c70c8f251218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the expression code generator.  <br /></td></tr>
-<tr class="memitem:a7245f77c108e9c39dab65c9993b3fe98" id="r_a7245f77c108e9c39dab65c9993b3fe98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7245f77c108e9c39dab65c9993b3fe98">generateExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRExpr.html">IR::node::IRExpr</a> *expr, <a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a> ctx=<a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a>)</td></tr>
-<tr class="memdesc:a7245f77c108e9c39dab65c9993b3fe98"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the expression  <br /></td></tr>
-<tr class="memitem:acb99ec4742bed89cea45c48f1ce3272c" id="r_acb99ec4742bed89cea45c48f1ce3272c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb99ec4742bed89cea45c48f1ce3272c">generateBinaryExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *binaryExpr, <a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a> ctx=<a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a>)</td></tr>
-<tr class="memdesc:acb99ec4742bed89cea45c48f1ce3272c"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the binary expression  <br /></td></tr>
-<tr class="memitem:aa3e4986949426d2d465be653eb8c7980" id="r_aa3e4986949426d2d465be653eb8c7980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3e4986949426d2d465be653eb8c7980">generateConditionExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRExpr.html">IR::node::IRExpr</a> *expr, std::string_view trueLabel, std::string_view falseLabel)</td></tr>
-<tr class="memdesc:aa3e4986949426d2d465be653eb8c7980"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the relational expression  <br /></td></tr>
-<tr class="memitem:ace62fd9f87caf209bfa5435917836e4b" id="r_ace62fd9f87caf209bfa5435917836e4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace62fd9f87caf209bfa5435917836e4b">generateIdExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRIdExpr.html">IR::node::IRIdExpr</a> *idExpr) const</td></tr>
-<tr class="memdesc:ace62fd9f87caf209bfa5435917836e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the id expression  <br /></td></tr>
-<tr class="memitem:a541c4079dee963afb923e6887d6157b2" id="r_a541c4079dee963afb923e6887d6157b2"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a541c4079dee963afb923e6887d6157b2">getIdExprAddress</a> (const <a class="el" href="classIR_1_1node_1_1IRIdExpr.html">IR::node::IRIdExpr</a> *idExpr) const</td></tr>
-<tr class="memdesc:a541c4079dee963afb923e6887d6157b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the address of the id  <br /></td></tr>
-<tr class="memitem:adec10e800b7411f665a5521ba4e081e2" id="r_adec10e800b7411f665a5521ba4e081e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adec10e800b7411f665a5521ba4e081e2">generateLiteralExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *literalExpr)</td></tr>
-<tr class="memdesc:adec10e800b7411f665a5521ba4e081e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates literal expression  <br /></td></tr>
-<tr class="memitem:a749c244a38a0055f79dac4e35a483062" id="r_a749c244a38a0055f79dac4e35a483062"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a749c244a38a0055f79dac4e35a483062">formatLiteral</a> (const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *literalExpr) const</td></tr>
-<tr class="memdesc:a749c244a38a0055f79dac4e35a483062"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the format of the literal expression  <br /></td></tr>
-<tr class="memitem:ad3487cb0e0b63ca77c131b96a5e6ed11" id="r_ad3487cb0e0b63ca77c131b96a5e6ed11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3487cb0e0b63ca77c131b96a5e6ed11">generateTemporaryExprs</a> (const <a class="el" href="classIR_1_1node_1_1IRTemporaryExpr.html">IR::node::IRTemporaryExpr</a> *temporaryExpr)</td></tr>
-<tr class="memdesc:ad3487cb0e0b63ca77c131b96a5e6ed11"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for assigning values to temporary variables  <br /></td></tr>
-<tr class="memitem:a8ed5deeae34e4592b2375cbe399e3065" id="r_a8ed5deeae34e4592b2375cbe399e3065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ed5deeae34e4592b2375cbe399e3065">generateFunctionCallExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRFunctionCallExpr.html">IR::node::IRFunctionCallExpr</a> *callExpr, bool expectsReturnVal=true)</td></tr>
-<tr class="memdesc:a8ed5deeae34e4592b2375cbe399e3065"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the function call  <br /></td></tr>
-<tr class="memitem:a603537798e169a8567ae448deccf3194" id="r_a603537798e169a8567ae448deccf3194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a603537798e169a8567ae448deccf3194">generateArguments</a> (const <a class="el" href="classIR_1_1node_1_1IRFunctionCallExpr.html">IR::node::IRFunctionCallExpr</a> *callExpr)</td></tr>
-<tr class="memdesc:a603537798e169a8567ae448deccf3194"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the arguments of the function call  <br /></td></tr>
+<tr class="memitem:ac28d6fe9a31a11a0687458239edbe3d8" id="r_ac28d6fe9a31a11a0687458239edbe3d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac28d6fe9a31a11a0687458239edbe3d8">ExpressionCodeGenerator</a> (<a class="el" href="structCodeGeneratorFunctionContext.html">CodeGeneratorFunctionContext</a> &amp;context)</td></tr>
+<tr class="memdesc:ac28d6fe9a31a11a0687458239edbe3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the expression code generator.  <br /></td></tr>
+<tr class="memitem:aa750c942d876e38a976d003154b986f0" id="r_aa750c942d876e38a976d003154b986f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa750c942d876e38a976d003154b986f0">generateExpr</a> (const <a class="el" href="classir_1_1IRExpr.html">ir::IRExpr</a> *expr, <a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a> exprCtx=<a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a>)</td></tr>
+<tr class="memdesc:aa750c942d876e38a976d003154b986f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the expression  <br /></td></tr>
+<tr class="memitem:afb21c319b5d50bfd563135117a07c403" id="r_afb21c319b5d50bfd563135117a07c403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb21c319b5d50bfd563135117a07c403">generateBinaryExpr</a> (const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *binaryExpr, <a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a> exprCtx=<a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a>)</td></tr>
+<tr class="memdesc:afb21c319b5d50bfd563135117a07c403"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the binary expression  <br /></td></tr>
+<tr class="memitem:a76145e8c79cb979c0caefd810bed08e4" id="r_a76145e8c79cb979c0caefd810bed08e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76145e8c79cb979c0caefd810bed08e4">generateConditionExpr</a> (const <a class="el" href="classir_1_1IRExpr.html">ir::IRExpr</a> *expr, std::string_view trueLabel, std::string_view falseLabel)</td></tr>
+<tr class="memdesc:a76145e8c79cb979c0caefd810bed08e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the relational expression  <br /></td></tr>
+<tr class="memitem:a9292f0fb5230fd9ea65218b7a09fac06" id="r_a9292f0fb5230fd9ea65218b7a09fac06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9292f0fb5230fd9ea65218b7a09fac06">generateIdExpr</a> (const <a class="el" href="classir_1_1IRIdExpr.html">ir::IRIdExpr</a> *idExpr) const</td></tr>
+<tr class="memdesc:a9292f0fb5230fd9ea65218b7a09fac06"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the id expression  <br /></td></tr>
+<tr class="memitem:ae11680859eca149180eaad728590ac0f" id="r_ae11680859eca149180eaad728590ac0f"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae11680859eca149180eaad728590ac0f">getIdExprAddress</a> (const <a class="el" href="classir_1_1IRIdExpr.html">ir::IRIdExpr</a> *idExpr) const</td></tr>
+<tr class="memdesc:ae11680859eca149180eaad728590ac0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the address of the id  <br /></td></tr>
+<tr class="memitem:a88c88fe7cb1d3797219ffdc4a6583a25" id="r_a88c88fe7cb1d3797219ffdc4a6583a25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88c88fe7cb1d3797219ffdc4a6583a25">generateLiteralExpr</a> (const <a class="el" href="classir_1_1IRLiteralExpr.html">ir::IRLiteralExpr</a> *literalExpr)</td></tr>
+<tr class="memdesc:a88c88fe7cb1d3797219ffdc4a6583a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates literal expression  <br /></td></tr>
+<tr class="memitem:a4b546385904574d12e596d32cd0e9b0c" id="r_a4b546385904574d12e596d32cd0e9b0c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b546385904574d12e596d32cd0e9b0c">formatLiteral</a> (const <a class="el" href="classir_1_1IRLiteralExpr.html">ir::IRLiteralExpr</a> *literalExpr) const</td></tr>
+<tr class="memdesc:a4b546385904574d12e596d32cd0e9b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the format of the literal expression  <br /></td></tr>
+<tr class="memitem:ac61d1dd77257a8b99b5441cd51cafc60" id="r_ac61d1dd77257a8b99b5441cd51cafc60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac61d1dd77257a8b99b5441cd51cafc60">generateTemporaryExprs</a> (const <a class="el" href="classir_1_1IRTemporaryExpr.html">ir::IRTemporaryExpr</a> *temporaryExpr)</td></tr>
+<tr class="memdesc:ac61d1dd77257a8b99b5441cd51cafc60"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for assigning values to temporary variables  <br /></td></tr>
+<tr class="memitem:aca5bc8c77e13fe33ca7a7356638df826" id="r_aca5bc8c77e13fe33ca7a7356638df826"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca5bc8c77e13fe33ca7a7356638df826">generateFunctionCallExpr</a> (const <a class="el" href="classir_1_1IRFunctionCallExpr.html">ir::IRFunctionCallExpr</a> *callExpr, bool expectsReturnVal=true)</td></tr>
+<tr class="memdesc:aca5bc8c77e13fe33ca7a7356638df826"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the function call  <br /></td></tr>
+<tr class="memitem:a632f5c4afee0ff26502c315a86ac97d2" id="r_a632f5c4afee0ff26502c315a86ac97d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a632f5c4afee0ff26502c315a86ac97d2">generateArguments</a> (const <a class="el" href="classir_1_1IRFunctionCallExpr.html">ir::IRFunctionCallExpr</a> *callExpr)</td></tr>
+<tr class="memdesc:a632f5c4afee0ff26502c315a86ac97d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for the arguments of the function call  <br /></td></tr>
 <tr class="memitem:a5e0ba3f71c3f8747488cb4411d957822" id="r_a5e0ba3f71c3f8747488cb4411d957822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e0ba3f71c3f8747488cb4411d957822">clearArguments</a> (size_t argc)</td></tr>
 <tr class="memdesc:a5e0ba3f71c3f8747488cb4411d957822"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates the asm code for removing arguments from the stack after function call is done  <br /></td></tr>
 </table><table class="memberdecls">
@@ -88,46 +89,49 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a52512448b9bafb6b700b73f8e8d97f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the operand  <br /></td></tr>
 <tr class="memitem:a8a7a6c29a139cbb8458923a152b1bdab" id="r_a8a7a6c29a139cbb8458923a152b1bdab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBinaryOperands.html">BinaryOperands</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a7a6c29a139cbb8458923a152b1bdab">getBinaryOperands</a> ()</td></tr>
 <tr class="memdesc:a8a7a6c29a139cbb8458923a152b1bdab"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the operands that are participating in the binary operation  <br /></td></tr>
-<tr class="memitem:a661461d6c4501f8f282fd67c70326028" id="r_a661461d6c4501f8f282fd67c70326028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a661461d6c4501f8f282fd67c70326028">generateMultiplicativeExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *binaryExpr, <a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands)</td></tr>
-<tr class="memdesc:a661461d6c4501f8f282fd67c70326028"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates multiplication and division binary expressions  <br /></td></tr>
-<tr class="memitem:a334988b7e39beb1b1874378dd88b99b5" id="r_a334988b7e39beb1b1874378dd88b99b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a334988b7e39beb1b1874378dd88b99b5">generateShiftExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *binaryExpr, <a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands)</td></tr>
-<tr class="memdesc:a334988b7e39beb1b1874378dd88b99b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates shift binary expression  <br /></td></tr>
+<tr class="memitem:a83a713270a0c703ae5b4c8b44326e005" id="r_a83a713270a0c703ae5b4c8b44326e005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83a713270a0c703ae5b4c8b44326e005">generateMultiplicativeExpr</a> (const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *binaryExpr, <a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands)</td></tr>
+<tr class="memdesc:a83a713270a0c703ae5b4c8b44326e005"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates multiplication and division binary expressions  <br /></td></tr>
+<tr class="memitem:afa7770b282181cb5de8af2694e8878c8" id="r_afa7770b282181cb5de8af2694e8878c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa7770b282181cb5de8af2694e8878c8">generateShiftExpr</a> (const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *binaryExpr, <a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands)</td></tr>
+<tr class="memdesc:afa7770b282181cb5de8af2694e8878c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates shift binary expression  <br /></td></tr>
 <tr class="memitem:a9f7b2617d3c2581f6990ec3f7047baac" id="r_a9f7b2617d3c2581f6990ec3f7047baac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f7b2617d3c2581f6990ec3f7047baac">generateLogicalAndExpr</a> (<a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands)</td></tr>
 <tr class="memdesc:a9f7b2617d3c2581f6990ec3f7047baac"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates logical and binary expression  <br /></td></tr>
 <tr class="memitem:acc7da0d8f3fa8515707a6a79f91cce86" id="r_acc7da0d8f3fa8515707a6a79f91cce86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc7da0d8f3fa8515707a6a79f91cce86">generateLogicalOrExpr</a> (<a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands)</td></tr>
 <tr class="memdesc:acc7da0d8f3fa8515707a6a79f91cce86"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates logical or binary expression  <br /></td></tr>
-<tr class="memitem:a99c47ef5ea2d9504eb217a1f69607ea8" id="r_a99c47ef5ea2d9504eb217a1f69607ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c47ef5ea2d9504eb217a1f69607ea8">generateRelationalExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *binaryExpr, <a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands, <a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a> ctx=<a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a>)</td></tr>
-<tr class="memdesc:a99c47ef5ea2d9504eb217a1f69607ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates relational binary expression  <br /></td></tr>
-<tr class="memitem:aa81be40aa9e284e87932fb88501f63b3" id="r_aa81be40aa9e284e87932fb88501f63b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa81be40aa9e284e87932fb88501f63b3">generateALUExpr</a> (const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *binaryExpr, <a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands)</td></tr>
-<tr class="memdesc:aa81be40aa9e284e87932fb88501f63b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ALU expressions (add, sub, and, or, xor)  <br /></td></tr>
+<tr class="memitem:a5e8207c432a2cbddadd7934558c915f8" id="r_a5e8207c432a2cbddadd7934558c915f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e8207c432a2cbddadd7934558c915f8">generateRelationalExpr</a> (const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *binaryExpr, <a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands, <a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a> exprCtx=<a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a>)</td></tr>
+<tr class="memdesc:a5e8207c432a2cbddadd7934558c915f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates relational binary expression  <br /></td></tr>
+<tr class="memitem:a4fed3a2b82e9da8a951d69582e6a38e6" id="r_a4fed3a2b82e9da8a951d69582e6a38e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fed3a2b82e9da8a951d69582e6a38e6">generateALUExpr</a> (const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *binaryExpr, <a class="el" href="structBinaryOperands.html">BinaryOperands</a> operands)</td></tr>
+<tr class="memdesc:a4fed3a2b82e9da8a951d69582e6a38e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ALU expressions (add, sub, and, or, xor)  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aeb1b45a969f2dd262c94c42ab8c124b1" id="r_aeb1b45a969f2dd262c94c42ab8c124b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCodeGeneratorFunctionContext.html">CodeGeneratorFunctionContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb1b45a969f2dd262c94c42ab8c124b1">ctx</a></td></tr>
+<tr class="memdesc:aeb1b45a969f2dd262c94c42ab8c124b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to a context of the function  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>code generator specialized for expressions </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6e2670c9cfbe4028bd79c70c8f251218" name="a6e2670c9cfbe4028bd79c70c8f251218"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e2670c9cfbe4028bd79c70c8f251218">&#9670;&#160;</a></span>ExpressionCodeGenerator()</h2>
+<a id="ac28d6fe9a31a11a0687458239edbe3d8" name="ac28d6fe9a31a11a0687458239edbe3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28d6fe9a31a11a0687458239edbe3d8">&#9670;&#160;</a></span>ExpressionCodeGenerator()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ExpressionCodeGenerator::ExpressionCodeGenerator </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structCodeGeneratorFunctionContext.html">CodeGeneratorFunctionContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Creates the instance of the expression code generator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>- reference to a context of the function </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -157,8 +161,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a749c244a38a0055f79dac4e35a483062" name="a749c244a38a0055f79dac4e35a483062"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a749c244a38a0055f79dac4e35a483062">&#9670;&#160;</a></span>formatLiteral()</h2>
+<a id="a4b546385904574d12e596d32cd0e9b0c" name="a4b546385904574d12e596d32cd0e9b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b546385904574d12e596d32cd0e9b0c">&#9670;&#160;</a></span>formatLiteral()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +170,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::string ExpressionCodeGenerator::formatLiteral </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>literalExpr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRLiteralExpr.html">ir::IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>literalExpr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -183,8 +187,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa81be40aa9e284e87932fb88501f63b3" name="aa81be40aa9e284e87932fb88501f63b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa81be40aa9e284e87932fb88501f63b3">&#9670;&#160;</a></span>generateALUExpr()</h2>
+<a id="a4fed3a2b82e9da8a951d69582e6a38e6" name="a4fed3a2b82e9da8a951d69582e6a38e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fed3a2b82e9da8a951d69582e6a38e6">&#9670;&#160;</a></span>generateALUExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +199,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateALUExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -221,8 +225,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a603537798e169a8567ae448deccf3194" name="a603537798e169a8567ae448deccf3194"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a603537798e169a8567ae448deccf3194">&#9670;&#160;</a></span>generateArguments()</h2>
+<a id="a632f5c4afee0ff26502c315a86ac97d2" name="a632f5c4afee0ff26502c315a86ac97d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632f5c4afee0ff26502c315a86ac97d2">&#9670;&#160;</a></span>generateArguments()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +234,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateArguments </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRFunctionCallExpr.html">IR::node::IRFunctionCallExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>callExpr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRFunctionCallExpr.html">ir::IRFunctionCallExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>callExpr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -246,8 +250,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acb99ec4742bed89cea45c48f1ce3272c" name="acb99ec4742bed89cea45c48f1ce3272c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb99ec4742bed89cea45c48f1ce3272c">&#9670;&#160;</a></span>generateBinaryExpr()</h2>
+<a id="afb21c319b5d50bfd563135117a07c403" name="afb21c319b5d50bfd563135117a07c403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb21c319b5d50bfd563135117a07c403">&#9670;&#160;</a></span>generateBinaryExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,12 +259,12 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateBinaryExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a></td>          <td class="paramname"><span class="paramname"><em>exprCtx</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -269,15 +273,15 @@ Private Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">binaryExpr</td><td>- const pointer to the irt binary expression </td></tr>
-    <tr><td class="paramname">ctx</td><td>- context of the expression, defaults to value </td></tr>
+    <tr><td class="paramname">exprCtx</td><td>- context of the expression, defaults to value </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aa3e4986949426d2d465be653eb8c7980" name="aa3e4986949426d2d465be653eb8c7980"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3e4986949426d2d465be653eb8c7980">&#9670;&#160;</a></span>generateConditionExpr()</h2>
+<a id="a76145e8c79cb979c0caefd810bed08e4" name="a76145e8c79cb979c0caefd810bed08e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76145e8c79cb979c0caefd810bed08e4">&#9670;&#160;</a></span>generateConditionExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,7 +289,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateConditionExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRExpr.html">IR::node::IRExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRExpr.html">ir::IRExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -312,8 +316,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7245f77c108e9c39dab65c9993b3fe98" name="a7245f77c108e9c39dab65c9993b3fe98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7245f77c108e9c39dab65c9993b3fe98">&#9670;&#160;</a></span>generateExpr()</h2>
+<a id="aa750c942d876e38a976d003154b986f0" name="aa750c942d876e38a976d003154b986f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa750c942d876e38a976d003154b986f0">&#9670;&#160;</a></span>generateExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,12 +325,12 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRExpr.html">IR::node::IRExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRExpr.html">ir::IRExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a></td>          <td class="paramname"><span class="paramname"><em>exprCtx</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -335,15 +339,15 @@ Private Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">expr</td><td>- const pointer to the irt expression </td></tr>
-    <tr><td class="paramname">ctx</td><td>- context of the expression, defaults to value </td></tr>
+    <tr><td class="paramname">exprCtx</td><td>- context of the expression, defaults to value </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a8ed5deeae34e4592b2375cbe399e3065" name="a8ed5deeae34e4592b2375cbe399e3065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ed5deeae34e4592b2375cbe399e3065">&#9670;&#160;</a></span>generateFunctionCallExpr()</h2>
+<a id="aca5bc8c77e13fe33ca7a7356638df826" name="aca5bc8c77e13fe33ca7a7356638df826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5bc8c77e13fe33ca7a7356638df826">&#9670;&#160;</a></span>generateFunctionCallExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,7 +355,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateFunctionCallExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRFunctionCallExpr.html">IR::node::IRFunctionCallExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>callExpr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRFunctionCallExpr.html">ir::IRFunctionCallExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>callExpr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -371,8 +375,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace62fd9f87caf209bfa5435917836e4b" name="ace62fd9f87caf209bfa5435917836e4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace62fd9f87caf209bfa5435917836e4b">&#9670;&#160;</a></span>generateIdExpr()</h2>
+<a id="a9292f0fb5230fd9ea65218b7a09fac06" name="a9292f0fb5230fd9ea65218b7a09fac06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9292f0fb5230fd9ea65218b7a09fac06">&#9670;&#160;</a></span>generateIdExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,7 +384,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateIdExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRIdExpr.html">IR::node::IRIdExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>idExpr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRIdExpr.html">ir::IRIdExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>idExpr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -396,8 +400,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adec10e800b7411f665a5521ba4e081e2" name="adec10e800b7411f665a5521ba4e081e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adec10e800b7411f665a5521ba4e081e2">&#9670;&#160;</a></span>generateLiteralExpr()</h2>
+<a id="a88c88fe7cb1d3797219ffdc4a6583a25" name="a88c88fe7cb1d3797219ffdc4a6583a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c88fe7cb1d3797219ffdc4a6583a25">&#9670;&#160;</a></span>generateLiteralExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,7 +409,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateLiteralExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRLiteralExpr.html">IR::node::IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>literalExpr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRLiteralExpr.html">ir::IRLiteralExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>literalExpr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -487,8 +491,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a661461d6c4501f8f282fd67c70326028" name="a661461d6c4501f8f282fd67c70326028"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a661461d6c4501f8f282fd67c70326028">&#9670;&#160;</a></span>generateMultiplicativeExpr()</h2>
+<a id="a83a713270a0c703ae5b4c8b44326e005" name="a83a713270a0c703ae5b4c8b44326e005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a713270a0c703ae5b4c8b44326e005">&#9670;&#160;</a></span>generateMultiplicativeExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,7 +503,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateMultiplicativeExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -525,8 +529,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a99c47ef5ea2d9504eb217a1f69607ea8" name="a99c47ef5ea2d9504eb217a1f69607ea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99c47ef5ea2d9504eb217a1f69607ea8">&#9670;&#160;</a></span>generateRelationalExpr()</h2>
+<a id="a5e8207c432a2cbddadd7934558c915f8" name="a5e8207c432a2cbddadd7934558c915f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8207c432a2cbddadd7934558c915f8">&#9670;&#160;</a></span>generateRelationalExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,7 +541,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateRelationalExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -547,7 +551,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45">ExprContext</a></td>          <td class="paramname"><span class="paramname"><em>exprCtx</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="code__generator__defs_8hpp.html#a54471c9fe8cb8379414c338753808e45aecc2e9c313faddb07e7da223c1dc5c3f">ExprContext::VALUE</a></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -561,7 +565,7 @@ Private Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">binaryExpr</td><td>- const pointer to the binary expression </td></tr>
-    <tr><td class="paramname">ctx</td><td>- context of the expression, defaults to value </td></tr>
+    <tr><td class="paramname">exprCtx</td><td>- context of the expression, defaults to value </td></tr>
     <tr><td class="paramname">operands</td><td>- left and right operand of the binary expression </td></tr>
   </table>
   </dd>
@@ -569,8 +573,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a334988b7e39beb1b1874378dd88b99b5" name="a334988b7e39beb1b1874378dd88b99b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a334988b7e39beb1b1874378dd88b99b5">&#9670;&#160;</a></span>generateShiftExpr()</h2>
+<a id="afa7770b282181cb5de8af2694e8878c8" name="afa7770b282181cb5de8af2694e8878c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7770b282181cb5de8af2694e8878c8">&#9670;&#160;</a></span>generateShiftExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -581,7 +585,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateShiftExpr </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRBinaryExpr.html">IR::node::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRBinaryExpr.html">ir::IRBinaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>binaryExpr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -607,8 +611,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad3487cb0e0b63ca77c131b96a5e6ed11" name="ad3487cb0e0b63ca77c131b96a5e6ed11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3487cb0e0b63ca77c131b96a5e6ed11">&#9670;&#160;</a></span>generateTemporaryExprs()</h2>
+<a id="ac61d1dd77257a8b99b5441cd51cafc60" name="ac61d1dd77257a8b99b5441cd51cafc60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61d1dd77257a8b99b5441cd51cafc60">&#9670;&#160;</a></span>generateTemporaryExprs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -616,7 +620,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ExpressionCodeGenerator::generateTemporaryExprs </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRTemporaryExpr.html">IR::node::IRTemporaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>temporaryExpr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRTemporaryExpr.html">ir::IRTemporaryExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>temporaryExpr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -660,8 +664,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a541c4079dee963afb923e6887d6157b2" name="a541c4079dee963afb923e6887d6157b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a541c4079dee963afb923e6887d6157b2">&#9670;&#160;</a></span>getIdExprAddress()</h2>
+<a id="ae11680859eca149180eaad728590ac0f" name="ae11680859eca149180eaad728590ac0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11680859eca149180eaad728590ac0f">&#9670;&#160;</a></span>getIdExprAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -669,7 +673,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::string_view ExpressionCodeGenerator::getIdExprAddress </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIR_1_1node_1_1IRIdExpr.html">IR::node::IRIdExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>idExpr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classir_1_1IRIdExpr.html">ir::IRIdExpr</a> *</td>          <td class="paramname"><span class="paramname"><em>idExpr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -717,6 +721,31 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>name of the operand </dd></dl>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="aeb1b45a969f2dd262c94c42ab8c124b1" name="aeb1b45a969f2dd262c94c42ab8c124b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1b45a969f2dd262c94c42ab8c124b1">&#9670;&#160;</a></span>ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCodeGeneratorFunctionContext.html">CodeGeneratorFunctionContext</a>&amp; ExpressionCodeGenerator::ctx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reference to a context of the function </p>
 
 </div>
 </div>
