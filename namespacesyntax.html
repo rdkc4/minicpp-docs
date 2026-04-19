@@ -64,9 +64,47 @@ Namespaces</h2></td></tr>
 Classes</h2></td></tr>
 <tr class="memitem:Token" id="r_Token"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsyntax_1_1Token.html">Token</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">description of a token  <a href="structsyntax_1_1Token.html#details">More...</a><br /></td></tr>
+<tr class="memitem:DirectiveParser" id="r_DirectiveParser"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsyntax_1_1DirectiveParser.html">DirectiveParser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for parsing directives  <a href="classsyntax_1_1DirectiveParser.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ExpressionParser" id="r_ExpressionParser"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsyntax_1_1ExpressionParser.html">ExpressionParser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for parsing expressions  <a href="classsyntax_1_1ExpressionParser.html#details">More...</a><br /></td></tr>
+<tr class="memitem:FunctionParser" id="r_FunctionParser"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsyntax_1_1FunctionParser.html">FunctionParser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for parsing functions  <a href="classsyntax_1_1FunctionParser.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Parser" id="r_Parser"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsyntax_1_1Parser.html">Parser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">syntax analysis of the tokenized input  <a href="classsyntax_1_1Parser.html#details">More...</a><br /></td></tr>
+<tr class="memitem:StatementParser" id="r_StatementParser"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsyntax_1_1StatementParser.html">StatementParser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for parsing statements  <a href="classsyntax_1_1StatementParser.html#details">More...</a><br /></td></tr>
+<tr class="memitem:TokenConsumer" id="r_TokenConsumer"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsyntax_1_1TokenConsumer.html">TokenConsumer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lexer wrapper, shared across parsers, non-owning.  <a href="classsyntax_1_1TokenConsumer.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:abfc8fc34ebd1201411f65c2709f834b1" id="r_abfc8fc34ebd1201411f65c2709f834b1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1">Operator</a> { <br />
+&#160;&#160;<a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a14b52fa379dea9171c3eb958d7fa5795">NO_OP</a> = 0
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a9eeb52badb613229884838847294b90d">ADD</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a241dd841abade20fcb27b8a9f494e1eb">SUB</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a2cdf52a55876063ec93b7d18bc741f6c">MUL</a>
+, <br />
+&#160;&#160;<a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a29bbf66f7f8529ec47e394fb5a36c646">DIV</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a9db56a6a70f2a921e6199f7050c21b04">ANDB</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1ac01be2f37880af8cbae89b5364f02ed1">ORB</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a97675eb3f268048604dc5155511a2a4d">XOR</a>
+, <br />
+&#160;&#160;<a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1adff23c74b1d8d80f33e8a894964c74d7">LSHIFT</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1ad13eccc8e378c60e2f9620ce4c77f963">RSHIFT</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a5471bbbe632b8222dcbbf8e5755d1e98">ANDL</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a0f4fd0dd93fd8034781d91475381de3f">ORL</a>
+, <br />
+&#160;&#160;<a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a1798e8c3621ca53d9e3a80d257306000">LESS</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1ae7e72355289e404b762d4cf88824d23b">GREATER</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a8a72211a539c4f44dcaa446209076da6">LEQUAL</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a9e63a520a6e8fefd37a5fa966d96f3bc">GEQUAL</a>
+, <br />
+&#160;&#160;<a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a969f331a87d8c958473c32b4d0e61a44">EQUAL</a>
+, <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a08c21e015248267a01d727848c97b40a">NEQUAL</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:abfc8fc34ebd1201411f65c2709f834b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">operators supported by the compiler  <a href="#abfc8fc34ebd1201411f65c2709f834b1">More...</a><br /></td></tr>
 <tr class="memitem:aea1c896bea47efde3e560d6fb850f4d8" id="r_aea1c896bea47efde3e560d6fb850f4d8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8">TokenType</a> { <br />
 &#160;&#160;<a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8ab718adec73e04ce3ec720dd11a06a308">ID</a>
 , <a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8aa0000d7769148184776f1d17656921b0">LITERAL</a>
@@ -137,13 +175,29 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6221fc802533b2c277a5313f5cce05d2" id="r_a6221fc802533b2c277a5313f5cce05d2"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6221fc802533b2c277a5313f5cce05d2">operatorToStr</a> (<a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1">Operator</a> op)</td></tr>
+<tr class="memdesc:a6221fc802533b2c277a5313f5cce05d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the string representation of the operator  <br /></td></tr>
+<tr class="memitem:a24c4cc5e87f70fb2e6607615c3a58d21" id="r_a24c4cc5e87f70fb2e6607615c3a58d21"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1">Operator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24c4cc5e87f70fb2e6607615c3a58d21">tokenTypeToOperator</a> (<a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8">syntax::TokenType</a> type)</td></tr>
+<tr class="memdesc:a24c4cc5e87f70fb2e6607615c3a58d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the operator of the underlying token type  <br /></td></tr>
+<tr class="memitem:a41991c0d927d31c1c3a22e619f98314c" id="r_a41991c0d927d31c1c3a22e619f98314c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41991c0d927d31c1c3a22e619f98314c">tokenTypeToType</a> (<a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8">TokenType</a> type)</td></tr>
+<tr class="memdesc:a41991c0d927d31c1c3a22e619f98314c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the type representation of the token type  <br /></td></tr>
 <tr class="memitem:a6f3248483f6d1efcdc957b572d45b47b" id="r_a6f3248483f6d1efcdc957b572d45b47b"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f3248483f6d1efcdc957b572d45b47b">tokenTypeToStr</a> (<a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8">TokenType</a> type)</td></tr>
 <tr class="memdesc:a6f3248483f6d1efcdc957b572d45b47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the string representation of the token type  <br /></td></tr>
 <tr class="memitem:a678fd2ad3440a0ba77c18ef5606432bb" id="r_a678fd2ad3440a0ba77c18ef5606432bb"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a678fd2ad3440a0ba77c18ef5606432bb">generalTokenTypeToStr</a> (<a class="el" href="#a0b2093d99f3b2052c3c25f5a793ba23b">GeneralTokenType</a> type)</td></tr>
 <tr class="memdesc:a678fd2ad3440a0ba77c18ef5606432bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the string representation of the general token type  <br /></td></tr>
+<tr class="memitem:af88526af1729c359e1f0810a9851f79c" id="r_af88526af1729c359e1f0810a9851f79c"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af88526af1729c359e1f0810a9851f79c">getPrecedence</a> (<a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8">TokenType</a> type)</td></tr>
+<tr class="memdesc:af88526af1729c359e1f0810a9851f79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the precedence of the token  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a1cdf7697bb4589c056bbd5f77cc472e1" id="r_a1cdf7697bb4589c056bbd5f77cc472e1"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cdf7697bb4589c056bbd5f77cc472e1">OPERATOR_COUNT</a> { static_cast&lt;size_t&gt;(<a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a08c21e015248267a01d727848c97b40a">Operator::NEQUAL</a>) + 1 }</td></tr>
+<tr class="memdesc:a1cdf7697bb4589c056bbd5f77cc472e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of operators  <br /></td></tr>
+<tr class="memitem:ad25b896219316393e442f5d5b21a3de6" id="r_ad25b896219316393e442f5d5b21a3de6"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view, <a class="el" href="#a1cdf7697bb4589c056bbd5f77cc472e1">OPERATOR_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad25b896219316393e442f5d5b21a3de6">operatorStringRepresentations</a></td></tr>
+<tr class="memdesc:ad25b896219316393e442f5d5b21a3de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps operators to their string representations  <br /></td></tr>
+<tr class="memitem:ade8c215cda44a55d2f4da43a1c1de1d2" id="r_ade8c215cda44a55d2f4da43a1c1de1d2"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1">Operator</a>, <a class="el" href="#a706b74103ab50a50f52ce49af469c573">syntax::TOKEN_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade8c215cda44a55d2f4da43a1c1de1d2">tokenTypeOperatorRepresentations</a></td></tr>
+<tr class="memdesc:ade8c215cda44a55d2f4da43a1c1de1d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps token type to operator  <br /></td></tr>
+<tr class="memitem:a7d605ccc8560e65523594b8c9623f002" id="r_a7d605ccc8560e65523594b8c9623f002"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; <a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a>, <a class="el" href="#a706b74103ab50a50f52ce49af469c573">TOKEN_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d605ccc8560e65523594b8c9623f002">tokenTypeTypeRepresentations</a></td></tr>
+<tr class="memdesc:a7d605ccc8560e65523594b8c9623f002"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps token type to type  <br /></td></tr>
 <tr class="memitem:a706b74103ab50a50f52ce49af469c573" id="r_a706b74103ab50a50f52ce49af469c573"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a706b74103ab50a50f52ce49af469c573">TOKEN_TYPE_COUNT</a> { static_cast&lt;size_t&gt;(<a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8aeb7076becd9b9973e6b08024597db564">TokenType::_EOF</a>) + 1 }</td></tr>
 <tr class="memdesc:a706b74103ab50a50f52ce49af469c573"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of token types  <br /></td></tr>
 <tr class="memitem:acb35ff93aa7df4357561dd7c8a6c7701" id="r_acb35ff93aa7df4357561dd7c8a6c7701"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb35ff93aa7df4357561dd7c8a6c7701">GENERAL_TOKEN_TYPE_COUNT</a> { static_cast&lt;size_t&gt;(<a class="el" href="#a0b2093d99f3b2052c3c25f5a793ba23ba03570470bad94692ce93e32700d2e1cb">GeneralTokenType::OTHER</a>) + 1 }</td></tr>
@@ -152,6 +206,8 @@ Variables</h2></td></tr>
 <tr class="memdesc:a32056f0437e6152e7a70a9563e615a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps token types to their string representations  <br /></td></tr>
 <tr class="memitem:ad0ad0eef09733e616f837402b37cef61" id="r_ad0ad0eef09733e616f837402b37cef61"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view, <a class="el" href="#acb35ff93aa7df4357561dd7c8a6c7701">GENERAL_TOKEN_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0ad0eef09733e616f837402b37cef61">generalTokenTypeStringRepresentations</a></td></tr>
 <tr class="memdesc:ad0ad0eef09733e616f837402b37cef61"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps general token types to their string representations  <br /></td></tr>
+<tr class="memitem:a02e09294196e928f8ce7eadf3e53494a" id="r_a02e09294196e928f8ce7eadf3e53494a"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; int, <a class="el" href="#a706b74103ab50a50f52ce49af469c573">TOKEN_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02e09294196e928f8ce7eadf3e53494a">precedence</a></td></tr>
+<tr class="memdesc:a02e09294196e928f8ce7eadf3e53494a"><td class="mdescLeft">&#160;</td><td class="mdescRight">precedence of the token types  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>module defining the elements related to syntax of the language </p>
@@ -182,6 +238,54 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a0b2093d99f3b2052c3c25f5a793ba23ba986496ca5b23669b8661171566a167c3" name="a0b2093d99f3b2052c3c25f5a793ba23ba986496ca5b23669b8661171566a167c3"></a>OPERATOR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0b2093d99f3b2052c3c25f5a793ba23ba948495146facadfe8859789036313d79" name="a0b2093d99f3b2052c3c25f5a793ba23ba948495146facadfe8859789036313d79"></a>TYPE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0b2093d99f3b2052c3c25f5a793ba23ba03570470bad94692ce93e32700d2e1cb" name="a0b2093d99f3b2052c3c25f5a793ba23ba03570470bad94692ce93e32700d2e1cb"></a>OTHER&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="abfc8fc34ebd1201411f65c2709f834b1" name="abfc8fc34ebd1201411f65c2709f834b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfc8fc34ebd1201411f65c2709f834b1">&#9670;&#160;</a></span>Operator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1">syntax::Operator</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>operators supported by the compiler </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a14b52fa379dea9171c3eb958d7fa5795" name="abfc8fc34ebd1201411f65c2709f834b1a14b52fa379dea9171c3eb958d7fa5795"></a>NO_OP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a9eeb52badb613229884838847294b90d" name="abfc8fc34ebd1201411f65c2709f834b1a9eeb52badb613229884838847294b90d"></a>ADD&#160;</td><td class="fielddoc"><p>arithmetic </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a241dd841abade20fcb27b8a9f494e1eb" name="abfc8fc34ebd1201411f65c2709f834b1a241dd841abade20fcb27b8a9f494e1eb"></a>SUB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a2cdf52a55876063ec93b7d18bc741f6c" name="abfc8fc34ebd1201411f65c2709f834b1a2cdf52a55876063ec93b7d18bc741f6c"></a>MUL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a29bbf66f7f8529ec47e394fb5a36c646" name="abfc8fc34ebd1201411f65c2709f834b1a29bbf66f7f8529ec47e394fb5a36c646"></a>DIV&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a9db56a6a70f2a921e6199f7050c21b04" name="abfc8fc34ebd1201411f65c2709f834b1a9db56a6a70f2a921e6199f7050c21b04"></a>ANDB&#160;</td><td class="fielddoc"><p>bitwise </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1ac01be2f37880af8cbae89b5364f02ed1" name="abfc8fc34ebd1201411f65c2709f834b1ac01be2f37880af8cbae89b5364f02ed1"></a>ORB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a97675eb3f268048604dc5155511a2a4d" name="abfc8fc34ebd1201411f65c2709f834b1a97675eb3f268048604dc5155511a2a4d"></a>XOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1adff23c74b1d8d80f33e8a894964c74d7" name="abfc8fc34ebd1201411f65c2709f834b1adff23c74b1d8d80f33e8a894964c74d7"></a>LSHIFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1ad13eccc8e378c60e2f9620ce4c77f963" name="abfc8fc34ebd1201411f65c2709f834b1ad13eccc8e378c60e2f9620ce4c77f963"></a>RSHIFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a5471bbbe632b8222dcbbf8e5755d1e98" name="abfc8fc34ebd1201411f65c2709f834b1a5471bbbe632b8222dcbbf8e5755d1e98"></a>ANDL&#160;</td><td class="fielddoc"><p>logical </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a0f4fd0dd93fd8034781d91475381de3f" name="abfc8fc34ebd1201411f65c2709f834b1a0f4fd0dd93fd8034781d91475381de3f"></a>ORL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a1798e8c3621ca53d9e3a80d257306000" name="abfc8fc34ebd1201411f65c2709f834b1a1798e8c3621ca53d9e3a80d257306000"></a>LESS&#160;</td><td class="fielddoc"><p>relational </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1ae7e72355289e404b762d4cf88824d23b" name="abfc8fc34ebd1201411f65c2709f834b1ae7e72355289e404b762d4cf88824d23b"></a>GREATER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a8a72211a539c4f44dcaa446209076da6" name="abfc8fc34ebd1201411f65c2709f834b1a8a72211a539c4f44dcaa446209076da6"></a>LEQUAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a9e63a520a6e8fefd37a5fa966d96f3bc" name="abfc8fc34ebd1201411f65c2709f834b1a9e63a520a6e8fefd37a5fa966d96f3bc"></a>GEQUAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a969f331a87d8c958473c32b4d0e61a44" name="abfc8fc34ebd1201411f65c2709f834b1a969f331a87d8c958473c32b4d0e61a44"></a>EQUAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfc8fc34ebd1201411f65c2709f834b1a08c21e015248267a01d727848c97b40a" name="abfc8fc34ebd1201411f65c2709f834b1a08c21e015248267a01d727848c97b40a"></a>NEQUAL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -304,6 +408,108 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="af88526af1729c359e1f0810a9851f79c" name="af88526af1729c359e1f0810a9851f79c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88526af1729c359e1f0810a9851f79c">&#9670;&#160;</a></span>getPrecedence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int syntax::getPrecedence </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8">TokenType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the precedence of the token </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>- type of the token </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number representing the precedence of the token </dd></dl>
+
+</div>
+</div>
+<a id="a6221fc802533b2c277a5313f5cce05d2" name="a6221fc802533b2c277a5313f5cce05d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6221fc802533b2c277a5313f5cce05d2">&#9670;&#160;</a></span>operatorToStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view syntax::operatorToStr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1">Operator</a></td>          <td class="paramname"><span class="paramname"><em>op</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the string representation of the operator </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>- operator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string representation of the operator </dd></dl>
+
+</div>
+</div>
+<a id="a24c4cc5e87f70fb2e6607615c3a58d21" name="a24c4cc5e87f70fb2e6607615c3a58d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c4cc5e87f70fb2e6607615c3a58d21">&#9670;&#160;</a></span>tokenTypeToOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1">Operator</a> syntax::tokenTypeToOperator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8">syntax::TokenType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the operator of the underlying token type </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>- type of the token </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>operator of the underlying token type, if token type is not an operator, returns <a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a14b52fa379dea9171c3eb958d7fa5795">Operator::NO_OP</a> </dd></dl>
+
+</div>
+</div>
 <a id="a6f3248483f6d1efcdc957b572d45b47b" name="a6f3248483f6d1efcdc957b572d45b47b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f3248483f6d1efcdc957b572d45b47b">&#9670;&#160;</a></span>tokenTypeToStr()</h2>
 
@@ -335,6 +541,40 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string representation of the token type </dd></dl>
+
+</div>
+</div>
+<a id="a41991c0d927d31c1c3a22e619f98314c" name="a41991c0d927d31c1c3a22e619f98314c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41991c0d927d31c1c3a22e619f98314c">&#9670;&#160;</a></span>tokenTypeToType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a> syntax::tokenTypeToType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aea1c896bea47efde3e560d6fb850f4d8">TokenType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for the type representation of the token type </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>- type of the token </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>type representation of the token type, if token is not type, it returns Type::NO_TYPE </dd></dl>
 
 </div>
 </div>
@@ -411,6 +651,78 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a1cdf7697bb4589c056bbd5f77cc472e1" name="a1cdf7697bb4589c056bbd5f77cc472e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cdf7697bb4589c056bbd5f77cc472e1">&#9670;&#160;</a></span>OPERATOR_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t syntax::OPERATOR_COUNT { static_cast&lt;size_t&gt;(<a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1a08c21e015248267a01d727848c97b40a">Operator::NEQUAL</a>) + 1 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of operators </p>
+
+</div>
+</div>
+<a id="ad25b896219316393e442f5d5b21a3de6" name="ad25b896219316393e442f5d5b21a3de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25b896219316393e442f5d5b21a3de6">&#9670;&#160;</a></span>operatorStringRepresentations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;std::string_view, <a class="el" href="#a1cdf7697bb4589c056bbd5f77cc472e1">OPERATOR_COUNT</a>&gt; syntax::operatorStringRepresentations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>maps operators to their string representations </p>
+
+</div>
+</div>
+<a id="a02e09294196e928f8ce7eadf3e53494a" name="a02e09294196e928f8ce7eadf3e53494a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e09294196e928f8ce7eadf3e53494a">&#9670;&#160;</a></span>precedence</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int, <a class="el" href="#a706b74103ab50a50f52ce49af469c573">TOKEN_TYPE_COUNT</a>&gt; syntax::precedence</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>precedence of the token types </p>
+
+</div>
+</div>
 <a id="a706b74103ab50a50f52ce49af469c573" name="a706b74103ab50a50f52ce49af469c573"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a706b74103ab50a50f52ce49af469c573">&#9670;&#160;</a></span>TOKEN_TYPE_COUNT</h2>
 
@@ -435,6 +747,30 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ade8c215cda44a55d2f4da43a1c1de1d2" name="ade8c215cda44a55d2f4da43a1c1de1d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8c215cda44a55d2f4da43a1c1de1d2">&#9670;&#160;</a></span>tokenTypeOperatorRepresentations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="#abfc8fc34ebd1201411f65c2709f834b1">Operator</a>, <a class="el" href="#a706b74103ab50a50f52ce49af469c573">syntax::TOKEN_TYPE_COUNT</a>&gt; syntax::tokenTypeOperatorRepresentations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>maps token type to operator </p>
+
+</div>
+</div>
 <a id="a32056f0437e6152e7a70a9563e615a2a" name="a32056f0437e6152e7a70a9563e615a2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32056f0437e6152e7a70a9563e615a2a">&#9670;&#160;</a></span>tokenTypeStringRepresentations</h2>
 
@@ -456,6 +792,61 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>maps token types to their string representations </p>
+
+</div>
+</div>
+<a id="a7d605ccc8560e65523594b8c9623f002" name="a7d605ccc8560e65523594b8c9623f002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d605ccc8560e65523594b8c9623f002">&#9670;&#160;</a></span>tokenTypeTypeRepresentations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a>, <a class="el" href="#a706b74103ab50a50f52ce49af469c573">TOKEN_TYPE_COUNT</a>&gt; syntax::tokenTypeTypeRepresentations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        [] {</div>
+<div class="line">            </div>
+<div class="line">            <span class="keyword">constexpr</span> <span class="keyword">auto</span> idx {</div>
+<div class="line">                [](<a class="code hl_enumeration" href="#aea1c896bea47efde3e560d6fb850f4d8">syntax::TokenType</a> type) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">size_t</span> {</div>
+<div class="line">                    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(type);</div>
+<div class="line">                }</div>
+<div class="line">            };</div>
+<div class="line"> </div>
+<div class="line">            std::array&lt;types::Type, syntax::TOKEN_TYPE_COUNT&gt; <a class="code hl_namespace" href="namespacetypes.html">types</a>{};</div>
+<div class="line">            types.fill(<a class="code hl_enumvalue" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513a245d11a3709454cc69b2de7911073d57">types::Type::NO_TYPE</a>);</div>
+<div class="line"> </div>
+<div class="line">            types[idx(<a class="code hl_enumvalue" href="#aea1c896bea47efde3e560d6fb850f4d8a53f93baa3057821107c750323892fa92">TokenType::INT</a>)]      = <a class="code hl_enumvalue" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513a53f93baa3057821107c750323892fa92">types::Type::INT</a>;</div>
+<div class="line">            types[idx(<a class="code hl_enumvalue" href="#aea1c896bea47efde3e560d6fb850f4d8aaf36b47f395cd01f48b8fc1013665054">TokenType::UNSIGNED</a>)] = <a class="code hl_enumvalue" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513aaf36b47f395cd01f48b8fc1013665054">types::Type::UNSIGNED</a>;</div>
+<div class="line">            types[idx(<a class="code hl_enumvalue" href="#aea1c896bea47efde3e560d6fb850f4d8a6d0c9fc747131795e6e5d0c5119f12cb">TokenType::VOID</a>)]     = <a class="code hl_enumvalue" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513a6d0c9fc747131795e6e5d0c5119f12cb">types::Type::VOID</a>;</div>
+<div class="line">            types[idx(<a class="code hl_enumvalue" href="#aea1c896bea47efde3e560d6fb850f4d8ae1f2d5134ed2543d38a0de9751cf75d9">TokenType::AUTO</a>)]     = <a class="code hl_enumvalue" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513ae1f2d5134ed2543d38a0de9751cf75d9">types::Type::AUTO</a>;</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">return</span> types;</div>
+<div class="line">        }()</div>
+<div class="line">    }</div>
+<div class="ttc" id="anamespacesyntax_html_aea1c896bea47efde3e560d6fb850f4d8"><div class="ttname"><a href="#aea1c896bea47efde3e560d6fb850f4d8">syntax::TokenType</a></div><div class="ttdeci">TokenType</div><div class="ttdoc">types of the tokens defined by the compiler</div><div class="ttdef"><b>Definition</b> token_types.hpp:12</div></div>
+<div class="ttc" id="anamespacesyntax_html_aea1c896bea47efde3e560d6fb850f4d8a53f93baa3057821107c750323892fa92"><div class="ttname"><a href="#aea1c896bea47efde3e560d6fb850f4d8a53f93baa3057821107c750323892fa92">syntax::TokenType::INT</a></div><div class="ttdeci">@ INT</div><div class="ttdoc">type keywords</div><div class="ttdef"><b>Definition</b> token_types.hpp:68</div></div>
+<div class="ttc" id="anamespacesyntax_html_aea1c896bea47efde3e560d6fb850f4d8a6d0c9fc747131795e6e5d0c5119f12cb"><div class="ttname"><a href="#aea1c896bea47efde3e560d6fb850f4d8a6d0c9fc747131795e6e5d0c5119f12cb">syntax::TokenType::VOID</a></div><div class="ttdeci">@ VOID</div><div class="ttdef"><b>Definition</b> token_types.hpp:70</div></div>
+<div class="ttc" id="anamespacesyntax_html_aea1c896bea47efde3e560d6fb850f4d8aaf36b47f395cd01f48b8fc1013665054"><div class="ttname"><a href="#aea1c896bea47efde3e560d6fb850f4d8aaf36b47f395cd01f48b8fc1013665054">syntax::TokenType::UNSIGNED</a></div><div class="ttdeci">@ UNSIGNED</div><div class="ttdef"><b>Definition</b> token_types.hpp:69</div></div>
+<div class="ttc" id="anamespacesyntax_html_aea1c896bea47efde3e560d6fb850f4d8ae1f2d5134ed2543d38a0de9751cf75d9"><div class="ttname"><a href="#aea1c896bea47efde3e560d6fb850f4d8ae1f2d5134ed2543d38a0de9751cf75d9">syntax::TokenType::AUTO</a></div><div class="ttdeci">@ AUTO</div><div class="ttdef"><b>Definition</b> token_types.hpp:71</div></div>
+<div class="ttc" id="anamespacetypes_html"><div class="ttname"><a href="namespacetypes.html">types</a></div><div class="ttdoc">namespace defining the types supported by the language</div></div>
+<div class="ttc" id="anamespacetypes_html_a50df03a9bcbb1a3abd441f7d98a40513a245d11a3709454cc69b2de7911073d57"><div class="ttname"><a href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513a245d11a3709454cc69b2de7911073d57">types::Type::NO_TYPE</a></div><div class="ttdeci">@ NO_TYPE</div><div class="ttdef"><b>Definition</b> types.hpp:18</div></div>
+<div class="ttc" id="anamespacetypes_html_a50df03a9bcbb1a3abd441f7d98a40513a53f93baa3057821107c750323892fa92"><div class="ttname"><a href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513a53f93baa3057821107c750323892fa92">types::Type::INT</a></div><div class="ttdeci">@ INT</div><div class="ttdef"><b>Definition</b> types.hpp:19</div></div>
+<div class="ttc" id="anamespacetypes_html_a50df03a9bcbb1a3abd441f7d98a40513a6d0c9fc747131795e6e5d0c5119f12cb"><div class="ttname"><a href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513a6d0c9fc747131795e6e5d0c5119f12cb">types::Type::VOID</a></div><div class="ttdeci">@ VOID</div><div class="ttdef"><b>Definition</b> types.hpp:21</div></div>
+<div class="ttc" id="anamespacetypes_html_a50df03a9bcbb1a3abd441f7d98a40513aaf36b47f395cd01f48b8fc1013665054"><div class="ttname"><a href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513aaf36b47f395cd01f48b8fc1013665054">types::Type::UNSIGNED</a></div><div class="ttdeci">@ UNSIGNED</div><div class="ttdef"><b>Definition</b> types.hpp:20</div></div>
+<div class="ttc" id="anamespacetypes_html_a50df03a9bcbb1a3abd441f7d98a40513ae1f2d5134ed2543d38a0de9751cf75d9"><div class="ttname"><a href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513ae1f2d5134ed2543d38a0de9751cf75d9">types::Type::AUTO</a></div><div class="ttdeci">@ AUTO</div><div class="ttdef"><b>Definition</b> types.hpp:22</div></div>
+</div><!-- fragment -->
+<p>maps token type to type </p>
 
 </div>
 </div>

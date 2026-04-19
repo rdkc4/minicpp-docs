@@ -47,6 +47,7 @@ $(function() {
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">parser_defs.hpp File Reference</div></div>
@@ -55,76 +56,21 @@ $(function() {
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &quot;<a class="el" href="token__types_8hpp.html">../../common/token/token_types.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:syntax" id="r_syntax"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesyntax.html">syntax</a></td></tr>
+<tr class="memdesc:namespacesyntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">module defining the elements related to syntax of the language <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a019fdbf7bc60e8117f7440cbe021ac7b" id="r_a019fdbf7bc60e8117f7440cbe021ac7b"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a019fdbf7bc60e8117f7440cbe021ac7b">getPrecedence</a> (<a class="el" href="namespacesyntax.html#aea1c896bea47efde3e560d6fb850f4d8">syntax::TokenType</a> type)</td></tr>
-<tr class="memdesc:a019fdbf7bc60e8117f7440cbe021ac7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the precedence of the token  <br /></td></tr>
+<tr class="memitem:af88526af1729c359e1f0810a9851f79c" id="r_af88526af1729c359e1f0810a9851f79c"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesyntax.html#af88526af1729c359e1f0810a9851f79c">syntax::getPrecedence</a> (<a class="el" href="namespacesyntax.html#aea1c896bea47efde3e560d6fb850f4d8">TokenType</a> type)</td></tr>
+<tr class="memdesc:af88526af1729c359e1f0810a9851f79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the precedence of the token  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a98826511d192a2d694dce06e1c139bcf" id="r_a98826511d192a2d694dce06e1c139bcf"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; int, <a class="el" href="namespacesyntax.html#a706b74103ab50a50f52ce49af469c573">syntax::TOKEN_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98826511d192a2d694dce06e1c139bcf">precedence</a></td></tr>
-<tr class="memdesc:a98826511d192a2d694dce06e1c139bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">precedence of the token types  <br /></td></tr>
+<tr class="memitem:a02e09294196e928f8ce7eadf3e53494a" id="r_a02e09294196e928f8ce7eadf3e53494a"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; int, <a class="el" href="namespacesyntax.html#a706b74103ab50a50f52ce49af469c573">TOKEN_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesyntax.html#a02e09294196e928f8ce7eadf3e53494a">syntax::precedence</a></td></tr>
+<tr class="memdesc:a02e09294196e928f8ce7eadf3e53494a"><td class="mdescLeft">&#160;</td><td class="mdescRight">precedence of the token types  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a019fdbf7bc60e8117f7440cbe021ac7b" name="a019fdbf7bc60e8117f7440cbe021ac7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a019fdbf7bc60e8117f7440cbe021ac7b">&#9670;&#160;</a></span>getPrecedence()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getPrecedence </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacesyntax.html#aea1c896bea47efde3e560d6fb850f4d8">syntax::TokenType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>getter for the precedence of the token </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>- type of the token </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number representing the precedence of the token </dd></dl>
-
-</div>
-</div>
-<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="a98826511d192a2d694dce06e1c139bcf" name="a98826511d192a2d694dce06e1c139bcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98826511d192a2d694dce06e1c139bcf">&#9670;&#160;</a></span>precedence</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;int, <a class="el" href="namespacesyntax.html#a706b74103ab50a50f52ce49af469c573">syntax::TOKEN_TYPE_COUNT</a>&gt; precedence</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>precedence of the token types </p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

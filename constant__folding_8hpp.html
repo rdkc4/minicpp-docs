@@ -57,7 +57,7 @@ $(function() {
 <code>#include &lt;format&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
-<code>#include &quot;<a class="el" href="defs_8hpp.html">../common/defs/defs.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="types_8hpp.html">../common/defs/types.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ast__binary__expr_8hpp.html">../common/abstract-syntax-tree/ast_binary_expr.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ir__expr_8hpp.html">../common/intermediate-representation-tree/ir_expr.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ir__literal__expr_8hpp.html">../common/intermediate-representation-tree/ir_literal_expr.hpp</a>&quot;</code><br />
@@ -72,12 +72,13 @@ Namespaces</h2></td></tr>
 <tr class="memitem:optimization_3A_3Aconstant_5Ffolding" id="r_optimization_3A_3Aconstant_5Ffolding"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptimization_1_1constant__folding.html">optimization::constant_folding</a></td></tr>
 <tr class="memdesc:namespaceoptimization_1_1constant__folding"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module for computing the operations that can be resolved in a compile-time. <br /></td></tr>
 <tr class="memitem:optimization" id="r_optimization"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptimization.html">optimization</a></td></tr>
+<tr class="memdesc:namespaceoptimization"><td class="mdescLeft">&#160;</td><td class="mdescRight">module containing the compiler optimization passes and analyses over the IR <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a27cd146ec8e847de594d5c9d06a34c02" id="r_a27cd146ec8e847de594d5c9d06a34c02"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
-<tr class="memitem:a27cd146ec8e847de594d5c9d06a34c02 template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoptimization_1_1constant__folding_1_1MergeResult.html">MergeResult</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptimization_1_1constant__folding.html#a27cd146ec8e847de594d5c9d06a34c02">optimization::constant_folding::mergeValues</a> (T l, T r, <a class="el" href="defs_8hpp.html#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> op, size_t line, size_t column)</td></tr>
-<tr class="memdesc:a27cd146ec8e847de594d5c9d06a34c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs operation on two constants  <br /></td></tr>
+<tr class="memitem:a27530d935ce24920ea65da2d743c198e" id="r_a27530d935ce24920ea65da2d743c198e"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a27530d935ce24920ea65da2d743c198e template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoptimization_1_1constant__folding_1_1MergeResult.html">MergeResult</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptimization_1_1constant__folding.html#a27530d935ce24920ea65da2d743c198e">optimization::constant_folding::mergeValues</a> (T l, T r, <a class="el" href="namespacesyntax.html#abfc8fc34ebd1201411f65c2709f834b1">syntax::Operator</a> op, size_t line, size_t column)</td></tr>
+<tr class="memdesc:a27530d935ce24920ea65da2d743c198e"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs operation on two constants  <br /></td></tr>
 <tr class="memitem:a664ade51171798e7cb230e49d98dd011" id="r_a664ade51171798e7cb230e49d98dd011"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a664ade51171798e7cb230e49d98dd011 template"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoptimization_1_1constant__folding.html#a664ade51171798e7cb230e49d98dd011">optimization::constant_folding::getOperandValue</a> (const <a class="el" href="classir_1_1IRLiteralExpr.html">ir::IRLiteralExpr</a> *operand)</td></tr>
 <tr class="memdesc:a664ade51171798e7cb230e49d98dd011"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to get operand value  <br /></td></tr>

@@ -58,7 +58,8 @@ $(function() {
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;string_view&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
-<code>#include &quot;<a class="el" href="defs_8hpp.html">../../defs/defs.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="types_8hpp.html">../../defs/types.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="operators_8hpp.html">../../defs/operators.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -139,8 +140,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ab96247f69718d09c08217e6f1a9aa38c" id="r_ab96247f69718d09c08217e6f1a9aa38c"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceir.html#ab96247f69718d09c08217e6f1a9aa38c">ir::irNodeToStr</a> (<a class="el" href="namespaceir.html#a58f93f215bb8ccbf3de3475c5bcdf820">IRNodeType</a> nodeType)</td></tr>
 <tr class="memdesc:ab96247f69718d09c08217e6f1a9aa38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the string representation of the ir node  <br /></td></tr>
-<tr class="memitem:acdfe98626c57987e34e6a9231ed27912" id="r_acdfe98626c57987e34e6a9231ed27912"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceir.html#a58f93f215bb8ccbf3de3475c5bcdf820">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceir.html#acdfe98626c57987e34e6a9231ed27912">ir::resolveOperator</a> (<a class="el" href="defs_8hpp.html#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> op, <a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type)</td></tr>
-<tr class="memdesc:acdfe98626c57987e34e6a9231ed27912"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the node that represents operation  <br /></td></tr>
+<tr class="memitem:a4ddadf72eb76bf8e652baefd0a2e2c21" id="r_a4ddadf72eb76bf8e652baefd0a2e2c21"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceir.html#a58f93f215bb8ccbf3de3475c5bcdf820">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceir.html#a4ddadf72eb76bf8e652baefd0a2e2c21">ir::resolveOperator</a> (<a class="el" href="namespacesyntax.html#abfc8fc34ebd1201411f65c2709f834b1">syntax::Operator</a> op, <a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a> type)</td></tr>
+<tr class="memdesc:a4ddadf72eb76bf8e652baefd0a2e2c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the node that represents operation  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -148,8 +149,8 @@ Variables</h2></td></tr>
 <tr class="memdesc:af149f6218d307fff162d0f3271da55f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of ir node types  <br /></td></tr>
 <tr class="memitem:a2f74dab4c20c217059843e40933bff45" id="r_a2f74dab4c20c217059843e40933bff45"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::string_view, <a class="el" href="namespaceir.html#af149f6218d307fff162d0f3271da55f4">IR_NODE_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceir.html#a2f74dab4c20c217059843e40933bff45">ir::irNodeTypeStringRepresentations</a></td></tr>
 <tr class="memdesc:a2f74dab4c20c217059843e40933bff45"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps the ir node types to their string representation  <br /></td></tr>
-<tr class="memitem:a38946e12fcf41fd27b524be95a3a3c28" id="r_a38946e12fcf41fd27b524be95a3a3c28"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; <a class="el" href="structir_1_1Operation.html">Operation</a>, <a class="el" href="defs_8hpp.html#aeb9f557079314461babda61aef04540b">OPERATOR_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceir.html#a38946e12fcf41fd27b524be95a3a3c28">ir::operationTable</a></td></tr>
-<tr class="memdesc:a38946e12fcf41fd27b524be95a3a3c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps operator to ir instruction node  <br /></td></tr>
+<tr class="memitem:a5382bad271cd888c6bbb860881073635" id="r_a5382bad271cd888c6bbb860881073635"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; <a class="el" href="structir_1_1Operation.html">Operation</a>, <a class="el" href="namespacesyntax.html#a1cdf7697bb4589c056bbd5f77cc472e1">syntax::OPERATOR_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceir.html#a5382bad271cd888c6bbb860881073635">ir::operationTable</a></td></tr>
+<tr class="memdesc:a5382bad271cd888c6bbb860881073635"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps operator to ir instruction node  <br /></td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -73,12 +73,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa70e3ccda5051cf487b8e9533d6ed689"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for temporary at specified position  <br /></td></tr>
 <tr class="memitem:af0312aecc13883672abc4346b2ed73e6" id="r_af0312aecc13883672abc4346b2ed73e6"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::string, <a class="el" href="classir_1_1IRExpr.html">IRExpr</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0312aecc13883672abc4346b2ed73e6">getTemporaryDetailsAtN</a> (size_t n) noexcept</td></tr>
 <tr class="memdesc:af0312aecc13883672abc4346b2ed73e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the temporary name and temporary expression at the specified position  <br /></td></tr>
-<tr class="memitem:a4b2d3762596d1766b09a6a6e93fc86e6" id="r_a4b2d3762596d1766b09a6a6e93fc86e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b2d3762596d1766b09a6a6e93fc86e6">addTemporaryExpr</a> (const std::string &amp;tempName, std::unique_ptr&lt; <a class="el" href="classir_1_1IRExpr.html">IRExpr</a> &gt; tempVal=nullptr, <a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type=<a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57">Type::NO_TYPE</a>)</td></tr>
-<tr class="memdesc:a4b2d3762596d1766b09a6a6e93fc86e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds new temporary variable  <br /></td></tr>
-<tr class="memitem:a7d07e6ade084f70ddf5b8984c04bb10d" id="r_a7d07e6ade084f70ddf5b8984c04bb10d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d07e6ade084f70ddf5b8984c04bb10d">setTemporaryExprAtN</a> (std::unique_ptr&lt; <a class="el" href="classir_1_1IRExpr.html">IRExpr</a> &gt; tempVal, <a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> t, size_t n)</td></tr>
-<tr class="memdesc:a7d07e6ade084f70ddf5b8984c04bb10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the temporary variable at specified position  <br /></td></tr>
-<tr class="memitem:a97dbdc517990180f459606de43c2a243" id="r_a97dbdc517990180f459606de43c2a243"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97dbdc517990180f459606de43c2a243">getTypes</a> () const noexcept</td></tr>
-<tr class="memdesc:a97dbdc517990180f459606de43c2a243"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the types of the temporaries  <br /></td></tr>
+<tr class="memitem:ac9b13ff98d2b30abb8ade85be7593468" id="r_ac9b13ff98d2b30abb8ade85be7593468"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9b13ff98d2b30abb8ade85be7593468">addTemporaryExpr</a> (const std::string &amp;tempName, std::unique_ptr&lt; <a class="el" href="classir_1_1IRExpr.html">IRExpr</a> &gt; tempVal=nullptr, <a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a> type=<a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513a245d11a3709454cc69b2de7911073d57">types::Type::NO_TYPE</a>)</td></tr>
+<tr class="memdesc:ac9b13ff98d2b30abb8ade85be7593468"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds new temporary variable  <br /></td></tr>
+<tr class="memitem:a8a30c8091820f44ca42437bc6a4be461" id="r_a8a30c8091820f44ca42437bc6a4be461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a30c8091820f44ca42437bc6a4be461">setTemporaryExprAtN</a> (std::unique_ptr&lt; <a class="el" href="classir_1_1IRExpr.html">IRExpr</a> &gt; tempVal, <a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a> type, size_t n)</td></tr>
+<tr class="memdesc:a8a30c8091820f44ca42437bc6a4be461"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the temporary variable at specified position  <br /></td></tr>
+<tr class="memitem:aa55d7c26fb42c67465b5efacfd3a526e" id="r_aa55d7c26fb42c67465b5efacfd3a526e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa55d7c26fb42c67465b5efacfd3a526e">getTypes</a> () const noexcept</td></tr>
+<tr class="memdesc:aa55d7c26fb42c67465b5efacfd3a526e"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the types of the temporaries  <br /></td></tr>
 <tr class="memitem:a038a276710a2d37c75eb5e7dcc93ced8" id="r_a038a276710a2d37c75eb5e7dcc93ced8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a038a276710a2d37c75eb5e7dcc93ced8">accept</a> (<a class="el" href="classir_1_1IRVisitor.html">IRVisitor</a> &amp;visitor) override</td></tr>
 <tr class="memdesc:a038a276710a2d37c75eb5e7dcc93ced8"><td class="mdescLeft">&#160;</td><td class="mdescRight">accepts the ir visitor  <br /></td></tr>
 <tr class="inherit_header pub_methods_classir_1_1IRNode"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classir_1_1IRNode')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classir_1_1IRNode.html">ir::IRNode</a></td></tr>
@@ -91,8 +91,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ad1ba0339628d74be63d550152f2c92cb" id="r_ad1ba0339628d74be63d550152f2c92cb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1ba0339628d74be63d550152f2c92cb">types</a></td></tr>
-<tr class="memdesc:ad1ba0339628d74be63d550152f2c92cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of types of the temporaries  <br /></td></tr>
+<tr class="memitem:a1f1de84770e609bbe1ea4b40499cdeca" id="r_a1f1de84770e609bbe1ea4b40499cdeca"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f1de84770e609bbe1ea4b40499cdeca">types</a></td></tr>
+<tr class="memdesc:a1f1de84770e609bbe1ea4b40499cdeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of types of the temporaries  <br /></td></tr>
 <tr class="memitem:ab6dfcc33abd08921a793e67f02b63034" id="r_ab6dfcc33abd08921a793e67f02b63034"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6dfcc33abd08921a793e67f02b63034">temporaryNames</a></td></tr>
 <tr class="memdesc:ab6dfcc33abd08921a793e67f02b63034"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of names of the temporaries  <br /></td></tr>
 <tr class="memitem:a514d9ace51a7caac231ef7ea9aab321f" id="r_a514d9ace51a7caac231ef7ea9aab321f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classir_1_1IRExpr.html">IRExpr</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a514d9ace51a7caac231ef7ea9aab321f">temporaryExprs</a></td></tr>
@@ -156,8 +156,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b2d3762596d1766b09a6a6e93fc86e6" name="a4b2d3762596d1766b09a6a6e93fc86e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b2d3762596d1766b09a6a6e93fc86e6">&#9670;&#160;</a></span>addTemporaryExpr()</h2>
+<a id="ac9b13ff98d2b30abb8ade85be7593468" name="ac9b13ff98d2b30abb8ade85be7593468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b13ff98d2b30abb8ade85be7593468">&#9670;&#160;</a></span>addTemporaryExpr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +175,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7a245d11a3709454cc69b2de7911073d57">Type::NO_TYPE</a></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513a245d11a3709454cc69b2de7911073d57">types::Type::NO_TYPE</a></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -350,8 +350,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a97dbdc517990180f459606de43c2a243" name="a97dbdc517990180f459606de43c2a243"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97dbdc517990180f459606de43c2a243">&#9670;&#160;</a></span>getTypes()</h2>
+<a id="aa55d7c26fb42c67465b5efacfd3a526e" name="aa55d7c26fb42c67465b5efacfd3a526e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55d7c26fb42c67465b5efacfd3a526e">&#9670;&#160;</a></span>getTypes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,7 +360,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; <a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> &gt; &amp; ir::IRTemporaryExpr::getTypes </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a> &gt; &amp; ir::IRTemporaryExpr::getTypes </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -378,8 +378,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7d07e6ade084f70ddf5b8984c04bb10d" name="a7d07e6ade084f70ddf5b8984c04bb10d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d07e6ade084f70ddf5b8984c04bb10d">&#9670;&#160;</a></span>setTemporaryExprAtN()</h2>
+<a id="a8a30c8091820f44ca42437bc6a4be461" name="a8a30c8091820f44ca42437bc6a4be461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a30c8091820f44ca42437bc6a4be461">&#9670;&#160;</a></span>setTemporaryExprAtN()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,7 +392,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -406,7 +406,7 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tempVal</td><td>- pointer to the expression </td></tr>
-    <tr><td class="paramname">t</td><td>- type of the temporary variable </td></tr>
+    <tr><td class="paramname">type</td><td>- type of the temporary variable </td></tr>
     <tr><td class="paramname">n</td><td>- position of the temporary </td></tr>
   </table>
   </dd>
@@ -463,8 +463,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad1ba0339628d74be63d550152f2c92cb" name="ad1ba0339628d74be63d550152f2c92cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1ba0339628d74be63d550152f2c92cb">&#9670;&#160;</a></span>types</h2>
+<a id="a1f1de84770e609bbe1ea4b40499cdeca" name="a1f1de84770e609bbe1ea4b40499cdeca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1de84770e609bbe1ea4b40499cdeca">&#9670;&#160;</a></span>types</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,7 +473,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="defs_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&gt; ir::IRTemporaryExpr::types</td>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacetypes.html#a50df03a9bcbb1a3abd441f7d98a40513">types::Type</a>&gt; ir::IRTemporaryExpr::types</td>
         </tr>
       </table>
   </td>
