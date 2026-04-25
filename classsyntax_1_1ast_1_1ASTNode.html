@@ -63,8 +63,16 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a28d128f57abd60bc7903155da217e076" id="r_a28d128f57abd60bc7903155da217e076"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28d128f57abd60bc7903155da217e076">ASTNode</a> (const <a class="el" href="structsyntax_1_1Token.html">syntax::Token</a> &amp;<a class="el" href="#a97210c2bf4141f79755ad0ca1774f3da">token</a>, <a class="el" href="namespacesyntax_1_1ast.html#a64da9beac18036e4f80e5dd5145e149f">ASTNodeType</a> ntype)</td></tr>
 <tr class="memdesc:a28d128f57abd60bc7903155da217e076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the ast node.  <br /></td></tr>
-<tr class="memitem:ae1143b382fee4b911f91f079994bb305" id="r_ae1143b382fee4b911f91f079994bb305"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1143b382fee4b911f91f079994bb305">~ASTNode</a> ()</td></tr>
-<tr class="memdesc:ae1143b382fee4b911f91f079994bb305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs the instance of the ast node.  <br /></td></tr>
+<tr class="memitem:a34bc9f35ae7693d823744e4ca548c544" id="r_a34bc9f35ae7693d823744e4ca548c544"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34bc9f35ae7693d823744e4ca548c544">~ASTNode</a> ()=default</td></tr>
+<tr class="memdesc:a34bc9f35ae7693d823744e4ca548c544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs the instance of the ast node.  <br /></td></tr>
+<tr class="memitem:aa1864f54c572692f52a3868ad08248ec" id="r_aa1864f54c572692f52a3868ad08248ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1864f54c572692f52a3868ad08248ec">ASTNode</a> (const ASTNode &amp;)=delete</td></tr>
+<tr class="memdesc:aa1864f54c572692f52a3868ad08248ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy constructor  <br /></td></tr>
+<tr class="memitem:a95e5d77ead8d1aab179389f9d52ce1a7" id="r_a95e5d77ead8d1aab179389f9d52ce1a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a28d128f57abd60bc7903155da217e076">ASTNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95e5d77ead8d1aab179389f9d52ce1a7">operator=</a> (const <a class="el" href="#a28d128f57abd60bc7903155da217e076">ASTNode</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a95e5d77ead8d1aab179389f9d52ce1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy assignment operator  <br /></td></tr>
+<tr class="memitem:a1bb6d1ca6ac4bda516de90b6e1e63e9f" id="r_a1bb6d1ca6ac4bda516de90b6e1e63e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bb6d1ca6ac4bda516de90b6e1e63e9f">ASTNode</a> (ASTNode &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:a1bb6d1ca6ac4bda516de90b6e1e63e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">move constructor  <br /></td></tr>
+<tr class="memitem:aee899934d5b2b9076be2442dd609be8d" id="r_aee899934d5b2b9076be2442dd609be8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a28d128f57abd60bc7903155da217e076">ASTNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee899934d5b2b9076be2442dd609be8d">operator=</a> (<a class="el" href="#a28d128f57abd60bc7903155da217e076">ASTNode</a> &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:aee899934d5b2b9076be2442dd609be8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">move assignment operator  <br /></td></tr>
 <tr class="memitem:afc1298d1b0c401b2091712cc5681ba3b" id="r_afc1298d1b0c401b2091712cc5681ba3b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsyntax_1_1Token.html">syntax::Token</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc1298d1b0c401b2091712cc5681ba3b">getToken</a> () const noexcept</td></tr>
 <tr class="memdesc:afc1298d1b0c401b2091712cc5681ba3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for a token of the node  <br /></td></tr>
 <tr class="memitem:a9bc724c3f36e5d3dbfa75e5bffe5164c" id="r_a9bc724c3f36e5d3dbfa75e5bffe5164c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesyntax_1_1ast.html#a64da9beac18036e4f80e5dd5145e149f">ASTNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bc724c3f36e5d3dbfa75e5bffe5164c">getNodeType</a> () const noexcept</td></tr>
@@ -83,7 +91,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>parent of AST nodes of all types </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a28d128f57abd60bc7903155da217e076" name="a28d128f57abd60bc7903155da217e076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28d128f57abd60bc7903155da217e076">&#9670;&#160;</a></span>ASTNode()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d128f57abd60bc7903155da217e076">&#9670;&#160;</a></span>ASTNode() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -112,8 +120,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1143b382fee4b911f91f079994bb305" name="ae1143b382fee4b911f91f079994bb305"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1143b382fee4b911f91f079994bb305">&#9670;&#160;</a></span>~ASTNode()</h2>
+<a id="a34bc9f35ae7693d823744e4ca548c544" name="a34bc9f35ae7693d823744e4ca548c544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34bc9f35ae7693d823744e4ca548c544">&#9670;&#160;</a></span>~ASTNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,7 +130,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">syntax::ast::ASTNode::~ASTNode </td>
+          <td class="memname">virtual syntax::ast::ASTNode::~ASTNode </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -136,6 +144,60 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destructs the instance of the ast node. </p>
+
+</div>
+</div>
+<a id="aa1864f54c572692f52a3868ad08248ec" name="aa1864f54c572692f52a3868ad08248ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1864f54c572692f52a3868ad08248ec">&#9670;&#160;</a></span>ASTNode() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">syntax::ast::ASTNode::ASTNode </td>
+          <td>(</td>
+          <td class="paramtype">const ASTNode &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted copy constructor </p>
+
+</div>
+</div>
+<a id="a1bb6d1ca6ac4bda516de90b6e1e63e9f" name="a1bb6d1ca6ac4bda516de90b6e1e63e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb6d1ca6ac4bda516de90b6e1e63e9f">&#9670;&#160;</a></span>ASTNode() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">syntax::ast::ASTNode::ASTNode </td>
+          <td>(</td>
+          <td class="paramtype">ASTNode &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>move constructor </p>
 
 </div>
 </div>
@@ -228,6 +290,60 @@ Private Attributes</h2></td></tr>
 
 <p>getter for a token of the node </p>
 <dl class="section return"><dt>Returns</dt><dd>const reference to a token describing the node </dd></dl>
+
+</div>
+</div>
+<a id="aee899934d5b2b9076be2442dd609be8d" name="aee899934d5b2b9076be2442dd609be8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee899934d5b2b9076be2442dd609be8d">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a28d128f57abd60bc7903155da217e076">ASTNode</a> &amp; syntax::ast::ASTNode::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a28d128f57abd60bc7903155da217e076">ASTNode</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>move assignment operator </p>
+
+</div>
+</div>
+<a id="a95e5d77ead8d1aab179389f9d52ce1a7" name="a95e5d77ead8d1aab179389f9d52ce1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e5d77ead8d1aab179389f9d52ce1a7">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a28d128f57abd60bc7903155da217e076">ASTNode</a> &amp; syntax::ast::ASTNode::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a28d128f57abd60bc7903155da217e076">ASTNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted copy assignment operator </p>
 
 </div>
 </div>

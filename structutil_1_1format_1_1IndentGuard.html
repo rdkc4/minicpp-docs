@@ -65,6 +65,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae6f65527eff2db89d71024767fea9630"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates the instance of the indent guard and increments the indentation  <br /></td></tr>
 <tr class="memitem:aa8d16b65ce8a1a9923115eadf3e3ea5f" id="r_aa8d16b65ce8a1a9923115eadf3e3ea5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8d16b65ce8a1a9923115eadf3e3ea5f">~IndentGuard</a> ()</td></tr>
 <tr class="memdesc:aa8d16b65ce8a1a9923115eadf3e3ea5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes the indent guard instance and decrements the indentation  <br /></td></tr>
+<tr class="memitem:afa8b32ba783d5f6b781e2e0ae880550c" id="r_afa8b32ba783d5f6b781e2e0ae880550c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa8b32ba783d5f6b781e2e0ae880550c">IndentGuard</a> (const IndentGuard &amp;)=delete</td></tr>
+<tr class="memdesc:afa8b32ba783d5f6b781e2e0ae880550c"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy constructor  <br /></td></tr>
+<tr class="memitem:ad80defb37e34ec3eda2483a72ae64076" id="r_ad80defb37e34ec3eda2483a72ae64076"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ae6f65527eff2db89d71024767fea9630">IndentGuard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad80defb37e34ec3eda2483a72ae64076">operator=</a> (const <a class="el" href="#ae6f65527eff2db89d71024767fea9630">IndentGuard</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ad80defb37e34ec3eda2483a72ae64076"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy assignment operator  <br /></td></tr>
+<tr class="memitem:a93d09e281a306a83f83918f1b24b69ac" id="r_a93d09e281a306a83f83918f1b24b69ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93d09e281a306a83f83918f1b24b69ac">IndentGuard</a> (IndentGuard &amp;&amp;) noexcept=delete</td></tr>
+<tr class="memdesc:a93d09e281a306a83f83918f1b24b69ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">move constructor  <br /></td></tr>
+<tr class="memitem:a84c1f0e37f4b4928e9e7bb8ab301af1a" id="r_a84c1f0e37f4b4928e9e7bb8ab301af1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ae6f65527eff2db89d71024767fea9630">IndentGuard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84c1f0e37f4b4928e9e7bb8ab301af1a">operator=</a> (<a class="el" href="#ae6f65527eff2db89d71024767fea9630">IndentGuard</a> &amp;&amp;) noexcept=delete</td></tr>
+<tr class="memdesc:a84c1f0e37f4b4928e9e7bb8ab301af1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted move assignment operator  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -75,7 +83,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>scope-based indentation control </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae6f65527eff2db89d71024767fea9630" name="ae6f65527eff2db89d71024767fea9630"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6f65527eff2db89d71024767fea9630">&#9670;&#160;</a></span>IndentGuard()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f65527eff2db89d71024767fea9630">&#9670;&#160;</a></span>IndentGuard() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,6 +139,115 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>deletes the indent guard instance and decrements the indentation </p>
+
+</div>
+</div>
+<a id="afa8b32ba783d5f6b781e2e0ae880550c" name="afa8b32ba783d5f6b781e2e0ae880550c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8b32ba783d5f6b781e2e0ae880550c">&#9670;&#160;</a></span>IndentGuard() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">util::format::IndentGuard::IndentGuard </td>
+          <td>(</td>
+          <td class="paramtype">const IndentGuard &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted copy constructor </p>
+
+</div>
+</div>
+<a id="a93d09e281a306a83f83918f1b24b69ac" name="a93d09e281a306a83f83918f1b24b69ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d09e281a306a83f83918f1b24b69ac">&#9670;&#160;</a></span>IndentGuard() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">util::format::IndentGuard::IndentGuard </td>
+          <td>(</td>
+          <td class="paramtype">IndentGuard &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>move constructor </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ad80defb37e34ec3eda2483a72ae64076" name="ad80defb37e34ec3eda2483a72ae64076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80defb37e34ec3eda2483a72ae64076">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae6f65527eff2db89d71024767fea9630">IndentGuard</a> &amp; util::format::IndentGuard::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae6f65527eff2db89d71024767fea9630">IndentGuard</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted copy assignment operator </p>
+
+</div>
+</div>
+<a id="a84c1f0e37f4b4928e9e7bb8ab301af1a" name="a84c1f0e37f4b4928e9e7bb8ab301af1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c1f0e37f4b4928e9e7bb8ab301af1a">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae6f65527eff2db89d71024767fea9630">IndentGuard</a> &amp; util::format::IndentGuard::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ae6f65527eff2db89d71024767fea9630">IndentGuard</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted move assignment operator </p>
 
 </div>
 </div>

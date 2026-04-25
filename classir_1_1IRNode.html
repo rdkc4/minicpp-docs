@@ -65,6 +65,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac3101acdd8d60f8c9e456f2d25aaece5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance of the irt node.  <br /></td></tr>
 <tr class="memitem:a6fc14447c4caa5a46f2549fb01c09a2d" id="r_a6fc14447c4caa5a46f2549fb01c09a2d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fc14447c4caa5a46f2549fb01c09a2d">~IRNode</a> ()=default</td></tr>
 <tr class="memdesc:a6fc14447c4caa5a46f2549fb01c09a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs the instance of the irt node.  <br /></td></tr>
+<tr class="memitem:a1edab7b7a4c99d163e4f5ae39adb5cc9" id="r_a1edab7b7a4c99d163e4f5ae39adb5cc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1edab7b7a4c99d163e4f5ae39adb5cc9">IRNode</a> (const IRNode &amp;)=delete</td></tr>
+<tr class="memdesc:a1edab7b7a4c99d163e4f5ae39adb5cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy constructor  <br /></td></tr>
+<tr class="memitem:a5f5453135ef31ab2e1afc809ddb4098e" id="r_a5f5453135ef31ab2e1afc809ddb4098e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac3101acdd8d60f8c9e456f2d25aaece5">IRNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f5453135ef31ab2e1afc809ddb4098e">operator=</a> (const <a class="el" href="#ac3101acdd8d60f8c9e456f2d25aaece5">IRNode</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a5f5453135ef31ab2e1afc809ddb4098e"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy assignment operator  <br /></td></tr>
+<tr class="memitem:a03a53c29822cce165fff6b77f4d36243" id="r_a03a53c29822cce165fff6b77f4d36243"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03a53c29822cce165fff6b77f4d36243">IRNode</a> (IRNode &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:a03a53c29822cce165fff6b77f4d36243"><td class="mdescLeft">&#160;</td><td class="mdescRight">move constructor  <br /></td></tr>
+<tr class="memitem:a535eb09d529737e48befb9afb920aae1" id="r_a535eb09d529737e48befb9afb920aae1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac3101acdd8d60f8c9e456f2d25aaece5">IRNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a535eb09d529737e48befb9afb920aae1">operator=</a> (<a class="el" href="#ac3101acdd8d60f8c9e456f2d25aaece5">IRNode</a> &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:a535eb09d529737e48befb9afb920aae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">move assignment operator  <br /></td></tr>
 <tr class="memitem:ab603a46028bb277bb5a7c6dce3149b8a" id="r_ab603a46028bb277bb5a7c6dce3149b8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceir.html#a58f93f215bb8ccbf3de3475c5bcdf820">IRNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab603a46028bb277bb5a7c6dce3149b8a">getNodeType</a> () const noexcept</td></tr>
 <tr class="memdesc:ab603a46028bb277bb5a7c6dce3149b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the node type  <br /></td></tr>
 <tr class="memitem:a48a9a51e3f174987b4946b9de3dca52b" id="r_a48a9a51e3f174987b4946b9de3dca52b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a9a51e3f174987b4946b9de3dca52b">accept</a> (<a class="el" href="classir_1_1IRVisitor.html">IRVisitor</a> &amp;visitor)=0</td></tr>
@@ -79,7 +87,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>parent class of all IRT nodes </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac3101acdd8d60f8c9e456f2d25aaece5" name="ac3101acdd8d60f8c9e456f2d25aaece5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3101acdd8d60f8c9e456f2d25aaece5">&#9670;&#160;</a></span>IRNode()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3101acdd8d60f8c9e456f2d25aaece5">&#9670;&#160;</a></span>IRNode() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,6 +135,60 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destructs the instance of the irt node. </p>
+
+</div>
+</div>
+<a id="a1edab7b7a4c99d163e4f5ae39adb5cc9" name="a1edab7b7a4c99d163e4f5ae39adb5cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1edab7b7a4c99d163e4f5ae39adb5cc9">&#9670;&#160;</a></span>IRNode() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ir::IRNode::IRNode </td>
+          <td>(</td>
+          <td class="paramtype">const IRNode &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted copy constructor </p>
+
+</div>
+</div>
+<a id="a03a53c29822cce165fff6b77f4d36243" name="a03a53c29822cce165fff6b77f4d36243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a53c29822cce165fff6b77f4d36243">&#9670;&#160;</a></span>IRNode() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ir::IRNode::IRNode </td>
+          <td>(</td>
+          <td class="paramtype">IRNode &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>move constructor </p>
 
 </div>
 </div>
@@ -191,6 +253,60 @@ Private Attributes</h2></td></tr>
 
 <p>getter for the node type </p>
 <dl class="section return"><dt>Returns</dt><dd>type of the node </dd></dl>
+
+</div>
+</div>
+<a id="a5f5453135ef31ab2e1afc809ddb4098e" name="a5f5453135ef31ab2e1afc809ddb4098e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5453135ef31ab2e1afc809ddb4098e">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac3101acdd8d60f8c9e456f2d25aaece5">IRNode</a> &amp; ir::IRNode::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ac3101acdd8d60f8c9e456f2d25aaece5">IRNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted copy assignment operator </p>
+
+</div>
+</div>
+<a id="a535eb09d529737e48befb9afb920aae1" name="a535eb09d529737e48befb9afb920aae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535eb09d529737e48befb9afb920aae1">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac3101acdd8d60f8c9e456f2d25aaece5">IRNode</a> &amp; ir::IRNode::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ac3101acdd8d60f8c9e456f2d25aaece5">IRNode</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>move assignment operator </p>
 
 </div>
 </div>

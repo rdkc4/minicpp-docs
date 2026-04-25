@@ -64,6 +64,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aab3494bfeb00e7fed733f114e4bca1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <br /></td></tr>
 <tr class="memitem:a69d783d5f6abdec9a83d622f6533dfab" id="r_a69d783d5f6abdec9a83d622f6533dfab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69d783d5f6abdec9a83d622f6533dfab">~IRVisitor</a> ()=default</td></tr>
 <tr class="memdesc:a69d783d5f6abdec9a83d622f6533dfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">default destructor  <br /></td></tr>
+<tr class="memitem:a29c6ae875a7b553f503d10755b01dd0f" id="r_a29c6ae875a7b553f503d10755b01dd0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29c6ae875a7b553f503d10755b01dd0f">IRVisitor</a> (const IRVisitor &amp;)=delete</td></tr>
+<tr class="memdesc:a29c6ae875a7b553f503d10755b01dd0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy constructor  <br /></td></tr>
+<tr class="memitem:a18765449feda39d1848567157904a2b5" id="r_a18765449feda39d1848567157904a2b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18765449feda39d1848567157904a2b5">operator=</a> (const <a class="el" href="#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a18765449feda39d1848567157904a2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy assignment operator  <br /></td></tr>
+<tr class="memitem:a2169e4e6010de5f5356a429efd5aa0aa" id="r_a2169e4e6010de5f5356a429efd5aa0aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2169e4e6010de5f5356a429efd5aa0aa">IRVisitor</a> (IRVisitor &amp;&amp;) noexcept=delete</td></tr>
+<tr class="memdesc:a2169e4e6010de5f5356a429efd5aa0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted move constructor  <br /></td></tr>
+<tr class="memitem:a9afb086357150df3ac5e05ddb40429ec" id="r_a9afb086357150df3ac5e05ddb40429ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9afb086357150df3ac5e05ddb40429ec">operator=</a> (<a class="el" href="#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;&amp;) noexcept=delete</td></tr>
+<tr class="memdesc:a9afb086357150df3ac5e05ddb40429ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted move assignment operator  <br /></td></tr>
 <tr class="memitem:a5aadeb8655988ee2bdd532e51f900bd5" id="r_a5aadeb8655988ee2bdd532e51f900bd5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5aadeb8655988ee2bdd532e51f900bd5">visit</a> (<a class="el" href="classir_1_1IRProgram.html">IRProgram</a> *program)=0</td></tr>
 <tr class="memdesc:a5aadeb8655988ee2bdd532e51f900bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">abstract method for visiting program  <br /></td></tr>
 <tr class="memitem:adacb6f7e79685ce87106742cb4b1ddbd" id="r_adacb6f7e79685ce87106742cb4b1ddbd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adacb6f7e79685ce87106742cb4b1ddbd">visit</a> (<a class="el" href="classir_1_1IRFunction.html">IRFunction</a> *function)=0</td></tr>
@@ -111,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>defines the interface for classes that need irt traversal </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aab3494bfeb00e7fed733f114e4bca1e9" name="aab3494bfeb00e7fed733f114e4bca1e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab3494bfeb00e7fed733f114e4bca1e9">&#9670;&#160;</a></span>IRVisitor()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3494bfeb00e7fed733f114e4bca1e9">&#9670;&#160;</a></span>IRVisitor() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +172,115 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a29c6ae875a7b553f503d10755b01dd0f" name="a29c6ae875a7b553f503d10755b01dd0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c6ae875a7b553f503d10755b01dd0f">&#9670;&#160;</a></span>IRVisitor() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ir::IRVisitor::IRVisitor </td>
+          <td>(</td>
+          <td class="paramtype">const IRVisitor &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted copy constructor </p>
+
+</div>
+</div>
+<a id="a2169e4e6010de5f5356a429efd5aa0aa" name="a2169e4e6010de5f5356a429efd5aa0aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2169e4e6010de5f5356a429efd5aa0aa">&#9670;&#160;</a></span>IRVisitor() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ir::IRVisitor::IRVisitor </td>
+          <td>(</td>
+          <td class="paramtype">IRVisitor &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted move constructor </p>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a18765449feda39d1848567157904a2b5" name="a18765449feda39d1848567157904a2b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18765449feda39d1848567157904a2b5">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp; ir::IRVisitor::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted copy assignment operator </p>
+
+</div>
+</div>
+<a id="a9afb086357150df3ac5e05ddb40429ec" name="a9afb086357150df3ac5e05ddb40429ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afb086357150df3ac5e05ddb40429ec">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp; ir::IRVisitor::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>deleted move assignment operator </p>
+
+</div>
+</div>
 <a id="a1135411d1e187ef3c2224d0333db8852" name="a1135411d1e187ef3c2224d0333db8852"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1135411d1e187ef3c2224d0333db8852">&#9670;&#160;</a></span>visit() <span class="overload">[1/21]</span></h2>
 

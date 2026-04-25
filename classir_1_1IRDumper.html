@@ -64,8 +64,6 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b1cfd97aa2e64fa8e97eef4f532f584" id="r_a5b1cfd97aa2e64fa8e97eef4f532f584"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b1cfd97aa2e64fa8e97eef4f532f584">IRDumper</a> (std::ostream &amp;<a class="el" href="#a2509ba74d5727c20cb515c8f6c638695">out</a>)</td></tr>
 <tr class="memdesc:a5b1cfd97aa2e64fa8e97eef4f532f584"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates the instance of the ir dumper  <br /></td></tr>
-<tr class="memitem:a278eb1efddc6fd5f2124654146e840a4" id="r_a278eb1efddc6fd5f2124654146e840a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a278eb1efddc6fd5f2124654146e840a4">~IRDumper</a> ()=default</td></tr>
-<tr class="memdesc:a278eb1efddc6fd5f2124654146e840a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes the instance of the ir dumper  <br /></td></tr>
 <tr class="memitem:a015ad8f3bc6938cf447744c61770417c" id="r_a015ad8f3bc6938cf447744c61770417c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a015ad8f3bc6938cf447744c61770417c">visit</a> (<a class="el" href="classir_1_1IRProgram.html">IRProgram</a> *program) final override</td></tr>
 <tr class="memdesc:a015ad8f3bc6938cf447744c61770417c"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps the ir program  <br /></td></tr>
 <tr class="memitem:a078384a96aaad6ebebefbb5483286b20" id="r_a078384a96aaad6ebebefbb5483286b20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a078384a96aaad6ebebefbb5483286b20">visit</a> (<a class="el" href="classir_1_1IRFunction.html">IRFunction</a> *function) final override</td></tr>
@@ -113,6 +111,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aab3494bfeb00e7fed733f114e4bca1e9 inherit pub_methods_classir_1_1IRVisitor"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <br /></td></tr>
 <tr class="memitem:a69d783d5f6abdec9a83d622f6533dfab inherit pub_methods_classir_1_1IRVisitor" id="r_a69d783d5f6abdec9a83d622f6533dfab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classir_1_1IRVisitor.html#a69d783d5f6abdec9a83d622f6533dfab">~IRVisitor</a> ()=default</td></tr>
 <tr class="memdesc:a69d783d5f6abdec9a83d622f6533dfab inherit pub_methods_classir_1_1IRVisitor"><td class="mdescLeft">&#160;</td><td class="mdescRight">default destructor  <br /></td></tr>
+<tr class="memitem:a29c6ae875a7b553f503d10755b01dd0f inherit pub_methods_classir_1_1IRVisitor" id="r_a29c6ae875a7b553f503d10755b01dd0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classir_1_1IRVisitor.html#a29c6ae875a7b553f503d10755b01dd0f">IRVisitor</a> (const IRVisitor &amp;)=delete</td></tr>
+<tr class="memdesc:a29c6ae875a7b553f503d10755b01dd0f inherit pub_methods_classir_1_1IRVisitor"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy constructor  <br /></td></tr>
+<tr class="memitem:a18765449feda39d1848567157904a2b5 inherit pub_methods_classir_1_1IRVisitor" id="r_a18765449feda39d1848567157904a2b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classir_1_1IRVisitor.html#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classir_1_1IRVisitor.html#a18765449feda39d1848567157904a2b5">operator=</a> (const <a class="el" href="classir_1_1IRVisitor.html#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a18765449feda39d1848567157904a2b5 inherit pub_methods_classir_1_1IRVisitor"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy assignment operator  <br /></td></tr>
+<tr class="memitem:a2169e4e6010de5f5356a429efd5aa0aa inherit pub_methods_classir_1_1IRVisitor" id="r_a2169e4e6010de5f5356a429efd5aa0aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classir_1_1IRVisitor.html#a2169e4e6010de5f5356a429efd5aa0aa">IRVisitor</a> (IRVisitor &amp;&amp;) noexcept=delete</td></tr>
+<tr class="memdesc:a2169e4e6010de5f5356a429efd5aa0aa inherit pub_methods_classir_1_1IRVisitor"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted move constructor  <br /></td></tr>
+<tr class="memitem:a9afb086357150df3ac5e05ddb40429ec inherit pub_methods_classir_1_1IRVisitor" id="r_a9afb086357150df3ac5e05ddb40429ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classir_1_1IRVisitor.html#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classir_1_1IRVisitor.html#a9afb086357150df3ac5e05ddb40429ec">operator=</a> (<a class="el" href="classir_1_1IRVisitor.html#aab3494bfeb00e7fed733f114e4bca1e9">IRVisitor</a> &amp;&amp;) noexcept=delete</td></tr>
+<tr class="memdesc:a9afb086357150df3ac5e05ddb40429ec inherit pub_methods_classir_1_1IRVisitor"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted move assignment operator  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -158,33 +164,6 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a278eb1efddc6fd5f2124654146e840a4" name="a278eb1efddc6fd5f2124654146e840a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a278eb1efddc6fd5f2124654146e840a4">&#9670;&#160;</a></span>~IRDumper()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ir::IRDumper::~IRDumper </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>deletes the instance of the ir dumper </p>
 
 </div>
 </div>
